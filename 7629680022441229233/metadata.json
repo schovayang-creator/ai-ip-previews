@@ -1,0 +1,35 @@
+[
+  {
+    "recommend_count": 26419,
+    "comment_count": 17082,
+    "digg_count": 376311,
+    "admire_count": 18,
+    "share_count": 78948,
+    "collect_count": 36053,
+    "download_addr": "https://www.douyin.com/aweme/v1/play/?video_id=v2800fgi0000d7h128fog65vpvk7d5hg&line=0&file_id=6f3d832c39a44811af0c38ac77e4deab&sign=be6b6aeeebab17fd6b7d2133ca65f0eb&is_play_url=1&source=PackSourceEnum_PUBLISH",
+    "id": "7629680022441229233",
+    "time": 1776423310,
+    "type": 0,
+    "desc": "我完全明白你为什么闭上眼睛假装没看见 #女性智慧 #girlstalk",
+    "duration": 316034,
+    "music_title": "@鹿冰冰创作的原声",
+    "music_url": "https://lf9-music-east.douyinstatic.com/obj/ies-music-hj/7629680018465196859.mp3",
+    "cover": "https://p9-pc-sign.douyinpic.com/obj/tos-cn-i-0813c000-ce/oYZiG6jiA8eWAI3EuCi0AEDBw1ojAECYfQ8Aw7?lk3s=138a59ce&x-expires=2093526000&x-signature=X131xlOc3Ud2Xd%2BGRB50ohsPRSU%3D&from=327834062&s=PackSourceEnum_PUBLISH&se=false&sc=cover&biz_tag=pcweb_cover&l=2026050723074996247118119C4348087F",
+    "author_avatar": "https://p3-pc.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-avt-0015_b7493f5f504858775ca5b116c89eeae5.jpeg?from=327834062",
+    "author_nickname": "鹿冰冰",
+    "author_uid": "MS4wLjABAAAAwp-wmFzRnbjOGYKeR65KVT7di41nW6o578VxngbUBrCx1ra31bBLhO7VSVZtFdzZ",
+    "author_unique_id": null,
+    "author_short_id": null,
+    "author_signature": "无标题",
+    "text_extra": [
+      {
+        "tag_id": "1623463108251655",
+        "tag_name": "女性智慧"
+      },
+      {
+        "tag_id": "1609208864413895",
+        "tag_name": "girlstalk"
+      }
+    ]
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "recommend_count": 8,
+    "comment_count": 83,
+    "digg_count": 2755,
+    "admire_count": 0,
+    "share_count": 40,
+    "collect_count": 293,
+    "download_addr": "https://www.douyin.com/aweme/v1/play/?video_id=v2800fgi0000d5d061fog65v92ogj5ng&line=0&file_id=0bab2d420638444e9df01ae5c33cc162&sign=acd2318eb41bbf01af940d6c4ef72b2f&is_play_url=1&source=PackSourceEnum_PUBLISH",
+    "id": "7591383913268909553",
+    "time": 1767519045,
+    "type": 0,
+    "desc": "好的妆效是非常昂贵的 #妆容分享 #提升自已 #女性认知 #柏瑞美定妆喷雾 #个...",
+    "duration": 97300,
+    "music_title": "@鹿冰冰创作的原声",
+    "music_url": "https://lf26-music-east.douyinstatic.com/obj/ies-music-hj/7591383915172989733.mp3",
+    "cover": "https://p9-pc-sign.douyinpic.com/obj/tos-cn-i-0813c000-ce/oEDHAExANIAWzFXA1oOfBeU31dAEC9wLapEgAE?lk3s=138a59ce&x-expires=2093526000&x-signature=OW6QIcGi1gB4PQZgPU3JPPDqCno%3D&from=327834062&s=PackSourceEnum_PUBLISH&se=false&sc=cover&biz_tag=pcweb_cover&l=2026050723075127833DA26A18BD502340",
+    "author_avatar": "https://p3-pc.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-avt-0015_b7493f5f504858775ca5b116c89eeae5.jpeg?from=327834062",
+    "author_nickname": "鹿冰冰",
+    "author_uid": "MS4wLjABAAAAwp-wmFzRnbjOGYKeR65KVT7di41nW6o578VxngbUBrCx1ra31bBLhO7VSVZtFdzZ",
+    "author_unique_id": null,
+    "author_short_id": null,
+    "author_signature": "无标题",
+    "text_extra": [
+      {
+        "tag_id": "1614088257115143",
+        "tag_name": "妆容分享"
+      },
+      {
+        "tag_id": "1636774229651527",
+        "tag_name": "提升自已"
+      },
+      {
+        "tag_id": "1644751642664974",
+        "tag_name": "女性认知"
+      },
+      {
+        "tag_id": "1640087070180360",
+        "tag_name": "柏瑞美定妆喷雾"
+      },
+      {
+        "tag_id": "1614759017478152",
+        "tag_name": "个人提升"
+      }
+    ]
+  }
+]

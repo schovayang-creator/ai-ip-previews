@@ -1,0 +1,47 @@
+[
+  {
+    "recommend_count": 395,
+    "comment_count": 380,
+    "digg_count": 16677,
+    "admire_count": 0,
+    "share_count": 1880,
+    "collect_count": 1624,
+    "download_addr": "https://www.douyin.com/aweme/v1/play/?video_id=v2700fgi0000d6dbm27og65p2vdngfjg&line=0&file_id=18a1b678723142b0a18781f309dfb5ef&sign=d8fe2b218df4794b693de70931909998&is_play_url=1&source=PackSourceEnum_PUBLISH",
+    "id": "7609600861879026545",
+    "time": 1771748269,
+    "type": 0,
+    "desc": "我准备好大干一场 #女性情感 #girlstalk #小知识大作用 #冷知识 #有趣的知识又...",
+    "duration": 165634,
+    "music_title": "@鹿冰冰创作的原声",
+    "music_url": "https://lf9-music-east.douyinstatic.com/obj/ies-music-hj/7609600833675709241.mp3",
+    "cover": "https://p9-pc-sign.douyinpic.com/obj/tos-cn-i-0813c000-ce/oMA0EiqTqZMQAuBx7pyaa9PAA2kqCraCAIiP6?lk3s=138a59ce&x-expires=2093526000&x-signature=rKYiFG8qlCMqmmz%2BtU%2Byv6VmTho%3D&from=327834062&s=PackSourceEnum_PUBLISH&se=false&sc=cover&biz_tag=pcweb_cover&l=20260507230750F7A8586AF85F447A320F",
+    "author_avatar": "https://p3-pc.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-avt-0015_b7493f5f504858775ca5b116c89eeae5.jpeg?from=327834062",
+    "author_nickname": "鹿冰冰",
+    "author_uid": "MS4wLjABAAAAwp-wmFzRnbjOGYKeR65KVT7di41nW6o578VxngbUBrCx1ra31bBLhO7VSVZtFdzZ",
+    "author_unique_id": null,
+    "author_short_id": null,
+    "author_signature": "无标题",
+    "text_extra": [
+      {
+        "tag_id": "1610262907477000",
+        "tag_name": "女性情感"
+      },
+      {
+        "tag_id": "1609208864413895",
+        "tag_name": "girlstalk"
+      },
+      {
+        "tag_id": "1644274930339852",
+        "tag_name": "小知识大作用"
+      },
+      {
+        "tag_id": "1767586760229982",
+        "tag_name": "冷知识"
+      },
+      {
+        "tag_id": "1739404462289932",
+        "tag_name": "有趣的知识又增长了"
+      }
+    ]
+  }
+]

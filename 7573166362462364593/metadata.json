@@ -1,0 +1,47 @@
+[
+  {
+    "recommend_count": 6695,
+    "comment_count": 18854,
+    "digg_count": 334497,
+    "admire_count": 2,
+    "share_count": 69499,
+    "collect_count": 53432,
+    "download_addr": "https://www.douyin.com/aweme/v1/play/?video_id=v2700fgi0000d4ckghfog65nmfr8mre0&line=0&file_id=878861b81fca4efdb89a48ed622513b6&sign=7f75857e649adb2e7909bc13afe90664&is_play_url=1&source=PackSourceEnum_PUBLISH",
+    "id": "7573166362462364593",
+    "time": 1763265202,
+    "type": 0,
+    "desc": "不要端着碗看别人的饭桌 #正能量 #女性成长 #摆脱焦虑 #情感共鸣 #日常唠嗑",
+    "duration": 167100,
+    "music_title": "@鹿冰冰创作的原声",
+    "music_url": "https://lf26-music-east.douyinstatic.com/obj/ies-music-hj/7573166361179032357.mp3",
+    "cover": "https://p9-pc-sign.douyinpic.com/obj/tos-cn-i-0813c000-ce/oQU1nFDT9AEPrIATgZEEewCATAuwBnAhGpfnGA?lk3s=138a59ce&x-expires=2093526000&x-signature=laFpDUF73R7Ng5FVofOKcvPU8hk%3D&from=327834062&s=PackSourceEnum_PUBLISH&se=false&sc=cover&biz_tag=pcweb_cover&l=2026050723075209ECC4841E59C763A43E",
+    "author_avatar": "https://p3-pc.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-avt-0015_b7493f5f504858775ca5b116c89eeae5.jpeg?from=327834062",
+    "author_nickname": "鹿冰冰",
+    "author_uid": "MS4wLjABAAAAwp-wmFzRnbjOGYKeR65KVT7di41nW6o578VxngbUBrCx1ra31bBLhO7VSVZtFdzZ",
+    "author_unique_id": null,
+    "author_short_id": null,
+    "author_signature": "无标题",
+    "text_extra": [
+      {
+        "tag_id": "1767587349694472",
+        "tag_name": "正能量"
+      },
+      {
+        "tag_id": "1767586830235661",
+        "tag_name": "女性成长"
+      },
+      {
+        "tag_id": "1622136098532355",
+        "tag_name": "摆脱焦虑"
+      },
+      {
+        "tag_id": "7419051488367872036",
+        "tag_name": "情感共鸣"
+      },
+      {
+        "tag_id": "1592658360901639",
+        "tag_name": "日常唠嗑"
+      }
+    ]
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "recommend_count": 63,
+    "comment_count": 573,
+    "digg_count": 22623,
+    "admire_count": 0,
+    "share_count": 1088,
+    "collect_count": 6542,
+    "download_addr": "https://www.douyin.com/aweme/v1/play/?video_id=v1e00fgi0000d5pkb9fog65n6fssp3ng&line=0&file_id=fae79381dc3547638a6956f11798eb07&sign=b3f2080d2450f1d08e635ba10042e3af&is_play_url=1&source=PackSourceEnum_PUBLISH",
+    "id": "7598494244517384177",
+    "time": 1769162306,
+    "type": 0,
+    "desc": "好物（便宜货）分享 #好物分享 #饰品 #一般人不告诉他 #发型 #项链",
+    "duration": 294767,
+    "music_title": "@鹿冰冰创作的原声",
+    "music_url": "https://lf9-music-east.douyinstatic.com/obj/ies-music-hj/7598494222609582907.mp3",
+    "cover": "https://p9-pc-sign.douyinpic.com/obj/tos-cn-i-0813c000-ce/oIJjIAA4pDEerPImEjFEwZDBAcA9GLAQIJfje0?lk3s=138a59ce&x-expires=2093526000&x-signature=oeIeIgQdamHTq1PWwfP6ALQFsso%3D&from=327834062&s=PackSourceEnum_PUBLISH&se=false&sc=cover&biz_tag=pcweb_cover&l=2026050723075127833DA26A18BD502340",
+    "author_avatar": "https://p3-pc.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-avt-0015_b7493f5f504858775ca5b116c89eeae5.jpeg?from=327834062",
+    "author_nickname": "鹿冰冰",
+    "author_uid": "MS4wLjABAAAAwp-wmFzRnbjOGYKeR65KVT7di41nW6o578VxngbUBrCx1ra31bBLhO7VSVZtFdzZ",
+    "author_unique_id": null,
+    "author_short_id": null,
+    "author_signature": "无标题",
+    "text_extra": [
+      {
+        "tag_id": "1767586936157191",
+        "tag_name": "好物分享"
+      },
+      {
+        "tag_id": "1661154955827214",
+        "tag_name": "饰品"
+      },
+      {
+        "tag_id": "1621970111958019",
+        "tag_name": "一般人不告诉他"
+      },
+      {
+        "tag_id": "1561270570572801",
+        "tag_name": "发型"
+      },
+      {
+        "tag_id": "1578323811678317",
+        "tag_name": "项链"
+      }
+    ]
+  }
+]

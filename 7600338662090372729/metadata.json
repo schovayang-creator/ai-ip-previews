@@ -1,0 +1,47 @@
+[
+  {
+    "recommend_count": 39,
+    "comment_count": 110,
+    "digg_count": 3651,
+    "admire_count": 0,
+    "share_count": 184,
+    "collect_count": 383,
+    "download_addr": "https://www.douyin.com/aweme/v1/play/?video_id=v2700fgi0000d5st4q7og65na20a96lg&line=0&file_id=0720e3189b9f45af8f018899e17ea55f&sign=8e398072b282b1334610501c19cb38d3&is_play_url=1&source=PackSourceEnum_PUBLISH",
+    "id": "7600338662090372729",
+    "time": 1769677279,
+    "type": 0,
+    "desc": "竭尽全力，只为轻盈一跃 #girlstalk#女性成长#化妆#珀莱雅早C晚A#女性",
+    "duration": 184412,
+    "music_title": "花海 (钢琴版)(改编版)",
+    "music_url": "https://sf5-hl-ali-cdn-tos.douyinstatic.com/obj/tos-cn-ve-2774/o8F2gfjSDBuRFfya9BElyiQ8ACGYwUbAlGz9eF",
+    "cover": "https://p9-pc-sign.douyinpic.com/obj/tos-cn-p-0015c000-ce/ogACzFJoJeo3DpZb7fQDd5BugOEfJ7KQNSFFIW?lk3s=138a59ce&x-expires=2093526000&x-signature=znP22dx8wOw2LvN0iJ4G799tT2o%3D&from=327834062&s=PackSourceEnum_PUBLISH&se=false&sc=cover&biz_tag=pcweb_cover&l=2026050723075127833DA26A18BD502340",
+    "author_avatar": "https://p3-pc.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-avt-0015_b7493f5f504858775ca5b116c89eeae5.jpeg?from=327834062",
+    "author_nickname": "鹿冰冰",
+    "author_uid": "MS4wLjABAAAAwp-wmFzRnbjOGYKeR65KVT7di41nW6o578VxngbUBrCx1ra31bBLhO7VSVZtFdzZ",
+    "author_unique_id": null,
+    "author_short_id": null,
+    "author_signature": "无标题",
+    "text_extra": [
+      {
+        "tag_id": "1609208864413895",
+        "tag_name": "girlstalk"
+      },
+      {
+        "tag_id": "1767586830235661",
+        "tag_name": "女性成长"
+      },
+      {
+        "tag_id": "1553176036452354",
+        "tag_name": "化妆"
+      },
+      {
+        "tag_id": "1768135808536595",
+        "tag_name": "珀莱雅早c晚a"
+      },
+      {
+        "tag_id": "1591025759996941",
+        "tag_name": "女性"
+      }
+    ]
+  }
+]

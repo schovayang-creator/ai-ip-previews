@@ -1,0 +1,47 @@
+[
+  {
+    "recommend_count": 421,
+    "comment_count": 146,
+    "digg_count": 20235,
+    "admire_count": 0,
+    "share_count": 1392,
+    "collect_count": 5862,
+    "download_addr": "https://www.douyin.com/aweme/v1/play/?video_id=v1e00fgi0000d6p84enog65hhmnj12dg&line=0&file_id=86ec3ba36e5e4957917cf107d65bfa71&sign=2dcdf06dcd67c89edea365d8fd1f3273&is_play_url=1&source=PackSourceEnum_PUBLISH",
+    "id": "7616293751489498042",
+    "time": 1773306576,
+    "type": 0,
+    "desc": "《岩中花述》极速版，一命速通 #读书分享 #鲁豫 #girlstalk #女性 #女性成长",
+    "duration": 221169,
+    "music_title": "@鹿冰冰创作的原声",
+    "music_url": "https://lf26-music-east.douyinstatic.com/obj/ies-music-hj/7616293738121317178.mp3",
+    "cover": "https://p3-pc-sign.douyinpic.com/obj/tos-cn-p-0015c000-ce/okUIIe2G6DAZB1xfJoFjE9pCVAhwECJsQ5fblE?lk3s=138a59ce&x-expires=2093526000&x-signature=GkErKitomzDkm529XDKFEK7Ge84%3D&from=327834062&s=PackSourceEnum_PUBLISH&se=false&sc=cover&biz_tag=pcweb_cover&l=20260507230750F7A8586AF85F447A320F",
+    "author_avatar": "https://p3-pc.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-avt-0015_b7493f5f504858775ca5b116c89eeae5.jpeg?from=327834062",
+    "author_nickname": "鹿冰冰",
+    "author_uid": "MS4wLjABAAAAwp-wmFzRnbjOGYKeR65KVT7di41nW6o578VxngbUBrCx1ra31bBLhO7VSVZtFdzZ",
+    "author_unique_id": null,
+    "author_short_id": null,
+    "author_signature": "无标题",
+    "text_extra": [
+      {
+        "tag_id": "1600361097908237",
+        "tag_name": "读书分享"
+      },
+      {
+        "tag_id": "1589577930883079",
+        "tag_name": "鲁豫"
+      },
+      {
+        "tag_id": "1609208864413895",
+        "tag_name": "girlstalk"
+      },
+      {
+        "tag_id": "1591025759996941",
+        "tag_name": "女性"
+      },
+      {
+        "tag_id": "1767586830235661",
+        "tag_name": "女性成长"
+      }
+    ]
+  }
+]

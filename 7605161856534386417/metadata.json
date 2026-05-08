@@ -1,0 +1,43 @@
+[
+  {
+    "recommend_count": 266,
+    "comment_count": 1542,
+    "digg_count": 47857,
+    "admire_count": 0,
+    "share_count": 1963,
+    "collect_count": 3231,
+    "download_addr": "https://www.douyin.com/aweme/v1/play/?video_id=v2800fgi0000d65f9a7og65hmv6g63p0&line=0&file_id=cbe2c9cd59594fdb9c4a7997955dcb09&sign=b99133c64b078f3fcaf41680439e9006&is_play_url=1&source=PackSourceEnum_PUBLISH",
+    "id": "7605161856534386417",
+    "time": 1770714730,
+    "type": 0,
+    "desc": "在经济下行期一个普通女人抠搜过年的开箱视频 #开箱 #开箱视频vlog #快递 #...",
+    "duration": 592201,
+    "music_title": "@鹿冰冰创作的原声",
+    "music_url": "https://lf26-music-east.douyinstatic.com/obj/ies-music-hj/7605161833967733541.mp3",
+    "cover": "https://p9-pc-sign.douyinpic.com/obj/tos-cn-p-0015c000-ce/o4f9IASbkjo8Up5VHCBKQfo7wCFNEpAviGDohE?lk3s=138a59ce&x-expires=2093526000&x-signature=hfRxeHijKLHO6Y4RTePeWTWXO%2Bo%3D&from=327834062&s=PackSourceEnum_PUBLISH&se=false&sc=cover&biz_tag=pcweb_cover&l=2026050723075127833DA26A18BD502340",
+    "author_avatar": "https://p3-pc.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-avt-0015_b7493f5f504858775ca5b116c89eeae5.jpeg?from=327834062",
+    "author_nickname": "鹿冰冰",
+    "author_uid": "MS4wLjABAAAAwp-wmFzRnbjOGYKeR65KVT7di41nW6o578VxngbUBrCx1ra31bBLhO7VSVZtFdzZ",
+    "author_unique_id": null,
+    "author_short_id": null,
+    "author_signature": "无标题",
+    "text_extra": [
+      {
+        "tag_id": "1577164526847006",
+        "tag_name": "开箱"
+      },
+      {
+        "tag_id": "1643567209581572",
+        "tag_name": "开箱视频vlog"
+      },
+      {
+        "tag_id": "1567544560587778",
+        "tag_name": "快递"
+      },
+      {
+        "tag_id": "1571948269640705",
+        "tag_name": "拆快递"
+      }
+    ]
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "recommend_count": 3451,
+    "comment_count": 3390,
+    "digg_count": 143984,
+    "admire_count": 0,
+    "share_count": 20045,
+    "collect_count": 13348,
+    "download_addr": "https://www.douyin.com/aweme/v1/play/?video_id=v1e00fgi0000d4lq92fog65g6nb39arg&line=0&file_id=b9d6724839134a2ba55a780eed4130eb&sign=74fc451309a4eb8f033e940e824a0e1c&is_play_url=1&source=PackSourceEnum_PUBLISH",
+    "id": "7578334586011712497",
+    "time": 1764468522,
+    "type": 0,
+    "desc": "幸福并非水龙头，我这边拧紧，你那边就能出水 #口播自媒体 #心理疗愈 #知...",
+    "duration": 176000,
+    "music_title": "Track in Time (氛围版)",
+    "music_url": "",
+    "cover": "https://p9-pc-sign.douyinpic.com/obj/tos-cn-p-0015c000-ce/oofxp6caDQY0urgSApFHe39JVCfEpcEQEUw6AK?lk3s=138a59ce&x-expires=2093526000&x-signature=HgkuzNMI1v4lhdzQO8cXYmIx7sQ%3D&from=327834062&s=PackSourceEnum_PUBLISH&se=false&sc=cover&biz_tag=pcweb_cover&l=2026050723075209ECC4841E59C763A43E",
+    "author_avatar": "https://p3-pc.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-avt-0015_b7493f5f504858775ca5b116c89eeae5.jpeg?from=327834062",
+    "author_nickname": "鹿冰冰",
+    "author_uid": "MS4wLjABAAAAwp-wmFzRnbjOGYKeR65KVT7di41nW6o578VxngbUBrCx1ra31bBLhO7VSVZtFdzZ",
+    "author_unique_id": null,
+    "author_short_id": null,
+    "author_signature": "无标题",
+    "text_extra": [
+      {
+        "tag_id": "1694108062637059",
+        "tag_name": "口播自媒体"
+      },
+      {
+        "tag_id": "1653445655131139",
+        "tag_name": "心理疗愈"
+      },
+      {
+        "tag_id": "1767587197766734",
+        "tag_name": "知识分享"
+      },
+      {
+        "tag_id": "1607508088828935",
+        "tag_name": "原生家庭"
+      },
+      {
+        "tag_id": "1768585202650200",
+        "tag_name": "东亚母女"
+      }
+    ]
+  }
+]

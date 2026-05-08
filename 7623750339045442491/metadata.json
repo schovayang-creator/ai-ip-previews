@@ -1,0 +1,43 @@
+[
+  {
+    "recommend_count": 398,
+    "comment_count": 562,
+    "digg_count": 23648,
+    "admire_count": 1,
+    "share_count": 2295,
+    "collect_count": 5555,
+    "download_addr": "https://www.douyin.com/aweme/v1/play/?video_id=v2800fgi0000d76fs1vog65r5mnmt15g&line=0&file_id=8d6ba4dd8a754d86a1629ff1be475c27&sign=dfeab998af43de405bb845bfe37d57b1&is_play_url=1&source=PackSourceEnum_PUBLISH",
+    "id": "7623750339045442491",
+    "time": 1775042699,
+    "type": 0,
+    "desc": "《包法利夫人》美女配猪头的大概结局 #包法利夫人#女性情感 #读书 #书单",
+    "duration": 1701300,
+    "music_title": "@鹿冰冰创作的原声",
+    "music_url": "https://lf26-music-east.douyinstatic.com/obj/ies-music-hj/7623750581483604795.mp3",
+    "cover": "https://p9-pc-sign.douyinpic.com/obj/tos-cn-i-0813c000-ce/okENIAEA9APzAmDpiFDzfvP1fCjAJEAwouQICW?lk3s=138a59ce&x-expires=2093526000&x-signature=%2FeYYohx%2FX%2FTLMlP2IFr4Tz%2BbHgw%3D&from=327834062&s=PackSourceEnum_PUBLISH&se=false&sc=cover&biz_tag=pcweb_cover&l=2026050723074996247118119C4348087F",
+    "author_avatar": "https://p3-pc.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-avt-0015_b7493f5f504858775ca5b116c89eeae5.jpeg?from=327834062",
+    "author_nickname": "鹿冰冰",
+    "author_uid": "MS4wLjABAAAAwp-wmFzRnbjOGYKeR65KVT7di41nW6o578VxngbUBrCx1ra31bBLhO7VSVZtFdzZ",
+    "author_unique_id": null,
+    "author_short_id": null,
+    "author_signature": "无标题",
+    "text_extra": [
+      {
+        "tag_id": "1623666324642829",
+        "tag_name": "包法利夫人"
+      },
+      {
+        "tag_id": "1610262907477000",
+        "tag_name": "女性情感"
+      },
+      {
+        "tag_id": "1570347557767170",
+        "tag_name": "读书"
+      },
+      {
+        "tag_id": "1595139015732231",
+        "tag_name": "书单"
+      }
+    ]
+  }
+]

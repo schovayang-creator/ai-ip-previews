@@ -1,0 +1,35 @@
+[
+  {
+    "recommend_count": 32,
+    "comment_count": 560,
+    "digg_count": 11895,
+    "admire_count": 0,
+    "share_count": 380,
+    "collect_count": 535,
+    "download_addr": "https://www.douyin.com/aweme/v1/play/?video_id=v2800fgi0000d7bn93fog65psjskn230&line=0&file_id=77191f910a774dfe8bd22665f3872b2d&sign=6bd065eee527bc2e0d1e3f73817f1869&is_play_url=1&source=PackSourceEnum_PUBLISH",
+    "id": "7626692910830989946",
+    "time": 1775727819,
+    "type": 0,
+    "desc": "我花钱太大了 #购物分享 #嘴替上线",
+    "duration": 178235,
+    "music_title": "@鹿冰冰创作的原声",
+    "music_url": "https://lf9-music-east.douyinstatic.com/obj/ies-music-hj/7626692912880962341.mp3",
+    "cover": "https://p9-pc-sign.douyinpic.com/obj/tos-cn-i-0813c000-ce/o8ASd3ooDIDMDXfTA9FAob9K6Cf2pAEEEywvA1?lk3s=138a59ce&x-expires=2093526000&x-signature=Hiq307pp9C4N7UcvDkemGV3ZnVk%3D&from=327834062&s=PackSourceEnum_PUBLISH&se=false&sc=cover&biz_tag=pcweb_cover&l=2026050723074996247118119C4348087F",
+    "author_avatar": "https://p3-pc.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-avt-0015_b7493f5f504858775ca5b116c89eeae5.jpeg?from=327834062",
+    "author_nickname": "鹿冰冰",
+    "author_uid": "MS4wLjABAAAAwp-wmFzRnbjOGYKeR65KVT7di41nW6o578VxngbUBrCx1ra31bBLhO7VSVZtFdzZ",
+    "author_unique_id": null,
+    "author_short_id": null,
+    "author_signature": "无标题",
+    "text_extra": [
+      {
+        "tag_id": "1568729544288258",
+        "tag_name": "购物分享"
+      },
+      {
+        "tag_id": "1752444744418304",
+        "tag_name": "嘴替上线"
+      }
+    ]
+  }
+]

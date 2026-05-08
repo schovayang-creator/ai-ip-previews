@@ -1,0 +1,47 @@
+[
+  {
+    "recommend_count": 36745,
+    "comment_count": 22383,
+    "digg_count": 433175,
+    "admire_count": 13,
+    "share_count": 57191,
+    "collect_count": 65253,
+    "download_addr": "https://www.douyin.com/aweme/v1/play/?video_id=v1e00fgi0000d625rmnog65sal8hi2fg&line=0&file_id=542bd466e48548e4925f96aff2ee7adf&sign=bff0b20659331fffefc4cd05070aaabe&is_play_url=1&source=PackSourceEnum_PUBLISH",
+    "id": "7603308900943126961",
+    "time": 1770283308,
+    "type": 0,
+    "desc": "我憎恨的是不再憎恨生命的自己 #girlstalk #女性 #女性智慧 #加缪 #今日分享",
+    "duration": 259853,
+    "music_title": "宁静舒缓温馨浪漫钢琴 Zen Meditation Music",
+    "music_url": "",
+    "cover": "https://p9-pc-sign.douyinpic.com/obj/tos-cn-p-0015c000-ce/ogSAffFEywt9DpcIBI4EAaCeYEhFEEUqpE3qm6?lk3s=138a59ce&x-expires=2093526000&x-signature=QfMrGN2DVR78fCWnG%2FBZls8OgG4%3D&from=327834062&s=PackSourceEnum_PUBLISH&se=false&sc=cover&biz_tag=pcweb_cover&l=2026050723074996247118119C4348087F",
+    "author_avatar": "https://p3-pc.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-avt-0015_b7493f5f504858775ca5b116c89eeae5.jpeg?from=327834062",
+    "author_nickname": "鹿冰冰",
+    "author_uid": "MS4wLjABAAAAwp-wmFzRnbjOGYKeR65KVT7di41nW6o578VxngbUBrCx1ra31bBLhO7VSVZtFdzZ",
+    "author_unique_id": null,
+    "author_short_id": null,
+    "author_signature": "无标题",
+    "text_extra": [
+      {
+        "tag_id": "1609208864413895",
+        "tag_name": "girlstalk"
+      },
+      {
+        "tag_id": "1591025759996941",
+        "tag_name": "女性"
+      },
+      {
+        "tag_id": "1623463108251655",
+        "tag_name": "女性智慧"
+      },
+      {
+        "tag_id": "1617221838130179",
+        "tag_name": "加缪"
+      },
+      {
+        "tag_id": "1767586466823181",
+        "tag_name": "今日分享"
+      }
+    ]
+  }
+]

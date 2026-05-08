@@ -1,0 +1,35 @@
+[
+  {
+    "recommend_count": 132,
+    "comment_count": 1685,
+    "digg_count": 16372,
+    "admire_count": 0,
+    "share_count": 2265,
+    "collect_count": 806,
+    "download_addr": "https://www.douyin.com/aweme/v1/play/?video_id=v1e00fgi0000d7553f7og65gk93jrd00&line=0&file_id=b0efc0e9d9e54b138749642eab998f67&sign=248a35e680b7f3be969f7ccb76f00352&is_play_url=1&source=PackSourceEnum_PUBLISH",
+    "id": "7622995855905309669",
+    "time": 1774867032,
+    "type": 0,
+    "desc": "开箱 #开箱 #这么诚实的妹子",
+    "duration": 546900,
+    "music_title": "@鹿冰冰创作的原声",
+    "music_url": "https://lf9-music-east.douyinstatic.com/obj/ies-music-hj/7622995879779142449.mp3",
+    "cover": "https://p9-pc-sign.douyinpic.com/obj/tos-cn-i-0813c000-ce/oIpnShYUKM3AHFViAPDBl2AviaA8Ac7lIhE90?lk3s=138a59ce&x-expires=2093526000&x-signature=vPcns8I%2BLEWkavb1hhkpZupzQ8k%3D&from=327834062&s=PackSourceEnum_PUBLISH&se=false&sc=cover&biz_tag=pcweb_cover&l=2026050723074996247118119C4348087F",
+    "author_avatar": "https://p3-pc.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-avt-0015_b7493f5f504858775ca5b116c89eeae5.jpeg?from=327834062",
+    "author_nickname": "鹿冰冰",
+    "author_uid": "MS4wLjABAAAAwp-wmFzRnbjOGYKeR65KVT7di41nW6o578VxngbUBrCx1ra31bBLhO7VSVZtFdzZ",
+    "author_unique_id": null,
+    "author_short_id": null,
+    "author_signature": "无标题",
+    "text_extra": [
+      {
+        "tag_id": "1577164526847006",
+        "tag_name": "开箱"
+      },
+      {
+        "tag_id": "1606401292631108",
+        "tag_name": "这么诚实的妹子"
+      }
+    ]
+  }
+]

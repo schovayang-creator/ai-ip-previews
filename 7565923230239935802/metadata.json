@@ -1,0 +1,47 @@
+[
+  {
+    "recommend_count": 86,
+    "comment_count": 1425,
+    "digg_count": 11358,
+    "admire_count": 0,
+    "share_count": 1287,
+    "collect_count": 609,
+    "download_addr": "https://www.douyin.com/aweme/v1/play/?video_id=v1e00fgi0000d3voklnog65ie3b7bac0&line=0&file_id=30ea393fee6b4e66ba594ce6b560e326&sign=2f43ce78a280b045999cb0e1a45fc971&is_play_url=1&source=PackSourceEnum_PUBLISH",
+    "id": "7565923230239935802",
+    "time": 1761578781,
+    "type": 0,
+    "desc": "令我耿耿于怀的两部手机#内容过于真实 #vlog日常 #日常生活 #日常唠嗑 #给我...",
+    "duration": 184034,
+    "music_title": "@鹿冰冰创作的原声",
+    "music_url": "https://lf26-music-east.douyinstatic.com/obj/ies-music-hj/7565923246198000442.mp3",
+    "cover": "https://p9-pc-sign.douyinpic.com/obj/tos-cn-p-0015c000-ce/ogZJzpRaFj7UEW4BF4AP4IQDfg18f5rCwzfKxk?lk3s=138a59ce&x-expires=2093526000&x-signature=%2B1phs6xf8oPueBPnPUsN7%2BkNIzg%3D&from=327834062&s=PackSourceEnum_PUBLISH&se=false&sc=cover&biz_tag=pcweb_cover&l=20260507230753971570AF6C3CEE7392A9",
+    "author_avatar": "https://p3-pc.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-avt-0015_b7493f5f504858775ca5b116c89eeae5.jpeg?from=327834062",
+    "author_nickname": "鹿冰冰",
+    "author_uid": "MS4wLjABAAAAwp-wmFzRnbjOGYKeR65KVT7di41nW6o578VxngbUBrCx1ra31bBLhO7VSVZtFdzZ",
+    "author_unique_id": null,
+    "author_short_id": null,
+    "author_signature": "无标题",
+    "text_extra": [
+      {
+        "tag_id": "1767586229303309",
+        "tag_name": "内容过于真实"
+      },
+      {
+        "tag_id": "7419051797869758527",
+        "tag_name": "vlog日常"
+      },
+      {
+        "tag_id": "1767586407077965",
+        "tag_name": "日常生活"
+      },
+      {
+        "tag_id": "1592658360901639",
+        "tag_name": "日常唠嗑"
+      },
+      {
+        "tag_id": "1730308845586440",
+        "tag_name": "给我一个强烈推荐"
+      }
+    ]
+  }
+]

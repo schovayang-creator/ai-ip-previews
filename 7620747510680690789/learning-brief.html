@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>V3复刻决策页 · 7620747510680690789</title>
+<style>
+:root { --paper:#f5ead8; --paper2:#fff8ec; --ink:#211714; --muted:#76685e; --line:#d9bea4; --coal:#17110f; --red:#a93427; --amber:#c76b24; --green:#1f6a57; --blue:#285f78; --shadow:0 22px 68px rgba(52,30,14,.14); --sans:"Avenir Next","PingFang SC","Hiragino Sans GB",sans-serif; --serif:"Songti SC","Kaiti SC","Hiragino Mincho ProN",serif; --num:"DIN Alternate","Avenir Next Condensed",var(--sans); }
+* { box-sizing:border-box; } html { scroll-behavior:smooth; } body { margin:0; color:var(--ink); font-family:var(--sans); background:radial-gradient(circle at 10% 6%,rgba(199,107,36,.23),transparent 30%),radial-gradient(circle at 92% 18%,rgba(31,106,87,.16),transparent 30%),linear-gradient(135deg,#e7d2ba 0%,var(--paper) 44%,#fbf3e9 100%); } a { color:inherit; } .page { width:min(1240px,100%); margin:0 auto; padding:26px 22px 70px; }
+.nav { position:sticky; top:0; z-index:8; margin:-26px -22px 22px; padding:12px 22px; display:flex; gap:10px; overflow:auto; border-bottom:1px solid rgba(217,190,164,.8); background:rgba(245,234,216,.86); backdrop-filter:blur(14px); } .nav a { text-decoration:none; white-space:nowrap; font-size:13px; padding:8px 12px; border:1px solid var(--line); border-radius:999px; background:rgba(255,248,236,.78); color:var(--muted); font-weight:800; }
+.hero { display:grid; grid-template-columns:360px 1fr; gap:22px; } .cover { padding:14px; border-radius:32px; background:linear-gradient(160deg,#2b1b15,#7c3725 48%,#e5ae70); box-shadow:var(--shadow); color:#fff6e9; overflow:hidden; } .cover img { display:block; width:100%; height:465px; object-fit:cover; border-radius:23px; box-shadow:0 20px 45px rgba(0,0,0,.28); } .cover h2 { margin:14px 6px 6px; font-family:var(--serif); font-size:25px; line-height:1.12; } .cover p { margin:0 6px 6px; color:rgba(255,246,233,.86); line-height:1.65; font-size:14px; }
+.hero-main { display:grid; gap:14px; } .verdict { border-radius:34px; background:linear-gradient(135deg,#fff8ec 0%,#fff3dc 58%,#f7cf8f 100%); border:1px solid var(--line); box-shadow:var(--shadow); padding:24px; position:relative; overflow:hidden; } .verdict:after { content:"64"; position:absolute; right:18px; top:-26px; font-family:var(--num); font-size:180px; line-height:1; color:rgba(169,52,39,.075); font-weight:900; letter-spacing:-.08em; } .kicker { color:var(--red); font-weight:900; letter-spacing:.13em; font-size:12px; text-transform:uppercase; } h1 { position:relative; z-index:1; margin:8px 0 10px; font-family:var(--serif); font-size:48px; line-height:1.03; letter-spacing:-.045em; max-width:850px; } .lead { position:relative; z-index:1; margin:0; color:var(--muted); line-height:1.75; max-width:820px; } .badges { position:relative; z-index:1; display:flex; flex-wrap:wrap; gap:8px; margin-top:16px; } .badge { border:1px solid var(--line); background:#fffaf1; border-radius:999px; padding:8px 11px; font-size:13px; font-weight:900; } .badge.warn { background:#fff0d1; color:#9a4b11; } .badge.good { background:#e8f3eb; color:var(--green); }
+.scoreline { display:grid; grid-template-columns:210px 1fr; gap:14px; } .big-score { border-radius:28px; background:var(--coal); color:#fff8ec; padding:22px; display:grid; align-content:center; min-height:154px; box-shadow:var(--shadow); } .big-score strong { font-family:var(--num); font-size:74px; line-height:.86; letter-spacing:-.06em; } .big-score span { margin-top:8px; color:rgba(255,248,236,.76); font-size:13px; } .next-actions { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; } .tile,.card { border:1px solid var(--line); border-radius:21px; background:#fffaf1; padding:16px; line-height:1.65; } .tile { min-height:154px; } .tile b,.card b { display:block; color:var(--red); margin-bottom:6px; } .tile span,.card span { color:var(--muted); } .card.good b { color:var(--green); } .card.strong { background:#231914; color:#fff8ec; border-color:#231914; } .card.strong b { color:#f4bd73; } .card.strong span { color:rgba(255,248,236,.74); }
+.section { margin-top:22px; border:1px solid var(--line); border-radius:34px; background:rgba(255,248,236,.84); box-shadow:0 16px 50px rgba(50,28,12,.09); padding:25px; } .section h2 { margin:0 0 14px; font-family:var(--serif); font-size:31px; line-height:1.1; letter-spacing:-.035em; } .section-lead { margin:-4px 0 18px; color:var(--muted); line-height:1.8; } .grid-4 { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; } .grid-3 { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; } .grid-2 { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+ul.clean { margin:0; padding-left:20px; line-height:1.8; color:var(--muted); } ul.clean li::marker { color:var(--amber); } .traffic { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; } .light { border-radius:22px; padding:17px; border:1px solid var(--line); background:#fffaf1; min-height:190px; } .light h3 { margin:0 0 10px; font-size:18px; } .green h3 { color:var(--green); } .yellow h3 { color:#a76213; } .red h3 { color:var(--red); }
+.timeline { display:grid; gap:10px; } .step { display:grid; grid-template-columns:54px 1fr; gap:12px; padding:14px; border:1px solid var(--line); border-radius:19px; background:#fffaf1; } .step code { display:grid; place-items:center; width:44px; height:44px; border-radius:14px; background:var(--coal); color:#fff8ec; font-family:var(--num); font-size:18px; } .quote { border-left:6px solid var(--red); background:#fff1db; border-radius:0 20px 20px 0; padding:18px 20px; font-family:var(--serif); font-size:21px; line-height:1.75; font-weight:900; }
+.table-wrap { overflow:auto; } table { width:100%; border-collapse:separate; border-spacing:0 8px; min-width:720px; } th,td { text-align:left; padding:11px 12px; background:#fffaf1; border-top:1px solid var(--line); border-bottom:1px solid var(--line); vertical-align:top; line-height:1.55; } th { color:var(--muted); font-size:12px; } td:first-child,th:first-child { border-left:1px solid var(--line); border-radius:14px 0 0 14px; font-weight:900; color:var(--red); } td:last-child,th:last-child { border-right:1px solid var(--line); border-radius:0 14px 14px 0; } .metrics { display:grid; grid-template-columns:repeat(6,1fr); gap:10px; } .metric { border:1px solid var(--line); border-radius:21px; background:#fffaf1; padding:15px; min-height:106px; } .metric strong { display:block; font-family:var(--num); font-size:32px; line-height:1; } .metric span { display:block; margin-top:8px; color:var(--muted); font-size:13px; } .metric em { display:block; margin-top:8px; color:var(--green); font-style:normal; font-size:12px; font-weight:900; }
+.script { white-space:pre-wrap; padding:20px; background:#1e1714; color:#fff6e9; border-radius:24px; line-height:1.9; font-size:15px; } .video-box video { width:100%; max-height:560px; border-radius:24px; background:#111; box-shadow:var(--shadow); } .empty { border:1px dashed rgba(169,52,39,.45); border-radius:20px; padding:16px; color:var(--muted); background:#fff0dc; } details { border:1px solid var(--line); border-radius:20px; background:#fffaf1; margin-top:11px; overflow:hidden; } summary { cursor:pointer; padding:15px 17px; font-weight:900; color:var(--red); } pre { margin:0; padding:17px; white-space:pre-wrap; overflow:auto; background:#1e1714; color:#fff6e9; line-height:1.7; font-size:12.5px; } .artifacts { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; } .artifact { text-decoration:none; border:1px solid var(--line); border-radius:17px; background:#fffaf1; padding:13px; min-height:78px; display:grid; gap:6px; } .artifact b { font-size:13px; word-break:break-all; color:var(--ink); } .artifact span { color:var(--muted); font-size:12px; } .footer { margin-top:24px; text-align:center; color:var(--muted); font-size:13px; }
+@media (max-width:980px) { .page { padding:18px 14px 46px; } .nav { margin:-18px -14px 16px; padding:10px 14px; } .hero,.scoreline,.grid-2 { grid-template-columns:1fr; } .cover img { height:auto; max-height:520px; } h1 { font-size:35px; } .next-actions,.grid-4,.grid-3,.traffic,.metrics,.artifacts { grid-template-columns:1fr; } .big-score strong { font-size:66px; } }
+@media print { body { background:#fff; } .nav,.video-box { display:none; } .page { width:100%; padding:0; } .section,.verdict,.cover,.big-score,.card,.tile { box-shadow:none; } }
+</style>
+</head>
+<body>
+<div class="page">
+<nav class="nav"><a href="#decision">复刻结论</a><a href="#star">爆点机制</a><a href="#pain">用户痛点</a><a href="#retention">留人逻辑</a><a href="#fire">为什么火</a><a href="#migration">迁移清单</a><a href="#data">数据</a><a href="#rewrite">等时长改写</a><a href="#appendix">证据附录</a></nav>
+<main id="decision" class="hero"><aside class="cover"><img src="https://p9-pc-sign.douyinpic.com/obj/tos-cn-p-0015c000-ce/oYB2AVV4FiTZqASBE0iB8XfoI4tnwqCZEnCWDe?lk3s=138a59ce&amp;x-expires=2093526000&amp;x-signature=BcG59pc8Cot%2BBFmT9e9ccuPgHTM%3D&amp;from=327834062&amp;s=PackSourceEnum_PUBLISH&amp;se=false&amp;sc=cover&amp;biz_tag=pcweb_cover&amp;l=20260507230750F7A8586AF85F447A320F" alt="视频封面"><h2>先做决策，再读分析</h2><p>V3 学习页先回答值不值得学、怎么学、哪里不能抄，再保留完整证据。</p></aside><section class="hero-main"><div class="verdict"><div class="kicker">V3 Decision Brief · 7620747510680690789</div><h1>只拆结构：分享一些伪装人生还很体面的好物</h1><p class="lead">核心痛点偏向“消费羞耻”，结构是“物件入口 -&gt; 旧记忆 -&gt; 羞耻 -&gt; 和解”；数据上分享/赞 2.5%、评论/赞 3.5%，但时长 5分10秒，需要按我方人设重写。</p><div class="badges"><span class="badge warn">复刻可行性 64/100</span><span class="badge good">中期信任 / 账号资产</span><span class="badge">推荐动作：改</span><span class="badge">评论文本缺失，只能从数据谨慎推断</span></div></div><div class="scoreline"><div class="big-score"><strong>64</strong><span>/100 · 复刻可行性，不是内容质量分。高分代表更适合我方直接转化。</span></div><div class="next-actions"><div class="tile"><b>下一步 01</b><span>先看爆点机制：痛点、入口、留人、互动理由。</span></div><div class="tile"><b>下一步 02</b><span>只学可迁移结构，不复制对方人生和原句。</span></div><div class="tile"><b>下一步 03</b><span>如要拍，先确认创作者是否有可替换真实素材。</span></div><div class="tile"><b>下一步 04</b><span>建议进入选题库，优先做结构学习。</span></div></div></div></section></main>
+<section id="star" class="section"><h2>爆点机制：这条为什么抓人</h2><div class="grid-4"><div class="card strong"><b>用户痛点</b><span>用户被吸引，不是因为题材本身，而是因为它替用户说出：我也有“消费羞耻”这类很难直接承认的感受。</span></div><div class="card strong"><b>第一眼入口</b><span>分享一些伪装人生还很体面的好物</span></div><div class="card strong"><b>留人逻辑</b><span>最大留人点是：它不是一直停在题材表面，而是把用户带到“消费羞耻”这个更深、更难说出口的情绪层。</span></div><div class="card strong"><b>互动理由</b><span>分享/赞 2.5%，收藏/赞 14.9%，评论/赞 3.5%；评论文本缺失时只做谨慎推断。</span></div></div></section>
+<section id="pain" class="section"><h2>用户痛点分析</h2><div class="grid-2"><div class="card"><b>表层痛点</b><ul class="clean"><li>表面是一个消费/物件选择，用户被“想要但又审判自己”的日常矛盾吸引。</li><li>表面击中的是“不配得感”相关处境，让用户先产生熟悉感。</li><li>表面击中的是“对过去自己的和解”相关处境，让用户先产生熟悉感。</li></ul></div><div class="card"><b>深层痛点</b><ul class="clean"><li>深层击中的是“消费羞耻”背后的自我解释和情绪负担。</li><li>深层是“不敢承认自己也值得好东西、好关系或好生活”。</li><li>深层是“现在的我能不能回头理解过去那个很用力的人”。</li></ul></div></div><div class="quote" style="margin-top:14px">用户被吸引，不是因为题材本身，而是因为它替用户说出：我也有“消费羞耻”这类很难直接承认的感受。</div></section>
+<section class="section"><h2>第一眼入口</h2><div class="grid-3"><div class="card"><b>封面入口</b>封面提供人物/状态/场景的第一眼识别；如果线上封面可见，用户先通过气质判断要不要停留。</div><div class="card"><b>标题/文案入口</b>分享一些伪装人生还很体面的好物</div><div class="card"><b>场景入口</b>从生活现场或自我讲述进入，降低观点内容的理解门槛。</div><div class="card"><b>人物状态入口</b>低到中能量、近距离表达，适合让用户感觉像在听朋友讲真话。</div><div class="card"><b>3秒疑问</b>她为什么要讲“分享一些伪装人生还很体面的好物”？这件事背后到底有什么情绪？</div></div></section>
+<section id="retention" class="section"><h2>留人逻辑</h2><div class="timeline"><div class="step"><code>01</code><div><li>开头先给具体入口：好 我分享 分享一些要买的之后非常有用 让大家乌鱼鸥很会生活 实际上我的人生时时刻刻都在拉响警报 那个锦笛可以让整个城市都灯火通明的程度 这一些很有心牙笔的东西 我很少分享这种体面的东西啊 原来第一个是护手霜 我刚从包里拿出来的那个按钮屋的...</li><li>用户继续看，是因为表层题材后面似乎藏着一个更私人的解释。</li><li>中段发生转弯：内容从事件本身转向“消费羞耻”背后的情绪和身份理解。</li><li>后段加深：用经历、细节或反思支撑观点，避免只剩鸡汤。</li><li>结尾释放：...的 需要仔细短想才能看出来 挺有审美的这种感觉的 有吗 反正就是挺好看的 我最近带出去 确实有人问我链接 说是很好看 大概就是这个样子 我最近买到的好东西就这样 这次真的是非常的体面 一个假货都没有 很有质量的 我很满意 大家各许所需 拜拜</li></div></div></div><div class="card good" style="margin-top:12px"><b>情绪递进</b>熟悉/好奇 -> 代入/停留 -> 被说中/心里一紧 -> 重新解释/松动 -> 被允许/想收藏或转发</div><div class="quote" style="margin-top:14px">最大留人点是：它不是一直停在题材表面，而是把用户带到“消费羞耻”这个更深、更难说出口的情绪层。</div></section>
+<section id="fire" class="section"><h2>为什么能火 / 为什么有学习价值</h2><ul class="clean"><li>痛点够隐秘：消费羞耻不是用户每天公开说的话，但很容易在心里存在。</li><li>入口够具体：先用标题、场景、物件或个人状态让用户进入，再讲抽象观点。</li><li>情绪有转弯：从一件事转向自我理解，用户会等那个“原来如此”的瞬间。</li><li>观点替用户说话：它把自责、羞耻或委屈换成一个更温柔的解释。</li><li>互动理由明确：分享/赞 2.5%、评论/赞 3.5%，可谨慎推断有表达立场或讨论的动力；但评论文本缺失时不能伪造具体评论。</li></ul><div class="quote" style="margin-top:14px">这条的价值不是“分享一些伪装人生还很体面的好物”本身，而是用它承载了“消费羞耻”的情绪机制。</div></section>
+<section id="migration" class="section"><h2>红黄绿迁移清单</h2><div class="traffic"><div class="light green"><h3>绿色可学</h3><ul class="clean"><li>学习“物件入口 -&gt; 旧记忆 -&gt; 羞耻 -&gt; 和解”的推进方式。</li><li>先给具体场景/物件/处境，再讲观点。</li><li>把自责转成重新理解，把痛点转成情绪许可。</li><li>用短句和个人化表达降低说教感。</li></ul></div><div class="light yellow"><h3>黄色谨慎</h3><ul class="clean"><li>涉及出身、金钱、关系、创伤时要避免审判别人。</li><li>长视频需要更强叙事控制，冷启动不要硬拖长。</li><li>如果没有自己的细节，容易变成空泛鸡汤。</li><li>过度脆弱暴露会给创作者造成心理和人设风险。</li></ul></div><div class="light red"><h3>红色不要复制</h3><ul class="clean"><li>不要复制对方原句、故事顺序和专属记忆。</li><li>不要把对方具体人生经历改成我方第一人称真实经历。</li><li>不要虚构创作者没有经历过的创伤、身份、收入、关系或成就。</li><li>不要为了追热点把女性成长内容拍成炫耀、卖惨或导师训话。</li></ul></div></div></section>
+<section class="section"><h2>我方人设适配</h2><div class="grid-4"><div class="card strong"><b>适配度</b><span>高</span></div><div class="card good"><b>适合我方</b><ul class="clean"><li>适合转成女性成长/情绪自救的口播，不需要站在观众上方教学。</li><li>可以保留“我也是后来才明白”的朋友式语气。</li><li>可以借“消费羞耻”引出反内耗和自我和解。</li></ul></div><div class="card"><b>不适合我方</b><ul class="clean"><li>不适合照搬原作者的身份、经历、消费水平或关系背景。</li><li>不适合变成强鸡血、强逆袭、强导师式口吻。</li></ul></div><div class="card"><b>要改什么</b><ul class="clean"><li>更短句</li><li>更像语音留言</li><li>少用结论先行的大词</li><li>保留一点疲惫但不绝望</li></ul></div></div><div class="card" style="margin-top:12px"><b>故事替换要求</b><ul class="clean"><li>把具体经历改成创作者可确认的真实素材</li><li>没有真实素材时使用低事实表达</li><li>把题材服务于情绪自救，而不是复述原故事</li></ul></div></section>
+<section id="data" class="section"><h2>数据判断</h2><p class="section-lead">数据必须结合账号内相对表现看；没有评论文本时，不伪造观众原话。</p><div class="metrics"><div class="metric"><strong>10,702</strong><span>点赞</span><em>原始认可</em></div><div class="metric"><strong>266</strong><span>分享</span><em>2.5% 分享/赞</em></div><div class="metric"><strong>1,598</strong><span>收藏</span><em>14.9% 收藏/赞</em></div><div class="metric"><strong>378</strong><span>评论</span><em>3.5% 评论/赞</em></div><div class="metric"><strong>5分10秒</strong><span>时长</span><em>原视频长度</em></div><div class="metric"><strong>评论文本缺失，只能从数据谨慎推断</strong><span>评论文本</span><em>置信度提示</em></div></div><div class="table-wrap" style="margin-top:14px"><table><tr><th>指标</th><th>本条</th><th>账号内排名</th><th>相对判断</th></tr><tr><td>点赞总量</td><td>10,702</td><td>第 63/81</td><td>高于 23.5% · 中位 22,175</td></tr><tr><td>分享总量</td><td>266</td><td>第 73/81</td><td>高于 11.1% · 中位 1,946</td></tr><tr><td>收藏总量</td><td>1,598</td><td>第 55/81</td><td>高于 33.3% · 中位 3,231</td></tr><tr><td>评论总量</td><td>378</td><td>第 57/81</td><td>高于 30.9% · 中位 714</td></tr><tr><td>分享/赞</td><td>2.5%</td><td>第 79/81</td><td>高于 3.7% · 中位 7.0%</td></tr><tr><td>收藏/赞</td><td>14.9%</td><td>第 29/81</td><td>高于 65.4% · 中位 12.6%</td></tr><tr><td>评论/赞</td><td>3.5%</td><td>第 33/81</td><td>高于 60.5% · 中位 3.1%</td></tr><tr><td>时长</td><td>310s</td><td>第 16/81</td><td>高于 81.5% · 中位 213s</td></tr></table></div></section>
+<section id="rewrite" class="section"><h2>等时长 AI 改写脚本</h2><div class="grid-4"><div class="card"><b>原视频时长</b>5分10秒</div><div class="card"><b>改写目标时长</b>4分08秒</div><div class="card"><b>改写策略</b>约 80% 时长</div><div class="card"><b>风险标签</b>原创：yellow<br>事实：需要创作者确认 / 演绎稿不可直接当真实经历</div></div><p class="section-lead" style="margin-top:14px">这是低事实口播/可演绎脚本，不得直接当作创作者真实经历发布；具体人生事实必须由创作者确认或替换。</p><div class="script">【开头｜需创作者确认/替换】我最近突然发现，原来我一直不是在和别人较劲，我是在和自己心里那个关于“消费羞耻”的声音较劲。
+
+它一开始只是那个我很想要、但又反复审判自己的东西。表面看起来很小，小到我差点不好意思讲。可是我越想越发现，我真正在意的不是这件事本身，而是我为什么连承认在意都这么紧张。
+
+我以前会很快把很多感受压下去。想要，就说自己不该想。难过，就说自己太矫情。羡慕别人，就马上提醒自己要懂事。好像只要我足够克制，足够理性，足够不麻烦别人，我就会变成一个更好的人。
+
+但后来我慢慢发现，很多时候不是我真的不想要，也不是我真的不委屈。我只是太习惯先审判自己了。一个念头刚冒出来，我就急着把它按回去。一个愿望刚出现，我就先问自己：你凭什么？你配吗？你是不是太贪心了？
+
+所以这条我不想讲一个很漂亮的道理。我只是想把这个瞬间留给你。如果你也常常这样，先别急着怪自己。你不是突然变得虚荣、脆弱、敏感，或者不知足。也许你只是太久没有认真听过自己的声音。
+
+我们可以慢慢练习一件事：当一个想法出现的时候，先不要立刻打掉它。先看一眼它。问问它从哪里来，保护过谁，又为什么到现在还这么小心。
+
+有些想要，不一定要马上被满足。但它至少可以先被你承认。有些委屈，不一定要讲给所有人听。但你自己可以先知道，它不是矫情。
+
+如果今天的你还做不到很勇敢，也没关系。可以先从一件很小的事情开始：允许自己说一句，我确实在意。允许自己承认，我也想要。允许自己把过去那个一直很用力的自己，轻轻放回生活里。
+
+【延展段｜可删减】以前我总觉得，一个人只要足够懂事，就不应该有太多需求。后来才明白，懂事如果一直建立在压抑自己上，它就会慢慢变成一种很隐蔽的内耗。你看起来没有麻烦任何人，但你一直在麻烦自己。
+
+所以我现在会试着把很多事情说得更轻一点。不急着上价值，也不急着证明自己已经好了。只是承认：我确实经历过一些东西，也确实因此变得小心。可小心不代表我不能重新往外走。
+
+【结尾】也许我们不用一下子变成很厉害的人。今天先不要继续责怪自己，就已经是在往外走了。</div></section>
+<section class="section video-box"><h2>本地视频预览</h2><video controls preload="metadata" poster="https://p9-pc-sign.douyinpic.com/obj/tos-cn-p-0015c000-ce/oYB2AVV4FiTZqASBE0iB8XfoI4tnwqCZEnCWDe?lk3s=138a59ce&amp;x-expires=2093526000&amp;x-signature=BcG59pc8Cot%2BBFmT9e9ccuPgHTM%3D&amp;from=327834062&amp;s=PackSourceEnum_PUBLISH&amp;se=false&amp;sc=cover&amp;biz_tag=pcweb_cover&amp;l=20260507230750F7A8586AF85F447A320F" src="raw/7620747510680690789.mp4"></video><p class="section-lead">注意：本地页可播放；发布到 GitHub Pages 时不复制 raw mp4。</p></section>
+<section id="appendix" class="section"><h2>证据附录</h2><p class="section-lead">附录用于复核。ASR 是分析级，不是逐字引用级。</p><details><summary>metadata.json</summary><pre>[
+  {
+    &quot;recommend_count&quot;: 48,
+    &quot;comment_count&quot;: 378,
+    &quot;digg_count&quot;: 10702,
+    &quot;admire_count&quot;: 1,
+    &quot;share_count&quot;: 266,
+    &quot;collect_count&quot;: 1598,
+    &quot;download_addr&quot;: &quot;https://www.douyin.com/aweme/v1/play/?video_id=v2700fgi0000d715abfog65sl6886lk0&amp;line=0&amp;file_id=320d39e373fb42fbbbd7e4df71d081bd&amp;sign=7971e669dd6709d713c6409abe95b40f&amp;is_play_url=1&amp;source=PackSourceEnum_PUBLISH&quot;,
+    &quot;id&quot;: &quot;7620747510680690789&quot;,
+    &quot;time&quot;: 1774343548,
+    &quot;type&quot;: 0,
+    &quot;desc&quot;: &quot;分享一些伪装人生还很体面的好物 #好物分享&quot;,
+    &quot;duration&quot;: 309934,
+    &quot;music_title&quot;: &quot;@鹿冰冰创作的原声&quot;,
+    &quot;music_url&quot;: &quot;https://lf26-music-east.douyinstatic.com/obj/ies-music-hj/7620747487967890233.mp3&quot;,
+    &quot;cover&quot;: &quot;https://p9-pc-sign.douyinpic.com/obj/tos-cn-p-0015c000-ce/oYB2AVV4FiTZqASBE0iB8XfoI4tnwqCZEnCWDe?lk3s=138a59ce&amp;x-expires=2093526000&amp;x-signature=BcG59pc8Cot%2BBFmT9e9ccuPgHTM%3D&amp;from=327834062&amp;s=PackSourceEnum_PUBLISH&amp;se=false&amp;sc=cover&amp;biz_tag=pcweb_cover&amp;l=20260507230750F7A8586AF85F447A320F&quot;,
+    &quot;author_avatar&quot;: &quot;https://p3-pc.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-avt-0015_b7493f5f504858775ca5b116c89eeae5.jpeg?from=327834062&quot;,
+    &quot;author_nickname&quot;: &quot;鹿冰冰&quot;,
+    &quot;author_uid&quot;: &quot;MS4wLjABAAAAwp-wmFzRnbjOGYKeR65KVT7di41nW6o578VxngbUBrCx1ra31bBLhO7VSVZtFdzZ&quot;,
+    &quot;author_unique_id&quot;: null,
+    &quot;author_short_id&quot;: null,
+    &quot;author_signature&quot;: &quot;无标题&quot;,
+    &quot;text_extra&quot;: [
+      {
+        &quot;tag_id&quot;: &quot;1767586936157191&quot;,
+        &quot;tag_name&quot;: &quot;好物分享&quot;
+      }
+    ]
+  }
+]</pre></details><details><summary>完整转写 · analysis-grade</summary><pre>好 我分享 分享一些要买的之后非常有用
+让大家乌鱼鸥很会生活
+实际上我的人生时时刻刻都在拉响警报
+那个锦笛可以让整个城市都灯火通明的程度
+这一些很有心牙笔的东西
+我很少分享这种体面的东西啊
+原来第一个是护手霜
+我刚从包里拿出来的那个按钮屋的
+自从去年还是前年
+我的狗确诊癲症之后
+我就彻底告别了香水
+如果平时想要有点社交体向的话
+基本上就靠齐磨护手霜
+我说了有两只 我最喜欢的是这个
+这个是浅玫瑰与姜糖的
+它是一个很有质感的
+完全不俗的玫瑰香
+你脱开之后就能闻到那种很浓郁的玫瑰花香味
+细纹还有一点树莓的那种清甜
+然后尾雕是木质香
+层次非常的丰富啊
+这种乳霜质地的
+卸出这张筷还挺舒爽的
+我抹完之后就会一天忍不住欣赏自己的这个手
+不少人说我身上香其实就是它的味
+放包里拿出来没事擦一擦
+显得我挺热爱生活的
+就是我很热忠于给别人分享我的护手霜
+就是细细的去介绍的时候
+显得我挺讲究的我这个人
+第二个是假发片
+等一下
+大家可以看一下效果
+平时不是这么夸张的
+就是它会压
+压的有点夸张了
+不带的话效果就这样的
+带不带确实差别挺大的
+我这是之前开箱的时候
+开的那个假发片
+当时带的时候我还挺难接受的
+后来我训服它了
+我知道该怎么使用了
+就是你需要把你的发缝完全分齐
+两边分开之后再把它扣上去
+让它微微的露出你的发缝
+然后把两边稍微用下
+然后输一输
+就会显得非常地自然
+我展示一下这个技巧
+我现在学会了
+就是从下往上
+你看它能露出你的发缝
+然后把它扣上
+然后再把它稍微这么输一输
+就好看了
+我现在去服它甚至不需要梳子
+确实是带上更好看一些
+很自然
+后台也有很多人问我
+它是什么牌子的
+我一会把店铺里面打在这
+但我觉得应该是这个价位都差不多
+这个是109
+就是稍微买不一点
+应该都挺好看的
+从第三个开始
+我们就正式进入到办公盒学习领域
+首先是这个拇指书撑
+这还挺好看的
+为钱就很喜欢
+它的使用场景是这样的
+这是一只手就能把这个书给撑开
+为钱我就知道这个东西
+但是我没买
+因为我觉得是否未免有点太装
+但是我现在这个工作
+就导致我确实需要大量的阅读
+我就顾不上那么许多了
+我立马把我以前想买的
+所有的文具我都买了
+端书是一个体力活
+我这是实话
+因为一看就得是极个点
+所以我有时候就会放腿上
+放腿上去
+需要两个手都这么压着
+这个就不需要
+这一手压就可以了
+我觉得还挺好用的
+而且它还很便宜
+而且这个东西确实显得我很讲究
+这个应该是我花的比较值的一个钱
+然后下一个是这个文具盒
+这个文具盒是我新买的
+我之前给大家分享我一个文具盒
+我现在还在用
+是这个草莓的
+这个世界上有一种比较职业比
+我不知道你们知不知道
+就是这种比
+我还挺爱用的
+看它空了
+就是它导致的
+有一天它没盖盖
+然后职业直接就全都把我这个全染了
+只要你没盖盖
+它接触到了布料
+它就会一直一直的往下审
+直到把整个管理的液体全部升空
+我有好一条裤就这么毁掉的
+所以这个比较它就现在没有那么体面了
+一般从外面把它塞到包里就不拿出来了
+然后我就需要一个相对体面一点的文具盒
+我就买了这个
+这个文具盒好用的
+因为我们现在很多这种硬皮书
+它是磁吸的
+可以吸在这个夹上
+直接就夹住了
+而且它很小
+直接就塞包里了
+这个文具盒的好处太多了
+它还有一个这样的侧斗
+这个侧斗我用来夹这个箭头书签了
+这个箭头书签其实也挺好用的
+就是你比如说你读到这了
+然后你就可以把它指向你读的那个段落
+但我说真的
+你要连读到哪个段落
+你都没记住的话
+咱也不看了
+是不是
+但我就觉得它其实
+它挺好用的
+因为它就显得没有那么绝命夺主
+很简洁
+我很喜欢这种相对来说简洁
+有点东西
+这些插在这就可以了
+它最伟大的一点是它这个侧斗可以放鱼点贴
+这个鱼点贴也是我想要推荐的
+它真的很好用
+我感觉应该很多人都用过了
+像这个罐头插机
+这个鱼点贴就可以直接指向你做标记的一个地方
+这鱼点贴也是真的很好用
+但是鱼点贴它好用
+还有一点就是鱼点贴有各种各样的颜色
+然后我觉得书籍也有各种各样的颜色
+我不知道你们能不能理解
+我就觉得每个书它的颜色是不一样的
+你就像这罐头插机
+我就觉得它应该是综合色的
+是乌尼一样的颜色
+我就用这个
+你看荣格的红书我就用红色
+像这个我收养了一个朋友
+我就觉得它是蓝色的
+你看我就用这种天蓝色
+你们懂吗
+但是这个鱼点贴的声性很卑劣
+你买回来之后它就是这样的
+极其难携带
+就是你这种东西你就只能加书里
+你家的奶本牛都忘了
+真烦
+所以我就把它剪开了
+就是你只能剪五排
+你要剪多就放进去了
+五排是正常好好的
+你剪五排然后把它放进去
+完美
+非常完美
+然后这里还放了几把药
+就是我随身携带的过敏药什么的
+这都是非常完美的
+就直接插进去就行了
+我会随身携带两个笔带
+然后一个笔带是一个草莓笔带
+然后还有一个笔带呢
+是专门看书的工具的笔带
+这里头会放一些看书的东西
+我跟你说
+比如说这些东西拿出来
+人都觉得你干活老历所了
+你就感觉你可体一面了
+真的
+就是很多人都这么说我
+有人说面都自己给的
+最后一个呢
+是我最近有买了点漂亮视频
+我最喜欢的是这个手链
+59块钱
+它非常适合我的手尾
+合我的审美
+就是这种细细的小小的
+需要仔细短想才能看出来
+挺有审美的这种感觉的
+有吗
+反正就是挺好看的
+我最近带出去
+确实有人问我链接
+说是很好看
+大概就是这个样子
+我最近买到的好东西就这样
+这次真的是非常的体面
+一个假货都没有
+很有质量的
+我很满意
+大家各许所需
+拜拜</pre></details><details><summary>评论分析状态</summary><pre># Comment Analysis - 7620747510680690789
+
+status: comment_content_not_available
+
+- Comment count: 378
+- Like count: 10,702
+- Share count: 266
+- Collect count: 1,598
+- Comment/Like ratio: 3.53%
+- Share/Like ratio: 2.49%
+- Collect/Like ratio: 14.93%
+
+## What Can Be Cautiously Inferred
+
+- High comment/share/collect ratios can indicate resonance, debate, saving, or forwarding behavior.
+- Without actual comment text, do not claim specific audience sentiment or high-frequency phrases.
+
+## What Is Missing
+
+- Top comments are not captured.
+- High-frequency comment themes are not captured.
+- Positive/negative/neutral口碑 cannot be verified from text yet.
+
+## Next Step If Needed
+
+- Ask Main/OCA to capture comments through the logged-in local/browser-safe path, then rerun comment analysis.
+</pre></details><details><summary>转写质量说明</summary><pre># Transcription Quality - 7620747510680690789
+
+- ASR model: faster-whisper small
+- Status: analysis-grade
+- Quote-grade: no
+- Known limitations: Chinese homophones, names, literary references, and short emotional pauses may require human/Doubao/large-v3 verification before exact quotation.
+- Use allowed: structure analysis, topic mining, draft production standards.
+- Use not allowed: final verbatim citation without review.
+</pre></details><h2 style="margin-top:24px">文件夹内容</h2><div class="artifacts"><a class="artifact" href="raw/"><b>raw</b><span>folder · 素材目录</span></a>
+<a class="artifact" href="comment-analysis.md"><b>comment-analysis.md</b><span>md · 0.8 KB</span></a>
+<a class="artifact" href="creator-reuse-brief.md"><b>creator-reuse-brief.md</b><span>md · 8.9 KB</span></a>
+<a class="artifact" href="learning-brief-v3.html"><b>learning-brief-v3.html</b><span>html · 33.7 KB</span></a>
+<a class="artifact" href="metadata.json"><b>metadata.json</b><span>json · 1.5 KB</span></a>
+<a class="artifact" href="process-log.json"><b>process-log.json</b><span>json · 1.2 KB</span></a>
+<a class="artifact" href="source-download.txt"><b>source-download.txt</b><span>txt · 0.3 KB</span></a>
+<a class="artifact" href="transcript-clean.md"><b>transcript-clean.md</b><span>md · 6.2 KB</span></a>
+<a class="artifact" href="transcript.asr.json"><b>transcript.asr.json</b><span>json · 21.1 KB</span></a>
+<a class="artifact" href="transcript.md"><b>transcript.md</b><span>md · 6.3 KB</span></a>
+<a class="artifact" href="transcription-quality.md"><b>transcription-quality.md</b><span>md · 0.4 KB</span></a></div></section>
+<div class="footer">AI-IP-Studio · 学结构，不偷人生 · V3 决策型学习页</div>
+</div>
+</body>
+</html>

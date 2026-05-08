@@ -1,0 +1,47 @@
+[
+  {
+    "recommend_count": 170,
+    "comment_count": 208,
+    "digg_count": 11361,
+    "admire_count": 0,
+    "share_count": 800,
+    "collect_count": 2577,
+    "download_addr": "https://www.douyin.com/aweme/v1/play/?video_id=v2700fgi0000d5hgj1nog65jv7sj64c0&line=0&file_id=36062cecc67242e283be650f959cc8c7&sign=1689e7d5e21f69854947d8b67bcffe97&is_play_url=1&source=PackSourceEnum_PUBLISH",
+    "id": "7593925689960327929",
+    "time": 1768098609,
+    "type": 0,
+    "desc": "语言表达能力被大大的高估了 #今日分享 #女性 #女性成长 #girlstalk #内容太过...",
+    "duration": 321534,
+    "music_title": "共度宁静时刻",
+    "music_url": "https://sf5-hl-ali-cdn-tos.douyinstatic.com/obj/tos-cn-ve-2774/oEnRyobpQxVsleHtnHHBC8CNDcMAyIggZehZ2l",
+    "cover": "https://p9-pc-sign.douyinpic.com/obj/tos-cn-p-0015c000-ce/oEymIwL9WfONrIkjJCGAQMxP75SgCDlBehIJeN?lk3s=138a59ce&x-expires=2093526000&x-signature=4X2IGhAEaBqfZd1SVTyUgRKj1to%3D&from=327834062&s=PackSourceEnum_PUBLISH&se=false&sc=cover&biz_tag=pcweb_cover&l=2026050723075127833DA26A18BD502340",
+    "author_avatar": "https://p3-pc.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-avt-0015_b7493f5f504858775ca5b116c89eeae5.jpeg?from=327834062",
+    "author_nickname": "鹿冰冰",
+    "author_uid": "MS4wLjABAAAAwp-wmFzRnbjOGYKeR65KVT7di41nW6o578VxngbUBrCx1ra31bBLhO7VSVZtFdzZ",
+    "author_unique_id": null,
+    "author_short_id": null,
+    "author_signature": "无标题",
+    "text_extra": [
+      {
+        "tag_id": "1767586466823181",
+        "tag_name": "今日分享"
+      },
+      {
+        "tag_id": "1591025759996941",
+        "tag_name": "女性"
+      },
+      {
+        "tag_id": "1767586830235661",
+        "tag_name": "女性成长"
+      },
+      {
+        "tag_id": "1609208864413895",
+        "tag_name": "girlstalk"
+      },
+      {
+        "tag_id": "1612766556222477",
+        "tag_name": "内容太过真实"
+      }
+    ]
+  }
+]

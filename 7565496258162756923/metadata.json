@@ -1,0 +1,43 @@
+[
+  {
+    "recommend_count": 276,
+    "comment_count": 6873,
+    "digg_count": 58957,
+    "admire_count": 0,
+    "share_count": 5054,
+    "collect_count": 10836,
+    "download_addr": "https://www.douyin.com/aweme/v1/play/?video_id=v1e00fgi0000d3v0d2fog65sktk4eav0&line=0&file_id=ac6d9992d4cc464c8708717688b56599&sign=2bd608bc002f046a2fdaaf5592942838&is_play_url=1&source=PackSourceEnum_PUBLISH",
+    "id": "7565496258162756923",
+    "time": 1761479367,
+    "type": 0,
+    "desc": "只要坚持被看到只是早晚问题#日常唠嗑 #内容太过真实 #每日分享 #日常分享",
+    "duration": 213400,
+    "music_title": "@鹿冰冰创作的原声",
+    "music_url": "https://lf9-music-east.douyinstatic.com/obj/ies-music-hj/7565496285214690106.mp3",
+    "cover": "https://p9-pc-sign.douyinpic.com/obj/tos-cn-i-0629/owBvAy2gQiAAXTWAE0iB87fzIAtvQXL4gBCd8q?lk3s=138a59ce&x-expires=2093526000&x-signature=CwkkcaYc5E6U5WQyvqkbr7J3ZkU%3D&from=327834062&s=PackSourceEnum_PUBLISH&se=false&sc=cover&biz_tag=pcweb_cover&l=20260507230753971570AF6C3CEE7392A9",
+    "author_avatar": "https://p3-pc.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-avt-0015_b7493f5f504858775ca5b116c89eeae5.jpeg?from=327834062",
+    "author_nickname": "鹿冰冰",
+    "author_uid": "MS4wLjABAAAAwp-wmFzRnbjOGYKeR65KVT7di41nW6o578VxngbUBrCx1ra31bBLhO7VSVZtFdzZ",
+    "author_unique_id": null,
+    "author_short_id": null,
+    "author_signature": "无标题",
+    "text_extra": [
+      {
+        "tag_id": "1592658360901639",
+        "tag_name": "日常唠嗑"
+      },
+      {
+        "tag_id": "1612766556222477",
+        "tag_name": "内容太过真实"
+      },
+      {
+        "tag_id": "1590229356146702",
+        "tag_name": "每日分享"
+      },
+      {
+        "tag_id": "1582755670888461",
+        "tag_name": "日常分享"
+      }
+    ]
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "recommend_count": 68,
+    "comment_count": 183,
+    "digg_count": 6448,
+    "admire_count": 0,
+    "share_count": 146,
+    "collect_count": 384,
+    "download_addr": "https://www.douyin.com/aweme/v1/play/?video_id=v1e00fgi0000d7qp6uvog65jg1t3rnng&line=0&file_id=764b6ec84cbe411599034e8dc9025817&sign=e54a526a07f6406002cd25bdd8479fcb&is_play_url=1&source=PackSourceEnum_PUBLISH",
+    "id": "7635171869779901809",
+    "time": 1777800651,
+    "type": 0,
+    "desc": "我与文字的关系一直相当谨慎 #女性智慧 #girlstalk #华为PuraX #阔折叠这么阔很...",
+    "duration": 221703,
+    "music_title": "@鹿冰冰创作的原声",
+    "music_url": "https://lf26-music-east.douyinstatic.com/obj/ies-music-hj/7635171899378518842.mp3",
+    "cover": "https://p9-pc-sign.douyinpic.com/obj/tos-cn-p-0015c000-ce/ow1vziC9eBpPeoAmlwjHAYF9Ef39gwEiyRI4sB?lk3s=138a59ce&x-expires=2093526000&x-signature=Vcp4eF%2F%2BKfb2Nff8apDiDzpmekY%3D&from=327834062&s=PackSourceEnum_PUBLISH&se=false&sc=cover&biz_tag=pcweb_cover&l=2026050723074996247118119C4348087F",
+    "author_avatar": "https://p3-pc.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-avt-0015_b7493f5f504858775ca5b116c89eeae5.jpeg?from=327834062",
+    "author_nickname": "鹿冰冰",
+    "author_uid": "MS4wLjABAAAAwp-wmFzRnbjOGYKeR65KVT7di41nW6o578VxngbUBrCx1ra31bBLhO7VSVZtFdzZ",
+    "author_unique_id": null,
+    "author_short_id": null,
+    "author_signature": "无标题",
+    "text_extra": [
+      {
+        "tag_id": "1623463108251655",
+        "tag_name": "女性智慧"
+      },
+      {
+        "tag_id": "1609208864413895",
+        "tag_name": "girlstalk"
+      },
+      {
+        "tag_id": "7481319176145995786",
+        "tag_name": "华为purax"
+      },
+      {
+        "tag_id": "7483778312603453477",
+        "tag_name": "阔折叠这么阔很有型"
+      },
+      {
+        "tag_id": "7480503629675825171",
+        "tag_name": "阔折叠一用就ai"
+      }
+    ]
+  }
+]

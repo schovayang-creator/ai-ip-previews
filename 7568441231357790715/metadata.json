@@ -1,0 +1,47 @@
+[
+  {
+    "recommend_count": 98,
+    "comment_count": 615,
+    "digg_count": 17405,
+    "admire_count": 1,
+    "share_count": 2264,
+    "collect_count": 6563,
+    "download_addr": "https://www.douyin.com/aweme/v1/play/?video_id=v1e00fgi0000d447p87og65stkdh3j4g&line=0&file_id=a0a891a56514487491db1351caaf3a2f&sign=e71ad1f7d93d216643e95c100046b942&is_play_url=1&source=PackSourceEnum_PUBLISH",
+    "id": "7568441231357790715",
+    "time": 1762165046,
+    "type": 0,
+    "desc": "廉价努力害人害己 #正能量 #美妆 #日常唠嗑 #女性智慧 #新手化妆",
+    "duration": 320202,
+    "music_title": "@鹿冰冰创作的原声",
+    "music_url": "https://lf26-music-east.douyinstatic.com/obj/ies-music-hj/7568441365206420273.mp3",
+    "cover": "https://p3-pc-sign.douyinpic.com/obj/tos-cn-p-0015c000-ce/oIPWRMsaRAg387TBu6P8EIoJXzhgTQhiEIBAi?lk3s=138a59ce&x-expires=2093526000&x-signature=%2FV38uQC9O0XC0nYTgandLn%2BGvVU%3D&from=327834062&s=PackSourceEnum_PUBLISH&se=false&sc=cover&biz_tag=pcweb_cover&l=20260507230753971570AF6C3CEE7392A9",
+    "author_avatar": "https://p3-pc.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-avt-0015_b7493f5f504858775ca5b116c89eeae5.jpeg?from=327834062",
+    "author_nickname": "鹿冰冰",
+    "author_uid": "MS4wLjABAAAAwp-wmFzRnbjOGYKeR65KVT7di41nW6o578VxngbUBrCx1ra31bBLhO7VSVZtFdzZ",
+    "author_unique_id": null,
+    "author_short_id": null,
+    "author_signature": "无标题",
+    "text_extra": [
+      {
+        "tag_id": "1767587349694472",
+        "tag_name": "正能量"
+      },
+      {
+        "tag_id": "1767586856764494",
+        "tag_name": "美妆"
+      },
+      {
+        "tag_id": "1592658360901639",
+        "tag_name": "日常唠嗑"
+      },
+      {
+        "tag_id": "1623463108251655",
+        "tag_name": "女性智慧"
+      },
+      {
+        "tag_id": "1589863054329863",
+        "tag_name": "新手化妆"
+      }
+    ]
+  }
+]

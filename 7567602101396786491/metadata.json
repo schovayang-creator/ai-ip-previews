@@ -1,0 +1,47 @@
+[
+  {
+    "recommend_count": 399,
+    "comment_count": 1949,
+    "digg_count": 43993,
+    "admire_count": 0,
+    "share_count": 6730,
+    "collect_count": 6816,
+    "download_addr": "https://www.douyin.com/aweme/v1/play/?video_id=v1e00fgi0000d42o4dvog65n2cpj6tf0&line=0&file_id=c012cbc018f84197894f86cca07ccdf3&sign=864b57651cf75349694322740d33dddb&is_play_url=1&source=PackSourceEnum_PUBLISH",
+    "id": "7567602101396786491",
+    "time": 1761969670,
+    "type": 0,
+    "desc": "我为什么能减肥成功 #正能量 #百亿流量扶持 #新手化妆 #女性成长 #日常生活",
+    "duration": 177600,
+    "music_title": "@鹿冰冰创作的原声",
+    "music_url": "",
+    "cover": "https://p9-pc-sign.douyinpic.com/obj/tos-cn-i-0813c000-ce/oIhAvBaQnMABgiCAiiGFAbyExPFAPAWPShJqI?lk3s=138a59ce&x-expires=2093526000&x-signature=240uNKEeCa5oAkpquFtz3QKzk3k%3D&from=327834062&s=PackSourceEnum_PUBLISH&se=false&sc=cover&biz_tag=pcweb_cover&l=20260507230753971570AF6C3CEE7392A9",
+    "author_avatar": "https://p3-pc.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-avt-0015_b7493f5f504858775ca5b116c89eeae5.jpeg?from=327834062",
+    "author_nickname": "鹿冰冰",
+    "author_uid": "MS4wLjABAAAAwp-wmFzRnbjOGYKeR65KVT7di41nW6o578VxngbUBrCx1ra31bBLhO7VSVZtFdzZ",
+    "author_unique_id": null,
+    "author_short_id": null,
+    "author_signature": "无标题",
+    "text_extra": [
+      {
+        "tag_id": "1767587349694472",
+        "tag_name": "正能量"
+      },
+      {
+        "tag_id": "1661396286476302",
+        "tag_name": "百亿流量扶持"
+      },
+      {
+        "tag_id": "1589863054329863",
+        "tag_name": "新手化妆"
+      },
+      {
+        "tag_id": "1767586830235661",
+        "tag_name": "女性成长"
+      },
+      {
+        "tag_id": "1767586407077965",
+        "tag_name": "日常生活"
+      }
+    ]
+  }
+]

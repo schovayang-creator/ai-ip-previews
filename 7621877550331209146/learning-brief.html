@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>V3复刻决策页 · 7621877550331209146</title>
+<style>
+:root { --paper:#f5ead8; --paper2:#fff8ec; --ink:#211714; --muted:#76685e; --line:#d9bea4; --coal:#17110f; --red:#a93427; --amber:#c76b24; --green:#1f6a57; --blue:#285f78; --shadow:0 22px 68px rgba(52,30,14,.14); --sans:"Avenir Next","PingFang SC","Hiragino Sans GB",sans-serif; --serif:"Songti SC","Kaiti SC","Hiragino Mincho ProN",serif; --num:"DIN Alternate","Avenir Next Condensed",var(--sans); }
+* { box-sizing:border-box; } html { scroll-behavior:smooth; } body { margin:0; color:var(--ink); font-family:var(--sans); background:radial-gradient(circle at 10% 6%,rgba(199,107,36,.23),transparent 30%),radial-gradient(circle at 92% 18%,rgba(31,106,87,.16),transparent 30%),linear-gradient(135deg,#e7d2ba 0%,var(--paper) 44%,#fbf3e9 100%); } a { color:inherit; } .page { width:min(1240px,100%); margin:0 auto; padding:26px 22px 70px; }
+.nav { position:sticky; top:0; z-index:8; margin:-26px -22px 22px; padding:12px 22px; display:flex; gap:10px; overflow:auto; border-bottom:1px solid rgba(217,190,164,.8); background:rgba(245,234,216,.86); backdrop-filter:blur(14px); } .nav a { text-decoration:none; white-space:nowrap; font-size:13px; padding:8px 12px; border:1px solid var(--line); border-radius:999px; background:rgba(255,248,236,.78); color:var(--muted); font-weight:800; }
+.hero { display:grid; grid-template-columns:360px 1fr; gap:22px; } .cover { padding:14px; border-radius:32px; background:linear-gradient(160deg,#2b1b15,#7c3725 48%,#e5ae70); box-shadow:var(--shadow); color:#fff6e9; overflow:hidden; } .cover img { display:block; width:100%; height:465px; object-fit:cover; border-radius:23px; box-shadow:0 20px 45px rgba(0,0,0,.28); } .cover h2 { margin:14px 6px 6px; font-family:var(--serif); font-size:25px; line-height:1.12; } .cover p { margin:0 6px 6px; color:rgba(255,246,233,.86); line-height:1.65; font-size:14px; }
+.hero-main { display:grid; gap:14px; } .verdict { border-radius:34px; background:linear-gradient(135deg,#fff8ec 0%,#fff3dc 58%,#f7cf8f 100%); border:1px solid var(--line); box-shadow:var(--shadow); padding:24px; position:relative; overflow:hidden; } .verdict:after { content:"74"; position:absolute; right:18px; top:-26px; font-family:var(--num); font-size:180px; line-height:1; color:rgba(169,52,39,.075); font-weight:900; letter-spacing:-.08em; } .kicker { color:var(--red); font-weight:900; letter-spacing:.13em; font-size:12px; text-transform:uppercase; } h1 { position:relative; z-index:1; margin:8px 0 10px; font-family:var(--serif); font-size:48px; line-height:1.03; letter-spacing:-.045em; max-width:850px; } .lead { position:relative; z-index:1; margin:0; color:var(--muted); line-height:1.75; max-width:820px; } .badges { position:relative; z-index:1; display:flex; flex-wrap:wrap; gap:8px; margin-top:16px; } .badge { border:1px solid var(--line); background:#fffaf1; border-radius:999px; padding:8px 11px; font-size:13px; font-weight:900; } .badge.warn { background:#fff0d1; color:#9a4b11; } .badge.good { background:#e8f3eb; color:var(--green); }
+.scoreline { display:grid; grid-template-columns:210px 1fr; gap:14px; } .big-score { border-radius:28px; background:var(--coal); color:#fff8ec; padding:22px; display:grid; align-content:center; min-height:154px; box-shadow:var(--shadow); } .big-score strong { font-family:var(--num); font-size:74px; line-height:.86; letter-spacing:-.06em; } .big-score span { margin-top:8px; color:rgba(255,248,236,.76); font-size:13px; } .next-actions { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; } .tile,.card { border:1px solid var(--line); border-radius:21px; background:#fffaf1; padding:16px; line-height:1.65; } .tile { min-height:154px; } .tile b,.card b { display:block; color:var(--red); margin-bottom:6px; } .tile span,.card span { color:var(--muted); } .card.good b { color:var(--green); } .card.strong { background:#231914; color:#fff8ec; border-color:#231914; } .card.strong b { color:#f4bd73; } .card.strong span { color:rgba(255,248,236,.74); }
+.section { margin-top:22px; border:1px solid var(--line); border-radius:34px; background:rgba(255,248,236,.84); box-shadow:0 16px 50px rgba(50,28,12,.09); padding:25px; } .section h2 { margin:0 0 14px; font-family:var(--serif); font-size:31px; line-height:1.1; letter-spacing:-.035em; } .section-lead { margin:-4px 0 18px; color:var(--muted); line-height:1.8; } .grid-4 { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; } .grid-3 { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; } .grid-2 { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+ul.clean { margin:0; padding-left:20px; line-height:1.8; color:var(--muted); } ul.clean li::marker { color:var(--amber); } .traffic { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; } .light { border-radius:22px; padding:17px; border:1px solid var(--line); background:#fffaf1; min-height:190px; } .light h3 { margin:0 0 10px; font-size:18px; } .green h3 { color:var(--green); } .yellow h3 { color:#a76213; } .red h3 { color:var(--red); }
+.timeline { display:grid; gap:10px; } .step { display:grid; grid-template-columns:54px 1fr; gap:12px; padding:14px; border:1px solid var(--line); border-radius:19px; background:#fffaf1; } .step code { display:grid; place-items:center; width:44px; height:44px; border-radius:14px; background:var(--coal); color:#fff8ec; font-family:var(--num); font-size:18px; } .quote { border-left:6px solid var(--red); background:#fff1db; border-radius:0 20px 20px 0; padding:18px 20px; font-family:var(--serif); font-size:21px; line-height:1.75; font-weight:900; }
+.table-wrap { overflow:auto; } table { width:100%; border-collapse:separate; border-spacing:0 8px; min-width:720px; } th,td { text-align:left; padding:11px 12px; background:#fffaf1; border-top:1px solid var(--line); border-bottom:1px solid var(--line); vertical-align:top; line-height:1.55; } th { color:var(--muted); font-size:12px; } td:first-child,th:first-child { border-left:1px solid var(--line); border-radius:14px 0 0 14px; font-weight:900; color:var(--red); } td:last-child,th:last-child { border-right:1px solid var(--line); border-radius:0 14px 14px 0; } .metrics { display:grid; grid-template-columns:repeat(6,1fr); gap:10px; } .metric { border:1px solid var(--line); border-radius:21px; background:#fffaf1; padding:15px; min-height:106px; } .metric strong { display:block; font-family:var(--num); font-size:32px; line-height:1; } .metric span { display:block; margin-top:8px; color:var(--muted); font-size:13px; } .metric em { display:block; margin-top:8px; color:var(--green); font-style:normal; font-size:12px; font-weight:900; }
+.script { white-space:pre-wrap; padding:20px; background:#1e1714; color:#fff6e9; border-radius:24px; line-height:1.9; font-size:15px; } .video-box video { width:100%; max-height:560px; border-radius:24px; background:#111; box-shadow:var(--shadow); } .empty { border:1px dashed rgba(169,52,39,.45); border-radius:20px; padding:16px; color:var(--muted); background:#fff0dc; } details { border:1px solid var(--line); border-radius:20px; background:#fffaf1; margin-top:11px; overflow:hidden; } summary { cursor:pointer; padding:15px 17px; font-weight:900; color:var(--red); } pre { margin:0; padding:17px; white-space:pre-wrap; overflow:auto; background:#1e1714; color:#fff6e9; line-height:1.7; font-size:12.5px; } .artifacts { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; } .artifact { text-decoration:none; border:1px solid var(--line); border-radius:17px; background:#fffaf1; padding:13px; min-height:78px; display:grid; gap:6px; } .artifact b { font-size:13px; word-break:break-all; color:var(--ink); } .artifact span { color:var(--muted); font-size:12px; } .footer { margin-top:24px; text-align:center; color:var(--muted); font-size:13px; }
+@media (max-width:980px) { .page { padding:18px 14px 46px; } .nav { margin:-18px -14px 16px; padding:10px 14px; } .hero,.scoreline,.grid-2 { grid-template-columns:1fr; } .cover img { height:auto; max-height:520px; } h1 { font-size:35px; } .next-actions,.grid-4,.grid-3,.traffic,.metrics,.artifacts { grid-template-columns:1fr; } .big-score strong { font-size:66px; } }
+@media print { body { background:#fff; } .nav,.video-box { display:none; } .page { width:100%; padding:0; } .section,.verdict,.cover,.big-score,.card,.tile { box-shadow:none; } }
+</style>
+</head>
+<body>
+<div class="page">
+<nav class="nav"><a href="#decision">复刻结论</a><a href="#star">爆点机制</a><a href="#pain">用户痛点</a><a href="#retention">留人逻辑</a><a href="#fire">为什么火</a><a href="#migration">迁移清单</a><a href="#data">数据</a><a href="#rewrite">等时长改写</a><a href="#appendix">证据附录</a></nav>
+<main id="decision" class="hero"><aside class="cover"><img src="https://p9-pc-sign.douyinpic.com/obj/tos-cn-p-0015c000-ce/oUTGIMbBAGIfrglCGsyCeLnyHJ89TQHV7LjeAD?lk3s=138a59ce&amp;x-expires=2093526000&amp;x-signature=LGDkFQDgyYoRP0Z8WllCa4GJC2g%3D&amp;from=327834062&amp;s=PackSourceEnum_PUBLISH&amp;se=false&amp;sc=cover&amp;biz_tag=pcweb_cover&amp;l=202605072301079864D67BEC0EAF9A7F38" alt="视频封面"><h2>先做决策，再读分析</h2><p>V3 学习页先回答值不值得学、怎么学、哪里不能抄，再保留完整证据。</p></aside><section class="hero-main"><div class="verdict"><div class="kicker">V3 Decision Brief · 7621877550331209146</div><h1>只拆结构：用一生去列这个不等式</h1><p class="lead">核心痛点偏向“对过去自己的和解”，结构是“反常识判断 -&gt; 个人经历 -&gt; 温柔收束”；数据上分享/赞 21.9%、评论/赞 3.7%，但时长 4分35秒，需要按我方人设重写。</p><div class="badges"><span class="badge warn">复刻可行性 74/100</span><span class="badge good">中期信任 / 账号资产</span><span class="badge">推荐动作：改</span><span class="badge">评论文本缺失，只能从数据谨慎推断</span></div></div><div class="scoreline"><div class="big-score"><strong>74</strong><span>/100 · 复刻可行性，不是内容质量分。高分代表更适合我方直接转化。</span></div><div class="next-actions"><div class="tile"><b>下一步 01</b><span>先看爆点机制：痛点、入口、留人、互动理由。</span></div><div class="tile"><b>下一步 02</b><span>只学可迁移结构，不复制对方人生和原句。</span></div><div class="tile"><b>下一步 03</b><span>如要拍，先确认创作者是否有可替换真实素材。</span></div><div class="tile"><b>下一步 04</b><span>建议进入选题库，优先做结构学习。</span></div></div></div></section></main>
+<section id="star" class="section"><h2>爆点机制：这条为什么抓人</h2><div class="grid-4"><div class="card strong"><b>用户痛点</b><span>用户被吸引，不是因为题材本身，而是因为它替用户说出：我也有“对过去自己的和解”这类很难直接承认的感受。</span></div><div class="card strong"><b>第一眼入口</b><span>用一生去列这个不等式</span></div><div class="card strong"><b>留人逻辑</b><span>最大留人点是：它不是一直停在题材表面，而是把用户带到“对过去自己的和解”这个更深、更难说出口的情绪层。</span></div><div class="card strong"><b>互动理由</b><span>分享/赞 21.9%，收藏/赞 15.6%，评论/赞 3.7%；评论文本缺失时只做谨慎推断。</span></div></div></section>
+<section id="pain" class="section"><h2>用户痛点分析</h2><div class="grid-2"><div class="card"><b>表层痛点</b><ul class="clean"><li>表面击中的是“对过去自己的和解”相关处境，让用户先产生熟悉感。</li><li>表面击中的是“女性成长”相关处境，让用户先产生熟悉感。</li><li>表面是关系里的委屈和失望，用户被“为什么我总在关系里弄丢自己”吸引。</li></ul></div><div class="card"><b>深层痛点</b><ul class="clean"><li>深层是“现在的我能不能回头理解过去那个很用力的人”。</li><li>深层是女性在关系、金钱、身份和自我价值之间重新站稳。</li><li>深层击中的是“关系受伤”背后的自我解释和情绪负担。</li></ul></div></div><div class="quote" style="margin-top:14px">用户被吸引，不是因为题材本身，而是因为它替用户说出：我也有“对过去自己的和解”这类很难直接承认的感受。</div></section>
+<section class="section"><h2>第一眼入口</h2><div class="grid-3"><div class="card"><b>封面入口</b>封面提供人物/状态/场景的第一眼识别；如果线上封面可见，用户先通过气质判断要不要停留。</div><div class="card"><b>标题/文案入口</b>用一生去列这个不等式</div><div class="card"><b>场景入口</b>从生活现场或自我讲述进入，降低观点内容的理解门槛。</div><div class="card"><b>人物状态入口</b>低到中能量、近距离表达，适合让用户感觉像在听朋友讲真话。</div><div class="card"><b>3秒疑问</b>她为什么要讲“用一生去列这个不等式”？这件事背后到底有什么情绪？</div></div></section>
+<section id="retention" class="section"><h2>留人逻辑</h2><div class="timeline"><div class="step"><code>01</code><div><li>开头先给具体入口：# Clean Transcript - 7621877550331209146 Status: cleaned from faster-whisper small ASR. Needs one human skim before usin...</li><li>用户继续看，是因为表层题材后面似乎藏着一个更私人的解释。</li><li>中段发生转弯：内容从事件本身转向“对过去自己的和解”背后的情绪和身份理解。</li><li>后段加深：用经历、细节或反思支撑观点，避免只剩鸡汤。</li><li>结尾释放：...我面前不值一提 因为为了活下去 我们需要不停地 在思考的风暴中列不等失 要到最后 就会变成一个仅仅 从自己的存在 就能感受到自己伟大的人 小聪明 大智慧 值不值得 幸不幸福 在我 在我们 这种旁若无人的 巨大的恨意和勇气中 其实相当不值一提</li></div></div></div><div class="card good" style="margin-top:12px"><b>情绪递进</b>熟悉/好奇 -> 代入/停留 -> 被说中/心里一紧 -> 重新解释/松动 -> 被允许/想收藏或转发</div><div class="quote" style="margin-top:14px">最大留人点是：它不是一直停在题材表面，而是把用户带到“对过去自己的和解”这个更深、更难说出口的情绪层。</div></section>
+<section id="fire" class="section"><h2>为什么能火 / 为什么有学习价值</h2><ul class="clean"><li>痛点够隐秘：对过去自己的和解不是用户每天公开说的话，但很容易在心里存在。</li><li>入口够具体：先用标题、场景、物件或个人状态让用户进入，再讲抽象观点。</li><li>情绪有转弯：从一件事转向自我理解，用户会等那个“原来如此”的瞬间。</li><li>观点替用户说话：它把自责、羞耻或委屈换成一个更温柔的解释。</li><li>互动理由明确：分享/赞 21.9%、评论/赞 3.7%，可谨慎推断有表达立场或讨论的动力；但评论文本缺失时不能伪造具体评论。</li></ul><div class="quote" style="margin-top:14px">这条的价值不是“用一生去列这个不等式”本身，而是用它承载了“对过去自己的和解”的情绪机制。</div></section>
+<section id="migration" class="section"><h2>红黄绿迁移清单</h2><div class="traffic"><div class="light green"><h3>绿色可学</h3><ul class="clean"><li>学习“反常识判断 -&gt; 个人经历 -&gt; 温柔收束”的推进方式。</li><li>先给具体场景/物件/处境，再讲观点。</li><li>把自责转成重新理解，把痛点转成情绪许可。</li><li>用短句和个人化表达降低说教感。</li></ul></div><div class="light yellow"><h3>黄色谨慎</h3><ul class="clean"><li>涉及出身、金钱、关系、创伤时要避免审判别人。</li><li>长视频需要更强叙事控制，冷启动不要硬拖长。</li><li>如果没有自己的细节，容易变成空泛鸡汤。</li><li>过度脆弱暴露会给创作者造成心理和人设风险。</li></ul></div><div class="light red"><h3>红色不要复制</h3><ul class="clean"><li>不要复制对方原句、故事顺序和专属记忆。</li><li>不要把对方具体人生经历改成我方第一人称真实经历。</li><li>不要虚构创作者没有经历过的创伤、身份、收入、关系或成就。</li><li>不要为了追热点把女性成长内容拍成炫耀、卖惨或导师训话。</li></ul></div></div></section>
+<section class="section"><h2>我方人设适配</h2><div class="grid-4"><div class="card strong"><b>适配度</b><span>高</span></div><div class="card good"><b>适合我方</b><ul class="clean"><li>适合转成女性成长/情绪自救的口播，不需要站在观众上方教学。</li><li>可以保留“我也是后来才明白”的朋友式语气。</li><li>可以借“对过去自己的和解”引出反内耗和自我和解。</li></ul></div><div class="card"><b>不适合我方</b><ul class="clean"><li>不适合照搬原作者的身份、经历、消费水平或关系背景。</li><li>不适合变成强鸡血、强逆袭、强导师式口吻。</li></ul></div><div class="card"><b>要改什么</b><ul class="clean"><li>更短句</li><li>更像语音留言</li><li>少用结论先行的大词</li><li>保留一点疲惫但不绝望</li></ul></div></div><div class="card" style="margin-top:12px"><b>故事替换要求</b><ul class="clean"><li>把具体经历改成创作者可确认的真实素材</li><li>没有真实素材时使用低事实表达</li><li>把题材服务于情绪自救，而不是复述原故事</li></ul></div></section>
+<section id="data" class="section"><h2>数据判断</h2><p class="section-lead">数据必须结合账号内相对表现看；没有评论文本时，不伪造观众原话。</p><div class="metrics"><div class="metric"><strong>189,921</strong><span>点赞</span><em>原始认可</em></div><div class="metric"><strong>41,554</strong><span>分享</span><em>21.9% 分享/赞</em></div><div class="metric"><strong>29,535</strong><span>收藏</span><em>15.6% 收藏/赞</em></div><div class="metric"><strong>7,105</strong><span>评论</span><em>3.7% 评论/赞</em></div><div class="metric"><strong>4分35秒</strong><span>时长</span><em>原视频长度</em></div><div class="metric"><strong>评论文本缺失，只能从数据谨慎推断</strong><span>评论文本</span><em>置信度提示</em></div></div><div class="table-wrap" style="margin-top:14px"><table><tr><th>指标</th><th>本条</th><th>账号内排名</th><th>相对判断</th></tr><tr><td>点赞总量</td><td>189,921</td><td>第 10/81</td><td>高于 88.9% · 中位 22,175</td></tr><tr><td>分享总量</td><td>41,554</td><td>第 7/81</td><td>高于 92.6% · 中位 1,946</td></tr><tr><td>收藏总量</td><td>29,535</td><td>第 9/81</td><td>高于 90.1% · 中位 3,231</td></tr><tr><td>评论总量</td><td>7,105</td><td>第 11/81</td><td>高于 87.7% · 中位 714</td></tr><tr><td>分享/赞</td><td>21.9%</td><td>第 6/81</td><td>高于 93.8% · 中位 7.0%</td></tr><tr><td>收藏/赞</td><td>15.6%</td><td>第 24/81</td><td>高于 71.6% · 中位 12.6%</td></tr><tr><td>评论/赞</td><td>3.7%</td><td>第 31/81</td><td>高于 63.0% · 中位 3.1%</td></tr><tr><td>时长</td><td>275s</td><td>第 22/81</td><td>高于 74.1% · 中位 213s</td></tr></table></div></section>
+<section id="rewrite" class="section"><h2>等时长 AI 改写脚本</h2><div class="grid-4"><div class="card"><b>原视频时长</b>4分35秒</div><div class="card"><b>改写目标时长</b>3分40秒</div><div class="card"><b>改写策略</b>约 80% 时长</div><div class="card"><b>风险标签</b>原创：yellow<br>事实：需要创作者确认 / 演绎稿不可直接当真实经历</div></div><p class="section-lead" style="margin-top:14px">这是低事实口播/可演绎脚本，不得直接当作创作者真实经历发布；具体人生事实必须由创作者确认或替换。</p><div class="script">【开头｜需创作者确认/替换】我最近突然发现，原来我一直不是在和别人较劲，我是在和自己心里那个关于“对过去自己的和解”的声音较劲。
+
+它一开始只是那段让我反复消耗自己的关系。表面看起来很小，小到我差点不好意思讲。可是我越想越发现，我真正在意的不是这件事本身，而是我为什么连承认在意都这么紧张。
+
+我以前会很快把很多感受压下去。想要，就说自己不该想。难过，就说自己太矫情。羡慕别人，就马上提醒自己要懂事。好像只要我足够克制，足够理性，足够不麻烦别人，我就会变成一个更好的人。
+
+但后来我慢慢发现，很多时候不是我真的不想要，也不是我真的不委屈。我只是太习惯先审判自己了。一个念头刚冒出来，我就急着把它按回去。一个愿望刚出现，我就先问自己：你凭什么？你配吗？你是不是太贪心了？
+
+所以这条我不想讲一个很漂亮的道理。我只是想把这个瞬间留给你。如果你也常常这样，先别急着怪自己。你不是突然变得虚荣、脆弱、敏感，或者不知足。也许你只是太久没有认真听过自己的声音。
+
+我们可以慢慢练习一件事：当一个想法出现的时候，先不要立刻打掉它。先看一眼它。问问它从哪里来，保护过谁，又为什么到现在还这么小心。
+
+有些想要，不一定要马上被满足。但它至少可以先被你承认。有些委屈，不一定要讲给所有人听。但你自己可以先知道，它不是矫情。
+
+如果今天的你还做不到很勇敢，也没关系。可以先从一件很小的事情开始：允许自己说一句，我确实在意。允许自己承认，我也想要。允许自己把过去那个一直很用力的自己，轻轻放回生活里。
+
+【结尾】也许我们不用一下子变成很厉害的人。今天先不要继续责怪自己，就已经是在往外走了。</div></section>
+<section class="section video-box"><h2>本地视频预览</h2><div class="empty">发布版不上传原始 mp4；本地如需回看，请打开视频文件夹里的 raw 素材。</div></section>
+<section id="appendix" class="section"><h2>证据附录</h2><p class="section-lead">附录用于复核。ASR 是分析级，不是逐字引用级。</p><details><summary>metadata.json</summary><pre>[
+  {
+    &quot;recommend_count&quot;: 18281,
+    &quot;comment_count&quot;: 7105,
+    &quot;digg_count&quot;: 189921,
+    &quot;admire_count&quot;: 7,
+    &quot;share_count&quot;: 41554,
+    &quot;collect_count&quot;: 29535,
+    &quot;download_addr&quot;: &quot;https://www.douyin.com/aweme/v1/play/?video_id=v1e00fgi0000d735hqfog65sikftbdhg&amp;line=0&amp;file_id=46c6ea00c96e4577a0912b7b705c3423&amp;sign=3cb2951ec1c047e0c6e098736ddd6ac1&amp;is_play_url=1&amp;source=PackSourceEnum_PUBLISH&quot;,
+    &quot;id&quot;: &quot;7621877550331209146&quot;,
+    &quot;time&quot;: 1774606656,
+    &quot;type&quot;: 0,
+    &quot;desc&quot;: &quot;用一生去列这个不等式 #情感共鸣 #人生思考 #成长历程 #girlstalk&quot;,
+    &quot;duration&quot;: 274700,
+    &quot;music_title&quot;: &quot;@鹿冰冰创作的原声&quot;,
+    &quot;music_url&quot;: &quot;https://lf9-music-east.douyinstatic.com/obj/ies-music-hj/7621877530462833445.mp3&quot;,
+    &quot;cover&quot;: &quot;https://p9-pc-sign.douyinpic.com/obj/tos-cn-p-0015c000-ce/oUTGIMbBAGIfrglCGsyCeLnyHJ89TQHV7LjeAD?lk3s=138a59ce&amp;x-expires=2093526000&amp;x-signature=LGDkFQDgyYoRP0Z8WllCa4GJC2g%3D&amp;from=327834062&amp;s=PackSourceEnum_PUBLISH&amp;se=false&amp;sc=cover&amp;biz_tag=pcweb_cover&amp;l=202605072301079864D67BEC0EAF9A7F38&quot;,
+    &quot;author_avatar&quot;: &quot;https://p3-pc.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-avt-0015_b7493f5f504858775ca5b116c89eeae5.jpeg?from=327834062&quot;,
+    &quot;author_nickname&quot;: &quot;鹿冰冰&quot;,
+    &quot;author_uid&quot;: &quot;MS4wLjABAAAAwp-wmFzRnbjOGYKeR65KVT7di41nW6o578VxngbUBrCx1ra31bBLhO7VSVZtFdzZ&quot;,
+    &quot;author_unique_id&quot;: null,
+    &quot;author_short_id&quot;: null,
+    &quot;author_signature&quot;: &quot;无标题&quot;,
+    &quot;text_extra&quot;: [
+      {
+        &quot;tag_id&quot;: &quot;7419051488367872036&quot;,
+        &quot;tag_name&quot;: &quot;情感共鸣&quot;
+      },
+      {
+        &quot;tag_id&quot;: &quot;1601696365711432&quot;,
+        &quot;tag_name&quot;: &quot;人生思考&quot;
+      },
+      {
+        &quot;tag_id&quot;: &quot;1584055108657166&quot;,
+        &quot;tag_name&quot;: &quot;成长历程&quot;
+      },
+      {
+        &quot;tag_id&quot;: &quot;1609208864413895&quot;,
+        &quot;tag_name&quot;: &quot;girlstalk&quot;
+      }
+    ]
+  }
+]</pre></details><details><summary>完整转写 · analysis-grade</summary><pre># Clean Transcript - 7621877550331209146
+
+Status: cleaned from faster-whisper small ASR. Needs one human skim before using as final quoted source.
+
+Visible caption:
+
+&gt; 用一生去列这个不等式 #情感共鸣 #人生思考 #成长历程 #girlstalk
+
+## Cleaned Text
+
+昨天我在经历了痛经 上了一天班 下班之后又写了一个脚本
+然后又拍了一个视频 干完一切之后大概9点多我就去遛狗
+回来之后又给狗烘干了鸡胸肉
+与此同时我正在跟我男朋友吵架
+等我躺在床上的时候我觉得一切应该可以结束了 风暴应该可以暂时停滞了
+我的狗就躺在我的手边 我的男朋友也来了 你是在和我道歉
+一切归位之后我突然感觉天悬地转 就一阵恶心感袭来
+我就去卫生间里大吐特吐 什么都没有吐出来
+有意识到我的胃里其实没有什么东西
+吐完之后我还是非常的恶心 我就躺在床上看了一下时间 是10点钟
+10点钟其实是一天中对我来说非常安全的时间
+这个时间已经不再适合进行任何的工作了
+可以大肆地排泄我这一天的思想废料 而不必担心浪费了大脑的算力
+没有工作了 人性消失 兽性开始降临
+我有充足的时间可以休息一下
+这个时候男朋友就在问我你在想什么
+他问了之后我才意识到我在想东西
+我一直到我的眼睛一直在盯着那个窗帘
+那个窗帘是我妈听说我当时用的窗帘透光
+每天早上都会把我照醒 这就从老家几百里给我带过来的
+但是换上之后发现这个窗帘它同样透光 透得一塌糊涂
+我每天早上依旧会被照醒
+我在意识到这一刻的时候 我就没有任何的感受
+只感觉到了恨 就是恨的兽性大发 太恨了
+我甚至不知道自己在恨什么
+然后我就从最细微处开始恨
+我就想到我特别的恨遛狗 我恨我头特别容易油
+两天就要洗一次 特别恨拖地
+在水道里缠满头发 黑色的台面如果说落满灰尘
+我特别恨我的毛孔 我也特别恨我聪明
+我要明明白白地忍受这一切
+不知道你们有没有听说过一句话
+可是走路还是走路 走路要先学会修路
+要先穿鞋 穿袜子 穿裤子
+有时候还要迎着风 顶着雨
+有时候还要说借过 借过
+我人生就这样的感觉
+我觉得我的每个动作都是非常的费力的
+对我来说洗澡很累 但是忍受不洗澡也很累
+在干净与不干净中做选择也很累
+我的大脑生来就要承受非常大的压力
+要列特别特别多的算式
+它没有一时的平静
+我之前发过一个视频说生命就是一场暴政
+很多人说你就不要思考 停止思考
+过度思考就是会陷入虚无
+但是我每天就过得很开心
+我是一个几乎不会被激怒的很温和的人
+也会被这种评论气的就是飞快划过
+我在飞快划过这种评论的那一瞬间
+心里也是滔天的恨意
+我不知道很多人既然不理解
+思考其实是一种被动状态
+我从来没有一天我主动的做下来
+我说我今天要好好地思考一下
+我从来没有那样过
+思考是我大脑的初始状态
+我大概在两三岁的时候
+我爸就总带我去他打工的那个车队
+那些中年男人总会给我买很多零食
+然后他没有故意往回要
+去试探我是不是会还给他们
+我每次都知道这是一种游戏
+他是为了确认我的品质
+我就会忍着自己的不情愿把零食还给他们
+然后他们就会夸我很大方
+我就在想这是为什么
+这有什么意思
+后来我就观察很多同龄的小孩
+他确实是不肯给
+然后这些大人就会批评他们说
+这个孩子很小气
+我又回想
+这些小孩为什么什么都不懂
+他们难道看不出来
+这是一场低级的表演吗
+只要配合就可以了
+我无数次溯源
+我的大脑是从什么时候
+开始席卷风暴的
+我都觉得是在那个车队里
+我从那个时候开始
+就想穷尽这个世界上的所有意义
+直到我发现这个世界上的
+很多东西都是意味不明的
+这个世界已经过去了30年
+我难道不想停止思考吗
+就是很多人都说我有小聪明
+但是没有大智慧
+说我搞不清楚
+其实活着是难得糊涂
+说我清醒就是肤浅
+可是我已如此肤浅的姿态
+走到你的面前
+我中途忍受了多少次走路
+洗澡 穿鞋
+把自己支撑起来
+没有人意识到
+其实我已经是自己的最佳版本了
+我在无法穷尽的算式里
+尚靠不到真正的自由
+尚回不到纯粹的天真
+在错位的海里
+求有一生只得到了一个真相
+就是我一生注定无依无靠
+但是我依然得体地
+出现在这个社会上
+一个人还要有多勇敢
+这还不够吗
+但是我确实不需要
+任何人的答案
+因为我的确够聪明了
+或者说像我这样的人
+已经极其勇敢了
+这种勇敢是在得知荒谬和虚无之后
+在泉水边宁愿渴死的勇敢
+滔天的恨，弥天的爱
+我走路 穿鞋 穿戴整齐
+可能我穿着
+昨天没洗的袜子
+头也微微发油
+但是我依然赴约了
+我这辈子最佩服的人
+就是我自己
+有个人他就是很幸运
+他是天生的勇者
+可以对苦恶失落不见
+但是有的人也像我一样
+就要活得相对狡诈一些
+为了向上
+可以抛下很多的自重
+幸福和快乐
+在我面前不值一提
+因为为了活下去
+我们需要不停地
+在思考的风暴中列不等失
+要到最后
+就会变成一个仅仅
+从自己的存在
+就能感受到自己伟大的人
+小聪明 大智慧
+值不值得 幸不幸福
+在我 在我们
+这种旁若无人的
+巨大的恨意和勇气中
+其实相当不值一提</pre></details><details><summary>评论分析状态</summary><pre>comment-analysis.md 不存在；无法验证评论文本。</pre></details><details><summary>转写质量说明</summary><pre># Transcription Quality Check
+
+Video: `7621877550331209146`
+
+## Current Read Level
+
+- Capture: success
+- Video download: success
+- Audio extraction: success
+- ASR model: `faster-whisper small`
+- Language confidence: `zh / 1.0`
+- Segment count: `146`
+- Raw ASR characters: `1882`
+- Readability: usable for content structure analysis
+- Quote accuracy: not final; requires human skim or larger model pass
+
+## What Is Reliable Now
+
+- Overall story arc
+- Emotional logic
+- Topic and hook
+- Narrative sequence
+- Most spoken paragraphs
+- Account style / pacing
+
+## What Is Not Final Yet
+
+- Exact quoted wording
+- Some homophone/near-sound words
+- Proper punctuation
+- A few metaphorical phrases
+
+## High-Confidence Corrections Applied
+
+- `痛惊` -&gt; `痛经`
+- `喜来` -&gt; `袭来`
+- `大吐里痛` -&gt; `大吐特吐`
+- `突然之后` -&gt; `吐完之后`
+- `大次的排泄` -&gt; `大肆地排泄`
+- `思想肺疗` -&gt; `思想废料`
+- `寿性` -&gt; `兽性`
+- `六狗` -&gt; `遛狗`
+- `脱地` -&gt; `拖地`
+- `落马灰尘` -&gt; `落满灰尘`
+- `要劣特别特别多的算是` -&gt; `要列特别特别多的算式`
+- `非快划过` -&gt; `飞快划过`
+- `掏天的痕迹` -&gt; `滔天的恨意`
+- `大家的初始状态` -&gt; `大脑的初始状态`
+- `同轮的小孩` -&gt; `同龄的小孩`
+- `穷进` -&gt; `穷尽`
+- `席卷风暴` -&gt; `席卷风暴`
+- `小聪美` -&gt; `小聪明`
+- `火力是难得虎涂` -&gt; `活着是难得糊涂`
+- `建筑就是肤浅` -&gt; `清醒就是肤浅`
+- `下回不到` -&gt; `尚回不到`
+- `无一无靠` -&gt; `无依无靠`
+- `泉水边宁愿渴死` -&gt; `泉水边宁愿渴死`
+- `掏天的很迷天的爱` -&gt; `滔天的恨，弥天的爱`
+- `活得相对较诈一些` -&gt; `活得相对狡诈一些`
+- `布置一体` -&gt; `不值一提`
+- `庞弱无人` -&gt; `旁若无人`
+
+## Next Quality Gate
+
+Use one of:
+
+1. Run larger ASR model after network allows download.
+2. Import Doubao transcript and compare.
+3. Human skim against video/audio before quoting exact lines.
+</pre></details><h2 style="margin-top:24px">文件夹内容</h2><div class="artifacts"><a class="artifact" href="raw/"><b>raw</b><span>folder · 素材目录</span></a>
+<a class="artifact" href="audio-transcript-analysis.md"><b>audio-transcript-analysis.md</b><span>md · 1.2 KB</span></a>
+<a class="artifact" href="capture-note.md"><b>capture-note.md</b><span>md · 0.3 KB</span></a>
+<a class="artifact" href="creator-reuse-brief.md"><b>creator-reuse-brief.md</b><span>md · 8.2 KB</span></a>
+<a class="artifact" href="learning-brief-v3.html"><b>learning-brief-v3.html</b><span>html · 33.7 KB</span></a>
+<a class="artifact" href="metadata.json"><b>metadata.json</b><span>json · 1.8 KB</span></a>
+<a class="artifact" href="performance-data.md"><b>performance-data.md</b><span>md · 0.8 KB</span></a>
+<a class="artifact" href="production-standards.md"><b>production-standards.md</b><span>md · 1.4 KB</span></a>
+<a class="artifact" href="reuse-guidance.md"><b>reuse-guidance.md</b><span>md · 0.7 KB</span></a>
+<a class="artifact" href="source-download.txt"><b>source-download.txt</b><span>txt · 0.4 KB</span></a>
+<a class="artifact" href="transcript-clean.md"><b>transcript-clean.md</b><span>md · 5.4 KB</span></a>
+<a class="artifact" href="transcript.asr.json"><b>transcript.asr.json</b><span>json · 15.5 KB</span></a>
+<a class="artifact" href="transcript.md"><b>transcript.md</b><span>md · 5.3 KB</span></a>
+<a class="artifact" href="transcription-quality.md"><b>transcription-quality.md</b><span>md · 1.9 KB</span></a>
+<a class="artifact" href="visual-analysis.md"><b>visual-analysis.md</b><span>md · 1.3 KB</span></a>
+<a class="artifact" href="why-it-worked.md"><b>why-it-worked.md</b><span>md · 1.5 KB</span></a></div></section>
+<div class="footer">AI-IP-Studio · 学结构，不偷人生 · V3 决策型学习页</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+[
+  {
+    "recommend_count": 477,
+    "comment_count": 1326,
+    "digg_count": 29045,
+    "admire_count": 0,
+    "share_count": 1398,
+    "collect_count": 2737,
+    "download_addr": "https://www.douyin.com/aweme/v1/play/?video_id=v2700fgi0000d7acvlvog65uq3j3lr5g&line=0&file_id=bfc3f46ee8234c1bab38c4dd1730daf0&sign=df9f8e97d5152c3ccb24f419754a753f&is_play_url=1&source=PackSourceEnum_PUBLISH",
+    "id": "7625949086109792369",
+    "time": 1775554634,
+    "type": 0,
+    "desc": "我为什么不垂直 #自媒体 #女性智慧",
+    "duration": 311334,
+    "music_title": "宁静舒缓温馨浪漫钢琴 Zen Meditation Music",
+    "music_url": "",
+    "cover": "https://p9-pc-sign.douyinpic.com/obj/tos-cn-p-0015c000-ce/okenyr2fDTGUjUkIm0LevQeETsO5gAG7zsGcQA?lk3s=138a59ce&x-expires=2093526000&x-signature=8XKBk6CDj6EmAFWmeNwvroVQEZU%3D&from=327834062&s=PackSourceEnum_PUBLISH&se=false&sc=cover&biz_tag=pcweb_cover&l=2026050723074996247118119C4348087F",
+    "author_avatar": "https://p3-pc.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-avt-0015_b7493f5f504858775ca5b116c89eeae5.jpeg?from=327834062",
+    "author_nickname": "鹿冰冰",
+    "author_uid": "MS4wLjABAAAAwp-wmFzRnbjOGYKeR65KVT7di41nW6o578VxngbUBrCx1ra31bBLhO7VSVZtFdzZ",
+    "author_unique_id": null,
+    "author_short_id": null,
+    "author_signature": "无标题",
+    "text_extra": [
+      {
+        "tag_id": "1609242987886600",
+        "tag_name": "自媒体"
+      },
+      {
+        "tag_id": "1623463108251655",
+        "tag_name": "女性智慧"
+      }
+    ]
+  }
+]

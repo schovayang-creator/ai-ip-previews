@@ -1,0 +1,47 @@
+[
+  {
+    "recommend_count": 1161,
+    "comment_count": 698,
+    "digg_count": 36083,
+    "admire_count": 1,
+    "share_count": 3712,
+    "collect_count": 6403,
+    "download_addr": "https://www.douyin.com/aweme/v1/play/?video_id=v1e00fgi0000d5u74i7og65nc4j09pt0&line=0&file_id=b88d2d43d5114500978714f8a5902ea5&sign=6b7f258d09b12ccb3d924284c25e032f&is_play_url=1&source=PackSourceEnum_PUBLISH",
+    "id": "7601078845869417339",
+    "time": 1769764081,
+    "type": 0,
+    "desc": "《傲慢与偏见》又名：霸道土象富豪爱上原生家庭破碎的农村女孩 36分钟详...",
+    "duration": 2134500,
+    "music_title": "@鹿冰冰创作的原声",
+    "music_url": "https://lf9-music-east.douyinstatic.com/obj/ies-music-hj/7601074012286061361.mp3",
+    "cover": "https://p9-pc-sign.douyinpic.com/obj/tos-cn-p-0015c000-ce/oUP8Eya5dSh3PMXBOxpYS5dACiyAXBPiIE60Y?lk3s=138a59ce&x-expires=2093526000&x-signature=8bjc2qNo%2BEZHMOUAwgMJpdesLKs%3D&from=327834062&s=PackSourceEnum_PUBLISH&se=false&sc=cover&biz_tag=pcweb_cover&l=2026050723075127833DA26A18BD502340",
+    "author_avatar": "https://p3-pc.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-avt-0015_b7493f5f504858775ca5b116c89eeae5.jpeg?from=327834062",
+    "author_nickname": "鹿冰冰",
+    "author_uid": "MS4wLjABAAAAwp-wmFzRnbjOGYKeR65KVT7di41nW6o578VxngbUBrCx1ra31bBLhO7VSVZtFdzZ",
+    "author_unique_id": null,
+    "author_short_id": null,
+    "author_signature": "无标题",
+    "text_extra": [
+      {
+        "tag_id": "1582209000197134",
+        "tag_name": "傲慢与偏见"
+      },
+      {
+        "tag_id": "1660656079276045",
+        "tag_name": "名著解读"
+      },
+      {
+        "tag_id": "1600361097908237",
+        "tag_name": "读书分享"
+      },
+      {
+        "tag_id": "1585486913673229",
+        "tag_name": "好书推荐"
+      },
+      {
+        "tag_id": "1767587340277767",
+        "tag_name": "女生必看"
+      }
+    ]
+  }
+]

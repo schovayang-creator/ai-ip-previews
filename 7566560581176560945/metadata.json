@@ -1,0 +1,47 @@
+[
+  {
+    "recommend_count": 858,
+    "comment_count": 1503,
+    "digg_count": 43907,
+    "admire_count": 0,
+    "share_count": 2424,
+    "collect_count": 5322,
+    "download_addr": "https://www.douyin.com/aweme/v1/play/?video_id=v2700fgi0000d40phgnog65l5or476e0&line=0&file_id=4927e218dc014c6ba3e5b49336ef7c9e&sign=45e511e78e94c5931de11af37b232a77&is_play_url=1&source=PackSourceEnum_PUBLISH",
+    "id": "7566560581176560945",
+    "time": 1761735600,
+    "type": 0,
+    "desc": "此生携豆出发。#日常生活 #vlog十亿流量扶持计划 #vlog日常 #社会纪实人生百...",
+    "duration": 235800,
+    "music_title": "@鹿冰冰创作的原声",
+    "music_url": "https://lf26-music-east.douyinstatic.com/obj/ies-music-hj/7566560594485185317.mp3",
+    "cover": "https://p9-pc-sign.douyinpic.com/obj/tos-cn-i-0629/oUAAgTd0BisAAqkIb9CfBizgABsnQWEyR6ZviQ?lk3s=138a59ce&x-expires=2093526000&x-signature=yyv%2FdEodFZE776QnH4gPSUw1siw%3D&from=327834062&s=PackSourceEnum_PUBLISH&se=false&sc=cover&biz_tag=pcweb_cover&l=20260507230753971570AF6C3CEE7392A9",
+    "author_avatar": "https://p3-pc.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-avt-0015_b7493f5f504858775ca5b116c89eeae5.jpeg?from=327834062",
+    "author_nickname": "鹿冰冰",
+    "author_uid": "MS4wLjABAAAAwp-wmFzRnbjOGYKeR65KVT7di41nW6o578VxngbUBrCx1ra31bBLhO7VSVZtFdzZ",
+    "author_unique_id": null,
+    "author_short_id": null,
+    "author_signature": "无标题",
+    "text_extra": [
+      {
+        "tag_id": "1767586407077965",
+        "tag_name": "日常生活"
+      },
+      {
+        "tag_id": "1631751653335043",
+        "tag_name": "vlog十亿流量扶持计划"
+      },
+      {
+        "tag_id": "7419051797869758527",
+        "tag_name": "vlog日常"
+      },
+      {
+        "tag_id": "1715489488895000",
+        "tag_name": "社会纪实人生百态"
+      },
+      {
+        "tag_id": "1592658360901639",
+        "tag_name": "日常唠嗑"
+      }
+    ]
+  }
+]

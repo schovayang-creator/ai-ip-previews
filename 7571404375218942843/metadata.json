@@ -1,0 +1,47 @@
+[
+  {
+    "recommend_count": 19,
+    "comment_count": 296,
+    "digg_count": 5284,
+    "admire_count": 0,
+    "share_count": 223,
+    "collect_count": 547,
+    "download_addr": "https://www.douyin.com/aweme/v1/play/?video_id=v1e00fgi0000d49furvog65j3f8c0f10&line=0&file_id=71526b375a624d3c81bffa947b2a069a&sign=228e1702265078ace1cb904aa3b4841f&is_play_url=1&source=PackSourceEnum_PUBLISH",
+    "id": "7571404375218942843",
+    "time": 1762854956,
+    "type": 0,
+    "desc": "失业时，家从来不是避风港 #找工作#boss直聘#就业大环境#失业#面试",
+    "duration": 51872,
+    "music_title": "@鹿冰冰创作的原声",
+    "music_url": "https://lf9-music-east.douyinstatic.com/obj/ies-music-hj/7571404377953651493.mp3",
+    "cover": "https://p9-pc-sign.douyinpic.com/obj/tos-cn-p-0015c000-ce/ooemfb2I20tMDQaIfLLIAEYGAEwNDmAFeflHAM?lk3s=138a59ce&x-expires=2093526000&x-signature=zu4%2FTcB84TjFSrkvcsbGqDP1dd4%3D&from=327834062&s=PackSourceEnum_PUBLISH&se=false&sc=cover&biz_tag=pcweb_cover&l=20260507230753971570AF6C3CEE7392A9",
+    "author_avatar": "https://p3-pc.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-avt-0015_b7493f5f504858775ca5b116c89eeae5.jpeg?from=327834062",
+    "author_nickname": "鹿冰冰",
+    "author_uid": "MS4wLjABAAAAwp-wmFzRnbjOGYKeR65KVT7di41nW6o578VxngbUBrCx1ra31bBLhO7VSVZtFdzZ",
+    "author_unique_id": null,
+    "author_short_id": null,
+    "author_signature": "无标题",
+    "text_extra": [
+      {
+        "tag_id": "1575943855288333",
+        "tag_name": "找工作"
+      },
+      {
+        "tag_id": "1604344319033358",
+        "tag_name": "boss直聘"
+      },
+      {
+        "tag_id": "1737959652321287",
+        "tag_name": "就业大环境"
+      },
+      {
+        "tag_id": "1586655547431949",
+        "tag_name": "失业"
+      },
+      {
+        "tag_id": "1581392946799629",
+        "tag_name": "面试"
+      }
+    ]
+  }
+]

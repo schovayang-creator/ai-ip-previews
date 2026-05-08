@@ -1,0 +1,35 @@
+[
+  {
+    "recommend_count": 627,
+    "comment_count": 1132,
+    "digg_count": 20754,
+    "admire_count": 0,
+    "share_count": 6188,
+    "collect_count": 2073,
+    "download_addr": "https://www.douyin.com/aweme/v1/play/?video_id=v2700fgi0000d4t75q7og65mrdc2om2g&line=0&file_id=26e7d4465eb441b1912b96dae4dc7ba7&sign=b9db06bcdc8b4e404e2ae4681f285d54&is_play_url=1&source=PackSourceEnum_PUBLISH",
+    "id": "7582500149218823473",
+    "time": 1765447349,
+    "type": 0,
+    "desc": "期待别人读懂你的隐喻，会将礼物变成惩罚 #花知晓#花知晓唇冻 #花知晓礼...",
+    "duration": 187300,
+    "music_title": "@鹿冰冰创作的原声",
+    "music_url": "https://lf26-music-east.douyinstatic.com/obj/ies-music-hj/7582500250737314609.mp3",
+    "cover": "https://p9-pc-sign.douyinpic.com/obj/tos-cn-p-0015c000-ce/oIBggIbM7XCgSA5e0fUdBOeUWYtGBDLROb1Jjx?lk3s=138a59ce&x-expires=2093526000&x-signature=mDHgYVjxUXlr2Wzk%2FdYw%2B1pwXF4%3D&from=327834062&s=PackSourceEnum_PUBLISH&se=false&sc=cover&biz_tag=pcweb_cover&l=2026050723075209ECC4841E59C763A43E",
+    "author_avatar": "https://p3-pc.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-avt-0015_b7493f5f504858775ca5b116c89eeae5.jpeg?from=327834062",
+    "author_nickname": "鹿冰冰",
+    "author_uid": "MS4wLjABAAAAwp-wmFzRnbjOGYKeR65KVT7di41nW6o578VxngbUBrCx1ra31bBLhO7VSVZtFdzZ",
+    "author_unique_id": null,
+    "author_short_id": null,
+    "author_signature": "无标题",
+    "text_extra": [
+      {
+        "tag_id": "1609208864413895",
+        "tag_name": "girlstalk"
+      },
+      {
+        "tag_id": "1767586404691015",
+        "tag_name": "口播"
+      }
+    ]
+  }
+]

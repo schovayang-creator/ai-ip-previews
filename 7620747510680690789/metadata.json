@@ -1,0 +1,31 @@
+[
+  {
+    "recommend_count": 48,
+    "comment_count": 378,
+    "digg_count": 10702,
+    "admire_count": 1,
+    "share_count": 266,
+    "collect_count": 1598,
+    "download_addr": "https://www.douyin.com/aweme/v1/play/?video_id=v2700fgi0000d715abfog65sl6886lk0&line=0&file_id=320d39e373fb42fbbbd7e4df71d081bd&sign=7971e669dd6709d713c6409abe95b40f&is_play_url=1&source=PackSourceEnum_PUBLISH",
+    "id": "7620747510680690789",
+    "time": 1774343548,
+    "type": 0,
+    "desc": "分享一些伪装人生还很体面的好物 #好物分享",
+    "duration": 309934,
+    "music_title": "@鹿冰冰创作的原声",
+    "music_url": "https://lf26-music-east.douyinstatic.com/obj/ies-music-hj/7620747487967890233.mp3",
+    "cover": "https://p9-pc-sign.douyinpic.com/obj/tos-cn-p-0015c000-ce/oYB2AVV4FiTZqASBE0iB8XfoI4tnwqCZEnCWDe?lk3s=138a59ce&x-expires=2093526000&x-signature=BcG59pc8Cot%2BBFmT9e9ccuPgHTM%3D&from=327834062&s=PackSourceEnum_PUBLISH&se=false&sc=cover&biz_tag=pcweb_cover&l=20260507230750F7A8586AF85F447A320F",
+    "author_avatar": "https://p3-pc.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-avt-0015_b7493f5f504858775ca5b116c89eeae5.jpeg?from=327834062",
+    "author_nickname": "鹿冰冰",
+    "author_uid": "MS4wLjABAAAAwp-wmFzRnbjOGYKeR65KVT7di41nW6o578VxngbUBrCx1ra31bBLhO7VSVZtFdzZ",
+    "author_unique_id": null,
+    "author_short_id": null,
+    "author_signature": "无标题",
+    "text_extra": [
+      {
+        "tag_id": "1767586936157191",
+        "tag_name": "好物分享"
+      }
+    ]
+  }
+]

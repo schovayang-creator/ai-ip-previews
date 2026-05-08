@@ -1,0 +1,47 @@
+[
+  {
+    "recommend_count": 3842,
+    "comment_count": 2142,
+    "digg_count": 137786,
+    "admire_count": 0,
+    "share_count": 15736,
+    "collect_count": 38424,
+    "download_addr": "https://www.douyin.com/aweme/v1/play/?video_id=v1e00fgi0000d5aemqnog65onhrudpgg&line=0&file_id=1d36a2a207a148b9bf4cacce0488e185&sign=082e04818dd90a3349aa83b351af42fc&is_play_url=1&source=PackSourceEnum_PUBLISH",
+    "id": "7589958191862123825",
+    "time": 1767174881,
+    "type": 0,
+    "desc": "英国文学的一场山火《呼啸山庄》，言情小说的男鬼文鼻祖 #女生必看 #呼啸...",
+    "duration": 1699634,
+    "music_title": "@鹿冰冰创作的原声",
+    "music_url": "https://lf26-music-east.douyinstatic.com/obj/ies-music-hj/7589958566673435429.mp3",
+    "cover": "https://p9-pc-sign.douyinpic.com/obj/tos-cn-p-0015c000-ce/o4TIFXC78MSFq8Bbyge7Ak33h8MV4fJQEfA2dN?lk3s=138a59ce&x-expires=2093526000&x-signature=g8Xhn4AWN7evEZAk9w9eFc6mjiE%3D&from=327834062&s=PackSourceEnum_PUBLISH&se=false&sc=cover&biz_tag=pcweb_cover&l=2026050723074996247118119C4348087F",
+    "author_avatar": "https://p3-pc.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-avt-0015_b7493f5f504858775ca5b116c89eeae5.jpeg?from=327834062",
+    "author_nickname": "鹿冰冰",
+    "author_uid": "MS4wLjABAAAAwp-wmFzRnbjOGYKeR65KVT7di41nW6o578VxngbUBrCx1ra31bBLhO7VSVZtFdzZ",
+    "author_unique_id": null,
+    "author_short_id": null,
+    "author_signature": "无标题",
+    "text_extra": [
+      {
+        "tag_id": "1767587340277767",
+        "tag_name": "女生必看"
+      },
+      {
+        "tag_id": "1589125257616387",
+        "tag_name": "呼啸山庄"
+      },
+      {
+        "tag_id": "1570347557767170",
+        "tag_name": "读书"
+      },
+      {
+        "tag_id": "1596346714373133",
+        "tag_name": "好书分享"
+      },
+      {
+        "tag_id": "1594273033263107",
+        "tag_name": "书籍分享"
+      }
+    ]
+  }
+]

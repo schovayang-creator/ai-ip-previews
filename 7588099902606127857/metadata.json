@@ -1,0 +1,47 @@
+[
+  {
+    "recommend_count": 4823,
+    "comment_count": 2543,
+    "digg_count": 279906,
+    "admire_count": 3,
+    "share_count": 22558,
+    "collect_count": 64998,
+    "download_addr": "https://www.douyin.com/aweme/v1/play/?video_id=v1e00fgi0000d575a7nog65vd6rimem0&line=0&file_id=7e22706276554a11a76e0b79c66a6cb4&sign=4b1beeb7b86032cf2fc6d5032f2a9d77&is_play_url=1&source=PackSourceEnum_PUBLISH",
+    "id": "7588099902606127857",
+    "time": 1766742185,
+    "type": 0,
+    "desc": "不要把自己变成“杂牌饮料”#口播短视频 #自媒体创业 #抖音热门小助手 #gir...",
+    "duration": 133500,
+    "music_title": "@鹿冰冰创作的原声",
+    "music_url": "https://lf9-music-east.douyinstatic.com/obj/ies-music-hj/7588099887342963505.mp3",
+    "cover": "https://p9-pc-sign.douyinpic.com/obj/tos-cn-p-0015c000-ce/oUKSCOUfI9KLW1WA3gMInY0R7o25GJCeBehQd8?lk3s=138a59ce&x-expires=2093526000&x-signature=Ucgqs64%2FSyFPwOIc3y8%2BuwFsBTI%3D&from=327834062&s=PackSourceEnum_PUBLISH&se=false&sc=cover&biz_tag=pcweb_cover&l=2026050723075127833DA26A18BD502340",
+    "author_avatar": "https://p3-pc.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-avt-0015_b7493f5f504858775ca5b116c89eeae5.jpeg?from=327834062",
+    "author_nickname": "鹿冰冰",
+    "author_uid": "MS4wLjABAAAAwp-wmFzRnbjOGYKeR65KVT7di41nW6o578VxngbUBrCx1ra31bBLhO7VSVZtFdzZ",
+    "author_unique_id": null,
+    "author_short_id": null,
+    "author_signature": "无标题",
+    "text_extra": [
+      {
+        "tag_id": "1689877827459083",
+        "tag_name": "口播短视频"
+      },
+      {
+        "tag_id": "1623091168392195",
+        "tag_name": "自媒体创业"
+      },
+      {
+        "tag_id": "1597070897102852",
+        "tag_name": "抖音热门小助手"
+      },
+      {
+        "tag_id": "1609208864413895",
+        "tag_name": "girlstalk"
+      },
+      {
+        "tag_id": "1623463108251655",
+        "tag_name": "女性智慧"
+      }
+    ]
+  }
+]

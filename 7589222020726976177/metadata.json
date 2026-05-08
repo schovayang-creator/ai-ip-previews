@@ -1,0 +1,47 @@
+[
+  {
+    "recommend_count": 48,
+    "comment_count": 186,
+    "digg_count": 13075,
+    "admire_count": 0,
+    "share_count": 553,
+    "collect_count": 3650,
+    "download_addr": "https://www.douyin.com/aweme/v1/play/?video_id=v2700fgi0000d5956vvog65jq30hegf0&line=0&file_id=edb583bdeed2441a808d0554d9c01449&sign=74e06e49e5b3b5e4658e971e72c2f44b&is_play_url=1&source=PackSourceEnum_PUBLISH",
+    "id": "7589222020726976177",
+    "time": 1767003450,
+    "type": 0,
+    "desc": "一个爱看书爱写字的人的文具分享 #抖音创作者中心 #文具分享 #笔 #爱用物...",
+    "duration": 219500,
+    "music_title": "@鹿冰冰创作的原声",
+    "music_url": "https://lf9-music-east.douyinstatic.com/obj/ies-music-hj/7589221967333575482.mp3",
+    "cover": "https://p9-pc-sign.douyinpic.com/obj/tos-cn-p-0015c000-ce/oMDYbEnBbIVpfFHBgOlftI0TbuZeD7goSSEKAJ?lk3s=138a59ce&x-expires=2093526000&x-signature=KQhYLjgjoB2Uj9ApgyALPbZmkgU%3D&from=327834062&s=PackSourceEnum_PUBLISH&se=false&sc=cover&biz_tag=pcweb_cover&l=2026050723075127833DA26A18BD502340",
+    "author_avatar": "https://p3-pc.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-avt-0015_b7493f5f504858775ca5b116c89eeae5.jpeg?from=327834062",
+    "author_nickname": "鹿冰冰",
+    "author_uid": "MS4wLjABAAAAwp-wmFzRnbjOGYKeR65KVT7di41nW6o578VxngbUBrCx1ra31bBLhO7VSVZtFdzZ",
+    "author_unique_id": null,
+    "author_short_id": null,
+    "author_signature": "无标题",
+    "text_extra": [
+      {
+        "tag_id": "1658033626987533",
+        "tag_name": "抖音创作者中心"
+      },
+      {
+        "tag_id": "1606959221334024",
+        "tag_name": "文具分享"
+      },
+      {
+        "tag_id": "1570514941677569",
+        "tag_name": "笔"
+      },
+      {
+        "tag_id": "1585662092756045",
+        "tag_name": "爱用物分享"
+      },
+      {
+        "tag_id": "1767586874444807",
+        "tag_name": "好物推荐🔥"
+      }
+    ]
+  }
+]

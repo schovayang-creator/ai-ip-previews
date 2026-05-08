@@ -1,0 +1,47 @@
+[
+  {
+    "recommend_count": 14,
+    "comment_count": 48,
+    "digg_count": 1632,
+    "admire_count": 0,
+    "share_count": 62,
+    "collect_count": 234,
+    "download_addr": "https://www.douyin.com/aweme/v1/play/?video_id=v1e00fgi0000d5j4gf7og65sfjodsoh0&line=0&file_id=947d37ba8d164e03bcd8a97243590192&sign=7eed87539b65e4b435b6d0036c8314df&is_play_url=1&source=PackSourceEnum_PUBLISH",
+    "id": "7594839173807294394",
+    "time": 1768381258,
+    "type": 0,
+    "desc": "我相信手写的力量 #黄天鹅新春限定礼盒#黄天鹅鸡蛋#girlstalk#送礼攻略#上热...",
+    "duration": 147934,
+    "music_title": "@鹿冰冰创作的原声",
+    "music_url": "https://lf9-music-east.douyinstatic.com/obj/ies-music-hj/7594839153792043813.mp3",
+    "cover": "https://p9-pc-sign.douyinpic.com/obj/tos-cn-p-0015c000-ce/o8Dxe5Ee7SIs78J5CGGM8BLJnfzzgAxI8ykNQB?lk3s=138a59ce&x-expires=2093526000&x-signature=JsK24HhZlcR7efPSDKlFs21GHX4%3D&from=327834062&s=PackSourceEnum_PUBLISH&se=false&sc=cover&biz_tag=pcweb_cover&l=2026050723075127833DA26A18BD502340",
+    "author_avatar": "https://p3-pc.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-avt-0015_b7493f5f504858775ca5b116c89eeae5.jpeg?from=327834062",
+    "author_nickname": "鹿冰冰",
+    "author_uid": "MS4wLjABAAAAwp-wmFzRnbjOGYKeR65KVT7di41nW6o578VxngbUBrCx1ra31bBLhO7VSVZtFdzZ",
+    "author_unique_id": null,
+    "author_short_id": null,
+    "author_signature": "无标题",
+    "text_extra": [
+      {
+        "tag_id": "7594353138120558644",
+        "tag_name": "黄天鹅新春限定礼盒"
+      },
+      {
+        "tag_id": "1659652450141198",
+        "tag_name": "黄天鹅鸡蛋"
+      },
+      {
+        "tag_id": "1609208864413895",
+        "tag_name": "girlstalk"
+      },
+      {
+        "tag_id": "1641034721618956",
+        "tag_name": "送礼攻略"
+      },
+      {
+        "tag_id": "1767587361772552",
+        "tag_name": "上热门"
+      }
+    ]
+  }
+]

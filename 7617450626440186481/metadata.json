@@ -1,0 +1,47 @@
+[
+  {
+    "recommend_count": 477,
+    "comment_count": 260,
+    "digg_count": 57278,
+    "admire_count": 1,
+    "share_count": 3682,
+    "collect_count": 15861,
+    "download_addr": "https://www.douyin.com/aweme/v1/play/?video_id=v2800fgi0000d6r9p9fog65mfv5imfj0&line=0&file_id=d3583b8e0fa24188b435dd817cbf64e0&sign=164385b3866baeb71b38751c19bd7e7b&is_play_url=1&source=PackSourceEnum_PUBLISH",
+    "id": "7617450626440186481",
+    "time": 1773575932,
+    "type": 0,
+    "desc": "如何把政史经拉下“神坛” #girlstalk #女性 #每日分享 #播客 #女性智慧",
+    "duration": 177608,
+    "music_title": "@鹿冰冰创作的原声",
+    "music_url": "https://lf26-music-east.douyinstatic.com/obj/ies-music-hj/7617450622052338489.mp3",
+    "cover": "https://p9-pc-sign.douyinpic.com/obj/tos-cn-p-0015c000-ce/o8MsnptfDICvm2syArFBoa9lPBf9pPEEE7w8At?lk3s=138a59ce&x-expires=2093526000&x-signature=pLRWiNc72aTyV9yWDy0ddCZy3bc%3D&from=327834062&s=PackSourceEnum_PUBLISH&se=false&sc=cover&biz_tag=pcweb_cover&l=20260507230750F7A8586AF85F447A320F",
+    "author_avatar": "https://p3-pc.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-avt-0015_b7493f5f504858775ca5b116c89eeae5.jpeg?from=327834062",
+    "author_nickname": "鹿冰冰",
+    "author_uid": "MS4wLjABAAAAwp-wmFzRnbjOGYKeR65KVT7di41nW6o578VxngbUBrCx1ra31bBLhO7VSVZtFdzZ",
+    "author_unique_id": null,
+    "author_short_id": null,
+    "author_signature": "无标题",
+    "text_extra": [
+      {
+        "tag_id": "1609208864413895",
+        "tag_name": "girlstalk"
+      },
+      {
+        "tag_id": "1591025759996941",
+        "tag_name": "女性"
+      },
+      {
+        "tag_id": "1590229356146702",
+        "tag_name": "每日分享"
+      },
+      {
+        "tag_id": "1636398259338248",
+        "tag_name": "播客"
+      },
+      {
+        "tag_id": "1623463108251655",
+        "tag_name": "女性智慧"
+      }
+    ]
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "recommend_count": 211,
+    "comment_count": 226,
+    "digg_count": 8664,
+    "admire_count": 0,
+    "share_count": 753,
+    "collect_count": 3502,
+    "download_addr": "https://www.douyin.com/aweme/v1/play/?video_id=v0200fg10000d5kcamnog65nl0lvaro0&line=0&file_id=53332298778543feb767224a48df3158&sign=3ee23289c1d083ff8e98e0884f75689a&is_play_url=1&source=PackSourceEnum_PUBLISH",
+    "id": "7595544960921914687",
+    "time": 1768475658,
+    "type": 0,
+    "desc": "《米德尔马契》一部号称英国版《红楼梦》，由女性写的女人史诗 68分钟超...",
+    "duration": 4092800,
+    "music_title": "@鹿冰冰创作的原声",
+    "music_url": "https://sf6-cdn-tos.douyinstatic.com/obj/ies-music/7595532839391693587.mp3",
+    "cover": "https://p9-pc-sign.douyinpic.com/obj/tos-cn-i-dy/048fd6c023ac45dc8da2ed6788ecdd58?lk3s=138a59ce&x-expires=2093526000&x-signature=6gY3VD67njWwLPlDzVRRsGU9wJ4%3D&from=327834062&s=PackSourceEnum_PUBLISH&se=false&sc=cover&biz_tag=pcweb_cover&l=2026050723075127833DA26A18BD502340",
+    "author_avatar": "https://p3-pc.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-avt-0015_b7493f5f504858775ca5b116c89eeae5.jpeg?from=327834062",
+    "author_nickname": "鹿冰冰",
+    "author_uid": "MS4wLjABAAAAwp-wmFzRnbjOGYKeR65KVT7di41nW6o578VxngbUBrCx1ra31bBLhO7VSVZtFdzZ",
+    "author_unique_id": null,
+    "author_short_id": null,
+    "author_signature": "无标题",
+    "text_extra": [
+      {
+        "tag_id": "1697706640194637",
+        "tag_name": "米德尔马契"
+      },
+      {
+        "tag_id": "1658329292486669",
+        "tag_name": "经典解读"
+      },
+      {
+        "tag_id": "1570347557767170",
+        "tag_name": "读书"
+      },
+      {
+        "tag_id": "1596346714373133",
+        "tag_name": "好书分享"
+      },
+      {
+        "tag_id": "1623463108251655",
+        "tag_name": "女性智慧"
+      }
+    ]
+  }
+]

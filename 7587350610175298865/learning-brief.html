@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>V3复刻决策页 · 7587350610175298865</title>
+<style>
+:root { --paper:#f5ead8; --paper2:#fff8ec; --ink:#211714; --muted:#76685e; --line:#d9bea4; --coal:#17110f; --red:#a93427; --amber:#c76b24; --green:#1f6a57; --blue:#285f78; --shadow:0 22px 68px rgba(52,30,14,.14); --sans:"Avenir Next","PingFang SC","Hiragino Sans GB",sans-serif; --serif:"Songti SC","Kaiti SC","Hiragino Mincho ProN",serif; --num:"DIN Alternate","Avenir Next Condensed",var(--sans); }
+* { box-sizing:border-box; } html { scroll-behavior:smooth; } body { margin:0; color:var(--ink); font-family:var(--sans); background:radial-gradient(circle at 10% 6%,rgba(199,107,36,.23),transparent 30%),radial-gradient(circle at 92% 18%,rgba(31,106,87,.16),transparent 30%),linear-gradient(135deg,#e7d2ba 0%,var(--paper) 44%,#fbf3e9 100%); } a { color:inherit; } .page { width:min(1240px,100%); margin:0 auto; padding:26px 22px 70px; }
+.nav { position:sticky; top:0; z-index:8; margin:-26px -22px 22px; padding:12px 22px; display:flex; gap:10px; overflow:auto; border-bottom:1px solid rgba(217,190,164,.8); background:rgba(245,234,216,.86); backdrop-filter:blur(14px); } .nav a { text-decoration:none; white-space:nowrap; font-size:13px; padding:8px 12px; border:1px solid var(--line); border-radius:999px; background:rgba(255,248,236,.78); color:var(--muted); font-weight:800; }
+.hero { display:grid; grid-template-columns:360px 1fr; gap:22px; } .cover { padding:14px; border-radius:32px; background:linear-gradient(160deg,#2b1b15,#7c3725 48%,#e5ae70); box-shadow:var(--shadow); color:#fff6e9; overflow:hidden; } .cover img { display:block; width:100%; height:465px; object-fit:cover; border-radius:23px; box-shadow:0 20px 45px rgba(0,0,0,.28); } .cover h2 { margin:14px 6px 6px; font-family:var(--serif); font-size:25px; line-height:1.12; } .cover p { margin:0 6px 6px; color:rgba(255,246,233,.86); line-height:1.65; font-size:14px; }
+.hero-main { display:grid; gap:14px; } .verdict { border-radius:34px; background:linear-gradient(135deg,#fff8ec 0%,#fff3dc 58%,#f7cf8f 100%); border:1px solid var(--line); box-shadow:var(--shadow); padding:24px; position:relative; overflow:hidden; } .verdict:after { content:"62"; position:absolute; right:18px; top:-26px; font-family:var(--num); font-size:180px; line-height:1; color:rgba(169,52,39,.075); font-weight:900; letter-spacing:-.08em; } .kicker { color:var(--red); font-weight:900; letter-spacing:.13em; font-size:12px; text-transform:uppercase; } h1 { position:relative; z-index:1; margin:8px 0 10px; font-family:var(--serif); font-size:48px; line-height:1.03; letter-spacing:-.045em; max-width:850px; } .lead { position:relative; z-index:1; margin:0; color:var(--muted); line-height:1.75; max-width:820px; } .badges { position:relative; z-index:1; display:flex; flex-wrap:wrap; gap:8px; margin-top:16px; } .badge { border:1px solid var(--line); background:#fffaf1; border-radius:999px; padding:8px 11px; font-size:13px; font-weight:900; } .badge.warn { background:#fff0d1; color:#9a4b11; } .badge.good { background:#e8f3eb; color:var(--green); }
+.scoreline { display:grid; grid-template-columns:210px 1fr; gap:14px; } .big-score { border-radius:28px; background:var(--coal); color:#fff8ec; padding:22px; display:grid; align-content:center; min-height:154px; box-shadow:var(--shadow); } .big-score strong { font-family:var(--num); font-size:74px; line-height:.86; letter-spacing:-.06em; } .big-score span { margin-top:8px; color:rgba(255,248,236,.76); font-size:13px; } .next-actions { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; } .tile,.card { border:1px solid var(--line); border-radius:21px; background:#fffaf1; padding:16px; line-height:1.65; } .tile { min-height:154px; } .tile b,.card b { display:block; color:var(--red); margin-bottom:6px; } .tile span,.card span { color:var(--muted); } .card.good b { color:var(--green); } .card.strong { background:#231914; color:#fff8ec; border-color:#231914; } .card.strong b { color:#f4bd73; } .card.strong span { color:rgba(255,248,236,.74); }
+.section { margin-top:22px; border:1px solid var(--line); border-radius:34px; background:rgba(255,248,236,.84); box-shadow:0 16px 50px rgba(50,28,12,.09); padding:25px; } .section h2 { margin:0 0 14px; font-family:var(--serif); font-size:31px; line-height:1.1; letter-spacing:-.035em; } .section-lead { margin:-4px 0 18px; color:var(--muted); line-height:1.8; } .grid-4 { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; } .grid-3 { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; } .grid-2 { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+ul.clean { margin:0; padding-left:20px; line-height:1.8; color:var(--muted); } ul.clean li::marker { color:var(--amber); } .traffic { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; } .light { border-radius:22px; padding:17px; border:1px solid var(--line); background:#fffaf1; min-height:190px; } .light h3 { margin:0 0 10px; font-size:18px; } .green h3 { color:var(--green); } .yellow h3 { color:#a76213; } .red h3 { color:var(--red); }
+.timeline { display:grid; gap:10px; } .step { display:grid; grid-template-columns:54px 1fr; gap:12px; padding:14px; border:1px solid var(--line); border-radius:19px; background:#fffaf1; } .step code { display:grid; place-items:center; width:44px; height:44px; border-radius:14px; background:var(--coal); color:#fff8ec; font-family:var(--num); font-size:18px; } .quote { border-left:6px solid var(--red); background:#fff1db; border-radius:0 20px 20px 0; padding:18px 20px; font-family:var(--serif); font-size:21px; line-height:1.75; font-weight:900; }
+.table-wrap { overflow:auto; } table { width:100%; border-collapse:separate; border-spacing:0 8px; min-width:720px; } th,td { text-align:left; padding:11px 12px; background:#fffaf1; border-top:1px solid var(--line); border-bottom:1px solid var(--line); vertical-align:top; line-height:1.55; } th { color:var(--muted); font-size:12px; } td:first-child,th:first-child { border-left:1px solid var(--line); border-radius:14px 0 0 14px; font-weight:900; color:var(--red); } td:last-child,th:last-child { border-right:1px solid var(--line); border-radius:0 14px 14px 0; } .metrics { display:grid; grid-template-columns:repeat(6,1fr); gap:10px; } .metric { border:1px solid var(--line); border-radius:21px; background:#fffaf1; padding:15px; min-height:106px; } .metric strong { display:block; font-family:var(--num); font-size:32px; line-height:1; } .metric span { display:block; margin-top:8px; color:var(--muted); font-size:13px; } .metric em { display:block; margin-top:8px; color:var(--green); font-style:normal; font-size:12px; font-weight:900; }
+.script { white-space:pre-wrap; padding:20px; background:#1e1714; color:#fff6e9; border-radius:24px; line-height:1.9; font-size:15px; } .video-box video { width:100%; max-height:560px; border-radius:24px; background:#111; box-shadow:var(--shadow); } .empty { border:1px dashed rgba(169,52,39,.45); border-radius:20px; padding:16px; color:var(--muted); background:#fff0dc; } details { border:1px solid var(--line); border-radius:20px; background:#fffaf1; margin-top:11px; overflow:hidden; } summary { cursor:pointer; padding:15px 17px; font-weight:900; color:var(--red); } pre { margin:0; padding:17px; white-space:pre-wrap; overflow:auto; background:#1e1714; color:#fff6e9; line-height:1.7; font-size:12.5px; } .artifacts { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; } .artifact { text-decoration:none; border:1px solid var(--line); border-radius:17px; background:#fffaf1; padding:13px; min-height:78px; display:grid; gap:6px; } .artifact b { font-size:13px; word-break:break-all; color:var(--ink); } .artifact span { color:var(--muted); font-size:12px; } .footer { margin-top:24px; text-align:center; color:var(--muted); font-size:13px; }
+@media (max-width:980px) { .page { padding:18px 14px 46px; } .nav { margin:-18px -14px 16px; padding:10px 14px; } .hero,.scoreline,.grid-2 { grid-template-columns:1fr; } .cover img { height:auto; max-height:520px; } h1 { font-size:35px; } .next-actions,.grid-4,.grid-3,.traffic,.metrics,.artifacts { grid-template-columns:1fr; } .big-score strong { font-size:66px; } }
+@media print { body { background:#fff; } .nav,.video-box { display:none; } .page { width:100%; padding:0; } .section,.verdict,.cover,.big-score,.card,.tile { box-shadow:none; } }
+</style>
+</head>
+<body>
+<div class="page">
+<nav class="nav"><a href="#decision">复刻结论</a><a href="#star">爆点机制</a><a href="#pain">用户痛点</a><a href="#retention">留人逻辑</a><a href="#fire">为什么火</a><a href="#migration">迁移清单</a><a href="#data">数据</a><a href="#rewrite">等时长改写</a><a href="#appendix">证据附录</a></nav>
+<main id="decision" class="hero"><aside class="cover"><img src="https://p9-pc-sign.douyinpic.com/obj/tos-cn-p-0015c000-ce/o4xABdFSrID9w5CAy89wfgETpLQk9RJEof06rB?lk3s=138a59ce&amp;x-expires=2093526000&amp;x-signature=9QWVrTJPZbCi%2B4fJXMxT%2FMSWihE%3D&amp;from=327834062&amp;s=PackSourceEnum_PUBLISH&amp;se=false&amp;sc=cover&amp;biz_tag=pcweb_cover&amp;l=2026050723075209ECC4841E59C763A43E" alt="视频封面"><h2>先做决策，再读分析</h2><p>V3 学习页先回答值不值得学、怎么学、哪里不能抄，再保留完整证据。</p></aside><section class="hero-main"><div class="verdict"><div class="kicker">V3 Decision Brief · 7587350610175298865</div><h1>只拆结构：知识年终盘点 我哭得不是那杯牛奶</h1><p class="lead">核心痛点偏向“不配得感”，结构是“反常识判断 -&gt; 个人经历 -&gt; 温柔收束”；数据上分享/赞 6.9%、评论/赞 1.5%，但时长 4分25秒，需要按我方人设重写。</p><div class="badges"><span class="badge warn">复刻可行性 62/100</span><span class="badge good">中期信任 / 账号资产</span><span class="badge">推荐动作：改</span><span class="badge">评论文本缺失，只能从数据谨慎推断</span></div></div><div class="scoreline"><div class="big-score"><strong>62</strong><span>/100 · 复刻可行性，不是内容质量分。高分代表更适合我方直接转化。</span></div><div class="next-actions"><div class="tile"><b>下一步 01</b><span>先看爆点机制：痛点、入口、留人、互动理由。</span></div><div class="tile"><b>下一步 02</b><span>只学可迁移结构，不复制对方人生和原句。</span></div><div class="tile"><b>下一步 03</b><span>如要拍，先确认创作者是否有可替换真实素材。</span></div><div class="tile"><b>下一步 04</b><span>建议进入选题库，优先做结构学习。</span></div></div></div></section></main>
+<section id="star" class="section"><h2>爆点机制：这条为什么抓人</h2><div class="grid-4"><div class="card strong"><b>用户痛点</b><span>用户被吸引，不是因为题材本身，而是因为它替用户说出：我也有“不配得感”这类很难直接承认的感受。</span></div><div class="card strong"><b>第一眼入口</b><span>知识年终盘点 我哭得不是那杯牛奶</span></div><div class="card strong"><b>留人逻辑</b><span>最大留人点是：它不是一直停在题材表面，而是把用户带到“不配得感”这个更深、更难说出口的情绪层。</span></div><div class="card strong"><b>互动理由</b><span>分享/赞 6.9%，收藏/赞 17.7%，评论/赞 1.5%；评论文本缺失时只做谨慎推断。</span></div></div></section>
+<section id="pain" class="section"><h2>用户痛点分析</h2><div class="grid-2"><div class="card"><b>表层痛点</b><ul class="clean"><li>表面击中的是“不配得感”相关处境，让用户先产生熟悉感。</li><li>表面是关系里的委屈和失望，用户被“为什么我总在关系里弄丢自己”吸引。</li><li>表面是一次情绪崩溃或想不通，用户被“我也这样消耗自己”的熟悉感吸引。</li></ul></div><div class="card"><b>深层痛点</b><ul class="clean"><li>深层是“不敢承认自己也值得好东西、好关系或好生活”。</li><li>深层击中的是“关系受伤”背后的自我解释和情绪负担。</li><li>深层击中的是“情绪内耗”背后的自我解释和情绪负担。</li></ul></div></div><div class="quote" style="margin-top:14px">用户被吸引，不是因为题材本身，而是因为它替用户说出：我也有“不配得感”这类很难直接承认的感受。</div></section>
+<section class="section"><h2>第一眼入口</h2><div class="grid-3"><div class="card"><b>封面入口</b>封面提供人物/状态/场景的第一眼识别；如果线上封面可见，用户先通过气质判断要不要停留。</div><div class="card"><b>标题/文案入口</b>知识年终盘点 我哭得不是那杯牛奶</div><div class="card"><b>场景入口</b>从生活现场或自我讲述进入，降低观点内容的理解门槛。</div><div class="card"><b>人物状态入口</b>低到中能量、近距离表达，适合让用户感觉像在听朋友讲真话。</div><div class="card"><b>3秒疑问</b>她为什么要讲“知识年终盘点 我哭得不是那杯牛奶”？这件事背后到底有什么情绪？</div></div></section>
+<section id="retention" class="section"><h2>留人逻辑</h2><div class="timeline"><div class="step"><code>01</code><div><li>开头先给具体入口：總之在寫稿子我突然間想到一個問題 就是這個世界上根本沒有任何一個人為打翻的牛奶哭泣 我去年參加了一個比賽 沒啥 連初選都沒過 我在和我朋友副盤這個事情的時候 有時候我當時就感覺不順 文檔總出問題 PPT還老卡 上去之後我發現話頭也不好使 我...</li><li>用户继续看，是因为表层题材后面似乎藏着一个更私人的解释。</li><li>中段发生转弯：内容从事件本身转向“不配得感”背后的情绪和身份理解。</li><li>后段加深：用经历、细节或反思支撑观点，避免只剩鸡汤。</li><li>结尾释放：...因為我最近這兩年 總是被你不要為打翻的牛奶哭泣 這句話可以讀得很煩 今後如果有人再這麼跟你說 你就可以告訴他 我哭的不是牛奶 我哭的是這張放牛奶的桌子 太小驚不起搖晃 這樣就能讓所有人都知道 其實你的痛苦不在於想要端吻牛奶 而是想要坐大桌子</li></div></div></div><div class="card good" style="margin-top:12px"><b>情绪递进</b>熟悉/好奇 -> 代入/停留 -> 被说中/心里一紧 -> 重新解释/松动 -> 被允许/想收藏或转发</div><div class="quote" style="margin-top:14px">最大留人点是：它不是一直停在题材表面，而是把用户带到“不配得感”这个更深、更难说出口的情绪层。</div></section>
+<section id="fire" class="section"><h2>为什么能火 / 为什么有学习价值</h2><ul class="clean"><li>痛点够隐秘：不配得感不是用户每天公开说的话，但很容易在心里存在。</li><li>入口够具体：先用标题、场景、物件或个人状态让用户进入，再讲抽象观点。</li><li>情绪有转弯：从一件事转向自我理解，用户会等那个“原来如此”的瞬间。</li><li>观点替用户说话：它把自责、羞耻或委屈换成一个更温柔的解释。</li><li>互动理由明确：分享/赞 6.9%、评论/赞 1.5%，可谨慎推断有表达立场或讨论的动力；但评论文本缺失时不能伪造具体评论。</li></ul><div class="quote" style="margin-top:14px">这条的价值不是“知识年终盘点 我哭得不是那杯牛奶”本身，而是用它承载了“不配得感”的情绪机制。</div></section>
+<section id="migration" class="section"><h2>红黄绿迁移清单</h2><div class="traffic"><div class="light green"><h3>绿色可学</h3><ul class="clean"><li>学习“反常识判断 -&gt; 个人经历 -&gt; 温柔收束”的推进方式。</li><li>先给具体场景/物件/处境，再讲观点。</li><li>把自责转成重新理解，把痛点转成情绪许可。</li><li>用短句和个人化表达降低说教感。</li></ul></div><div class="light yellow"><h3>黄色谨慎</h3><ul class="clean"><li>涉及出身、金钱、关系、创伤时要避免审判别人。</li><li>长视频需要更强叙事控制，冷启动不要硬拖长。</li><li>如果没有自己的细节，容易变成空泛鸡汤。</li><li>过度脆弱暴露会给创作者造成心理和人设风险。</li></ul></div><div class="light red"><h3>红色不要复制</h3><ul class="clean"><li>不要复制对方原句、故事顺序和专属记忆。</li><li>不要把对方具体人生经历改成我方第一人称真实经历。</li><li>不要虚构创作者没有经历过的创伤、身份、收入、关系或成就。</li><li>不要为了追热点把女性成长内容拍成炫耀、卖惨或导师训话。</li></ul></div></div></section>
+<section class="section"><h2>我方人设适配</h2><div class="grid-4"><div class="card strong"><b>适配度</b><span>高</span></div><div class="card good"><b>适合我方</b><ul class="clean"><li>适合转成女性成长/情绪自救的口播，不需要站在观众上方教学。</li><li>可以保留“我也是后来才明白”的朋友式语气。</li><li>可以借“不配得感”引出反内耗和自我和解。</li></ul></div><div class="card"><b>不适合我方</b><ul class="clean"><li>不适合照搬原作者的身份、经历、消费水平或关系背景。</li><li>不适合变成强鸡血、强逆袭、强导师式口吻。</li></ul></div><div class="card"><b>要改什么</b><ul class="clean"><li>更短句</li><li>更像语音留言</li><li>少用结论先行的大词</li><li>保留一点疲惫但不绝望</li></ul></div></div><div class="card" style="margin-top:12px"><b>故事替换要求</b><ul class="clean"><li>把具体经历改成创作者可确认的真实素材</li><li>没有真实素材时使用低事实表达</li><li>把题材服务于情绪自救，而不是复述原故事</li></ul></div></section>
+<section id="data" class="section"><h2>数据判断</h2><p class="section-lead">数据必须结合账号内相对表现看；没有评论文本时，不伪造观众原话。</p><div class="metrics"><div class="metric"><strong>16,301</strong><span>点赞</span><em>原始认可</em></div><div class="metric"><strong>1,124</strong><span>分享</span><em>6.9% 分享/赞</em></div><div class="metric"><strong>2,881</strong><span>收藏</span><em>17.7% 收藏/赞</em></div><div class="metric"><strong>244</strong><span>评论</span><em>1.5% 评论/赞</em></div><div class="metric"><strong>4分25秒</strong><span>时长</span><em>原视频长度</em></div><div class="metric"><strong>评论文本缺失，只能从数据谨慎推断</strong><span>评论文本</span><em>置信度提示</em></div></div><div class="table-wrap" style="margin-top:14px"><table><tr><th>指标</th><th>本条</th><th>账号内排名</th><th>相对判断</th></tr><tr><td>点赞总量</td><td>16,301</td><td>第 51/81</td><td>高于 38.3% · 中位 22,175</td></tr><tr><td>分享总量</td><td>1,124</td><td>第 49/81</td><td>高于 40.7% · 中位 1,946</td></tr><tr><td>收藏总量</td><td>2,881</td><td>第 43/81</td><td>高于 48.1% · 中位 3,231</td></tr><tr><td>评论总量</td><td>244</td><td>第 65/81</td><td>高于 21.0% · 中位 714</td></tr><tr><td>分享/赞</td><td>6.9%</td><td>第 42/81</td><td>高于 49.4% · 中位 7.0%</td></tr><tr><td>收藏/赞</td><td>17.7%</td><td>第 21/81</td><td>高于 75.3% · 中位 12.6%</td></tr><tr><td>评论/赞</td><td>1.5%</td><td>第 72/81</td><td>高于 12.3% · 中位 3.1%</td></tr><tr><td>时长</td><td>265s</td><td>第 26/81</td><td>高于 69.1% · 中位 213s</td></tr></table></div></section>
+<section id="rewrite" class="section"><h2>等时长 AI 改写脚本</h2><div class="grid-4"><div class="card"><b>原视频时长</b>4分25秒</div><div class="card"><b>改写目标时长</b>3分32秒</div><div class="card"><b>改写策略</b>约 80% 时长</div><div class="card"><b>风险标签</b>原创：yellow<br>事实：需要创作者确认 / 演绎稿不可直接当真实经历</div></div><p class="section-lead" style="margin-top:14px">这是低事实口播/可演绎脚本，不得直接当作创作者真实经历发布；具体人生事实必须由创作者确认或替换。</p><div class="script">【开头｜需创作者确认/替换】我最近突然发现，原来我一直不是在和别人较劲，我是在和自己心里那个关于“不配得感”的声音较劲。
+
+它一开始只是那段让我反复消耗自己的关系。表面看起来很小，小到我差点不好意思讲。可是我越想越发现，我真正在意的不是这件事本身，而是我为什么连承认在意都这么紧张。
+
+我以前会很快把很多感受压下去。想要，就说自己不该想。难过，就说自己太矫情。羡慕别人，就马上提醒自己要懂事。好像只要我足够克制，足够理性，足够不麻烦别人，我就会变成一个更好的人。
+
+但后来我慢慢发现，很多时候不是我真的不想要，也不是我真的不委屈。我只是太习惯先审判自己了。一个念头刚冒出来，我就急着把它按回去。一个愿望刚出现，我就先问自己：你凭什么？你配吗？你是不是太贪心了？
+
+所以这条我不想讲一个很漂亮的道理。我只是想把这个瞬间留给你。如果你也常常这样，先别急着怪自己。你不是突然变得虚荣、脆弱、敏感，或者不知足。也许你只是太久没有认真听过自己的声音。
+
+我们可以慢慢练习一件事：当一个想法出现的时候，先不要立刻打掉它。先看一眼它。问问它从哪里来，保护过谁，又为什么到现在还这么小心。
+
+有些想要，不一定要马上被满足。但它至少可以先被你承认。有些委屈，不一定要讲给所有人听。但你自己可以先知道，它不是矫情。
+
+如果今天的你还做不到很勇敢，也没关系。可以先从一件很小的事情开始：允许自己说一句，我确实在意。允许自己承认，我也想要。允许自己把过去那个一直很用力的自己，轻轻放回生活里。
+
+【结尾】也许我们不用一下子变成很厉害的人。今天先不要继续责怪自己，就已经是在往外走了。</div></section>
+<section class="section video-box"><h2>本地视频预览</h2><video controls preload="metadata" poster="https://p9-pc-sign.douyinpic.com/obj/tos-cn-p-0015c000-ce/o4xABdFSrID9w5CAy89wfgETpLQk9RJEof06rB?lk3s=138a59ce&amp;x-expires=2093526000&amp;x-signature=9QWVrTJPZbCi%2B4fJXMxT%2FMSWihE%3D&amp;from=327834062&amp;s=PackSourceEnum_PUBLISH&amp;se=false&amp;sc=cover&amp;biz_tag=pcweb_cover&amp;l=2026050723075209ECC4841E59C763A43E" src="raw/7587350610175298865.mp4"></video><p class="section-lead">注意：本地页可播放；发布到 GitHub Pages 时不复制 raw mp4。</p></section>
+<section id="appendix" class="section"><h2>证据附录</h2><p class="section-lead">附录用于复核。ASR 是分析级，不是逐字引用级。</p><details><summary>metadata.json</summary><pre>[
+  {
+    &quot;recommend_count&quot;: 402,
+    &quot;comment_count&quot;: 244,
+    &quot;digg_count&quot;: 16301,
+    &quot;admire_count&quot;: 1,
+    &quot;share_count&quot;: 1124,
+    &quot;collect_count&quot;: 2881,
+    &quot;download_addr&quot;: &quot;https://www.douyin.com/aweme/v1/play/?video_id=v2800fgi0000d55qpc7og65sks0i1lv0&amp;line=0&amp;file_id=86b2391f952a47c7a0b0e92f74d779c5&amp;sign=38269fe08ab1a6445e41f18c2a55bb4a&amp;is_play_url=1&amp;source=PackSourceEnum_PUBLISH&quot;,
+    &quot;id&quot;: &quot;7587350610175298865&quot;,
+    &quot;time&quot;: 1766567756,
+    &quot;type&quot;: 0,
+    &quot;desc&quot;: &quot;知识年终盘点 我哭得不是那杯牛奶 #2025最有含金量的心理知识#情感 #girlstalk...&quot;,
+    &quot;duration&quot;: 264700,
+    &quot;music_title&quot;: &quot;@鹿冰冰创作的原声&quot;,
+    &quot;music_url&quot;: &quot;https://lf9-music-east.douyinstatic.com/obj/ies-music-hj/7587350735885519674.mp3&quot;,
+    &quot;cover&quot;: &quot;https://p9-pc-sign.douyinpic.com/obj/tos-cn-p-0015c000-ce/o4xABdFSrID9w5CAy89wfgETpLQk9RJEof06rB?lk3s=138a59ce&amp;x-expires=2093526000&amp;x-signature=9QWVrTJPZbCi%2B4fJXMxT%2FMSWihE%3D&amp;from=327834062&amp;s=PackSourceEnum_PUBLISH&amp;se=false&amp;sc=cover&amp;biz_tag=pcweb_cover&amp;l=2026050723075209ECC4841E59C763A43E&quot;,
+    &quot;author_avatar&quot;: &quot;https://p3-pc.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-avt-0015_b7493f5f504858775ca5b116c89eeae5.jpeg?from=327834062&quot;,
+    &quot;author_nickname&quot;: &quot;鹿冰冰&quot;,
+    &quot;author_uid&quot;: &quot;MS4wLjABAAAAwp-wmFzRnbjOGYKeR65KVT7di41nW6o578VxngbUBrCx1ra31bBLhO7VSVZtFdzZ&quot;,
+    &quot;author_unique_id&quot;: null,
+    &quot;author_short_id&quot;: null,
+    &quot;author_signature&quot;: &quot;无标题&quot;,
+    &quot;text_extra&quot;: [
+      {
+        &quot;tag_id&quot;: &quot;7580321870713473050&quot;,
+        &quot;tag_name&quot;: &quot;2025最有含金量的心理知识&quot;
+      },
+      {
+        &quot;tag_id&quot;: &quot;1572618705886286&quot;,
+        &quot;tag_name&quot;: &quot;情感&quot;
+      },
+      {
+        &quot;tag_id&quot;: &quot;1609208864413895&quot;,
+        &quot;tag_name&quot;: &quot;girlstalk&quot;
+      },
+      {
+        &quot;tag_id&quot;: &quot;1623463108251655&quot;,
+        &quot;tag_name&quot;: &quot;女性智慧&quot;
+      },
+      {
+        &quot;tag_id&quot;: &quot;1767586229303309&quot;,
+        &quot;tag_name&quot;: &quot;内容过于真实&quot;
+      }
+    ]
+  }
+]</pre></details><details><summary>完整转写 · analysis-grade</summary><pre>總之在寫稿子我突然間想到一個問題
+就是這個世界上根本沒有任何一個人為打翻的牛奶哭泣
+我去年參加了一個比賽
+沒啥 連初選都沒過
+我在和我朋友副盤這個事情的時候
+有時候我當時就感覺不順
+文檔總出問題
+PPT還老卡
+上去之後我發現話頭也不好使
+我在和我朋友說的時候
+他就說你別為打翻的牛奶哭泣
+我當時就感覺不對
+我好像不是為了這個牛奶在哭
+但是我被他的一句話
+就把所有的這個想法都堵回去了
+我在做第一份工作的時候有一次出差
+或者一個行李箱
+剛一下樓就被每天都過的那個台階裡半島了
+我就摔到雪坑裡了
+那次我就感覺心裡陰陰有種不安
+下了飛機之後
+身份證就丟了
+課上了十天
+一個學生都沒靠上
+通過率為零
+我當時煩死了
+我同事也是這麼跟我說的
+他說你停止不要為打翻牛奶哭泣了
+這句話有點太火了
+我無數次想要追究這種失敗之後的情緒的時候
+都被這句話劇中弱情的給打回來了
+我剛才坐在這想要寫一個特別重要的文告
+我打開筆彈花一下子
+筆全灑了
+筆 口紅
+主持人全部都嘩啦啦的散落一地
+我最近被這種不悅的細節影響了太多次了
+就在世道零頭發現自己沒帶U盤
+軟件不好使
+發現平時很容易搞定的事情
+現在要耽誤很多的時間
+就在筆彈灑的那一瞬間我就想完了
+這件事情我就做不好了
+我確實是從來都沒有為打翻的牛奶哭泣過
+我是從我把它放在桌眼的那個瞬間
+我就開始哭了
+在我心裡它早就翻了
+而且我總去晃動這個桌子試圖讓它翻
+等它真的翻了的時候
+我迫不及待的告大家
+我早就知道的
+我不行的
+所以真正讓我難受的
+其實是在我權力以赴的時候
+控制不住會被一些愚蠢的
+細小的自己的錯誤放大那種失敗的預感
+我就開始給自己寫失敗的腳本
+緊接著期待奇蹟發生
+最後奇蹟果然沒有發生的時候
+我就要去扮演命運的受害者
+你看我就知道的
+不行的
+沒有那麼幸運的
+我可以說這個世界上根本沒有任何一人
+它會被打發了的牛奶哭泣
+是因為這個牛奶從始至終
+甚至都不在它的杯中
+但是我明白了這種惡劣的自我推特之後
+我是怎麼做的呢
+我現在筆全都散在桌上亂七八糟的
+我不知道你們有沒有聽說過
+李爾克在秋日裡說
+誰沒有房子
+誰不必建造
+誰此時孤獨
+誰永生孤獨
+就是說你現在不安穩
+你就去接受這種不安穩
+你不要為了追求安穩
+慌亂的去拼湊東西
+起碼事情做好
+我想起來
+我再一次特別重要的面試前
+打開PPT發現
+PPT是空白的
+就是我不知道到底是版本錯誤
+還是說無法保存
+反正那一刻
+我對自己的自我厭氣
+簡直到達來頂點
+我用空白的PPT做完了
+自我介紹
+今天我拿到了兩張獎狀
+但是那次面試失敗了
+這篇稿子我也是全力去寫了
+收穫如何要過一段時間才能見分效
+我想說其實就這樣
+就是有時候能成
+有時候不能
+但是秋後算賬
+先解決問題
+再解決情緒
+只要讓我抓住一次成功
+我馬上回頭就去問那杯牛奶
+哦真的嗎
+那點看似不詳的小事
+到底代表了什麼呀
+我擅長給自己製作成功的案例
+就是告訴自己
+你看吧 沒事的
+一點小麻煩而已
+有時候
+但是有的時候牛奶
+也是真的翻了
+我能感覺到自己並不是很想
+總是責怪自己這種失誤
+因為我就是這種人
+我就是這種會獲多獲少
+在大事面前犯錯犯蠢的人
+所以我一直在擴大這張桌子
+這張桌子越大
+我的容錯率越高
+我有好幾次都感覺
+這次真的要完蛋了
+但是我靠自己長期積累下的這種
+行為慣事
+總能夠
+還是讓自己平穩落地了
+所以怎麼樣才能不把這個牛奶
+放在中眼邊恐嚇自己呢
+第一個就是桌子越小
+越愛搖晃
+牛奶就越愛大飯
+桌子越大容錯率就越高
+第二點就是不要自毀
+不要提前在心裡
+把你的牛奶大翻
+第三點就是
+為自己製作一個成功的愛麗
+只需要一次戰勝失敗的劇本
+就可以投入生產大肆使用
+第四個就是
+秋後算這樣
+心理解決問題
+再收拾情緒
+人生的路太篤窍了
+有的時候我們真的只是太緊張了
+緊張就難免出錯
+我想到這裡時候
+突然想到我們沒有什麼事事
+都必須要做特別完美的義務
+我今天拿到的獎狀是第二名
+和第三名
+我在拿到這個獎狀之後
+我男朋友就問
+那誰是第一名
+我是不管我的事
+我在這兩個比賽中
+也有一些看似不是很順利的瞬間
+我也是依靠怪事
+把這些事情都做完了
+沒拿到好成員
+我也沒有覺得特別的難受
+這可能是我下一個話題
+就是我不是不期待
+我是覺得我有義務做到標準
+先以上去換取認可
+但是我沒有義務做到最好
+就非要拿第一名
+我早早就發現一個問題
+就是越做到最好
+性價比就越低
+我說這句話
+其實是因為我最近這兩年
+總是被你不要為打翻的牛奶哭泣
+這句話可以讀得很煩
+今後如果有人再這麼跟你說
+你就可以告訴他
+我哭的不是牛奶
+我哭的是這張放牛奶的桌子
+太小驚不起搖晃
+這樣就能讓所有人都知道
+其實你的痛苦不在於想要端吻牛奶
+而是想要坐大桌子</pre></details><details><summary>评论分析状态</summary><pre># Comment Analysis - 7587350610175298865
+
+status: comment_content_not_available
+
+- Comment count: 244
+- Like count: 16,301
+- Share count: 1,124
+- Collect count: 2,881
+- Comment/Like ratio: 1.50%
+- Share/Like ratio: 6.90%
+- Collect/Like ratio: 17.67%
+
+## What Can Be Cautiously Inferred
+
+- High comment/share/collect ratios can indicate resonance, debate, saving, or forwarding behavior.
+- Without actual comment text, do not claim specific audience sentiment or high-frequency phrases.
+
+## What Is Missing
+
+- Top comments are not captured.
+- High-frequency comment themes are not captured.
+- Positive/negative/neutral口碑 cannot be verified from text yet.
+
+## Next Step If Needed
+
+- Ask Main/OCA to capture comments through the logged-in local/browser-safe path, then rerun comment analysis.
+</pre></details><details><summary>转写质量说明</summary><pre># Transcription Quality - 7587350610175298865
+
+- ASR model: faster-whisper small
+- Status: analysis-grade
+- Quote-grade: no
+- Known limitations: Chinese homophones, names, literary references, and short emotional pauses may require human/Doubao/large-v3 verification before exact quotation.
+- Use allowed: structure analysis, topic mining, draft production standards.
+- Use not allowed: final verbatim citation without review.
+</pre></details><h2 style="margin-top:24px">文件夹内容</h2><div class="artifacts"><a class="artifact" href="raw/"><b>raw</b><span>folder · 素材目录</span></a>
+<a class="artifact" href="comment-analysis.md"><b>comment-analysis.md</b><span>md · 0.8 KB</span></a>
+<a class="artifact" href="creator-reuse-brief.md"><b>creator-reuse-brief.md</b><span>md · 8.4 KB</span></a>
+<a class="artifact" href="learning-brief-v3.html"><b>learning-brief-v3.html</b><span>html · 32.9 KB</span></a>
+<a class="artifact" href="metadata.json"><b>metadata.json</b><span>json · 1.9 KB</span></a>
+<a class="artifact" href="process-log.json"><b>process-log.json</b><span>json · 1.2 KB</span></a>
+<a class="artifact" href="source-download.txt"><b>source-download.txt</b><span>txt · 0.3 KB</span></a>
+<a class="artifact" href="transcript-clean.md"><b>transcript-clean.md</b><span>md · 5.3 KB</span></a>
+<a class="artifact" href="transcript.asr.json"><b>transcript.asr.json</b><span>json · 18.0 KB</span></a>
+<a class="artifact" href="transcript.md"><b>transcript.md</b><span>md · 5.5 KB</span></a>
+<a class="artifact" href="transcription-quality.md"><b>transcription-quality.md</b><span>md · 0.4 KB</span></a></div></section>
+<div class="footer">AI-IP-Studio · 学结构，不偷人生 · V3 决策型学习页</div>
+</div>
+</body>
+</html>

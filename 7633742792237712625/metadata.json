@@ -1,0 +1,35 @@
+[
+  {
+    "recommend_count": 90,
+    "comment_count": 315,
+    "digg_count": 8094,
+    "admire_count": 0,
+    "share_count": 359,
+    "collect_count": 626,
+    "download_addr": "https://www.douyin.com/aweme/v1/play/?video_id=v2700fgi0000d7o7vjvog65l0igacbrg&line=0&file_id=46fd8dbb46c04f488889c6fe51ddc96f&sign=c5ac796a0eeef149b644398f02c85f7b&is_play_url=1&source=PackSourceEnum_PUBLISH",
+    "id": "7633742792237712625",
+    "time": 1777369249,
+    "type": 0,
+    "desc": "我童年伴随着三个困境 #girlstalk #女性智慧",
+    "duration": 157800,
+    "music_title": "@鹿冰冰创作的原声",
+    "music_url": "https://lf26-music-east.douyinstatic.com/obj/ies-music-hj/7633742795190176561.mp3",
+    "cover": "https://p9-pc-sign.douyinpic.com/obj/tos-cn-p-0015c000-ce/ocKHcefwYAAtGEXgFKUIAfM4gmgLQUWoPv8Eef?lk3s=138a59ce&x-expires=2093526000&x-signature=ecHn3jVGSrL602Gm9n8B7At67fY%3D&from=327834062&s=PackSourceEnum_PUBLISH&se=false&sc=cover&biz_tag=pcweb_cover&l=2026050723074996247118119C4348087F",
+    "author_avatar": "https://p3-pc.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-avt-0015_b7493f5f504858775ca5b116c89eeae5.jpeg?from=327834062",
+    "author_nickname": "鹿冰冰",
+    "author_uid": "MS4wLjABAAAAwp-wmFzRnbjOGYKeR65KVT7di41nW6o578VxngbUBrCx1ra31bBLhO7VSVZtFdzZ",
+    "author_unique_id": null,
+    "author_short_id": null,
+    "author_signature": "无标题",
+    "text_extra": [
+      {
+        "tag_id": "1609208864413895",
+        "tag_name": "girlstalk"
+      },
+      {
+        "tag_id": "1623463108251655",
+        "tag_name": "女性智慧"
+      }
+    ]
+  }
+]

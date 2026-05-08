@@ -1,0 +1,47 @@
+[
+  {
+    "recommend_count": 1497,
+    "comment_count": 1000,
+    "digg_count": 48905,
+    "admire_count": 2,
+    "share_count": 5414,
+    "collect_count": 6699,
+    "download_addr": "https://www.douyin.com/aweme/v1/play/?video_id=v1e00fgi0000d5mvhn7og65v8bp9qnq0&line=0&file_id=2979bc3412eb45f6ac1b653d579dc892&sign=52efe726644fc38ca7a6937211b9c91b&is_play_url=1&source=PackSourceEnum_PUBLISH",
+    "id": "7597003408528705393",
+    "time": 1768815194,
+    "type": 0,
+    "desc": "不要抽搐，挣扎 #girlstalk女性成长 #情感心理 #触及真心 #情感心理 #内容太过...",
+    "duration": 269676,
+    "music_title": "All the Loving Mothers",
+    "music_url": "",
+    "cover": "https://p3-pc-sign.douyinpic.com/obj/tos-cn-p-0015c000-ce/oEIDQ4PeflvIUXD25etlCDLGoC8GerATA69kbF?lk3s=138a59ce&x-expires=2093526000&x-signature=iiEXUbepcJikCTxgSOKsLcYGS3o%3D&from=327834062&s=PackSourceEnum_PUBLISH&se=false&sc=cover&biz_tag=pcweb_cover&l=2026050723075127833DA26A18BD502340",
+    "author_avatar": "https://p3-pc.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-avt-0015_b7493f5f504858775ca5b116c89eeae5.jpeg?from=327834062",
+    "author_nickname": "鹿冰冰",
+    "author_uid": "MS4wLjABAAAAwp-wmFzRnbjOGYKeR65KVT7di41nW6o578VxngbUBrCx1ra31bBLhO7VSVZtFdzZ",
+    "author_unique_id": null,
+    "author_short_id": null,
+    "author_signature": "无标题",
+    "text_extra": [
+      {
+        "tag_id": "1793037407782939",
+        "tag_name": "girlstalk女性成长"
+      },
+      {
+        "tag_id": "1596812651012110",
+        "tag_name": "情感心理"
+      },
+      {
+        "tag_id": "1620368293087236",
+        "tag_name": "触及真心"
+      },
+      {
+        "tag_id": "1596812651012110",
+        "tag_name": "情感心理"
+      },
+      {
+        "tag_id": "1612766556222477",
+        "tag_name": "内容太过真实"
+      }
+    ]
+  }
+]

@@ -1,0 +1,31 @@
+[
+  {
+    "recommend_count": 1749,
+    "comment_count": 12980,
+    "digg_count": 131618,
+    "admire_count": 0,
+    "share_count": 17156,
+    "collect_count": 3705,
+    "download_addr": "https://www.douyin.com/aweme/v1/play/?video_id=v2700fgi0000d77ocdnog65oo5q1e2f0&line=0&file_id=ed2f4f195d474dcab445f8ac1dd9f457&sign=161879c6d73625013516a83ebd6b6ecf&is_play_url=1&source=PackSourceEnum_PUBLISH",
+    "id": "7624460502748372345",
+    "time": 1775208047,
+    "type": 0,
+    "desc": "给穿搭圈的十条建议 #时尚",
+    "duration": 238734,
+    "music_title": "@鹿冰冰创作的原声",
+    "music_url": "https://lf26-music-east.douyinstatic.com/obj/ies-music-hj/7624460494455638841.mp3",
+    "cover": "https://p9-pc-sign.douyinpic.com/obj/tos-cn-p-0015c000-ce/owMBEEfEgwzmp2engIBY9uAORuE7FgAODxb4hP?lk3s=138a59ce&x-expires=2093526000&x-signature=UBOWHK5Ux1Fi8hl2Rde1fs3WyOI%3D&from=327834062&s=PackSourceEnum_PUBLISH&se=false&sc=cover&biz_tag=pcweb_cover&l=2026050723074996247118119C4348087F",
+    "author_avatar": "https://p3-pc.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-avt-0015_b7493f5f504858775ca5b116c89eeae5.jpeg?from=327834062",
+    "author_nickname": "鹿冰冰",
+    "author_uid": "MS4wLjABAAAAwp-wmFzRnbjOGYKeR65KVT7di41nW6o578VxngbUBrCx1ra31bBLhO7VSVZtFdzZ",
+    "author_unique_id": null,
+    "author_short_id": null,
+    "author_signature": "无标题",
+    "text_extra": [
+      {
+        "tag_id": "1562354857442306",
+        "tag_name": "时尚"
+      }
+    ]
+  }
+]

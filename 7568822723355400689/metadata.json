@@ -1,0 +1,47 @@
+[
+  {
+    "recommend_count": 51,
+    "comment_count": 210,
+    "digg_count": 7305,
+    "admire_count": 0,
+    "share_count": 281,
+    "collect_count": 773,
+    "download_addr": "https://www.douyin.com/aweme/v1/play/?video_id=v1e00fgi0000d44tin7og65ulk0suhbg&line=0&file_id=5788d929058d45da83bbbd97a620d370&sign=bd3e54c9e83335e778173857b1e27b87&is_play_url=1&source=PackSourceEnum_PUBLISH",
+    "id": "7568822723355400689",
+    "time": 1762253871,
+    "type": 0,
+    "desc": "关于穷 #正能量 #口播自媒体 #干货 #知识分享 #口播短视频上热门",
+    "duration": 172988,
+    "music_title": "@鹿冰冰创作的原声",
+    "music_url": "https://lf26-music-east.douyinstatic.com/obj/ies-music-hj/7568822743693986597.mp3",
+    "cover": "https://p9-pc-sign.douyinpic.com/obj/tos-cn-i-0813c000-ce/oQCIziPVaALMpBiEn7OnAoPhAAAwQJKc3cAiB?lk3s=138a59ce&x-expires=2093526000&x-signature=4t8zjkHr5sbTJ8ovbiPDO%2BIRplA%3D&from=327834062&s=PackSourceEnum_PUBLISH&se=false&sc=cover&biz_tag=pcweb_cover&l=20260507230753971570AF6C3CEE7392A9",
+    "author_avatar": "https://p3-pc.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-avt-0015_b7493f5f504858775ca5b116c89eeae5.jpeg?from=327834062",
+    "author_nickname": "鹿冰冰",
+    "author_uid": "MS4wLjABAAAAwp-wmFzRnbjOGYKeR65KVT7di41nW6o578VxngbUBrCx1ra31bBLhO7VSVZtFdzZ",
+    "author_unique_id": null,
+    "author_short_id": null,
+    "author_signature": "无标题",
+    "text_extra": [
+      {
+        "tag_id": "1767587349694472",
+        "tag_name": "正能量"
+      },
+      {
+        "tag_id": "1694108062637059",
+        "tag_name": "口播自媒体"
+      },
+      {
+        "tag_id": "1767586303335454",
+        "tag_name": "干货"
+      },
+      {
+        "tag_id": "1767587197766734",
+        "tag_name": "知识分享"
+      },
+      {
+        "tag_id": "1711849967089672",
+        "tag_name": "口播短视频上热门"
+      }
+    ]
+  }
+]
