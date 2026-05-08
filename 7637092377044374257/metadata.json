@@ -1,0 +1,39 @@
+[
+  {
+    "recommend_count": 168,
+    "comment_count": 436,
+    "digg_count": 10657,
+    "admire_count": 0,
+    "share_count": 1107,
+    "collect_count": 989,
+    "download_addr": "https://www.douyin.com/aweme/v1/play/?video_id=v2700fgi0000d7u6dfvog65od6flv2k0&line=0&file_id=a9f8428bc7574a9ea957b6b814541faf&sign=3c7c30dd03a2ca0f4e86a4e0793beab4&is_play_url=1&source=PackSourceEnum_PUBLISH",
+    "id": "7637092377044374257",
+    "time": 1778149135,
+    "type": 0,
+    "desc": "我人生第一个好包 #girlstalk #女性智慧 #包包分享",
+    "duration": 249234,
+    "music_title": "@鹿冰冰创作的原声",
+    "music_url": "https://lf26-music-east.douyinstatic.com/obj/ies-music-hj/7637092389068426033.mp3",
+    "cover": "https://p9-pc-sign.douyinpic.com/obj/tos-cn-i-0813c000-ce/oEhDTebcfQAMdA5zN0z44eArIAIR6KGHnIf2AL?lk3s=138a59ce&x-expires=2093526000&x-signature=BfSIC7R6tXMbMwpXMYR6QSGhU2Q%3D&from=327834062&s=PackSourceEnum_PUBLISH&se=false&sc=cover&biz_tag=pcweb_cover&l=2026050723074996247118119C4348087F",
+    "author_avatar": "https://p3-pc.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-avt-0015_b7493f5f504858775ca5b116c89eeae5.jpeg?from=327834062",
+    "author_nickname": "鹿冰冰",
+    "author_uid": "MS4wLjABAAAAwp-wmFzRnbjOGYKeR65KVT7di41nW6o578VxngbUBrCx1ra31bBLhO7VSVZtFdzZ",
+    "author_unique_id": null,
+    "author_short_id": null,
+    "author_signature": "无标题",
+    "text_extra": [
+      {
+        "tag_id": "1609208864413895",
+        "tag_name": "girlstalk"
+      },
+      {
+        "tag_id": "1623463108251655",
+        "tag_name": "女性智慧"
+      },
+      {
+        "tag_id": "1619114570141700",
+        "tag_name": "包包分享"
+      }
+    ]
+  }
+]

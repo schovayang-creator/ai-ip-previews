@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>视频学习快览 · 7637092377044374257</title>
+<style>
+:root {
+  --paper:#f6efe4; --paper2:#fffaf1; --ink:#201815; --muted:#75675d;
+  --red:#b43e26; --red2:#e45f3a; --green:#1f6558; --green2:#87a985;
+  --line:#dbc6b5; --gold:#c9933f; --shadow:0 24px 70px rgba(54,32,16,.13);
+  --radius:26px; --sans:"Hiragino Sans GB","Avenir Next","PingFang SC",sans-serif;
+  --serif:"Songti SC","Kaiti SC","Hiragino Mincho ProN",serif; --num:"DIN Alternate","Avenir Next Condensed",var(--sans);
+}
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { margin:0; color:var(--ink); font-family:var(--sans); background:
+  radial-gradient(circle at 7% 4%, rgba(180,62,38,.13), transparent 28%),
+  radial-gradient(circle at 92% 18%, rgba(31,101,88,.13), transparent 30%),
+  linear-gradient(135deg,#efe2d3 0%, var(--paper) 42%, #f8f1e8 100%); }
+a { color:inherit; }
+.page { width:min(1180px, 100%); margin:0 auto; padding:28px 24px 64px; }
+.nav { position:sticky; top:0; z-index:5; margin:-28px -24px 22px; padding:12px 24px; backdrop-filter: blur(14px); background:rgba(246,239,228,.82); border-bottom:1px solid rgba(219,198,181,.75); display:flex; gap:12px; overflow:auto; }
+.nav a { text-decoration:none; white-space:nowrap; font-size:13px; color:var(--muted); padding:8px 12px; border:1px solid var(--line); border-radius:999px; background:rgba(255,250,241,.65); }
+.hero { display:grid; grid-template-columns: 390px 1fr; gap:26px; align-items:stretch; }
+.cover-card { position:relative; padding:16px; border-radius:34px; background:linear-gradient(155deg,#33231e,#7f3829 48%,#e7bd83); box-shadow:var(--shadow); min-height:620px; overflow:hidden; }
+.cover-card:before { content:""; position:absolute; inset:12px; border:1px solid rgba(255,255,255,.36); border-radius:28px; pointer-events:none; }
+.cover-card img { width:100%; height:520px; object-fit:cover; border-radius:24px; display:block; box-shadow:0 18px 45px rgba(0,0,0,.28); }
+.cover-note { color:#fff6ea; padding:15px 4px 0; }
+.eyebrow { font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:rgba(255,246,234,.72); }
+.cover-note h2 { margin:6px 0 8px; font-family:var(--serif); font-size:26px; line-height:1.08; }
+.cover-note p { margin:0; font-size:14px; line-height:1.65; color:rgba(255,246,234,.88); }
+.hero-main { display:flex; flex-direction:column; gap:18px; }
+.title-card { background:rgba(255,250,241,.86); border:1px solid var(--line); border-radius:34px; padding:28px; box-shadow:var(--shadow); position:relative; overflow:hidden; }
+.title-card:after { content:""; position:absolute; width:230px; height:230px; border-radius:50%; right:-95px; top:-95px; background:radial-gradient(circle, rgba(180,62,38,.18), transparent 70%); }
+.kicker { color:var(--red); font-weight:800; letter-spacing:.08em; font-size:13px; }
+h1 { margin:10px 0 12px; font-family:var(--serif); font-weight:900; font-size:48px; line-height:1.06; letter-spacing:-.04em; max-width:780px; }
+.subtitle { color:var(--muted); line-height:1.75; max-width:760px; }
+.actions { display:flex; flex-wrap:wrap; gap:10px; margin-top:18px; }
+.btn { text-decoration:none; padding:11px 14px; border-radius:999px; border:1px solid var(--line); background:#fffaf1; font-weight:800; font-size:14px; }
+.btn.primary { background:var(--ink); color:#fffaf1; border-color:var(--ink); }
+.meta-grid { display:grid; grid-template-columns:repeat(6,1fr); gap:12px; }
+.metric { grid-column:span 2; background:rgba(255,250,241,.78); border:1px solid var(--line); border-radius:22px; padding:18px; min-height:112px; box-shadow:0 12px 32px rgba(54,32,16,.07); }
+.metric strong { display:block; font-family:var(--num); font-size:34px; line-height:1; letter-spacing:-.04em; }
+.metric span { display:block; color:var(--muted); font-size:13px; margin-top:8px; }
+.metric em { display:inline-block; margin-top:10px; color:var(--green); font-style:normal; font-size:12px; font-weight:900; }
+.section { margin-top:24px; background:rgba(255,250,241,.82); border:1px solid var(--line); border-radius:34px; padding:26px; box-shadow:0 16px 48px rgba(54,32,16,.08); }
+.section h2 { margin:0 0 16px; font-family:var(--serif); font-size:30px; letter-spacing:-.03em; }
+.section-lead { color:var(--muted); line-height:1.8; margin-top:-6px; }
+.digest { display:grid; grid-template-columns:1.1fr .9fr; gap:18px; }
+.big-quote { border-left:6px solid var(--red); background:#fff6e8; border-radius:0 22px 22px 0; padding:20px 22px; font-size:20px; line-height:1.72; font-family:var(--serif); font-weight:800; }
+.quick-list { display:grid; gap:10px; }
+.quick-list div { padding:14px 16px; border:1px solid var(--line); border-radius:18px; background:#fffaf1; line-height:1.55; }
+.quick-list b { color:var(--red); }
+.two-col { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+.cards { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
+.card { border:1px solid var(--line); border-radius:22px; padding:16px; background:#fffaf1; line-height:1.65; }
+.card b { color:var(--red); }
+.card.good b { color:var(--green); }
+.timeline { display:grid; gap:12px; position:relative; }
+.step { display:grid; grid-template-columns:70px 1fr; gap:14px; align-items:start; padding:14px; border-radius:20px; background:#fffaf1; border:1px solid var(--line); }
+.step code { display:grid; place-items:center; width:54px; height:54px; border-radius:18px; background:var(--ink); color:#fffaf1; font-family:var(--num); font-size:19px; }
+.step b { display:block; color:var(--red); margin-bottom:5px; }
+.hex-wrap { display:grid; grid-template-columns:repeat(3,1fr); grid-template-rows:auto auto auto; gap:12px; align-items:stretch; }
+.hex-point { min-height:126px; padding:14px; border-radius:22px; border:1px solid var(--line); background:linear-gradient(180deg,#fffaf1,#f9ead7); display:flex; flex-direction:column; justify-content:space-between; }
+.hex-point h3 { margin:0; font-size:15px; color:var(--red); }
+.hex-point p { margin:8px 0; font-size:13px; color:var(--muted); line-height:1.55; }
+.score { height:9px; border-radius:999px; background:#ead8c8; overflow:hidden; }
+.score i { display:block; height:100%; border-radius:inherit; background:linear-gradient(90deg,var(--red2),var(--gold)); }
+.hex-center { grid-column:2; grid-row:2; border-radius:50%; aspect-ratio:1/1; display:grid; place-items:center; text-align:center; padding:18px; background:radial-gradient(circle,#fffaf1 0 58%,#efe0cf 59%); border:1px solid var(--line); box-shadow:inset 0 0 0 10px rgba(180,62,38,.06); }
+.hex-center strong { font-family:var(--serif); font-size:30px; color:var(--red); }
+.hex-center span { display:block; margin-top:6px; color:var(--muted); line-height:1.4; }
+.scale-table { width:100%; border-collapse:separate; border-spacing:0 8px; }
+.scale-table td,.scale-table th { text-align:left; padding:10px 12px; background:#fffaf1; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+.scale-table th { color:var(--muted); font-size:12px; }
+.scale-table td:first-child,.scale-table th:first-child { border-left:1px solid var(--line); border-radius:14px 0 0 14px; color:var(--red); font-weight:900; }
+.scale-table td:last-child,.scale-table th:last-child { border-right:1px solid var(--line); border-radius:0 14px 14px 0; }
+.video-box video { width:100%; max-height:560px; border-radius:24px; background:#111; box-shadow:var(--shadow); }
+.comment-panel { border:1px dashed rgba(180,62,38,.45); border-radius:24px; padding:18px; background:#fff6e8; }
+.empty-comments { display:grid; gap:8px; color:var(--muted); line-height:1.7; }
+.empty-comments b { color:var(--red); font-size:18px; }
+.comment-list { margin:0; padding-left:24px; }
+.comment-list li { margin:10px 0; line-height:1.6; }
+.comment-list b { color:var(--red); margin-right:8px; }
+.comment-list em { color:var(--muted); font-style:normal; margin-left:8px; font-size:12px; }
+.transcript { white-space:pre-wrap; max-height:none; padding:20px; background:#211915; color:#fff6ea; border-radius:24px; line-height:1.9; font-size:15px; }
+.artifacts { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; }
+.artifact { text-decoration:none; padding:13px; border:1px solid var(--line); border-radius:16px; background:#fffaf1; display:grid; gap:6px; min-height:76px; }
+.artifact strong { font-size:13px; word-break:break-all; }
+.artifact span { color:var(--muted); font-size:12px; }
+details { border:1px solid var(--line); border-radius:18px; background:#fffaf1; margin-top:10px; overflow:hidden; }
+summary { cursor:pointer; padding:14px 16px; font-weight:900; color:var(--red); }
+pre { margin:0; padding:16px; overflow:auto; white-space:pre-wrap; background:#211915; color:#fff6ea; line-height:1.65; font-size:12px; }
+.footer { color:var(--muted); text-align:center; margin-top:28px; font-size:13px; }
+@media (max-width:900px) {
+  .page { padding:18px 14px 44px; } .nav { margin:-18px -14px 16px; padding:10px 14px; }
+  .hero,.digest,.two-col { grid-template-columns:1fr; } .cover-card { min-height:0; } .cover-card img { height:auto; max-height:520px; }
+  h1 { font-size:35px; } .meta-grid { grid-template-columns:repeat(2,1fr); } .metric { grid-column:span 1; padding:14px; } .metric strong { font-size:28px; }
+  .cards,.artifacts { grid-template-columns:1fr; } .hex-wrap { grid-template-columns:1fr; } .hex-center { grid-column:auto; grid-row:auto; border-radius:24px; aspect-ratio:auto; }
+}
+@media print {
+  body { background:#fff; } .page { width:100%; padding:0; } .nav,.actions,.video-box { display:none; } .section,.title-card,.cover-card,.metric { box-shadow:none; }
+}
+</style>
+</head>
+<body>
+<div class="page">
+  <nav class="nav">
+    <a href="#top">封面与摘要</a><a href="#data">数据</a><a href="#star">六芒星</a><a href="#structure">结构</a><a href="#comments">评论</a><a href="#transcript">完整转写</a><a href="#artifacts">文件夹内容</a>
+  </nav>
+  <main id="top" class="hero">
+    <aside class="cover-card">
+      <img src="cover.jpg" alt="视频封面">
+      <div class="cover-note">
+        <div class="eyebrow">Cover Reading</div>
+        <h2>封面用“大字 + 人物 + 物件”先把主题钉住</h2>
+        <p>优点是第一眼明确：人、包、情绪词都有；风险是粉色大字很强，适合原账号，不一定适合我方创作者气质。</p>
+      </div>
+    </aside>
+    <section class="hero-main">
+      <div class="title-card">
+        <div class="kicker">视频学习页 · 7637092377044374257</div>
+        <h1>不是包包开箱，是一次把“想要”讲清楚的自我和解</h1>
+        <p class="subtitle">我人生第一个好包 #girlstalk #女性智慧 #包包分享｜作者：鹿冰冰｜发布时间：2026-05-07 18:18:55｜时长：249 秒。这个 HTML 是给创作者看的学习页：保留数据、封面、结构、风险、转写和本地文件证据。</p>
+        <div class="actions">
+          <a class="btn primary" href="https://www.douyin.com/video/7637092377044374257" target="_blank" rel="noreferrer">打开抖音原链接</a>
+          <a class="btn" href="metadata.json">metadata.json</a>
+          <a class="btn" href="transcript-clean.md">transcript-clean.md</a>
+          <a class="btn" href="comment-analysis.md">comment-analysis.md</a>
+        </div>
+      </div>
+      <div id="data" class="meta-grid">
+        <div class="metric"><strong>10,657</strong><span>点赞</span><em>认可 / 共鸣</em></div>
+        <div class="metric"><strong>1,107</strong><span>分享</span><em>10.4% 分享/赞</em></div>
+        <div class="metric"><strong>989</strong><span>收藏</span><em>9.3% 收藏/赞</em></div>
+        <div class="metric"><strong>436</strong><span>评论数</span><em>4.1% 评论/赞</em></div>
+        <div class="metric"><strong>4.2min</strong><span>视频长度</span><em>长叙事</em></div>
+        <div class="metric"><strong>无</strong><span>评论明细</span><em>待补抓</em></div>
+      </div>
+    </section>
+  </main>
+
+  <section class="section">
+    <h2>一页先读懂</h2>
+    <div class="digest">
+      <div class="big-quote">表面是买了一个有点贵的包，真正讲的是：一个曾经因物质匮乏而窘迫的人，如何不否认自己的来处，也不再羞耻于偶尔承认“我也想要”。</div>
+      <div class="quick-list">
+        <div><b>学习对象：</b>结构、情绪推进、物件入口、数据表现。</div>
+        <div><b>不能复制：</b>农村出身、品牌记忆、广告量、两只包、原句和例子顺序。</div>
+        <div><b>给新手的结论：</b>可学，但要压缩成 60-90 秒，用自己的物件和自己的来处。</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>成功 / 失败点评</h2>
+    <div class="cards">
+      <div class="card good"><b>成功 01 · 物件先行</b><br>从“赶高铁前拆包”进入，先有现场和物件，再进入观点，观众不需要先听大道理。</div>
+      <div class="card good"><b>成功 02 · 矛盾具体</b><br>“贵但不奢侈”“开心但克制”，让消费话题不显得炫耀，而像一次真实欲望的承认。</div>
+      <div class="card good"><b>成功 03 · 伤口作证</b><br>旧包、大学品牌无知、物质窘迫，让观点不是口号，而是有生活证据。</div>
+      <div class="card"><b>失败风险 01 · 太长</b><br>4 分 09 秒需要强叙事控制。新手如果没有足够细节，很容易从深刻变成散。</div>
+      <div class="card"><b>失败风险 02 · 太私人</b><br>这个视频最强的部分恰恰最不能复制，直接移植会失真。</div>
+      <div class="card"><b>失败风险 03 · 阶层表达</b><br>讲穷、消费、羞耻时，不能变成审判别人、卖惨或包装优越感。</div>
+    </div>
+  </section>
+
+  <section id="star" class="section">
+    <h2>六芒星评价：学习价值，不替代内容标尺</h2>
+    <p class="section-lead">这不是外部评分公式，只是把创作者最容易看懂的 6 个学习点做成展示组件；正式判断仍以项目内容标尺为准。</p>
+    <div class="two-col">
+      <div class="hex-wrap">
+        <div class="hex-point"><h3>开场入口 5/5</h3><p>赶高铁 + 新包，场景和物件同时出现。</p><div class="score"><i style="width:100%"></i></div></div>
+        <div class="hex-point"><h3>具体证据 5/5</h3><p>两只包、购买过程、旧记忆都能支撑观点。</p><div class="score"><i style="width:100%"></i></div></div>
+        <div class="hex-point"><h3>情绪转弯 5/5</h3><p>从开心购物转到来处、羞耻、金钱观。</p><div class="score"><i style="width:100%"></i></div></div>
+        <div class="hex-center"><div><strong>高价值</strong><span>适合作为结构样本<br>不适合作为脚本源</span></div></div>
+        <div class="hex-point"><h3>传播动机 4/5</h3><p>分享/赞 10.4%，收藏/赞 9.3%，转发和留存都强。</p><div class="score"><i style="width:80%"></i></div></div>
+        <div class="hex-point"><h3>迁移难度 2/5</h3><p>个人经历太重，必须换成自己的物件和记忆。</p><div class="score"><i style="width:40%"></i></div></div>
+        <div class="hex-point"><h3>风险控制 3/5</h3><p>阶层/消费表达容易跑偏，需要温和精准。</p><div class="score"><i style="width:60%"></i></div></div>
+      </div>
+      <div>
+        <table class="scale-table">
+          <tr><th>维度</th><th>分</th><th>理由</th></tr>
+          <tr><td>HF</td><td>3</td><td>开场有现场和物件张力。</td></tr>
+          <tr><td>PF</td><td>1</td><td>对我方创作者不能直接迁移。</td></tr>
+          <tr><td>OA</td><td>3</td><td>从包转到来处与金钱观。</td></tr>
+          <tr><td>AV</td><td>3</td><td>给观众尊严化解释。</td></tr>
+          <tr><td>CE</td><td>3</td><td>两只包和旧记忆作证。</td></tr>
+          <tr><td>SF</td><td>2</td><td>画面简单，但长叙事难。</td></tr>
+          <tr><td>CR</td><td>2</td><td>能讨论，也需避开审判。</td></tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="structure" class="section">
+    <h2>内容结构：4分钟里真正发生了什么</h2>
+    <div class="timeline">
+      <div class="step"><code>01</code><div><b>现场钩子</b>马上要赶高铁，先拆新包。观众先进入一个具体生活瞬间。</div></div>
+      <div class="step"><code>02</code><div><b>欲望承认</b>这是少见的、不是极致性价比的消费；“想要”被摆出来。</div></div>
+      <div class="step"><code>03</code><div><b>外部触发</b>另一个女性的包和人生故事，让这个物件变得有意义。</div></div>
+      <div class="step"><code>04</code><div><b>旧伤浮现</b>旧书包和大学时不认识品牌的记忆，把阶层羞耻引入。</div></div>
+      <div class="step"><code>05</code><div><b>核心判断</b>穷不是问题；如何对待无法选择的身世，决定了表达的美丑。</div></div>
+      <div class="step"><code>06</code><div><b>价值闭环</b>真实克制的消费观，成为账号信任的一部分。</div></div>
+      <div class="step"><code>07</code><div><b>回到日常</b>收束到赶高铁，避免停在抽象口号里。</div></div>
+    </div>
+  </section>
+
+  <section class="section video-box">
+    <h2>本地视频预览</h2>
+    <p class="section-lead">如果本地 raw 视频存在，可以直接在 HTML 里回看；否则用上方抖音链接打开。</p>
+    <video controls preload="metadata" poster="cover.jpg" src="raw/7637092377044374257.mp4"></video>
+  </section>
+
+  <section id="comments" class="section">
+    <h2>评论区：这里现在是缺口，不是结论</h2>
+    <div class="comment-panel">
+      
+    <div class="empty-comments">
+      <b>当前没有评论明细</b>
+      <span>本地表只有 comment_count，没有高赞评论文本、点赞数、回复链和高频词。不能伪造观众原话。</span>
+      <span>建议后续补抓：comments.json / comments.md / top-comment-screenshots。</span>
+    </div>
+    
+    </div>
+    <p class="section-lead">当前可以谨慎说：评论/赞 4.1%、分享/赞 10.4%、收藏/赞 9.3%，说明它可能同时有讨论、转发和保存价值。但没有评论文本时，不能说“观众都在说什么”。</p>
+  </section>
+
+  <section class="section">
+    <h2>创作者如何安全迁移</h2>
+    <div class="cards">
+      <div class="card good"><b>第一步</b><br>找一件自己真的在意、但又差点审判自己的东西。</div>
+      <div class="card good"><b>第二步</b><br>问：它暴露了我的哪个羞耻、欲望、比较、来处或缺口？</div>
+      <div class="card good"><b>第三步</b><br>先讲具体场景，再讲情绪，再给重新理解，不要一上来总结人生。</div>
+      <div class="card"><b>改写公式</b><br>我在意的一件东西 -> 我差点因为想要它而审判自己 -> 它保护着过去哪个版本的我 -> 我现在如何重新理解自己 -> 给观众一个温柔许可。</div>
+      <div class="card"><b>不要复制</b><br>不要复制原句、原故事、例子顺序、农村出身、品牌记忆或广告背书。</div>
+      <div class="card"><b>新手建议</b><br>冷启动先做 60-90 秒，先跑通“物件 + 真实场景 + 一个转弯”。</div>
+    </div>
+  </section>
+
+  <section id="transcript" class="section">
+    <h2>完整转文字内容</h2>
+    <p class="section-lead">ASR 分析级，可用于结构分析和选题挖掘；不要直接逐字引用。</p>
+    <div class="transcript">我马上要出发去赶高铁参加我朋友的婚礼
+但是我想背我的新包
+所以说我就把我的包拆开给大家看一下
+这是我人生中买的第一个有点贵的包
+但是它也没有多贵是800多块钱
+这个内档可以完完全全的放进去
+然后还给它买了个配件
+上次开箱的时候其实露出了
+这个配件是100多
+可以把它挂在拉链上
+这个是龙箱的拖特包
+因为考虑到我要通行
+所以我买了纸张白
+我之所以买它是因为我没有特别昂贵的拖特包
+我觉得我需要一个性价比稍微低一点的包
+因为我平时买东西性价比有点太高了
+那天我刷视频的时候看到了夜深的采访
+不知道大家知不知道夜深
+就是他人生中曾经经历过两次失败的婚姻
+在第二次婚姻失败的时候
+他几乎失去了自己的一切
+背景离向的在美国
+50岁的时候靠去了自己的护士执照
+他把自己第一次潜伏出轨的时候的
+那个小女生叫做小朋友
+我就突然间感觉我很沉迷于他
+所以我就摸索着去了他别的平台的账号
+发现他最近在分享自己的动态
+说自己深思熟悉地买了一个茶粉色的Long Champ的包
+我不知道是什么包
+然后就去搜了一下
+我发现他叫Long Champ
+然后在中国也能买到
+我就900多买了一个
+这个不是广告
+我肯定是思索有用了一下的
+那天晚上我是先退出去冷静了一下
+过了一会之后我发现我还是有点想要
+所以我就又点回去
+把它给买了
+他买茶粉色的包是因为他要配自己的护士服务
+我要配我自己平时的通信风格
+所以我就买了纸张白
+其实我是非常满意的
+到了之后我就想给大家出一个视频
+我就没拆这个快递
+但是我每次路过这个快递的时候
+我心里都会稍微的轻易地跳动一下
+我还为他做了很多的准备
+给他买了一个内胆
+还买了一些配饰
+甚至还为他卸了一个稿子
+接下来我要背着他
+去参加五一我两个朋友的婚礼
+他要陪我度过我人生中很长一段的时间
+其实我这么满意的购物真的很少
+除此之外我还有一个包
+我也非常的喜欢
+就是这个北几湖的树包
+他已经被我装满了
+也是陪了我很长很长的时间
+一会我也会背着他去干高铁
+我这个包买的时候
+是因为大一开学那年
+当时有几个大二的男生当我们班的道员
+在军训的时候
+我在操场上想请假
+但是我找不到导员了
+我就随即抓住了一个男生
+我问导员在哪里
+然后他就给我指了一个男生
+那个密集的人群中
+他说
+其中那个穿着万思的男生是我们的导员
+我当时就直接问他
+我说什么叫万思
+我真不知道
+我不是没有羞耻心
+我是真的不知道
+那个时候我就实际上太无知了
+我不知道万思这个事情
+是一件很奇怪的事
+当年爸爸去哪儿
+很火
+留月的儿子背了一个北几湖的树包
+然后我搜了价格之后退去了
+几年之后我毕业了
+还是觉得自己需要一个树包去装电脑
+然后我就果断买了这个树包
+我为此开心了很长时间
+哪怕是看到他就觉得很开心
+也为他买了很多的挂件
+恨不得一天换一个
+我本来录这个视频
+其实真的就是很单纯的想给大家分享
+我人生中很喜悦的两次购物
+然后我说一说的发现其实都是包
+而且是那种性价比没有那么高的包
+和我平时很不像的那种购物
+我觉得这个好像和消费主义无关
+是因为
+我其实是一个很有自己的消费官
+也不太爱消费的人
+身边的人甚至会觉得
+我有一点太抠门了
+但是我最快乐的消费
+竟然是我秩序外的那一瞬间
+在理智成天很久之后的那个头脑移热
+然后我突然想到很多人说
+你不要当很有穷二的博主
+还有很多人分享说是你要远离
+有穷相的人
+不要和这种人做朋友来往
+太密切
+我其实赚了一些钱了
+我是农村的孩子
+是真正的农村的那种大山里的孩子
+你否认穷
+我觉得就是否认了我的全部
+我的立志
+我的幸运与不幸
+我不知道大家现在对于穷的这种
+底处到底是来自于哪里
+我就是不是很喜欢把自己装的
+从小都很阔着
+我很享受
+就是说曾经穷过
+现在还能用自己的双手
+创造一切的这种感觉
+在人生的所有路径中
+我觉得这是最美好的
+我觉得最爽的一种路界
+就是白手即假
+后来无数次
+我在直面子已窘迫的时候
+我都在找大衣那天在操场上
+对着对方说
+我不认识万死的那个瞬间的感觉
+我觉得穷不是问题
+问题是你如何对待这种
+无法选择的
+身世
+你迎染的姿态
+他决定了没丑
+其实你的窘迫
+所有人都看得出来
+这句话其实很残忍
+但是你要接受这种残忍
+简单来说
+我上个月的广告
+其实非常的多
+后台每天找我的人
+都有几十个
+在三四月份的时候
+就已经把整个上半年的
+党旗都集满了
+我觉得市场相对来说
+认可我这种消费馆
+是因为我的截至和克制
+是因为我真实的接受
+自己的全部的消费馆
+变成了自己的消费馆的完全体
+各自的人的偶尔的冲动消费
+是更罕见的
+更动容的
+真实的金钱馆和消费馆
+就是更加的执棄人心
+所以说无论怎么样
+我以后还是会保持
+我这样的消费馆
+就这样
+拜拜
+我去赶高铁了</div>
+  </section>
+
+  <section id="artifacts" class="section">
+    <h2>这个视频文件夹里的内容</h2>
+    <div class="artifacts"><a class="artifact" href="raw/"><strong>raw</strong><span>folder · 素材目录</span></a><a class="artifact" href="comment-analysis.md"><strong>comment-analysis.md</strong><span>md · 0.8 KB</span></a><a class="artifact" href="cover.jpg"><strong>cover.jpg</strong><span>jpg · 243.6 KB</span></a><a class="artifact" href="learning-brief.md"><strong>learning-brief.md</strong><span>md · 4.0 KB</span></a><a class="artifact" href="learning-brief.pdf"><strong>learning-brief.pdf</strong><span>pdf · 121.1 KB</span></a><a class="artifact" href="learning-brief.png"><strong>learning-brief.png</strong><span>png · 415.0 KB</span></a><a class="artifact" href="learning-brief.tex"><strong>learning-brief.tex</strong><span>tex · 6.7 KB</span></a><a class="artifact" href="metadata.json"><strong>metadata.json</strong><span>json · 1.7 KB</span></a><a class="artifact" href="process-log.json"><strong>process-log.json</strong><span>json · 1.2 KB</span></a><a class="artifact" href="source-download.txt"><strong>source-download.txt</strong><span>txt · 0.3 KB</span></a><a class="artifact" href="transcript-clean.md"><strong>transcript-clean.md</strong><span>md · 5.3 KB</span></a><a class="artifact" href="transcript.asr.json"><strong>transcript.asr.json</strong><span>json · 17.5 KB</span></a><a class="artifact" href="transcript.md"><strong>transcript.md</strong><span>md · 5.4 KB</span></a><a class="artifact" href="transcription-quality.md"><strong>transcription-quality.md</strong><span>md · 0.4 KB</span></a></div>
+    <h2 style="margin-top:26px">原始记录 / 其他分析</h2>
+    <details><summary>comment-analysis.md</summary><pre># Comment Analysis - 7637092377044374257
+
+status: comment_content_not_available
+
+- Comment count: 436
+- Like count: 10,657
+- Share count: 1,107
+- Collect count: 989
+- Comment/Like ratio: 4.09%
+- Share/Like ratio: 10.39%
+- Collect/Like ratio: 9.28%
+
+## What Can Be Cautiously Inferred
+
+- High comment/share/collect ratios can indicate resonance, debate, saving, or forwarding behavior.
+- Without actual comment text, do not claim specific audience sentiment or high-frequency phrases.
+
+## What Is Missing
+
+- Top comments are not captured.
+- High-frequency comment themes are not captured.
+- Positive/negative/neutral口碑 cannot be verified from text yet.
+
+## Next Step If Needed
+
+- Ask Main/OCA to capture comments through the logged-in local/browser-safe path, then rerun comment analysis.
+</pre></details><details><summary>transcription-quality.md</summary><pre># Transcription Quality - 7637092377044374257
+
+- ASR model: faster-whisper small
+- Status: analysis-grade
+- Quote-grade: no
+- Known limitations: Chinese homophones, names, literary references, and short emotional pauses may require human/Doubao/large-v3 verification before exact quotation.
+- Use allowed: structure analysis, topic mining, draft production standards.
+- Use not allowed: final verbatim citation without review.
+</pre></details><details><summary>source-download.txt</summary><pre>https://www.douyin.com/aweme/v1/play/?video_id=v2700fgi0000d7u6dfvog65od6flv2k0&amp;line=0&amp;file_id=a9f8428bc7574a9ea957b6b814541faf&amp;sign=3c7c30dd03a2ca0f4e86a4e0793beab4&amp;is_play_url=1&amp;source=PackSourceEnum_PUBLISH
+ dir=/Users/yang/Desktop/AI-IP-Studio/accounts/douyin/42470269203/videos/7637092377044374257/raw
+ out=7637092377044374257.mp4
+</pre></details><details><summary>process-log.json</summary><pre>[
+  {
+    &quot;step&quot;: &quot;metadata_detail_capture&quot;,
+    &quot;seconds&quot;: 0.0,
+    &quot;status&quot;: &quot;skipped&quot;,
+    &quot;note&quot;: &quot;download_addr already in metadata&quot;
+  },
+  {
+    &quot;step&quot;: &quot;source_url_prepare&quot;,
+    &quot;seconds&quot;: 0.0,
+    &quot;status&quot;: &quot;ok&quot;,
+    &quot;note&quot;: &quot;url captured&quot;
+  },
+  {
+    &quot;step&quot;: &quot;video_download&quot;,
+    &quot;seconds&quot;: 33.24,
+    &quot;status&quot;: &quot;ok&quot;,
+    &quot;note&quot;: &quot;size=48502164; duration=249.2s; expected=249.2s; decode_ok=True; size_ok=True; 629k\n 86 46.2M   86 39.9M    0     0  1403k      0  0:00:33  0:00:29  0:00:04  725k\n 89 46.2M   89 41.2M    0     0  1402k      0  0:00:33  0:00:30  0:00:03  987k\n 92 46.2M   92 42.8M    0     0  1410k      0  0:00:33  0:00:31  0:00:02 1362k\n 96 46.2M   96 44.7M    0     0  1425k      0  0:00:33  0:00:32  0:00:01 1543k\n100 46.2M  100 46.2M    0     0  1433k      0  0:00:33  0:00:33 --:--:-- 1625k\n&quot;
+  },
+  {
+    &quot;step&quot;: &quot;audio_extract&quot;,
+    &quot;seconds&quot;: 0.29,
+    &quot;status&quot;: &quot;ok&quot;,
+    &quot;note&quot;: &quot;size=7973716; duration=249.2s; expected=249.2s&quot;
+  },
+  {
+    &quot;step&quot;: &quot;asr_transcribe&quot;,
+    &quot;seconds&quot;: 84.85,
+    &quot;status&quot;: &quot;ok&quot;,
+    &quot;note&quot;: &quot;173 1915\n&quot;
+  },
+  {
+    &quot;step&quot;: &quot;tier2_analysis_scaffold&quot;,
+    &quot;seconds&quot;: 0.0,
+    &quot;status&quot;: &quot;skipped&quot;,
+    &quot;note&quot;: &quot;Tier 1&quot;
+  }
+]</pre></details><details><summary>metadata.json</summary><pre>[
+  {
+    &quot;recommend_count&quot;: 168,
+    &quot;comment_count&quot;: 436,
+    &quot;digg_count&quot;: 10657,
+    &quot;admire_count&quot;: 0,
+    &quot;share_count&quot;: 1107,
+    &quot;collect_count&quot;: 989,
+    &quot;download_addr&quot;: &quot;https://www.douyin.com/aweme/v1/play/?video_id=v2700fgi0000d7u6dfvog65od6flv2k0&amp;line=0&amp;file_id=a9f8428bc7574a9ea957b6b814541faf&amp;sign=3c7c30dd03a2ca0f4e86a4e0793beab4&amp;is_play_url=1&amp;source=PackSourceEnum_PUBLISH&quot;,
+    &quot;id&quot;: &quot;7637092377044374257&quot;,
+    &quot;time&quot;: 1778149135,
+    &quot;type&quot;: 0,
+    &quot;desc&quot;: &quot;我人生第一个好包 #girlstalk #女性智慧 #包包分享&quot;,
+    &quot;duration&quot;: 249234,
+    &quot;music_title&quot;: &quot;@鹿冰冰创作的原声&quot;,
+    &quot;music_url&quot;: &quot;https://lf26-music-east.douyinstatic.com/obj/ies-music-hj/7637092389068426033.mp3&quot;,
+    &quot;cover&quot;: &quot;https://p9-pc-sign.douyinpic.com/obj/tos-cn-i-0813c000-ce/oEhDTebcfQAMdA5zN0z44eArIAIR6KGHnIf2AL?lk3s=138a59ce&amp;x-expires=2093526000&amp;x-signature=BfSIC7R6tXMbMwpXMYR6QSGhU2Q%3D&amp;from=327834062&amp;s=PackSourceEnum_PUBLISH&amp;se=false&amp;sc=cover&amp;biz_tag=pcweb_cover&amp;l=2026050723074996247118119C4348087F&quot;,
+    &quot;author_avatar&quot;: &quot;https://p3-pc.douyinpic.com/aweme/100x100/aweme-avatar/tos-cn-avt-0015_b7493f5f504858775ca5b116c89eeae5.jpeg?from=327834062&quot;,
+    &quot;author_nickname&quot;: &quot;鹿冰冰&quot;,
+    &quot;author_uid&quot;: &quot;MS4wLjABAAAAwp-wmFzRnbjOGYKeR65KVT7di41nW6o578VxngbUBrCx1ra31bBLhO7VSVZtFdzZ&quot;,
+    &quot;author_unique_id&quot;: null,
+    &quot;author_short_id&quot;: null,
+    &quot;author_signature&quot;: &quot;无标题&quot;,
+    &quot;text_extra&quot;: [
+      {
+        &quot;tag_id&quot;: &quot;1609208864413895&quot;,
+        &quot;tag_name&quot;: &quot;girlstalk&quot;
+      },
+      {
+        &quot;tag_id&quot;: &quot;1623463108251655&quot;,
+        &quot;tag_name&quot;: &quot;女性智慧&quot;
+      },
+      {
+        &quot;tag_id&quot;: &quot;1619114570141700&quot;,
+        &quot;tag_name&quot;: &quot;包包分享&quot;
+      }
+    ]
+  }
+]</pre></details>
+  </section>
+
+  <div class="footer">AI-IP-Studio · 学结构，不偷人生 · 本页为本地学习材料，不代表可直接照搬成稿。</div>
+</div>
+</body>
+</html>
