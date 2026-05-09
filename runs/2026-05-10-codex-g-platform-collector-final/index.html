@@ -35,18 +35,20 @@
     <section class="grid two">
       <div class="card"><h2>目标</h2><p>本次任务不是重新实现全平台采集系统，而是对 G 任务“全平台采集与信号源适配器”做最终公开审计：检查已有产物是否真实存在、哪些能力已可复用、哪些仍只是设计意图，并生成一个可以给用户看的 final-only 报告页。</p>
 <p>最终判断：当前项目已经具备若干可复用基础，例如 <code>video-collector</code>、Douyin V3 账号学习、XHS 专项流程、daily trend 高信号采样规则和报告发布器；但 G 任务指定的独立 adapter 产物没有落盘，因此不能声称“全平台自动跑通”。现阶段可以进入“人工/半自动日更信号台”，不能进入“全平台自动采集”。</p></div>
-      <div class="card"><h2>验证</h2><p>本报告生成后执行并记录以下验证：</p>
+      <div class="card"><h2>验证</h2><p>本报告生成后已执行并记录以下验证：</p>
 <ul>
-<li>本地 Markdown 报告存在：<code>plans/run-reports/2026-05-10-codex-g-platform-collector-final-report.md</code></li>
-<li>本地 HTML 报告存在：<code>publish/ai-ip-previews/runs/2026-05-10-codex-g-platform-collector-final/index.html</code></li>
-<li>本地报告副本存在：<code>publish/ai-ip-previews/runs/2026-05-10-codex-g-platform-collector-final/report.md</code></li>
-<li><code>python3 scripts/publish_run_report.py --check plans/run-reports/2026-05-10-codex-g-platform-collector-final-report.md</code></li>
-<li><code>python3 scripts/publish_run_report.py --rebuild-index</code></li>
-<li><code>git add runs/2026-05-10-codex-g-platform-collector-final/index.html runs/2026-05-10-codex-g-platform-collector-final/report.md runs/index.html</code></li>
-<li><code>git commit -m &quot;reports: publish platform collector final report&quot;</code></li>
-<li><code>git push</code></li>
-<li>远程最终报告页 HTTP 200：<code>https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-10-codex-g-platform-collector-final/</code></li>
-<li>远程 <code>/runs/</code> HTTP 200：<code>https://schovayang-creator.github.io/ai-ip-previews/runs/</code></li>
+<li>本地 Markdown 报告存在：<code>plans/run-reports/2026-05-10-codex-g-platform-collector-final-report.md</code>。</li>
+<li>本地 HTML 报告存在：<code>publish/ai-ip-previews/runs/2026-05-10-codex-g-platform-collector-final/index.html</code>。</li>
+<li>本地报告副本存在：<code>publish/ai-ip-previews/runs/2026-05-10-codex-g-platform-collector-final/report.md</code>。</li>
+<li><code>python3 scripts/publish_run_report.py --check plans/run-reports/2026-05-10-codex-g-platform-collector-final-report.md</code> 通过。</li>
+<li><code>python3 scripts/publish_run_report.py --rebuild-index</code> 通过。</li>
+<li>本地 HTTP 验证通过：<code>http://127.0.0.1:8765/runs/2026-05-10-codex-g-platform-collector-final/</code> 返回 <code>HTTP/1.0 200 OK</code>。</li>
+<li>本地 HTTP 验证通过：<code>http://127.0.0.1:8765/runs/</code> 返回 <code>HTTP/1.0 200 OK</code>。</li>
+<li>发布仓库只 stage 本任务目录和 <code>runs/index.html</code>：<code>runs/2026-05-10-codex-g-platform-collector-final/index.html</code>、<code>runs/2026-05-10-codex-g-platform-collector-final/report.md</code>、<code>runs/index.html</code>。</li>
+<li><code>git commit -m &quot;reports: publish platform collector final report&quot;</code> 成功，提交为 <code>eef2fbd1b402ce7ed5421047791a05e495de4780</code>。</li>
+<li><code>git push</code> 成功：<code>b5f18d2..eef2fbd main -&gt; main</code>。</li>
+<li>远程最终报告页 HTTP 200：<code>https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-10-codex-g-platform-collector-final/</code>。</li>
+<li>远程 <code>/runs/</code> HTTP 200：<code>https://schovayang-creator.github.io/ai-ip-previews/runs/</code>。</li>
 </ul></div>
     </section>
 

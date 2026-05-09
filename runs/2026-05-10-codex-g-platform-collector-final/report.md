@@ -20,6 +20,9 @@ version: 1
 - 公开索引: `publish/ai-ip-previews/runs/index.html`
 - 预期远程链接: `https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-10-codex-g-platform-collector-final/`
 - 预期远程索引: `https://schovayang-creator.github.io/ai-ip-previews/runs/`
+- 发布验证 commit: `eef2fbd1b402ce7ed5421047791a05e495de4780`
+- 远程最终报告页 HTTP: `200`
+- 远程 `/runs/` HTTP: `200`
 
 ## 目标 / Objective
 
@@ -186,18 +189,20 @@ PlatformSignalCard
 
 ## 验证 / Validation
 
-本报告生成后执行并记录以下验证：
+本报告生成后已执行并记录以下验证：
 
-- 本地 Markdown 报告存在：`plans/run-reports/2026-05-10-codex-g-platform-collector-final-report.md`
-- 本地 HTML 报告存在：`publish/ai-ip-previews/runs/2026-05-10-codex-g-platform-collector-final/index.html`
-- 本地报告副本存在：`publish/ai-ip-previews/runs/2026-05-10-codex-g-platform-collector-final/report.md`
-- `python3 scripts/publish_run_report.py --check plans/run-reports/2026-05-10-codex-g-platform-collector-final-report.md`
-- `python3 scripts/publish_run_report.py --rebuild-index`
-- `git add runs/2026-05-10-codex-g-platform-collector-final/index.html runs/2026-05-10-codex-g-platform-collector-final/report.md runs/index.html`
-- `git commit -m "reports: publish platform collector final report"`
-- `git push`
-- 远程最终报告页 HTTP 200：`https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-10-codex-g-platform-collector-final/`
-- 远程 `/runs/` HTTP 200：`https://schovayang-creator.github.io/ai-ip-previews/runs/`
+- 本地 Markdown 报告存在：`plans/run-reports/2026-05-10-codex-g-platform-collector-final-report.md`。
+- 本地 HTML 报告存在：`publish/ai-ip-previews/runs/2026-05-10-codex-g-platform-collector-final/index.html`。
+- 本地报告副本存在：`publish/ai-ip-previews/runs/2026-05-10-codex-g-platform-collector-final/report.md`。
+- `python3 scripts/publish_run_report.py --check plans/run-reports/2026-05-10-codex-g-platform-collector-final-report.md` 通过。
+- `python3 scripts/publish_run_report.py --rebuild-index` 通过。
+- 本地 HTTP 验证通过：`http://127.0.0.1:8765/runs/2026-05-10-codex-g-platform-collector-final/` 返回 `HTTP/1.0 200 OK`。
+- 本地 HTTP 验证通过：`http://127.0.0.1:8765/runs/` 返回 `HTTP/1.0 200 OK`。
+- 发布仓库只 stage 本任务目录和 `runs/index.html`：`runs/2026-05-10-codex-g-platform-collector-final/index.html`、`runs/2026-05-10-codex-g-platform-collector-final/report.md`、`runs/index.html`。
+- `git commit -m "reports: publish platform collector final report"` 成功，提交为 `eef2fbd1b402ce7ed5421047791a05e495de4780`。
+- `git push` 成功：`b5f18d2..eef2fbd main -> main`。
+- 远程最终报告页 HTTP 200：`https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-10-codex-g-platform-collector-final/`。
+- 远程 `/runs/` HTTP 200：`https://schovayang-creator.github.io/ai-ip-previews/runs/`。
 
 ## 发布链接 / Publish Links
 
@@ -250,7 +255,7 @@ PlatformSignalCard
 | final-only 索引 | `publish_run_report.py` 默认 final-only 索引，仅公开本最终报告 | 通过 |
 | 不改主页 | 本任务未修改主页 | 通过 |
 | 不做危险采集 | 未登录平台、未抓取、未下载 raw media、未保存隐私数据 | 通过 |
-| GitHub push 与远程 HTTP 200 | 收尾阶段执行并在最终回复记录 commit hash 与 HTTP 200 | 待命令验证 |
+| GitHub push 与远程 HTTP 200 | 发布仓库提交 `eef2fbd1b402ce7ed5421047791a05e495de4780` 并 push 成功；远程最终报告页和 `/runs/` 均 HTTP 200 | 通过 |
 
 ## 自评 / Self-Review
 
