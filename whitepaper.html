@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AI-IP-Studio 新人女性自媒体账号启动白皮书</title>
 <style>
+
 :root {
   --bg:#eef3f0; --paper:#fffaf2; --paper2:#f8efe4; --ink:#1c2427; --muted:#6e7474;
   --navy:#0a2c5c; --blue:#1e5b97; --green:#1c7563; --mint:#dcefe7; --gold:#c69343;
@@ -79,32 +80,66 @@ code { font-family:var(--mono); background:#eef3ef; padding:2px 5px; border-radi
   .chapter,.section { padding:20px; border-radius:26px; } .chapter h2 { font-size:29px; }
 }
 @media print { body { background:white; } .page { width:100%; padding:0; } .topbar,.hero-actions { display:none; } .chapter,.section,.hero-title,.manifest,.quick-card { box-shadow:none; } }
+
+
+/* V2 reading layout: fixed-width content + two side rails. */
+body { background-attachment: fixed; }
+.page { width:min(1500px,100%); }
+.topbar.globalbar { align-items:center; }
+.topbar.globalbar a.home-link { background:var(--navy); color:#fffaf2; border-color:var(--navy); }
+.hero { grid-template-columns:minmax(0,1.06fr) minmax(330px,.94fr); }
+.whitepaper-shell { display:grid; grid-template-columns:230px minmax(0, 1fr) 276px; gap:16px; align-items:start; margin-top:22px; }
+.whitepaper-content { min-width:0; width:100%; }
+.left-rail,.right-rail { position:sticky; top:72px; max-height:calc(100vh - 88px); overflow:auto; scrollbar-width:thin; }
+.rail-card { border:1px solid var(--line); border-radius:26px; background:rgba(255,250,242,.9); box-shadow:0 14px 44px rgba(23,37,45,.08); padding:15px; }
+.rail-card + .rail-card { margin-top:12px; }
+.rail-title { display:flex; align-items:center; justify-content:space-between; gap:8px; color:var(--navy); font-weight:900; margin-bottom:10px; }
+.rail-title small { color:var(--muted); font-weight:800; }
+.chapter-index { display:grid; gap:6px; }
+.chapter-index a { text-decoration:none; border:1px solid rgba(217,203,187,.78); background:#fffdf8; border-radius:14px; padding:8px 9px; display:grid; grid-template-columns:34px 1fr; gap:7px; align-items:center; }
+.chapter-index a em { font-style:normal; width:28px; height:28px; border-radius:10px; display:grid; place-items:center; background:var(--mint); color:var(--green); font-family:var(--mono); font-weight:900; font-size:12px; }
+.chapter-index a span { color:var(--ink); font-weight:900; font-size:13px; line-height:1.25; }
+.path-list { display:grid; gap:9px; }
+.path { border:1px solid rgba(217,203,187,.78); border-radius:16px; padding:11px; background:#fffdf8; }
+.path b { display:block; color:var(--rose); margin-bottom:7px; }
+.path a { display:inline-block; text-decoration:none; margin:3px 5px 3px 0; padding:5px 8px; border-radius:999px; background:#eef3ef; color:var(--green); font-size:12px; font-weight:900; }
+.system-links { display:grid; gap:8px; }
+.system-links a { text-decoration:none; border:1px solid rgba(217,203,187,.78); border-radius:15px; padding:10px 11px; background:#fffdf8; color:var(--navy); font-weight:900; line-height:1.35; }
+.doc-meta { border:1px solid var(--line); border-radius:24px; background:rgba(255,250,242,.88); padding:18px 20px; box-shadow:0 12px 32px rgba(23,37,45,.06); }
+.doc-meta p { margin:4px 0; color:var(--muted); line-height:1.55; }
+.chapter { width:100%; margin-top:20px; scroll-margin-top:86px; }
+.chapter article, .chapter section { max-width:none; }
+.chapter p, .chapter li, .chapter blockquote { max-width: none; }
+.chapter h2 { max-width: 100%; }
+.chapter h3 { scroll-margin-top:86px; }
+.back-top { display:block; text-align:center; text-decoration:none; margin-top:12px; border:1px solid var(--line); border-radius:999px; padding:9px 12px; background:var(--navy); color:#fffaf2; font-weight:900; }
+.mobile-jump { display:none; margin-top:18px; border:1px solid var(--line); border-radius:24px; background:rgba(255,250,242,.9); padding:14px; }
+.mobile-jump select { width:100%; border:1px solid var(--line); border-radius:999px; padding:12px 14px; background:#fffdf8; color:var(--ink); font-weight:900; }
+@media (max-width:1180px) {
+  .whitepaper-shell { grid-template-columns:210px minmax(0,1fr); }
+  .right-rail { position:static; grid-column:1 / -1; max-height:none; display:grid; grid-template-columns:repeat(2,1fr); gap:12px; }
+  .right-rail .rail-card + .rail-card { margin-top:0; }
+}
+@media (max-width:920px) {
+  .hero { grid-template-columns:1fr; }
+  .whitepaper-shell { grid-template-columns:1fr; }
+  .left-rail { position:static; max-height:none; }
+  .left-rail .rail-card { display:none; }
+  .mobile-jump { display:block; }
+  .right-rail { grid-template-columns:1fr; }
+  .chapter-index { grid-template-columns:repeat(2,1fr); }
+  .chapter-index a { grid-template-columns:30px 1fr; }
+}
+@media (max-width:560px) {
+  .chapter-index { grid-template-columns:1fr; }
+  .reader-map { grid-template-columns:1fr; }
+}
+
 </style>
 </head>
 <body>
 <div class="page">
-  <nav class="topbar"><a href="#sec-0"><b>0</b><span>账号本质 / 阅读方式</span></a>
-<a href="#sec-1"><b>1</b><span>对标成功规律</span></a>
-<a href="#sec-2"><b>2</b><span>可学习内容模式</span></a>
-<a href="#sec-3"><b>3</b><span>账号定位</span></a>
-<a href="#sec-4"><b>4</b><span>创作者刻写与素材库</span></a>
-<a href="#sec-5"><b>5</b><span>内容标准与阶段策略</span></a>
-<a href="#sec-6"><b>6</b><span>选题方法</span></a>
-<a href="#sec-7"><b>7</b><span>开头写法</span></a>
-<a href="#sec-8"><b>8</b><span>正文结构</span></a>
-<a href="#sec-9"><b>9</b><span>结尾方式</span></a>
-<a href="#sec-10"><b>10</b><span>拍摄标准</span></a>
-<a href="#sec-11"><b>11</b><span>剪辑标准</span></a>
-<a href="#sec-12"><b>12</b><span>发布包装</span></a>
-<a href="#sec-13"><b>13</b><span>三方职责</span></a>
-<a href="#sec-14"><b>14</b><span>系统协作边界</span></a>
-<a href="#sec-15"><b>15</b><span>完整生产流程</span></a>
-<a href="#sec-16"><b>16</b><span>30 天计划</span></a>
-<a href="#sec-17"><b>17</b><span>新手错误</span></a>
-<a href="#sec-18"><b>18</b><span>安全与原创</span></a>
-<a href="#sec-19"><b>19</b><span>可复制模板</span></a>
-<a href="#sec-20"><b>20</b><span>第一步行动</span></a>
-<a href="#sec-21"><b>21</b><span>长期原则</span></a></nav>
+  <nav class="topbar globalbar"><a class="home-link" href="system-test.html"><b>System</b><span>完整系统</span></a><a href="./"><b>V3</b><span>视频门户</span></a><a href="account-insights.html"><b>Case</b><span>账号实验</span></a><a href="#top"><b>Top</b><span>回到顶部</span></a><a href="#sec-19"><b>Templates</b><span>模板区</span></a><a href="#sec-20"><b>Action</b><span>明天开始</span></a></nav>
   <header class="hero" id="top">
     <div class="hero-title">
       <div class="kicker">AI-IP-Studio Creator Onboarding</div>
@@ -121,6 +156,28 @@ code { font-family:var(--mono); background:#eef3ef; padding:2px 5px; border-radi
       <div class="quick-grid"><div class="quick-card"><strong>系统定位</strong><p>不是写稿软件，而是把真实经历变成选题、脚本、拍摄、发布、复盘的内容制片系统。</p></div><div class="quick-card"><strong>创作者核心</strong><p>真实经验、可说边界、镜头表达、最终判断，必须由本人参与。</p></div><div class="quick-card"><strong>AI 角色</strong><p>拆解结构、生成候选、改写脚本、检查风险、整理复盘。</p></div><div class="quick-card"><strong>工程师角色</strong><p>搭系统、管素材、调工具、稳流程、记录数据，让生产可持续。</p></div><div class="quick-card"><strong>第一目标</strong><p>冷启动不是立刻爆，而是完成一次稳定闭环并形成可复盘资产。</p></div><div class="quick-card"><strong>底层原则</strong><p>系统给选择，创作者做选择；技术提高效率，但不能制造真实。</p></div></div>
     </aside>
   </header>
+  <div class="mobile-jump"><select onchange="if(this.value) location.hash=this.value"><option value="">跳到章节...</option><option value="#sec-0">Chapter 0 · 账号本质</option>
+<option value="#sec-1">Chapter 1 · 成功规律</option>
+<option value="#sec-2">Chapter 2 · 学习模式</option>
+<option value="#sec-3">Chapter 3 · 账号定位</option>
+<option value="#sec-4">Chapter 4 · 素材资产</option>
+<option value="#sec-5">Chapter 5 · 内容标准</option>
+<option value="#sec-6">Chapter 6 · 选题</option>
+<option value="#sec-7">Chapter 7 · 开头</option>
+<option value="#sec-8">Chapter 8 · 正文</option>
+<option value="#sec-9">Chapter 9 · 结尾</option>
+<option value="#sec-10">Chapter 10 · 拍摄</option>
+<option value="#sec-11">Chapter 11 · 剪辑</option>
+<option value="#sec-12">Chapter 12 · 发布</option>
+<option value="#sec-13">Chapter 13 · 三方职责</option>
+<option value="#sec-14">Chapter 14 · 协作边界</option>
+<option value="#sec-15">Chapter 15 · 生产流程</option>
+<option value="#sec-16">Chapter 16 · 30天计划</option>
+<option value="#sec-17">Chapter 17 · 新手错误</option>
+<option value="#sec-18">Chapter 18 · 原创安全</option>
+<option value="#sec-19">Chapter 19 · 模板</option>
+<option value="#sec-20">Chapter 20 · 最小行动</option>
+<option value="#sec-21">Chapter 21 · 最终原则</option></select></div>
   <section class="section" id="system-flow">
     <h2>系统生产闭环</h2>
     <p class="section-lead">白皮书的核心不是让创作者一次性读完所有细节，而是建立一个从真实素材到发布复盘的稳定循环。</p>
@@ -137,12 +194,34 @@ code { font-family:var(--mono); background:#eef3ef; padding:2px 5px; border-radi
       <a href="#sec-20"><b>Action</b><span>明天怎么开始</span></a>
     </div>
   </section>
-  <p>AI-IP-Studio 新人女性自媒体账号启动白皮书</p>
+  <div class="whitepaper-shell">
+    <aside class="left-rail"><div class="rail-card"><div class="rail-title"><span>章节索引</span><small>22章</small></div><div class="chapter-index"><a href="#sec-0"><em>00</em><span>账号本质</span></a>
+<a href="#sec-1"><em>01</em><span>成功规律</span></a>
+<a href="#sec-2"><em>02</em><span>学习模式</span></a>
+<a href="#sec-3"><em>03</em><span>账号定位</span></a>
+<a href="#sec-4"><em>04</em><span>素材资产</span></a>
+<a href="#sec-5"><em>05</em><span>内容标准</span></a>
+<a href="#sec-6"><em>06</em><span>选题</span></a>
+<a href="#sec-7"><em>07</em><span>开头</span></a>
+<a href="#sec-8"><em>08</em><span>正文</span></a>
+<a href="#sec-9"><em>09</em><span>结尾</span></a>
+<a href="#sec-10"><em>10</em><span>拍摄</span></a>
+<a href="#sec-11"><em>11</em><span>剪辑</span></a>
+<a href="#sec-12"><em>12</em><span>发布</span></a>
+<a href="#sec-13"><em>13</em><span>三方职责</span></a>
+<a href="#sec-14"><em>14</em><span>协作边界</span></a>
+<a href="#sec-15"><em>15</em><span>生产流程</span></a>
+<a href="#sec-16"><em>16</em><span>30天计划</span></a>
+<a href="#sec-17"><em>17</em><span>新手错误</span></a>
+<a href="#sec-18"><em>18</em><span>原创安全</span></a>
+<a href="#sec-19"><em>19</em><span>模板</span></a>
+<a href="#sec-20"><em>20</em><span>最小行动</span></a>
+<a href="#sec-21"><em>21</em><span>最终原则</span></a></div><a class="back-top" href="#top">回到顶部</a></div></aside>
+    <main class="whitepaper-content"><div class="doc-meta"><p>AI-IP-Studio 新人女性自媒体账号启动白皮书</p>
 <p>版本：v1.0</p>
 <p>日期：2026-05-08</p>
 <p>适用对象：刚准备开始做女性成长 / 情绪自救 / 真实生活口播账号的创作者本人</p>
-<p>项目文件：docs/new-creator-self-media-whitepaper.txt</p>
-<article class="chapter" id="sec-0"><div class="chapter-label">Chapter 0</div><h2>先说结论：这个账号不是“装成博主”，而是训练一种稳定表达能力</h2>
+<p>项目文件：docs/new-creator-self-media-whitepaper.txt</p></div><article class="chapter" id="sec-0"><div class="chapter-label">Chapter 0</div><h2>先说结论：这个账号不是“装成博主”，而是训练一种稳定表达能力</h2>
 <p class="chapter-focus">账号本质 / 阅读方式</p>
 <p>你要做的不是一个“会说金句的女生账号”，也不是一个“每天讲大道理的情感号”。</p>
 <p class="label-line">这个账号的核心，是让观众在你这里获得三种感觉：</p>
@@ -159,7 +238,7 @@ code { font-family:var(--mono); background:#eef3ef; padding:2px 5px; border-radi
 <p class="label-line">给新手创作者的阅读方式：</p>
 <ul class="plain-list"><li>如果你只想知道这个账号是什么，先读第 0、3、5 章。</li><li>如果你不知道自己该讲什么，读第 4、6、19.1、19.6 章。</li><li>如果你想马上开始拍，读第 7、8、9、10、12、20 章。</li><li>如果你担心 AI 写得不像你，重点读第 18、19.4、19.6 章。</li><li>如果你只想执行第一周，直接看第 16 章和第 20 章。</li></ul>
 <p>你不需要知道项目里每个文件在哪里。工程师 / 主理人会维护后台文件。你只需要完成三件事：提供真实素材，判断稿子像不像你，完成拍摄和反馈。</p>
-<article class="chapter" id="sec-1"><div class="chapter-label">Chapter 1</div><h2>我们从已跑通视频里学到的核心规律</h2>
+</article><article class="chapter" id="sec-1"><div class="chapter-label">Chapter 1</div><h2>我们从已跑通视频里学到的核心规律</h2>
 <p class="chapter-focus">对标成功规律</p>
 <p>本项目已处理的对标来源是抖音账号“鹿冰冰”的一批高互动口播 / 生活表达 / 女性成长视频。已完成的本地材料包括视频元数据、ASR 转写、部分深度分析、互动指标、视觉分析和生产标准。</p>
 <p>注意：这些视频是学习对象，不是复制对象。我们学习的是结构、情绪推进、观众心理、选题判断、拍摄节奏；不能复制她的个人故事、原句、独特比喻、生活经历、文学引用链和表达习惯。</p>
@@ -182,7 +261,7 @@ code { font-family:var(--mono); background:#eef3ef; padding:2px 5px; border-radi
 <p>内容特征：有一个可被讨论的现场，例如回应批评、展示穿搭、表达争议观点。</p>
 <p>适合新手学习：可以少量尝试，但新账号不要一开始就过度依赖争议。</p>
 <p>这批视频告诉我们：女性成长口播不等于“温柔鸡汤”。真正有传播力的女性成长内容，通常是“温柔外壳 + 清醒骨架 + 具体伤口 + 一点点反抗”。</p>
-<article class="chapter" id="sec-2"><div class="chapter-label">Chapter 2</div><h2>对标视频中的可学习成功模式</h2>
+</article><article class="chapter" id="sec-2"><div class="chapter-label">Chapter 2</div><h2>对标视频中的可学习成功模式</h2>
 <p class="chapter-focus">可学习内容模式</p>
 <p>以下模式来自已处理视频的结构抽象。它们只能作为创作方法，不能照搬原视频细节。</p>
 <h3 id="sec-2-1">2.1 被羞耻的冲动 -&gt; 具体伤口 -&gt; 保护性重述</h3>
@@ -260,7 +339,7 @@ code { font-family:var(--mono); background:#eef3ef; padding:2px 5px; border-radi
 <ol class="ordered-list"><li>先承认限制：我不是那种精力很多的人。</li><li>讲具体表现：睡不好、容易累、拍一条视频要缓很久、出门也费劲。</li><li>不卖惨，讲真实成本。</li><li>重定义勇敢：不是每天元气满满，而是状态不好时仍然完成一点点。</li><li>给低门槛行动：今天只完成一个最小动作。</li></ol>
 <p class="label-line">新手注意：</p>
 <ul class="plain-list"><li>涉及疾病、心理健康、医疗判断时必须谨慎，不要给别人诊断。</li><li>可以说自己的感受，不要给观众提供医学建议。</li></ul>
-<article class="chapter" id="sec-3"><div class="chapter-label">Chapter 3</div><h2>这个新账号应该怎么定位</h2>
+</article><article class="chapter" id="sec-3"><div class="chapter-label">Chapter 3</div><h2>这个新账号应该怎么定位</h2>
 <p class="chapter-focus">账号定位</p>
 <p>根据项目现有定位文件，这个账号的方向不是“单纯情感博主”，而是：</p>
 <p>女性成长博主 / 互联网闺蜜 / 陪伴型表达者。</p>
@@ -275,7 +354,7 @@ code { font-family:var(--mono); background:#eef3ef; padding:2px 5px; border-radi
 <ul class="plain-list"><li>直接，但不凶。</li><li>清醒，但不审判。</li><li>柔软，但不软弱。</li><li>真诚，但不把伤口当表演。</li><li>有思考，但不像论文。</li><li>像朋友发来的语音，不像老师上课。</li></ul>
 <p class="label-line">最重要的一句话：</p>
 <p>你不是去“教育观众”，你是把你自己也在经历的混乱，整理成一个能让别人少痛苦一点的表达。</p>
-<article class="chapter" id="sec-4"><div class="chapter-label">Chapter 4</div><h2>新手创作者必须建立的内容资产</h2>
+</article><article class="chapter" id="sec-4"><div class="chapter-label">Chapter 4</div><h2>新手创作者必须建立的内容资产</h2>
 <p class="chapter-focus">创作者刻写与素材库</p>
 <p>不要每天坐在那里问“我今天发什么”。那样很快会枯竭。</p>
 <p>你要建立的是四个内容资产库。</p>
@@ -328,7 +407,7 @@ code { font-family:var(--mono); background:#eef3ef; padding:2px 5px; border-radi
 <p class="label-line">记录格式：</p>
 <ul class="plain-list"><li>对标视频 ID / 链接：</li><li>它讲的不是表面话题，而是：</li><li>它的开头怎么抓人：</li><li>它中间用了什么证据：</li><li>它最后怎样转弯：</li><li>我不能复制的部分：</li><li>我可以学习的结构：</li><li>我自己的版本可以换成什么经历：</li></ul>
 <p>这部分由 AI 和工程师负责主要整理，创作者只需要参与判断：这个结构我能不能说？这个情绪我是不是真的有？</p>
-<article class="chapter" id="sec-5"><div class="chapter-label">Chapter 5</div><h2>一条合格视频的标准</h2>
+</article><article class="chapter" id="sec-5"><div class="chapter-label">Chapter 5</div><h2>一条合格视频的标准</h2>
 <p class="chapter-focus">内容标准与阶段策略</p>
 <p>一条合格的新手视频，不是看起来像爆款，而是同时满足以下条件：</p>
 <ol class="ordered-list"><li>开头 3 秒有真实钩子。</li><li>中间至少有一个具体场景或例子。</li><li>有一个从“情绪”到“理解”的转弯。</li><li>结尾给观众许可或小动作，而不是命令。</li><li>这段话创作者真的能说出口。</li><li>没有复制对标账号的独特表达。</li><li>拍摄难度在当前资源下可完成。</li><li>发布后能被复盘，而不是发完就算。</li></ol>
@@ -450,7 +529,7 @@ code { font-family:var(--mono); background:#eef3ef; padding:2px 5px; border-radi
 <p class="label-line">可以进入后期的信号：</p>
 <ul class="plain-list"><li>有一批观众持续互动，而不是只看单条爆款。</li><li>评论或私信里开始出现明确需求：想要清单、方法、陪伴、咨询、社群、产品推荐。</li><li>创作者已经知道自己能提供什么，不能提供什么。</li><li>至少有一个轻承接产品或私域入口，不会伤害账号信任。</li></ul>
 <p>如果没有这些信号，不要急着卖。前期先起号，中期先稳信任，后期再承接商业。</p>
-<article class="chapter" id="sec-6"><div class="chapter-label">Chapter 6</div><h2>选题怎么做：不要追热点，要抓“隐形痛点”</h2>
+</article><article class="chapter" id="sec-6"><div class="chapter-label">Chapter 6</div><h2>选题怎么做：不要追热点，要抓“隐形痛点”</h2>
 <p class="chapter-focus">选题方法</p>
 <p>新手最容易犯的错，是看到什么火就拍什么。这个方向不能这么做。</p>
 <p class="label-line">女性成长 / 自愈口播的选题，应优先来自这些来源：</p>
@@ -461,7 +540,7 @@ code { font-family:var(--mono); background:#eef3ef; padding:2px 5px; border-radi
 <ol class="ordered-list"><li>这是不是目标观众真实会遇到的问题？</li><li>我有没有自己的场景或经历能支撑它？</li><li>它有没有一个反常识或重新解释的角度？</li><li>它会不会变成空泛鸡汤？</li><li>它现在能不能拍？</li></ol>
 <p class="label-line">不建议新手一开始做的选题：</p>
 <ul class="plain-list"><li>需要大量专业背书的心理学 / 医学 / 法律建议。</li><li>过度宏大的社会议题。</li><li>纯粹攻击男性、父母、职场、婚姻的情绪内容。</li><li>明显照搬对标账号个人经历的题。</li><li>自己没有真实经验却硬讲的深刻话题。</li><li>纯热点跟风。</li></ul>
-<article class="chapter" id="sec-7"><div class="chapter-label">Chapter 7</div><h2>开头怎么写：第一句要像“突然被看见”</h2>
+</article><article class="chapter" id="sec-7"><div class="chapter-label">Chapter 7</div><h2>开头怎么写：第一句要像“突然被看见”</h2>
 <p class="chapter-focus">开头写法</p>
 <p class="label-line">这个账号的开头，不适合传统营销号那种：</p>
 <ul class="plain-list"><li>“女生一定要知道的三件事。”</li><li>“如果你想变强，请看完这条视频。”</li><li>“真正厉害的女人都明白……”</li></ul>
@@ -479,7 +558,7 @@ code { font-family:var(--mono); background:#eef3ef; padding:2px 5px; border-radi
 <ul class="plain-list"><li>太大：关于人生，我想说几句。</li><li>太空：每个人都要学会成长。</li><li>太装：真正清醒的女人，从不……</li><li>太像 AI：在当今快节奏社会中，很多女性面临……</li><li>太像课堂：今天我们来聊一个话题。</li></ul>
 <p class="label-line">第一句的标准：</p>
 <p>观众刷到时，应该觉得“她怎么知道我这样”，而不是“她又要讲道理了”。</p>
-<article class="chapter" id="sec-8"><div class="chapter-label">Chapter 8</div><h2>正文怎么写：先让人相信，再给人解释</h2>
+</article><article class="chapter" id="sec-8"><div class="chapter-label">Chapter 8</div><h2>正文怎么写：先让人相信，再给人解释</h2>
 <p class="chapter-focus">正文结构</p>
 <p>一条口播正文最常见的失败，是太早讲道理。</p>
 <p class="label-line">正确顺序应该是：</p>
@@ -508,7 +587,7 @@ code { font-family:var(--mono); background:#eef3ef; padding:2px 5px; border-radi
 <ul class="plain-list"><li>一个真正复杂的问题。</li><li>至少 3 个具体场景或人生节点。</li><li>每个场景都推进理解，而不是重复表达。</li><li>结尾有一个足够有力量的重新解释。</li></ul>
 <p>适合主题：重要人生选择、家庭影响、长期身体 / 精力限制、创作道路、关系模式。</p>
 <p>新手建议：前 30 天主要做 45-90 秒，少量测试 2 分钟，不要一开始追求长篇大论。</p>
-<article class="chapter" id="sec-9"><div class="chapter-label">Chapter 9</div><h2>结尾怎么写：给许可，不要喊口号</h2>
+</article><article class="chapter" id="sec-9"><div class="chapter-label">Chapter 9</div><h2>结尾怎么写：给许可，不要喊口号</h2>
 <p class="chapter-focus">结尾方式</p>
 <p class="label-line">这个账号的结尾，不应该像：</p>
 <ul class="plain-list"><li>“所以女生一定要强大起来。”</li><li>“从今天开始逆袭。”</li><li>“关注我，带你走出内耗。”</li><li>“你一定会越来越好。”</li></ul>
@@ -517,7 +596,7 @@ code { font-family:var(--mono); background:#eef3ef; padding:2px 5px; border-radi
 <p>结尾的作用不是“升华”，而是让观众从视频里安全落地。</p>
 <p class="label-line">好的结尾应该让人想：</p>
 <ul class="plain-list"><li>我被理解了。</li><li>我可以保存这条。</li><li>我可以转给一个人。</li><li>我今天可以少攻击自己一点。</li></ul>
-<article class="chapter" id="sec-10"><div class="chapter-label">Chapter 10</div><h2>拍摄标准：画面要真，不要假精致</h2>
+</article><article class="chapter" id="sec-10"><div class="chapter-label">Chapter 10</div><h2>拍摄标准：画面要真，不要假精致</h2>
 <p class="chapter-focus">拍摄标准</p>
 <p>这类账号最重要的视觉感，不是贵、不是大片、不是过度美颜，而是：可信、亲近、稳定、能听清。</p>
 <p class="label-line">基础配置：</p>
@@ -532,7 +611,7 @@ code { font-family:var(--mono); background:#eef3ef; padding:2px 5px; border-radi
 <ul class="plain-list"><li>不要像背课文。</li><li>不要像演讲。</li><li>不要每句话都很用力。</li><li>允许停顿，但不要拖沓。</li><li>允许眼神有一点不确定，但核心句要说清楚。</li><li>像给一个信任的朋友讲，而不是向全网证明自己。</li></ul>
 <p class="label-line">拍摄前检查：</p>
 <ol class="ordered-list"><li>这条稿子我真的能说吗？</li><li>有没有一句话让我觉得太假？删掉。</li><li>有没有一句话太像别人的表达？改掉。</li><li>第一遍先不拍，读出来听听。</li><li>正式拍 2-3 遍，不要每错一句就从头崩溃。</li><li>拍完立刻标记最好的一条。</li></ol>
-<article class="chapter" id="sec-11"><div class="chapter-label">Chapter 11</div><h2>剪辑标准：不要把真诚剪没了</h2>
+</article><article class="chapter" id="sec-11"><div class="chapter-label">Chapter 11</div><h2>剪辑标准：不要把真诚剪没了</h2>
 <p class="chapter-focus">剪辑标准</p>
 <p>这个账号的剪辑目标：清楚、稳定、让人愿意听下去。</p>
 <p>不是：刺激、花哨、强节奏、模板感。</p>
@@ -554,7 +633,7 @@ code { font-family:var(--mono); background:#eef3ef; padding:2px 5px; border-radi
 <ul class="plain-list"><li>一屏最多 1-2 行。</li><li>字体大，手机上能看清。</li><li>白色 / 暖白色 + 阴影或描边。</li><li>关键词可以轻微强调，但不要满屏动画。</li><li>不要为了押韵改内容。</li></ul>
 <p class="label-line">剪辑交付给工程师 / AI 时，创作者需要提供：</p>
 <ul class="plain-list"><li>最好的一条主口播。</li><li>可用 B-roll。</li><li>哪一句是重点。</li><li>哪些片段不能用。</li><li>是否允许保留卡顿 / 笑场 / 犹豫。</li></ul>
-<article class="chapter" id="sec-12"><div class="chapter-label">Chapter 12</div><h2>发布包装：标题、封面、文案、评论区</h2>
+</article><article class="chapter" id="sec-12"><div class="chapter-label">Chapter 12</div><h2>发布包装：标题、封面、文案、评论区</h2>
 <p class="chapter-focus">发布包装</p>
 <p>发布包装不是骗点击，而是帮观众在 1 秒内知道“这条和我有关”。</p>
 <h3 id="sec-12-1">12.1 封面文字</h3>
@@ -576,7 +655,7 @@ code { font-family:var(--mono); background:#eef3ef; padding:2px 5px; border-radi
 <ul class="plain-list"><li>你最近也有这种感觉吗？</li><li>如果你愿意，可以留一句：你正在练习什么？</li><li>这条先留给还在准备开始的人。</li><li>你有没有一个一直想做但不敢开始的东西？</li></ul>
 <p class="label-line">不适合：</p>
 <ul class="plain-list"><li>点赞关注不迷路。</li><li>评论区告诉我你是哪一种女人。</li><li>不点赞你一定会后悔。</li></ul>
-<article class="chapter" id="sec-13"><div class="chapter-label">Chapter 13</div><h2>三方协同：创作者、AI、工程师分别做什么</h2>
+</article><article class="chapter" id="sec-13"><div class="chapter-label">Chapter 13</div><h2>三方协同：创作者、AI、工程师分别做什么</h2>
 <p class="chapter-focus">三方职责</p>
 <p>这个项目不能靠一个人蛮干。三方必须边界清楚。</p>
 <h3 id="sec-13-1">13.1 创作者负责什么</h3>
@@ -603,7 +682,7 @@ code { font-family:var(--mono); background:#eef3ef; padding:2px 5px; border-radi
 <ol class="ordered-list"><li>维护项目文件、脚本、仓库、目录结构。</li><li>采集 / 导入对标视频元数据。</li><li>管理转写、ASR、视频下载、原始素材路径。</li><li>保证敏感数据不进入 Git。</li><li>组织队列：哪些视频已处理，哪些待处理。</li><li>维护内容标尺、主题库、成功模式库。</li><li>监督 AI 不偏离账号定位和原创边界。</li><li>收集发布数据，建立复盘节奏。</li><li>把创作者从技术负担中解放出来。</li></ol>
 <p>工程师 / 主理人不是创作者的老板，也不是替创作者决定人生的人。</p>
 <p>他的角色是系统协调者：让创作者专注表达，让 AI 高效产出，让流程能复用、能追踪、能迭代。</p>
-<article class="chapter" id="sec-14"><div class="chapter-label">Chapter 14</div><h2>系统协作引导：系统、工程师、创作者怎样配合</h2>
+</article><article class="chapter" id="sec-14"><div class="chapter-label">Chapter 14</div><h2>系统协作引导：系统、工程师、创作者怎样配合</h2>
 <p class="chapter-focus">系统协作边界</p>
 <p>这一章要直接告诉你：AI-IP-Studio 这个系统到底能帮你做什么，工程师 / 主理人能帮你做什么，哪些事情不能外包，哪些事情可以由你和系统一起做，再由你决定分工。</p>
 <p>你不用把这个系统理解成一个“帮你写稿的软件”。</p>
@@ -828,7 +907,7 @@ code { font-family:var(--mono); background:#eef3ef; padding:2px 5px; border-radi
 <ul class="plain-list"><li>这件事我真的在意吗？</li><li>这句话我真的会说吗？</li><li>这个经历真的属于我吗？</li><li>这个方向我愿意被长期看见吗？</li><li>这条视频即使不火，我会不会觉得它仍然值得？</li></ul>
 <p>如果答案都是否定的，那系统再顺，也应该停下来重想。</p>
 <p>系统是为了让你更稳定地成为你自己，而不是更快地变成另一个人。</p>
-<article class="chapter" id="sec-15"><div class="chapter-label">Chapter 15</div><h2>标准工作流程：从一个灵感到一条发布视频</h2>
+</article><article class="chapter" id="sec-15"><div class="chapter-label">Chapter 15</div><h2>标准工作流程：从一个灵感到一条发布视频</h2>
 <p class="chapter-focus">完整生产流程</p>
 <p>以下是本项目推荐的完整流程。</p>
 <h3 id="sec-15-1">15.1 阶段 A：对标输入</h3>
@@ -881,7 +960,7 @@ code { font-family:var(--mono); background:#eef3ef; padding:2px 5px; border-radi
 <p class="label-line">复盘结论只分 4 类：</p>
 <ul class="plain-list"><li>repeat：值得继续做同类。</li><li>revise：选题有价值，但表达 / 开头 / 时长要改。</li><li>park：暂时放下，以后再做。</li><li>stop：不适合账号或风险太高。</li></ul>
 <p>不要因为一条数据不好就否定整个方向。冷启动前 5-10 条主要是校准，不是判生死。</p>
-<article class="chapter" id="sec-16"><div class="chapter-label">Chapter 16</div><h2>第一阶段 30 天执行计划</h2>
+</article><article class="chapter" id="sec-16"><div class="chapter-label">Chapter 16</div><h2>第一阶段 30 天执行计划</h2>
 <p class="chapter-focus">30 天计划</p>
 <p>目标：不是 30 天爆红，而是建立稳定生产闭环。</p>
 <h3 id="sec-3836236442702939841">第 0 周：准备</h3>
@@ -919,10 +998,10 @@ code { font-family:var(--mono); background:#eef3ef; padding:2px 5px; border-radi
 <ul class="plain-list"><li>哪 3 条数据最好。</li><li>哪 3 条最像创作者。</li><li>哪类选题收藏高。</li><li>哪类选题评论多。</li><li>哪类选题创作者说起来最自然。</li><li>哪些表达风险高。</li><li>下个月保留 / 放弃 / 加强什么。</li></ul>
 <p class="label-line">创作者回答：</p>
 <ul class="plain-list"><li>哪条我最愿意继续做？</li><li>哪条我最不想再拍？</li><li>哪些评论让我觉得被理解？</li><li>哪些话我说出来不舒服？</li><li>我下个月想把自己往哪个方向推一点？</li></ul>
-<article class="chapter" id="sec-17"><div class="chapter-label">Chapter 17</div><h2>新手最容易犯的 20 个错误</h2>
+</article><article class="chapter" id="sec-17"><div class="chapter-label">Chapter 17</div><h2>新手最容易犯的 20 个错误</h2>
 <p class="chapter-focus">新手错误</p>
 <ol class="ordered-list"><li>一上来就想做成大博主质感。</li><li>每条都想讲人生真理。</li><li>没有具体场景，全是抽象感悟。</li><li>直接复制对标账号的故事和比喻。</li><li>把 AI 稿子不改就读。</li><li>开头太像标题党。</li><li>结尾太像鸡汤。</li><li>用“女人就应该”“你必须”这种命令语气。</li><li>没有自己的经历，却硬讲深刻话题。</li><li>过度解释，视频像作文。</li><li>拍摄太追求完美，导致迟迟不发布。</li><li>剪辑太花，把真诚剪没了。</li><li>每天换方向，账号没有稳定识别。</li><li>只看点赞，不看收藏、转发、评论结构。</li><li>被一条差数据打崩。</li><li>过早商业化，伤害信任。</li><li>把个人伤口讲得太多，自己承受不了。</li><li>把观众当学生，而不是当朋友。</li><li>只追热点，不建立自己的问题库。</li><li>没有复盘，发完就忘。</li></ol>
-<article class="chapter" id="sec-18"><div class="chapter-label">Chapter 18</div><h2>内容安全和原创边界</h2>
+</article><article class="chapter" id="sec-18"><div class="chapter-label">Chapter 18</div><h2>内容安全和原创边界</h2>
 <p class="chapter-focus">安全与原创</p>
 <p class="label-line">必须遵守：</p>
 <ol class="ordered-list"><li>不说不是自己的故事。</li><li>不把对标账号的独特表达换几个字拿来用。</li><li>不复制对标视频的例子顺序。</li><li>不冒充专业心理、医学、法律建议。</li><li>不承诺观众一定会变好、变强、涨粉、赚钱、被爱。</li><li>不为了流量制造极端性别对立。</li><li>不公开第三方隐私。</li><li>不讲创作者本人尚未准备好承担后果的私人细节。</li></ol>
@@ -930,7 +1009,7 @@ code { font-family:var(--mono); background:#eef3ef; padding:2px 5px; border-radi
 <ul class="plain-list"><li>观点。</li><li>例子。</li><li>观众场景。</li><li>结论。</li><li>情绪立场。</li><li>结构顺序。</li><li>行动建议。</li></ul>
 <p class="label-line">每条从对标视频来的内容，都要问：</p>
 <ul class="plain-list"><li>我学的是结构，还是在偷她的人生？</li><li>这个例子是不是我的？</li><li>这句话如果原作者刷到，会不会觉得太像？</li><li>创作者说出来是否真实？</li></ul>
-<article class="chapter" id="sec-19"><div class="chapter-label">Chapter 19</div><h2>可直接使用的工作模板</h2>
+</article><article class="chapter" id="sec-19"><div class="chapter-label">Chapter 19</div><h2>可直接使用的工作模板</h2>
 <p class="chapter-focus">可复制模板</p>
 <h3 id="sec-19-1">19.1 创作者每日记录模板</h3>
 <p class="label-line">日期：</p>
@@ -1016,7 +1095,7 @@ code { font-family:var(--mono); background:#eef3ef; padding:2px 5px; border-radi
 我想在这里讲低能量、内耗、普通女孩开始做事的过程。
 如果你也总觉得自己还没准备好，我希望你在这里先不用责怪自己。
 我们不一定马上变好，但可以一点点把自己放回生活里。</pre>
-<article class="chapter" id="sec-20"><div class="chapter-label">Chapter 20</div><h2>明天就可以开始的最小行动</h2>
+</article><article class="chapter" id="sec-20"><div class="chapter-label">Chapter 20</div><h2>明天就可以开始的最小行动</h2>
 <p class="chapter-focus">第一步行动</p>
 <p>如果你明天就要开始，不要先研究一个月。</p>
 <p class="label-line">按这个顺序做：</p>
@@ -1024,7 +1103,7 @@ code { font-family:var(--mono); background:#eef3ef; padding:2px 5px; border-radi
 <p>第一条视频的目标不是爆。</p>
 <p class="label-line">第一条视频的目标是证明：</p>
 <ul class="plain-list"><li>我能出现在镜头前。</li><li>我能说一段属于自己的话。</li><li>我能完成一次从选题到发布的闭环。</li><li>这个系统能帮我持续生产，而不是只给我一堆建议。</li></ul>
-<article class="chapter" id="sec-21"><div class="chapter-label">Chapter 21</div><h2>最终原则</h2>
+</article><article class="chapter" id="sec-21"><div class="chapter-label">Chapter 21</div><h2>最终原则</h2>
 <p class="chapter-focus">长期原则</p>
 <p>这个账号要长期做下去，最重要的不是“每条都完美”，而是守住以下原则：</p>
 <ol class="ordered-list"><li>真实比高级重要。</li><li>具体比深刻重要。</li><li>可持续比爆一次重要。</li><li>个人经验比空泛观点重要。</li><li>结构学习可以，人生不能复制。</li><li>AI 是制片工具，不是灵魂替身。</li><li>工程师是流程保护者，不是内容独裁者。</li><li>创作者是账号的中心，她的边界必须被尊重。</li><li>冷启动不要假装自己已经懂流量。</li><li>每一条视频都要让观众更清楚一点，而不是更焦虑一点。</li></ol>
@@ -1032,7 +1111,19 @@ code { font-family:var(--mono); background:#eef3ef; padding:2px 5px; border-radi
 <p>你只需要先成为一个能够稳定出现、稳定表达、稳定复盘的人。</p>
 <p>账号不是一天长出来的。账号是一条一条视频，把你从“害怕被看见的人”，训练成“可以把自己说清楚的人”。</p>
 <p>这才是这个项目真正要帮你完成的事。</p>
-  <div class="footer">Generated from docs/new-creator-self-media-whitepaper.txt · 2026-05-08 22:45</div>
+</article></main>
+    <aside class="right-rail">
+      <div class="rail-card"><div class="rail-title"><span>按目的快速读</span><small>路径</small></div><div class="path-list">
+        <div class="path"><b>我只想知道账号是什么</b><a href="#sec-0">本质</a><a href="#sec-3">定位</a><a href="#sec-5">标准</a></div>
+        <div class="path"><b>我不知道自己讲什么</b><a href="#sec-4">素材库</a><a href="#sec-6">选题</a><a href="#sec-19">问卷</a></div>
+        <div class="path"><b>我想马上开始拍</b><a href="#sec-7">开头</a><a href="#sec-8">正文</a><a href="#sec-10">拍摄</a><a href="#sec-20">行动</a></div>
+        <div class="path"><b>我想理解系统怎么协作</b><a href="#sec-13">三方</a><a href="#sec-14">边界</a><a href="#sec-15">流程</a></div>
+      </div></div>
+      <div class="rail-card"><div class="rail-title"><span>系统入口</span><small>Links</small></div><div class="system-links"><a href="system-test.html">完整系统 test</a><a href="./">V3 视频学习门户</a><a href="account-insights.html">账号综合分析</a><a href="links.md">全部视频链接</a><a href="account-summary.md">团队简版总结</a></div></div>
+      <div class="rail-card"><div class="rail-title"><span>阅读提醒</span><small>Boundary</small></div><p style="color:var(--muted);line-height:1.75;margin:0">白皮书是给创作者理解系统用的；真正生成脚本前，仍要回到 profile、do-not-say、content ethics 和 Content Scale。</p></div>
+    </aside>
+  </div>
+  <div class="footer">Generated from docs/new-creator-self-media-whitepaper.txt · UI upgraded with chapter index · 2026-05-09</div>
 </div>
 </body>
 </html>
