@@ -7,7 +7,7 @@
 - 模式: managed
 - 最终状态: finished
 - 开始时间: 2026-05-10 02:45 CST
-- 完成时间: 2026-05-10 03:02 CST
+- 完成时间: 2026-05-10 03:30 CST
 - 执行者: Codex
 - 本地报告路径: `plans/run-reports/2026-05-09-codex-f-run-report-publisher-v2-report.md`
 - 发布页面路径: `publish/ai-ip-previews/runs/2026-05-09-codex-f-run-report-publisher-v2/index.html`
@@ -113,6 +113,18 @@ find publish/ai-ip-previews/runs -type f \( -iname '*.mp4' -o -iname '*.mov' -o 
 result: no forbidden raw media / credential-like files under /runs/
 ```
 
+```text
+git -C publish/ai-ip-previews show --name-only --oneline -1 -- runs/2026-05-09-codex-f-run-report-publisher-v2 runs/index.html
+result: pushed publish repo commit b0b4c08 included runs/2026-05-09-codex-f-run-report-publisher-v2/index.html, runs/2026-05-09-codex-f-run-report-publisher-v2/report.md, and runs/index.html
+```
+
+```text
+curl -I -L --max-time 30 https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-09-codex-f-run-report-publisher-v2/
+result: HTTP/2 200
+curl -I -L --max-time 30 https://schovayang-creator.github.io/ai-ip-previews/runs/
+result: HTTP/2 200
+```
+
 ## 发布链接 / Publish Links
 
 - 本地 Markdown 报告: `plans/run-reports/2026-05-09-codex-f-run-report-publisher-v2-report.md`
@@ -121,25 +133,23 @@ result: no forbidden raw media / credential-like files under /runs/
 - 本地报告索引: `publish/ai-ip-previews/runs/index.html`
 - 预期远程报告 URL: `https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-09-codex-f-run-report-publisher-v2/`
 - 预期远程索引 URL: `https://schovayang-creator.github.io/ai-ip-previews/runs/`
-- 远程 HTTP 验证: 未检查；本任务只生成本地 publish artifacts，未自动 push/deploy。
+- 远程 HTTP 验证: 已检查；`https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-09-codex-f-run-report-publisher-v2/` 返回 HTTP/2 200，`https://schovayang-creator.github.io/ai-ip-previews/runs/` 返回 HTTP/2 200。
 
 ## 跳过项 / Skipped Items
 
 - 没有把旧 report / 旧 HTML 当成本次 V2 完成证据；它们只用于差距分析。
 - 没有改动视频页、主页、原始媒体、cookie、token 或凭证。
-- 没有自动 push 到 GitHub Pages；发布流程仍按项目规则只生成本地页面，远程部署需用户或发布流程执行。
 - 6 个 codex todo 文件已经有固定 `/goal` 前置要求；本次只做核对，不做无意义重复改写。
 
 ## 风险 / Risks
 
 - secret 扫描仍是启发式，只能拒绝明显 token/key/cookie/password 模式，不能替代人工敏感信息审查。
 - publisher 的 Markdown 渲染仍是轻量渲染，不是完整 Markdown 引擎；目前足够覆盖报告页需要的标题、段落、列表、代码块和链接。
-- `/runs/` 远程 URL 只有在 `publish/ai-ip-previews` 被提交并推送后才会真正可访问。
+- GitHub Pages 可能存在短时缓存；本次已验证 V2 报告 URL 和 `/runs/` 索引 URL 均返回 HTTP 200。
 
 ## 下一步 / Next Actions
 
 - 后续任何 managed `/goal` 任务都应使用强化后的 finished 门槛：缺 HTML、缺验证、缺用户标准评审、缺路径、缺索引不能 finished。
-- 若要远程查看 V2 报告，请部署或 push `publish/ai-ip-previews`，再验证 GitHub Pages URL。
 - 如果未来发现报告内容包含敏感信息，应先人工审查 Markdown 报告再发布。
 
 ## 自评 / Self-Review
@@ -156,10 +166,11 @@ result: no forbidden raw media / credential-like files under /runs/
 - `report.md` 发布副本是否已生成：是
 - `/runs/` 索引是否已更新：是
 - 报告路径、HTML 路径、预期远程 URL 是否已记录：是
+- GitHub Pages 远程 URL 是否已验证 HTTP 200：是
 - 是否引入秘密或原始媒体：否
 - 如果最终状态是 finished，是否确认不存在“缺 HTML / 缺验证 / 缺用户标准评审 / 缺路径 / 缺索引”：是
 - 最终状态：finished
 
 ## 完成说明 / Completion Note
 
-本次是直接从 `plans/todo/2026-05-09-codex-f-run-report-publisher.md` 启动的 V2 补丁任务。按 V2 硬规则，旧报告和旧 HTML 没有作为完成证据；本次单独生成了 V2 Markdown 报告、V2 HTML 报告页、V2 `report.md` 副本，并更新 `/runs/` 索引。原 `plans/todo/` 任务文件保持不删除。
+本次是直接从 `plans/todo/2026-05-09-codex-f-run-report-publisher.md` 启动的 V2 补丁任务。按 V2 硬规则，旧报告和旧 HTML 没有作为完成证据；本次单独生成了 V2 Markdown 报告、V2 HTML 报告页、V2 `report.md` 副本，更新 `/runs/` 索引，并验证本地与 GitHub Pages 远程 URL 均为 HTTP 200。原 `plans/todo/` 任务文件保持不删除。
