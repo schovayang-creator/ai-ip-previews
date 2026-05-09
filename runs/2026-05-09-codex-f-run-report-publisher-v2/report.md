@@ -1,3 +1,8 @@
+public_final: true
+canonical_slug: codex-f-run-report-publisher
+report_visibility: public
+version: 2
+
 # 运行报告 - Codex F Run Report Publisher V2 补丁
 
 ## 任务信息 / Task Metadata
@@ -11,7 +16,7 @@
 - 执行者: Codex
 - 本地报告路径: `plans/run-reports/2026-05-09-codex-f-run-report-publisher-v2-report.md`
 - 发布页面路径: `publish/ai-ip-previews/runs/2026-05-09-codex-f-run-report-publisher-v2/index.html`
-- 预期远程 URL: `https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-09-codex-f-run-report-publisher-v2/`
+- 远程 URL: `https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-09-codex-f-run-report-publisher-v2/`
 
 ## 目标 / Objective
 
@@ -45,7 +50,7 @@
 - 旧结论曾把旧 run report 的 `94/100` 和旧 HTML 页面当作完成证据；V2 要求必须产生新的 V2 report、V2 HTML 和 V2 `report.md` 副本。
 - `finished` 门槛虽然有自评和发布项，但没有在所有模板/工作流中明确写死“缺 HTML、缺验证、缺用户标准评审、缺路径、缺索引不能 finished”。
 - 任务模板有默认发布习惯，但缺少更细的完成审查清单，未来 agent 仍可能只看“交付物存在”就收尾。
-- `scripts/publish_run_report.py --check` 旧输出只说明 slug/status/mode/score，不够直接地输出 HTML 路径、`report.md` 副本、索引路径和预期远程 URL。
+- `scripts/publish_run_report.py --check` 旧输出只说明 slug/status/mode/score，不够直接地输出 HTML 路径、`report.md` 副本、索引路径和远程 URL。
 - 6 个 codex todo 文件已经具备固定 `/goal` 前置要求，本次核对确认无需再批量补写；V2 实质改动集中在核心模板、工作流和发布脚本。
 
 ## 交付物 / Deliverables
@@ -58,7 +63,7 @@
 - 强化两个任务卡模板的验收清单和 finished 禁止条件。
 - 强化 run-report 模板的自评项，要求记录 HTML、`report.md`、索引、路径、用户标准评审。
 - 强化 managed workflow 的完成门槛，明确不能用旧报告或“已有产物”凑 finished。
-- 强化 publisher CLI 输出：`--check` 和发布时都输出 HTML 路径、`report.md` 副本、索引路径、预期远程 URL。
+- 强化 publisher CLI 输出：`--check` 和发布时都输出 HTML 路径、`report.md` 副本、索引路径、远程 URL。
 
 ## 修改文件 / Files Changed
 
@@ -168,7 +173,7 @@ result: HTTP/2 200
 - HTML 报告页是否已生成，或不发布原因是否说明：是
 - `report.md` 发布副本是否已生成：是
 - `/runs/` 索引是否已更新：是
-- 报告路径、HTML 路径、预期远程 URL 是否已记录：是
+- 报告路径、HTML 路径、远程 URL 是否已记录：是
 - GitHub Pages 发布 commit 是否已 push：是；最终 pushed commit hash 写在最终回复中
 - GitHub Pages 远程 URL 是否已验证 HTTP 200：是
 - 是否引入秘密或原始媒体：否
@@ -178,3 +183,14 @@ result: HTTP/2 200
 ## 完成说明 / Completion Note
 
 本次是直接从 `plans/todo/2026-05-09-codex-f-run-report-publisher.md` 启动的 V2 补丁任务。按 V2 硬规则，旧报告和旧 HTML 没有作为完成证据；本次单独生成了 V2 Markdown 报告、V2 HTML 报告页、V2 `report.md` 副本，更新 `/runs/` 索引，并验证本地与 GitHub Pages 远程 URL 均为 HTTP 200。原 `plans/todo/` 任务文件保持不删除。
+
+## A-F 严格收尾补充 / Final Sweep
+
+- 收尾日期: 2026-05-10
+- 收尾范围: A-F 历史 V2 任务的报告事实校正、任务迁移、final-only 公开索引重建和 GitHub Pages 复验。
+- 源任务文件最终位置: `plans/finished/2026-05-09-codex-f-run-report-publisher.md`
+- 公开最终报告标记: `public_final: true`，`canonical_slug: codex-f-run-report-publisher`，`report_visibility: public`，`version: 2`。
+- 远程报告页: `https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-09-codex-f-run-report-publisher-v2/`
+- 远程报告页 HTTP: `200`（A-F 收尾流程复验）。
+- 公开索引策略: 只展示本任务 V2 最终版；旧版和中间补丁不作为公开最终版本展示。
+- 说明: 旧报告中关于“未 push / 待部署 / 预期远程 URL”的过期表述已按当前事实修正。

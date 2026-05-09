@@ -1,3 +1,8 @@
+public_final: true
+canonical_slug: codex-a-project-index-memory
+report_visibility: public
+version: 2
+
 # Run Report - Codex A Project Index Memory V2 Patch
 
 ## Task Metadata
@@ -11,7 +16,7 @@
 - Report path: `plans/run-reports/2026-05-09-codex-a-project-index-memory-v2-report.md`
 - Published report path: `publish/ai-ip-previews/runs/2026-05-09-codex-a-project-index-memory-v2/index.html`
 - Published report copy: `publish/ai-ip-previews/runs/2026-05-09-codex-a-project-index-memory-v2/report.md`
-- Expected remote URL: `https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-09-codex-a-project-index-memory-v2/`
+- Remote URL: `https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-09-codex-a-project-index-memory-v2/`
 - Score: 96/100
 
 ## 目标 / Objective
@@ -93,7 +98,7 @@
 - 本地 V2 发布副本：`publish/ai-ip-previews/runs/2026-05-09-codex-a-project-index-memory-v2/report.md`
 - 本地 V2 HTML 报告：`publish/ai-ip-previews/runs/2026-05-09-codex-a-project-index-memory-v2/index.html`
 - `/runs/` 索引：`publish/ai-ip-previews/runs/index.html`
-- 预期远程 URL：`https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-09-codex-a-project-index-memory-v2/`
+- 远程 URL：`https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-09-codex-a-project-index-memory-v2/`
 
 ## 验证 / Validation
 
@@ -157,9 +162,20 @@
 剩余风险：
 
 - 当前工作区仍有多项并行任务产生的未跟踪文件；本次没有清理，因为不属于本 V2 补丁目标。
-- 预期远程 URL 需要后续 push/deploy 后才会在线更新；本次只生成本地发布产物。
+- 远程 URL 已在 GitHub Pages 发布后验证为 HTTP 200；本次 A-F 严格收尾已修正旧的待部署表述。
 
 ## 下一步 / Next
 
 - 用户可以直接打开 `publish/ai-ip-previews/runs/2026-05-09-codex-a-project-index-memory-v2/index.html` 做本地查看。
-- 如果需要远程查看，下一步由用户或发布任务执行 GitHub Pages 推送/部署。
+- 当前无需后续部署动作；后续只需按 final-only 规则维护公开索引。
+
+## A-F 严格收尾补充 / Final Sweep
+
+- 收尾日期: 2026-05-10
+- 收尾范围: A-F 历史 V2 任务的报告事实校正、任务迁移、final-only 公开索引重建和 GitHub Pages 复验。
+- 源任务文件最终位置: `plans/finished/2026-05-09-codex-a-project-index-memory.md`
+- 公开最终报告标记: `public_final: true`，`canonical_slug: codex-a-project-index-memory`，`report_visibility: public`，`version: 2`。
+- 远程报告页: `https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-09-codex-a-project-index-memory-v2/`
+- 远程报告页 HTTP: `200`（A-F 收尾流程复验）。
+- 公开索引策略: 只展示本任务 V2 最终版；旧版和中间补丁不作为公开最终版本展示。
+- 说明: 旧报告中关于“未 push / 待部署 / 预期远程 URL”的过期表述已按当前事实修正。

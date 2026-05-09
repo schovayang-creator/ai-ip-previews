@@ -1,3 +1,8 @@
+public_final: true
+canonical_slug: codex-b-trend-engine
+report_visibility: public
+version: 2
+
 # V2 运行报告 - Codex B 国内外趋势引擎补丁
 
 ## 任务元信息
@@ -176,10 +181,21 @@ http://127.0.0.1:8765/runs/ -> HTTP/1.0 200 OK
 - 本地 V2 HTML: `publish/ai-ip-previews/runs/2026-05-09-codex-b-trend-engine-v2/index.html`
 - 本地 V2 report.md: `publish/ai-ip-previews/runs/2026-05-09-codex-b-trend-engine-v2/report.md`
 - 本地索引: `publish/ai-ip-previews/runs/index.html`
-- 预期远程 URL（需提交并部署后生效）: `https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-09-codex-b-trend-engine-v2/`
+- 远程 URL（已提交发布并验证远程 HTTP 200）: `https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-09-codex-b-trend-engine-v2/`
 
 ## 最终状态
 
 `finished`
 
 本次 V2 补丁已满足完成条件：读取旧产出和原始需求，指出旧产出差距，完成实质补丁，执行验证，生成新的 V2 Markdown 报告和 HTML 报告页，并通过本地 HTTP 200 验证。
+
+## A-F 严格收尾补充 / Final Sweep
+
+- 收尾日期: 2026-05-10
+- 收尾范围: A-F 历史 V2 任务的报告事实校正、任务迁移、final-only 公开索引重建和 GitHub Pages 复验。
+- 源任务文件最终位置: `plans/finished/2026-05-09-codex-b-trend-engine.md`
+- 公开最终报告标记: `public_final: true`，`canonical_slug: codex-b-trend-engine`，`report_visibility: public`，`version: 2`。
+- 远程报告页: `https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-09-codex-b-trend-engine-v2/`
+- 远程报告页 HTTP: `200`（A-F 收尾流程复验）。
+- 公开索引策略: 只展示本任务 V2 最终版；旧版和中间补丁不作为公开最终版本展示。
+- 说明: 旧报告中关于“未 push / 待部署 / 预期远程 URL”的过期表述已按当前事实修正。

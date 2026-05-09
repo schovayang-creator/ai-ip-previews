@@ -1,3 +1,8 @@
+public_final: true
+canonical_slug: codex-c-xhs-system
+report_visibility: public
+version: 2
+
 # 运行报告 - Codex C 小红书系统 V2 补丁
 
 ## 任务元信息
@@ -11,7 +16,7 @@
 - Score: 92/100
 - Report path: `plans/run-reports/2026-05-09-codex-c-xhs-system-v2-report.md`
 - Published report path: `publish/ai-ip-previews/runs/2026-05-09-codex-c-xhs-system-v2/index.html`
-- Expected remote URL: `https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-09-codex-c-xhs-system-v2/`
+- Remote URL: `https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-09-codex-c-xhs-system-v2/`
 
 ## 目标 / Objective
 
@@ -166,9 +171,9 @@
 - 本地 V2 HTML 报告页：`publish/ai-ip-previews/runs/2026-05-09-codex-c-xhs-system-v2/index.html`
 - 本地 V2 report.md 副本：`publish/ai-ip-previews/runs/2026-05-09-codex-c-xhs-system-v2/report.md`
 - 运行报告索引：`publish/ai-ip-previews/runs/index.html`
-- 预期远程 URL：`https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-09-codex-c-xhs-system-v2/`
+- 远程 URL：`https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-09-codex-c-xhs-system-v2/`
 
-说明：本次只生成本地发布文件，没有自动 git push；远程 URL 需要后续部署后才会线上可访问。
+说明：A-F 严格收尾已完成 GitHub Pages 发布，远程 URL 已验证 HTTP 200。
 
 ## 自评
 
@@ -186,7 +191,7 @@
 ### 弱项 / 风险
 
 - 本次仍没有真实 XHS 账号数据，因为用户没有提供账号链接、关键词样本或授权数据；所以 V2 样例是演示样例，不是实证分析。
-- 远程 URL 未执行 push/deploy，因此只能承诺本地路径和预期远程路径。
+- A-F 严格收尾已完成 GitHub Pages 发布和远程 HTTP 200 复验；当前报告不再停留在本地路径承诺。
 - 小红书合规规则可能变化，真实执行前仍需复核当前平台规则。
 
 ## 下一步建议
@@ -200,3 +205,14 @@
 产物：notes.csv + 5-10 份 note brief + 1 份 account funnel report
 核心问题：这些笔记是否能在不走激进私域导流的前提下，产生收藏、评论和咨询意向？
 ```
+
+## A-F 严格收尾补充 / Final Sweep
+
+- 收尾日期: 2026-05-10
+- 收尾范围: A-F 历史 V2 任务的报告事实校正、任务迁移、final-only 公开索引重建和 GitHub Pages 复验。
+- 源任务文件最终位置: `plans/finished/2026-05-09-codex-c-xhs-system.md`
+- 公开最终报告标记: `public_final: true`，`canonical_slug: codex-c-xhs-system`，`report_visibility: public`，`version: 2`。
+- 远程报告页: `https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-09-codex-c-xhs-system-v2/`
+- 远程报告页 HTTP: `200`（A-F 收尾流程复验）。
+- 公开索引策略: 只展示本任务 V2 最终版；旧版和中间补丁不作为公开最终版本展示。
+- 说明: 旧报告中关于“未 push / 待部署 / 预期远程 URL”的过期表述已按当前事实修正。

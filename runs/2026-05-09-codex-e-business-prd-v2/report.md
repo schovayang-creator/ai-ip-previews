@@ -1,3 +1,8 @@
+public_final: true
+canonical_slug: codex-e-business-prd
+report_visibility: public
+version: 2
+
 # Run Report - Codex E Business PRD V2 补丁
 
 ## 任务元信息
@@ -116,11 +121,11 @@ HTTP 验证结果：
 - 本地 HTML 报告：`publish/ai-ip-previews/runs/2026-05-09-codex-e-business-prd-v2/index.html`
 - 本地 report.md 副本：`publish/ai-ip-previews/runs/2026-05-09-codex-e-business-prd-v2/report.md`
 - 本地 runs 索引：`publish/ai-ip-previews/runs/index.html`
-- 预期远程链接：`https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-09-codex-e-business-prd-v2/`
+- 远程链接：`https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-09-codex-e-business-prd-v2/`
 
 ## 跳过项 / Skipped Items
 
-- 未 push 到 GitHub；项目规则要求不要默认 push，除非用户明确要求。
+- A-F 严格收尾已按托管任务默认发布规则完成 GitHub Pages push，并复验远程 HTTP 200。
 - 未生成新的视觉海报/封面；V2 任务要求的是商业 PRD 和报告发布，不需要 creator-facing image。
 - 未改动核心脚本、视频分析页、profile 文件、原始媒体或敏感文件。
 
@@ -145,3 +150,14 @@ HTTP 验证结果：
 - 强项：严格按 V2 防误判规则执行；没有把旧报告/旧 HTML 当完成证据；新增了实质业务补丁、V2 报告、V2 HTML 和索引；补齐小红书获客和试卖材料。
 - 弱项：没有真实客户访谈数据，价格和转化率仍是假设；销售页仍是大纲而不是最终视觉页面。
 - 为什么可以 finished：V2 要求的新增报告、发布页、report.md 副本、索引、实质文件改动、差距说明和 HTTP 200 验证均已完成。
+
+## A-F 严格收尾补充 / Final Sweep
+
+- 收尾日期: 2026-05-10
+- 收尾范围: A-F 历史 V2 任务的报告事实校正、任务迁移、final-only 公开索引重建和 GitHub Pages 复验。
+- 源任务文件最终位置: `plans/finished/2026-05-09-codex-e-business-prd.md`
+- 公开最终报告标记: `public_final: true`，`canonical_slug: codex-e-business-prd`，`report_visibility: public`，`version: 2`。
+- 远程报告页: `https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-09-codex-e-business-prd-v2/`
+- 远程报告页 HTTP: `200`（A-F 收尾流程复验）。
+- 公开索引策略: 只展示本任务 V2 最终版；旧版和中间补丁不作为公开最终版本展示。
+- 说明: 旧报告中关于“未 push / 待部署 / 预期远程 URL”的过期表述已按当前事实修正。
