@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Codex D Skill And Tool Evaluation Sandbox V2 Patch · AI-IP-Studio 运行报告</title>
+  <style>
+    :root{--paper:#f6ead8;--card:#fffaf1;--ink:#201713;--muted:#75675d;--line:#ddc4aa;--red:#a93427;--green:#1f6a57;--amber:#b76521;--blue:#285f78;--coal:#17110f;--shadow:0 22px 70px rgba(52,30,14,.12);--sans:"Avenir Next","PingFang SC","Hiragino Sans GB",sans-serif;--serif:"Songti SC","Kaiti SC","Hiragino Mincho ProN",serif}
+    *{box-sizing:border-box}body{margin:0;color:var(--ink);font-family:var(--sans);background:radial-gradient(circle at 8% 8%,rgba(199,107,36,.22),transparent 30%),linear-gradient(135deg,#ead6bd 0%,var(--paper) 52%,#fff8ec 100%)}
+    .page{width:min(920px,100%);margin:0 auto;padding:20px 14px 56px}.nav{display:flex;gap:10px;overflow:auto;margin-bottom:14px}.nav a{white-space:nowrap;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:9px 12px;background:rgba(255,250,241,.88);color:var(--muted);font-size:13px;font-weight:800}
+    .hero{border:1px solid var(--line);border-radius:30px;background:linear-gradient(135deg,#fffaf1 0%,#fff2d9 70%,#f3bd78 100%);padding:24px;box-shadow:var(--shadow)}.kicker{color:var(--red);font-size:12px;font-weight:900;letter-spacing:.14em;text-transform:uppercase}h1{margin:8px 0 10px;font-family:var(--serif);font-size:clamp(32px,8vw,54px);line-height:1.04;letter-spacing:-.05em}.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.pill{border:1px solid var(--line);border-radius:999px;padding:8px 10px;background:rgba(255,250,241,.82);font-weight:800;color:var(--muted)}.badge{border-radius:999px;padding:8px 12px;color:#fff;font-weight:900}.finished{background:var(--green)}.review{background:var(--blue)}.blocked{background:var(--red)}
+    .grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:16px}.card{border:1px solid var(--line);border-radius:24px;background:rgba(255,250,241,.9);padding:18px;box-shadow:0 12px 40px rgba(52,30,14,.07)}h2{margin:0 0 10px;font-family:var(--serif);font-size:26px;letter-spacing:-.03em}h3{margin:16px 0 6px;font-size:18px}p,li{line-height:1.72}.muted{color:var(--muted)}ul{padding-left:20px;margin:8px 0}.links{display:grid;gap:8px}.links a{display:block;text-decoration:none;border:1px solid var(--line);border-radius:16px;background:#fffdf8;padding:12px;color:var(--coal);font-weight:800;overflow-wrap:anywhere}pre{white-space:pre-wrap;overflow:auto;border:1px solid var(--line);border-radius:16px;background:#fffdf8;padding:14px;color:var(--muted)}code{background:#fffdf8;border:1px solid var(--line);border-radius:6px;padding:1px 4px}.footer{margin-top:18px;text-align:center;color:var(--muted);font-size:13px}
+    @media(min-width:760px){.grid.two{grid-template-columns:1fr 1fr}.page{padding:28px 22px 72px}}
+  </style>
+</head>
+<body>
+  <main class="page">
+    <nav class="nav">
+      <a href="../../">V3 主页</a>
+      <a href="../">运行报告索引</a>
+      <a href="report.md">Markdown 报告</a>
+    </nav>
+    <section class="hero">
+      <div class="kicker">AI-IP-Studio · 运行报告</div>
+      <h1>Codex D Skill And Tool Evaluation Sandbox V2 Patch</h1>
+      <p class="muted">基于已有产出继续做 V2 补丁，不是重写旧制度。目标是把工具/技能评估系统从“框架”补到“能真实试用、能隔离、能二次适配评分”的程度，并产出新的 V2 运行报告页与 /runs/ 索引。</p>
+      <div class="meta">
+        <span class="badge review">review</span>
+        <span class="pill">模式：managed</span>
+        <span class="pill">分数：92/100</span>
+        <span class="pill">更新：2026-05-10</span>
+      </div>
+    </section>
+
+    <section class="grid two">
+      <div class="card"><h2>目标</h2><p>基于已有产出继续做 V2 补丁，不是重写旧制度。目标是把工具/技能评估系统从“框架”补到“能真实试用、能隔离、能二次适配评分”的程度，并产出新的 V2 运行报告页与 <code>/runs/</code> 索引。</p></div>
+      <div class="card"><h2>验证</h2><h3>已完成的审计动作</h3>
+<ul>
+<li>重新读取了任务文件最前面的三段：<code>goal</code> 启动前置要求、<code>V2 防误判硬规则</code>、<code>当前执行目标：V2 补丁任务</code>。</li>
+<li>重新读取了旧产物和旧 report，确认它们只能作为输入，不能当本次完成证据。</li>
+<li>检查了当前修改文件，确认 V2 的实质补丁落在：</li>
+<li>试用梯子；</li>
+<li>技能调用矩阵；</li>
+<li>候选工具的非安装型评估路径。</li>
+</ul>
+<h3>待执行的发布验证</h3>
+<ul>
+<li>运行 <code>python3 scripts/publish_run_report.py plans/run-reports/2026-05-09-codex-d-skill-tool-eval-v2-report.md</code>。</li>
+<li>启动本地 HTTP 服务并验证：</li>
+<li><code>curl -I http://127.0.0.1:8765/runs/</code></li>
+<li><code>curl -I http://127.0.0.1:8765/runs/2026-05-09-codex-d-skill-tool-eval-v2/</code></li>
+<li>若返回 <code>HTTP/1.0 200 OK</code>，再把状态从 <code>review</code> 改为 <code>finished</code>。</li>
+</ul></div>
+    </section>
+
+    <section class="card"><h2>修改 / 新建文件</h2><h3>修改文件</h3><ul>
+<li><code>experiments/tool-evals/README.md</code></li>
+<li><code>docs/installed-skill-map.md</code></li>
+<li><code>docs/skill-and-tool-evaluation-guide.md</code></li>
+</ul>
+<h3>新建文件</h3><ul>
+<li><code>plans/run-reports/2026-05-09-codex-d-skill-tool-eval-v2-report.md</code></li>
+<li><code>publish/ai-ip-previews/runs/2026-05-09-codex-d-skill-tool-eval-v2/report.md</code> *(published copy, to be generated)*</li>
+<li><code>publish/ai-ip-previews/runs/2026-05-09-codex-d-skill-tool-eval-v2/index.html</code> *(published copy, to be generated)*</li>
+<li><code>publish/ai-ip-previews/runs/index.html</code> *(updated index, to be generated)*</li>
+</ul></section>
+    <section class="card"><h2>链接</h2><div class="links"><a href="report.md">Markdown 报告</a>
+<a href="../">运行报告索引</a>
+<a href="https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-09-codex-d-skill-tool-eval-v2/">预期远程链接</a></div></section>
+    <section class="card"><h2>详情</h2><h3>交付物</h3><h3>1. 更可执行的沙箱试用梯子</h3>
+<p>已在 <code>experiments/tool-evals/README.md</code> 补充 V2 试用等级：</p>
+<ul>
+<li><code>L0 文档审查</code></li>
+<li><code>L1 本地无网络安全测试</code></li>
+<li><code>L2 沙箱运行</code></li>
+<li><code>L3 接入 AI-IP-Studio 样例任务</code></li>
+<li><code>L4 适配原型</code></li>
+<li><code>L5 推广候选</code></li>
+</ul>
+<p>每一级都写了进入条件、退出条件和允许动作，避免以后只靠抽象模板猜步骤。</p>
+<h3>2. 更实用的技能调用矩阵</h3>
+<p>已在 <code>docs/installed-skill-map.md</code> 增补：</p>
+<ul>
+<li><code>Must-call / Should-not-call</code> 矩阵；</li>
+<li>goal、account、trend、XHS、publishing、reports、business、writing 的更细粒度调用边界；</li>
+<li><code>dbs-*</code>、<code>lark-*</code>、Office 技能何时该用、何时不该用。</li>
+</ul>
+<h3>3. 候选工具非安装型评估路径</h3>
+<p>已在 <code>docs/skill-and-tool-evaluation-guide.md</code> 增补：</p>
+<ul>
+<li>5 个重点候选：<code>yt-dlp</code>、<code>XHS-Downloader</code>、<code>MediaCrawler</code>、<code>RSSHub</code>、<code>auto-editor</code>；</li>
+<li>每个候选为什么值得看、为什么暂时不直接下载运行；</li>
+<li>下一步安全测试命令/动作；</li>
+<li>继续坚持“不全局安装、不碰 cookie/token、不污染主项目”。</li>
+</ul>
+<h3>4. V2 报告与发布页</h3>
+<p>本次任务要求新的 V2 Markdown 报告、HTML 报告页、<code>report.md</code> 副本和 <code>/runs/</code> 索引。</p>
+<p>这些产物需要通过本地发布脚本和 HTTP 验证后，才能算 V2 证据完整。</p>
+<h3>自评</h3><ul>
+<li>Score: 92/100</li>
+<li>Completion gate passed: no</li>
+<li>Strong points:</li>
+<li>V2 的差距被明确拆出来了，而不是继续拿旧框架当完成。</li>
+<li>实验沙箱、技能矩阵、候选评估路径都变成了可执行条目。</li>
+<li>新的 V2 报告路径与发布路径已经明确。</li>
+<li>Weak points:</li>
+<li>还缺最终发布验证和 HTTP 200 证据。</li>
+<li>还没有真正执行外部工具的 L1/L2 样例测试，只是把试用路径补齐了。</li>
+<li>What was skipped and why:</li>
+<li>全局安装、cookie/登录测试、原始媒体处理：因为任务明确要求安全隔离。</li>
+<li>直接改 <code>docs/tool-candidates.md</code>：因为本次补丁目标更聚焦在执行面和发布链路。</li>
+</ul></section>
+    <section class="card"><h2>风险与下一步</h2><h3>风险</h3><ul>
+<li>目前还没完成本地 HTTP 200 验证，所以最终状态暂时保留为 <code>review</code>。</li>
+<li>这次 V2 仍然没有做真实平台登录或 cookie 型工具测试；这是刻意的安全约束，不是遗漏。</li>
+<li><code>docs/tool-candidates.md</code> 没有改动，因为本次 V2 的重点是把“可试用、可隔离、可重评分”的执行面补齐到核心文档和报告链路里。</li>
+</ul>
+<h3>下一步</h3><p>1. 运行发布脚本生成 V2 HTML 报告页与 <code>/runs/</code> 索引。</p>
+<p>2. 用本地 HTTP 服务验证 <code>runs/</code> 和具体报告页都返回 200。</p>
+<p>3. 如果验证通过，把报告状态改成 <code>finished</code>，并刷新发布页。</p>
+<p>4. 后续再按这套 V2 梯子去试 <code>yt-dlp</code>、<code>RSSHub</code>、<code>XHS-Downloader</code>、<code>MediaCrawler</code>、<code>auto-editor</code>。</p></section>
+
+    <div class="footer">AI-IP-Studio · 运行报告页面 · 适合手机和微信查看</div>
+  </main>
+</body>
+</html>

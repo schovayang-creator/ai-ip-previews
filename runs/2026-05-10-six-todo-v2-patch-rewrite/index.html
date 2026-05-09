@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>六个 Todo V2 补丁目标回写 · AI-IP-Studio 运行报告</title>
+  <style>
+    :root{--paper:#f6ead8;--card:#fffaf1;--ink:#201713;--muted:#75675d;--line:#ddc4aa;--red:#a93427;--green:#1f6a57;--amber:#b76521;--blue:#285f78;--coal:#17110f;--shadow:0 22px 70px rgba(52,30,14,.12);--sans:"Avenir Next","PingFang SC","Hiragino Sans GB",sans-serif;--serif:"Songti SC","Kaiti SC","Hiragino Mincho ProN",serif}
+    *{box-sizing:border-box}body{margin:0;color:var(--ink);font-family:var(--sans);background:radial-gradient(circle at 8% 8%,rgba(199,107,36,.22),transparent 30%),linear-gradient(135deg,#ead6bd 0%,var(--paper) 52%,#fff8ec 100%)}
+    .page{width:min(920px,100%);margin:0 auto;padding:20px 14px 56px}.nav{display:flex;gap:10px;overflow:auto;margin-bottom:14px}.nav a{white-space:nowrap;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:9px 12px;background:rgba(255,250,241,.88);color:var(--muted);font-size:13px;font-weight:800}
+    .hero{border:1px solid var(--line);border-radius:30px;background:linear-gradient(135deg,#fffaf1 0%,#fff2d9 70%,#f3bd78 100%);padding:24px;box-shadow:var(--shadow)}.kicker{color:var(--red);font-size:12px;font-weight:900;letter-spacing:.14em;text-transform:uppercase}h1{margin:8px 0 10px;font-family:var(--serif);font-size:clamp(32px,8vw,54px);line-height:1.04;letter-spacing:-.05em}.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.pill{border:1px solid var(--line);border-radius:999px;padding:8px 10px;background:rgba(255,250,241,.82);font-weight:800;color:var(--muted)}.badge{border-radius:999px;padding:8px 12px;color:#fff;font-weight:900}.finished{background:var(--green)}.review{background:var(--blue)}.blocked{background:var(--red)}
+    .grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:16px}.card{border:1px solid var(--line);border-radius:24px;background:rgba(255,250,241,.9);padding:18px;box-shadow:0 12px 40px rgba(52,30,14,.07)}h2{margin:0 0 10px;font-family:var(--serif);font-size:26px;letter-spacing:-.03em}h3{margin:16px 0 6px;font-size:18px}p,li{line-height:1.72}.muted{color:var(--muted)}ul{padding-left:20px;margin:8px 0}.links{display:grid;gap:8px}.links a{display:block;text-decoration:none;border:1px solid var(--line);border-radius:16px;background:#fffdf8;padding:12px;color:var(--coal);font-weight:800;overflow-wrap:anywhere}pre{white-space:pre-wrap;overflow:auto;border:1px solid var(--line);border-radius:16px;background:#fffdf8;padding:14px;color:var(--muted)}code{background:#fffdf8;border:1px solid var(--line);border-radius:6px;padding:1px 4px}.footer{margin-top:18px;text-align:center;color:var(--muted);font-size:13px}
+    @media(min-width:760px){.grid.two{grid-template-columns:1fr 1fr}.page{padding:28px 22px 72px}}
+  </style>
+</head>
+<body>
+  <main class="page">
+    <nav class="nav">
+      <a href="../../">V3 主页</a>
+      <a href="../">运行报告索引</a>
+      <a href="report.md">Markdown 报告</a>
+    </nav>
+    <section class="hero">
+      <div class="kicker">AI-IP-Studio · 运行报告</div>
+      <h1>六个 Todo V2 补丁目标回写</h1>
+      <p class="muted">纠正此前只给 6 个旧 todo 加 /goal 前置规范、但没有根据已有产出和用户原始需求改写任务本体的问题。现在已直接修改原本 6 个 md 文件，把它们从“旧任务”升级为“V2 补丁任务”，旧正文只作为背景参考。</p>
+      <div class="meta">
+        <span class="badge finished">finished</span>
+        <span class="pill">模式：office</span>
+        <span class="pill">分数：96/100</span>
+        <span class="pill">更新：2026-05-10</span>
+      </div>
+    </section>
+
+    <section class="grid two">
+      <div class="card"><h2>目标</h2><p>纠正此前只给 6 个旧 todo 加 <code>/goal</code> 前置规范、但没有根据已有产出和用户原始需求改写任务本体的问题。现在已直接修改原本 6 个 md 文件，把它们从“旧任务”升级为“V2 补丁任务”，旧正文只作为背景参考。</p></div>
+      <div class="card"><h2>验证</h2><p>执行了内容校验脚本，确认 6 个任务文件都包含对应 V2 补丁关键词：</p>
+<ul>
+<li>A：<code>当前执行目标：V2 补丁任务</code>、<code>docs/decision-log.md</code>、<code>旧任务必须回写</code>、<code>默认发布 HTML 报告页</code>。</li>
+<li>B：<code>国内外热点</code>、<code>YouTube</code>、<code>X/Twitter</code>、<code>GitHub</code>、<code>视觉证据</code>。</li>
+<li>C：<code>小红书</code>、<code>真实 pilot</code>、<code>10-30 条高信号笔记</code>、<code>引流/带货/服务</code>。</li>
+<li>D：<code>真实试用等级</code>、<code>L0 文档审查</code>、<code>L2 沙箱运行</code>、<code>二次适配评分</code>。</li>
+<li>E：<code>可以拿去卖</code>、<code>小红书获客</code>、<code>试卖素材清单</code>、<code>单元经济</code>。</li>
+<li>F：<code>任务文件不自包含</code>、<code>默认不发布</code>、<code>finished 过宽</code>、<code>任务完成审查清单</code>。</li>
+</ul>
+<p>校验结果：<code>all 6 todo files contain v2 patch requirements</code>。</p></div>
+    </section>
+
+    <section class="card"><h2>修改 / 新建文件</h2><h3>修改文件</h3><ul>
+<li><code>plans/todo/2026-05-09-codex-a-project-index-memory.md</code></li>
+<li><code>plans/todo/2026-05-09-codex-b-trend-engine.md</code></li>
+<li><code>plans/todo/2026-05-09-codex-c-xhs-system.md</code></li>
+<li><code>plans/todo/2026-05-09-codex-d-skill-tool-eval.md</code></li>
+<li><code>plans/todo/2026-05-09-codex-e-business-prd.md</code></li>
+<li><code>plans/todo/2026-05-09-codex-f-run-report-publisher.md</code></li>
+</ul>
+<h3>新建文件</h3><ul>
+<li><code>plans/run-reports/2026-05-10-six-todo-v2-patch-rewrite-report.md</code></li>
+</ul></section>
+    <section class="card"><h2>链接</h2><div class="links"><a href="report.md">Markdown 报告</a>
+<a href="../">运行报告索引</a>
+<a href="https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-10-six-todo-v2-patch-rewrite/">预期远程链接</a></div></section>
+    <section class="card"><h2>详情</h2><h3>交付物</h3><ul>
+<li>6 个原 <code>plans/todo/2026-05-09-codex-*.md</code> 文件均已新增 <code>当前执行目标：V2 补丁任务（以本段为准）</code>。</li>
+<li>每个任务都要求先读已有产出和原始需求，再做二次补丁，不是原样重跑。</li>
+<li>A 任务升级为项目索引/记忆系统 V2：补 AGENTS 路由、decision log、quickstart、用户偏好和旧任务回写教训。</li>
+<li>B 任务升级为国内外趋势引擎 V2：补 YouTube / X / GitHub 高信号源、视觉证据切片、国内外热点、钩子模板。</li>
+<li>C 任务升级为 XHS 系统 V2：补真实 pilot、10-30 条高信号笔记采样、引流/带货/服务路径、样例。</li>
+<li>D 任务升级为工具评估 V2：补真实试用等级、沙箱运行、原始评分 + 适配评分、候选工具安全元数据评估。</li>
+<li>E 任务升级为商业 PRD V2：补可直接试卖的 offer、小红书获客路径、试卖素材、单元经济和阶段顺序。</li>
+<li>F 任务升级为报告系统 V2：补任务文件自包含、默认发布、finished 审查、HTML/索引验收。</li>
+</ul>
+<h3>发布链接</h3><ul>
+<li>本地报告页面：<code>publish/ai-ip-previews/runs/2026-05-10-six-todo-v2-patch-rewrite/index.html</code></li>
+<li>本地报告索引：<code>publish/ai-ip-previews/runs/index.html</code></li>
+<li>预期远程链接：<code>https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-10-six-todo-v2-patch-rewrite/</code></li>
+</ul>
+<h3>跳过项</h3><ul>
+<li>没有新建 6 个额外 todo 文件；按用户要求，直接改在原本 6 个 md 文件里。</li>
+<li>没有执行 6 个 V2 任务本身；本次只负责把任务提示词改对，让后续 6 个 Codex 按新目标运行。</li>
+<li>没有 push GitHub；本次只生成本地发布目录。</li>
+</ul>
+<h3>自评</h3><ul>
+<li>分数: 96/100</li>
+<li>达标原因：这次终于把 V2 补丁目标写进了原本 6 个 md 文件，而不是只改模板或新增说明。</li>
+<li>扣分原因：尚未实际执行 6 个 V2 任务；这一步应该由 6 个并行 Codex 完成。</li>
+</ul>
+<h3>完成说明</h3><p>本次修复的是任务提示词层。6 个旧 todo 现在已经不是原样旧任务，而是“读取已有产出 + 对照原始需求 + 做 V2 补丁 + 默认发布报告”的新任务。用户可以继续按习惯只发送 <code>/goal + 文件路径</code>。</p></section>
+    <section class="card"><h2>风险与下一步</h2><h3>风险</h3><ul>
+<li>6 个 V2 任务真正执行后仍需要各自更新运行报告和 HTML 页面。</li>
+<li>旧正文仍保留在文件后半部分，可能有旧 wording；但文件已明确“当前执行目标 V2 以本段为准”。</li>
+<li>如果后续 Codex 忽略本段，说明它没有按任务文件顺序读取，需要在最终报告中判为不达标。</li>
+</ul>
+<h3>下一步</h3><p>用户可以直接复制以下 6 行分别开 Codex：</p>
+<pre>/goal /Users/yang/Desktop/AI-IP-Studio/plans/todo/2026-05-09-codex-a-project-index-memory.md
+/goal /Users/yang/Desktop/AI-IP-Studio/plans/todo/2026-05-09-codex-b-trend-engine.md
+/goal /Users/yang/Desktop/AI-IP-Studio/plans/todo/2026-05-09-codex-c-xhs-system.md
+/goal /Users/yang/Desktop/AI-IP-Studio/plans/todo/2026-05-09-codex-d-skill-tool-eval.md
+/goal /Users/yang/Desktop/AI-IP-Studio/plans/todo/2026-05-09-codex-e-business-prd.md
+/goal /Users/yang/Desktop/AI-IP-Studio/plans/todo/2026-05-09-codex-f-run-report-publisher.md</pre></section>
+
+    <div class="footer">AI-IP-Studio · 运行报告页面 · 适合手机和微信查看</div>
+  </main>
+</body>
+</html>

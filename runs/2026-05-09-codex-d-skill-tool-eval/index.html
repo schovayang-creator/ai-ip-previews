@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Codex D Skill And Tool Evaluation Sandbox · AI-IP-Studio 运行报告</title>
+  <style>
+    :root{--paper:#f6ead8;--card:#fffaf1;--ink:#201713;--muted:#75675d;--line:#ddc4aa;--red:#a93427;--green:#1f6a57;--amber:#b76521;--blue:#285f78;--coal:#17110f;--shadow:0 22px 70px rgba(52,30,14,.12);--sans:"Avenir Next","PingFang SC","Hiragino Sans GB",sans-serif;--serif:"Songti SC","Kaiti SC","Hiragino Mincho ProN",serif}
+    *{box-sizing:border-box}body{margin:0;color:var(--ink);font-family:var(--sans);background:radial-gradient(circle at 8% 8%,rgba(199,107,36,.22),transparent 30%),linear-gradient(135deg,#ead6bd 0%,var(--paper) 52%,#fff8ec 100%)}
+    .page{width:min(920px,100%);margin:0 auto;padding:20px 14px 56px}.nav{display:flex;gap:10px;overflow:auto;margin-bottom:14px}.nav a{white-space:nowrap;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:9px 12px;background:rgba(255,250,241,.88);color:var(--muted);font-size:13px;font-weight:800}
+    .hero{border:1px solid var(--line);border-radius:30px;background:linear-gradient(135deg,#fffaf1 0%,#fff2d9 70%,#f3bd78 100%);padding:24px;box-shadow:var(--shadow)}.kicker{color:var(--red);font-size:12px;font-weight:900;letter-spacing:.14em;text-transform:uppercase}h1{margin:8px 0 10px;font-family:var(--serif);font-size:clamp(32px,8vw,54px);line-height:1.04;letter-spacing:-.05em}.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.pill{border:1px solid var(--line);border-radius:999px;padding:8px 10px;background:rgba(255,250,241,.82);font-weight:800;color:var(--muted)}.badge{border-radius:999px;padding:8px 12px;color:#fff;font-weight:900}.finished{background:var(--green)}.review{background:var(--blue)}.blocked{background:var(--red)}
+    .grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:16px}.card{border:1px solid var(--line);border-radius:24px;background:rgba(255,250,241,.9);padding:18px;box-shadow:0 12px 40px rgba(52,30,14,.07)}h2{margin:0 0 10px;font-family:var(--serif);font-size:26px;letter-spacing:-.03em}h3{margin:16px 0 6px;font-size:18px}p,li{line-height:1.72}.muted{color:var(--muted)}ul{padding-left:20px;margin:8px 0}.links{display:grid;gap:8px}.links a{display:block;text-decoration:none;border:1px solid var(--line);border-radius:16px;background:#fffdf8;padding:12px;color:var(--coal);font-weight:800;overflow-wrap:anywhere}pre{white-space:pre-wrap;overflow:auto;border:1px solid var(--line);border-radius:16px;background:#fffdf8;padding:14px;color:var(--muted)}code{background:#fffdf8;border:1px solid var(--line);border-radius:6px;padding:1px 4px}.footer{margin-top:18px;text-align:center;color:var(--muted);font-size:13px}
+    @media(min-width:760px){.grid.two{grid-template-columns:1fr 1fr}.page{padding:28px 22px 72px}}
+  </style>
+</head>
+<body>
+  <main class="page">
+    <nav class="nav">
+      <a href="../../">V3 主页</a>
+      <a href="../">运行报告索引</a>
+      <a href="report.md">Markdown 报告</a>
+    </nav>
+    <section class="hero">
+      <div class="kicker">AI-IP-Studio · 运行报告</div>
+      <h1>Codex D Skill And Tool Evaluation Sandbox</h1>
+      <p class="muted">Create a safe evaluation system for testing external skills/tools related to short-video, social-media research, trend monitoring, account analysis, and content automation. The system needed experiment folder rules, evaluation templates, an</p>
+      <div class="meta">
+        <span class="badge finished">finished</span>
+        <span class="pill">模式：managed</span>
+        <span class="pill">分数：94/100</span>
+        <span class="pill">更新：2026-05-09</span>
+      </div>
+    </section>
+
+    <section class="grid two">
+      <div class="card"><h2>目标</h2><p>Create a safe evaluation system for testing external skills/tools related to short-video, social-media research, trend monitoring, account analysis, and content automation. The system needed experiment folder rules, evaluation templates, an installed skill map, a guide for searching/evaluating/adapting tools, an existing skill audit, a future candidate search plan, and this run report.</p></div>
+      <div class="card"><h2>验证</h2><p>| Requirement | Evidence | Status |</p>
+<p>|---|---|---|</p>
+<p>| Required deliverables exist | All required allowed files now exist, including this run report. | pass |</p>
+<p>| Required reading inspected | Listed in <code>Context Read</code>; task prompt, AGENTS, raw requests, interpretation, git policy, tool candidates, and relevant skill docs were read. | pass |</p>
+<p>| Write scope respected | Created only files allowed by the task. Inspected but did not modify <code>docs/tool-candidates.md</code>. | pass |</p>
+<p>| No unsafe global installs | No package/tool install commands were run. Only docs and public metadata checks were performed. | pass |</p>
+<p>| Experiment folders separated | <code>experiments/tool-evals/</code> and <code>experiments/skill-evals/</code> now have separate rules and layouts. | pass |</p>
+<p>| Templates cover tool, skill, safety, adaptation/re-score | Tool template contains tool, skill addendum, and adaptation/re-score addendum; safety template is separate. | pass |</p>
+<p>| Original/adapted score required | <code>experiments/README.md</code> and template scorecards require both scores. | pass |</p>
+<p>| Existing skills mapped | <code>docs/installed-skill-map.md</code> maps project and visible global skills by use case, overlap, status, and when not to use. | pass |</p>
+<p>| Candidate search plan exists | <code>docs/skill-and-tool-evaluation-guide.md</code> contains future search plan and first 5 recommended experiments. | pass |</p>
+<p>| Future agents can evaluate consistently | Folder layout, execution levels, scorecard, stop conditions, and promotion gates are documented. | pass |</p></div>
+    </section>
+
+    <section class="card"><h2>修改 / 新建文件</h2><h3>修改文件</h3><ul>
+<li>No pre-existing in-scope files were modified.</li>
+<li>No files outside the task write scope were edited.</li>
+<li><code>docs/tool-candidates.md</code> was inspected but intentionally left unchanged to respect the strict write scope.</li>
+</ul>
+<h3>新建文件</h3><ul>
+<li><code>experiments/README.md</code></li>
+<li><code>experiments/skill-evals/README.md</code></li>
+<li><code>experiments/tool-evals/README.md</code></li>
+<li><code>experiments/templates/tool-evaluation-template.md</code></li>
+<li><code>experiments/templates/safety-review-template.md</code></li>
+<li><code>docs/skill-and-tool-evaluation-guide.md</code></li>
+<li><code>docs/installed-skill-map.md</code></li>
+<li><code>plans/run-reports/2026-05-09-codex-d-skill-tool-eval-report.md</code></li>
+</ul></section>
+    <section class="card"><h2>链接</h2><div class="links"><a href="report.md">Markdown 报告</a>
+<a href="../">运行报告索引</a>
+<a href="https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-09-codex-d-skill-tool-eval/">预期远程链接</a></div></section>
+    <section class="card"><h2>详情</h2><h3>交付物</h3><h3>1. Experiment Folder Rules</h3>
+<p>Delivered in <code>experiments/README.md</code>, <code>experiments/tool-evals/README.md</code>, and <code>experiments/skill-evals/README.md</code>.</p>
+<p>Rules now define:</p>
+<ul>
+<li>one folder per tested project/tool or skill;</li>
+<li>standard naming: <code>YYYYMMDD-tool-slug</code> / <code>YYYYMMDD-skill-slug</code>;</li>
+<li>required source metadata;</li>
+<li>install log for tools;</li>
+<li>test plan;</li>
+<li>redacted raw outputs;</li>
+<li>safety review;</li>
+<li>adaptation notes;</li>
+<li>scorecard with original score and adapted AI-IP-Studio score;</li>
+<li>safe execution levels from L0 candidate note to L5 promotion candidate;</li>
+<li>stop conditions for credentials, unsafe scraping, unclear license, copying risk, and untraceable outputs.</li>
+</ul>
+<h3>2. Templates</h3>
+<p>Delivered in <code>experiments/templates/tool-evaluation-template.md</code> and <code>experiments/templates/safety-review-template.md</code>.</p>
+<p>The tool template includes:</p>
+<ul>
+<li>tool evaluation fields;</li>
+<li>source metadata;</li>
+<li>install log;</li>
+<li>test plan;</li>
+<li>raw output index;</li>
+<li>output quality review;</li>
+<li>safety summary;</li>
+<li>adaptation notes;</li>
+<li>scorecard;</li>
+<li>promotion gate;</li>
+<li>skill evaluation addendum;</li>
+<li>adaptation/re-score addendum.</li>
+</ul>
+<p>The safety template includes:</p>
+<ul>
+<li>secret/credential checks;</li>
+<li>data handling;</li>
+<li>security review;</li>
+<li>license/commercial-use review;</li>
+<li>platform/legal risk;</li>
+<li>AI-IP-Studio rule check;</li>
+<li>allowed-use decision.</li>
+</ul>
+<h3>3. Installed Skill Map</h3>
+<p>Delivered in <code>docs/installed-skill-map.md</code>.</p>
+<p>It maps:</p>
+<ul>
+<li>AI-IP-Studio local skills;</li>
+<li>image generation skills;</li>
+<li>OpenAI/agent/skill infrastructure skills;</li>
+<li>dontbesilent/dbskill suite;</li>
+<li>Lark/Feishu skills;</li>
+<li>Office/document skills;</li>
+<li>business/planning chatroom skills.</li>
+</ul>
+<p>It also identifies primary routing for:</p>
+<ul>
+<li>account analysis;</li>
+<li>trend research;</li>
+<li>Xiaohongshu/XHS;</li>
+<li>publishing;</li>
+<li>reports;</li>
+<li>business;</li>
+<li>writing.</li>
+</ul>
+<p>Most global skills are marked <code>needs live test</code> because this task audited routing and fit, but did not execute live skill prompt tests.</p>
+<h3>4. Skill And Tool Evaluation Guide</h3>
+<p>Delivered in <code>docs/skill-and-tool-evaluation-guide.md</code>.</p>
+<p>It documents:</p>
+<ul>
+<li>where to search GitHub/social/product sources;</li>
+<li>what GitHub and social evidence to record;</li>
+<li>metrics that matter: stars, maintenance, license, security, output quality, AI-IP-Studio fit, integration cost;</li>
+<li>how to avoid contaminating the project;</li>
+<li>how to adapt tools to AI-IP-Studio output contracts;</li>
+<li>human confirmation gates;</li>
+<li>installed skill evaluation rules;</li>
+<li>a repeatable candidate search plan;</li>
+<li>an initial candidate shortlist.</li>
+</ul>
+<h3>5. Candidate Search Plan And Initial Shortlist</h3>
+<p>Delivered in <code>docs/skill-and-tool-evaluation-guide.md</code>.</p>
+<p>The future search plan tells agents to:</p>
+<p>1. choose one use case per run;</p>
+<p>2. collect 10-20 candidates;</p>
+<p>3. record source URL, category, value hypothesis, license, stars/adoption signal, last update, first safety concern, and safe evaluation level;</p>
+<p>4. shortlist 3-5 candidates;</p>
+<p>5. run sandboxed experiments;</p>
+<p>6. adapt or reject based on safety and adapted score.</p>
+<p>Initial shortlist recorded from existing project notes plus safe public GitHub metadata checks:</p>
+<ul>
+<li><code>yt-dlp</code></li>
+<li><code>TikTokDownloader</code></li>
+<li><code>XHS-Downloader</code></li>
+<li><code>MediaCrawler</code></li>
+<li><code>RSSHub</code></li>
+<li><code>faster-whisper</code></li>
+<li><code>whisper.cpp</code></li>
+<li><code>whisperX</code></li>
+<li><code>auto-editor</code></li>
+<li><code>pyJianYingDraft</code></li>
+<li><code>MoneyPrinterTurbo</code></li>
+<li><code>ShortGPT</code></li>
+<li><code>LangGraph</code></li>
+<li><code>openai-agents-python</code></li>
+</ul>
+<p>No unknown tools were installed globally.</p>
+<h3>自评</h3><ul>
+<li>Score: 94/100</li>
+<li>Completion gate passed: yes</li>
+<li>Status: finished</li>
+</ul>
+<p>Strong points:</p>
+<ul>
+<li>The sandbox is operationally specific, not just conceptual.</li>
+<li>Folder rules and templates require safety review, source metadata, logs, raw output redaction, adaptation notes, and dual scores.</li>
+<li>The installed skill map gives practical routing and overlap rules for AI-IP-Studio&#x27;s current visible skills.</li>
+<li>The guide separates discovery, safety, evaluation, adaptation, and promotion.</li>
+<li>No unknown tools were installed and no raw media/secrets were touched.</li>
+</ul>
+<p>Weak points:</p>
+<ul>
+<li>No live skill prompt tests were run; global skills are correctly marked <code>needs live test</code> rather than over-claimed.</li>
+<li>Initial candidate shortlist used lightweight public metadata checks and existing notes, not a full multi-source social discovery run.</li>
+<li>The skill evaluation and adaptation/re-score templates are addenda inside the tool evaluation template rather than separate files, because the task write scope listed only two template files.</li>
+</ul>
+<p>What was skipped and why:</p>
+<ul>
+<li>Global installs: skipped because explicitly unsafe/out of scope.</li>
+<li>Credentialed platform tests: skipped because not approved and not needed for this sandbox design run.</li>
+<li>Publishing a remote HTML report: not required by this task&#x27;s write scope; local run report was required and created.</li>
+<li>Moving/deleting the todo prompt: skipped because the prompt is under <code>plans/todo/</code> and explicitly says to leave final archival to the user or task-board agent.</li>
+</ul></section>
+    <section class="card"><h2>风险与下一步</h2><h3>风险</h3><ul>
+<li>Future tool candidates that require cookies, QR login, browser profile access, or platform scraping must stay at documentation review until the user approves a controlled test.</li>
+<li>GPL/AGPL/missing-license tools may be fine for local experiments but need review before product/service integration.</li>
+<li>A dedicated trend-engine local skill/workflow still needs to be created in a future task.</li>
+</ul>
+<h3>下一步</h3><p>1. Run a first L1/L3 experiment for <code>yt-dlp</code> using a public, non-private sample URL.</p>
+<p>2. Run L1 documentation/safety reviews for <code>TikTokDownloader</code>, <code>XHS-Downloader</code>, and <code>MediaCrawler</code> before any login/cookie-based use.</p>
+<p>3. Run an L1/L3 <code>RSSHub</code> test for public trend feeds to seed the domestic/international trend engine.</p>
+<p>4. Live-test <code>dbs-hook</code>, <code>dbs-ai-check</code>, and <code>dbs-xhs-title</code> through <code>skills/dbskill-bridge.md</code> on a non-sensitive sample script/package.</p>
+<p>5. Create a dedicated trend-engine workflow once candidate collection and feed experiments are validated.</p></section>
+
+    <div class="footer">AI-IP-Studio · 运行报告页面 · 适合手机和微信查看</div>
+  </main>
+</body>
+</html>

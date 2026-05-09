@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Codex E Business PRD V2 补丁 · AI-IP-Studio 运行报告</title>
+  <style>
+    :root{--paper:#f6ead8;--card:#fffaf1;--ink:#201713;--muted:#75675d;--line:#ddc4aa;--red:#a93427;--green:#1f6a57;--amber:#b76521;--blue:#285f78;--coal:#17110f;--shadow:0 22px 70px rgba(52,30,14,.12);--sans:"Avenir Next","PingFang SC","Hiragino Sans GB",sans-serif;--serif:"Songti SC","Kaiti SC","Hiragino Mincho ProN",serif}
+    *{box-sizing:border-box}body{margin:0;color:var(--ink);font-family:var(--sans);background:radial-gradient(circle at 8% 8%,rgba(199,107,36,.22),transparent 30%),linear-gradient(135deg,#ead6bd 0%,var(--paper) 52%,#fff8ec 100%)}
+    .page{width:min(920px,100%);margin:0 auto;padding:20px 14px 56px}.nav{display:flex;gap:10px;overflow:auto;margin-bottom:14px}.nav a{white-space:nowrap;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:9px 12px;background:rgba(255,250,241,.88);color:var(--muted);font-size:13px;font-weight:800}
+    .hero{border:1px solid var(--line);border-radius:30px;background:linear-gradient(135deg,#fffaf1 0%,#fff2d9 70%,#f3bd78 100%);padding:24px;box-shadow:var(--shadow)}.kicker{color:var(--red);font-size:12px;font-weight:900;letter-spacing:.14em;text-transform:uppercase}h1{margin:8px 0 10px;font-family:var(--serif);font-size:clamp(32px,8vw,54px);line-height:1.04;letter-spacing:-.05em}.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.pill{border:1px solid var(--line);border-radius:999px;padding:8px 10px;background:rgba(255,250,241,.82);font-weight:800;color:var(--muted)}.badge{border-radius:999px;padding:8px 12px;color:#fff;font-weight:900}.finished{background:var(--green)}.review{background:var(--blue)}.blocked{background:var(--red)}
+    .grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:16px}.card{border:1px solid var(--line);border-radius:24px;background:rgba(255,250,241,.9);padding:18px;box-shadow:0 12px 40px rgba(52,30,14,.07)}h2{margin:0 0 10px;font-family:var(--serif);font-size:26px;letter-spacing:-.03em}h3{margin:16px 0 6px;font-size:18px}p,li{line-height:1.72}.muted{color:var(--muted)}ul{padding-left:20px;margin:8px 0}.links{display:grid;gap:8px}.links a{display:block;text-decoration:none;border:1px solid var(--line);border-radius:16px;background:#fffdf8;padding:12px;color:var(--coal);font-weight:800;overflow-wrap:anywhere}pre{white-space:pre-wrap;overflow:auto;border:1px solid var(--line);border-radius:16px;background:#fffdf8;padding:14px;color:var(--muted)}code{background:#fffdf8;border:1px solid var(--line);border-radius:6px;padding:1px 4px}.footer{margin-top:18px;text-align:center;color:var(--muted);font-size:13px}
+    @media(min-width:760px){.grid.two{grid-template-columns:1fr 1fr}.page{padding:28px 22px 72px}}
+  </style>
+</head>
+<body>
+  <main class="page">
+    <nav class="nav">
+      <a href="../../">V3 主页</a>
+      <a href="../">运行报告索引</a>
+      <a href="report.md">Markdown 报告</a>
+    </nav>
+    <section class="hero">
+      <div class="kicker">AI-IP-Studio · 运行报告</div>
+      <h1>Codex E Business PRD V2 补丁</h1>
+      <p class="muted">本次执行的是 V2 补丁任务，不是旧任务复核。目标是把已有商业 PRD 从“策略分析”补到“可以拿去卖 / 试卖 / 陪跑交付”的程度，并生成新的 V2 Markdown 运行报告、V2 HTML 报告页、V2 report.md 发布副本和更新后的 /runs/ 索引。</p>
+      <div class="meta">
+        <span class="badge finished">finished</span>
+        <span class="pill">模式：managed</span>
+        <span class="pill">分数：94/100</span>
+        <span class="pill">更新：2026-05-10 CST</span>
+      </div>
+    </section>
+
+    <section class="grid two">
+      <div class="card"><h2>目标</h2><p>本次执行的是 V2 补丁任务，不是旧任务复核。目标是把已有商业 PRD 从“策略分析”补到“可以拿去卖 / 试卖 / 陪跑交付”的程度，并生成新的 V2 Markdown 运行报告、V2 HTML 报告页、V2 report.md 发布副本和更新后的 <code>/runs/</code> 索引。</p></div>
+      <div class="card"><h2>验证</h2><h3>V2 验收清单</h3>
+<p>| 条件 | 证据 | 状态 |</p>
+<p>|---|---|---|</p>
+<p>| 已读取旧产出和原始需求 | 本报告 <code>已读取材料</code> 列出旧产出、旧报告和原始需求文件 | Pass |</p>
+<p>| 已指出旧产出与原始需求之间的差距 | 本报告 <code>旧产出与用户原始需求之间的差距</code> 表格；<code>docs/business-prd-v0.md</code> 17.2 | Pass |</p>
+<p>| 已完成 V2 实质改动 | 三个业务文件新增 V2 章节，内容直接围绕试卖、offer、小红书获客、单元经济 | Pass |</p>
+<p>| 不是只复核旧产物 | 新增/更新 <code>docs/business-prd-v0.md</code>、<code>offer-candidates.md</code>、<code>first-30-days-validation-plan.md</code> | Pass |</p>
+<p>| 3 个可对外沟通 offer | <code>research/business/offer-candidates.md</code> V2 Offer A/B/C | Pass |</p>
+<p>| 小红书引流售卖路径 | <code>research/business/first-30-days-validation-plan.md</code> V2 小红书获客/引流售卖路径 | Pass |</p>
+<p>| SaaS 阶段条件 | <code>docs/business-prd-v0.md</code> 17.7；<code>first-30-days-validation-plan.md</code> 不能做/可以启动 SaaS 条件 | Pass |</p>
+<p>| 第一批试卖素材清单 | <code>first-30-days-validation-plan.md</code> V2 第一批试卖素材清单 | Pass |</p>
+<p>| 运营单元经济 | <code>first-30-days-validation-plan.md</code> V2 运营单元经济补丁；<code>docs/business-prd-v0.md</code> 17.6 | Pass |</p>
+<p>| 新 V2 Markdown report | <code>plans/run-reports/2026-05-09-codex-e-business-prd-v2-report.md</code> | Pass |</p>
+<p>| 新 V2 HTML 页面 | <code>publish/ai-ip-previews/runs/2026-05-09-codex-e-business-prd-v2/index.html</code> | Pass |</p>
+<p>| 新 V2 report.md 发布副本 | <code>publish/ai-ip-previews/runs/2026-05-09-codex-e-business-prd-v2/report.md</code> | Pass |</p>
+<p>| 更新 <code>/runs/</code> 索引 | <code>publish/ai-ip-previews/runs/index.html</code> 含 V2 报告入口 | Pass |</p>
+<p>| 本地 HTTP 200 | 已用本地 server + curl 验证 <code>/runs/</code> 和 <code>/runs/2026-05-09-codex-e-business-prd-v2/</code>，结果写入本报告 | Pass |</p>
+<h3>验证命令</h3>
+<pre>rg -n &quot;V2|小红书获客|第一批试卖素材|运营单元经济补丁|不能做 SaaS|可以启动 SaaS|销售页大纲|微信试卖话术|初筛问卷|客户验收标准|外部试卖版&quot; docs/business-prd-v0.md research/business/offer-candidates.md research/business/first-30-days-validation-plan.md
+python3 scripts/publish_run_report.py --check plans/run-reports/2026-05-09-codex-e-business-prd-v2-report.md
+python3 scripts/publish_run_report.py --slug 2026-05-09-codex-e-business-prd-v2 plans/run-reports/2026-05-09-codex-e-business-prd-v2-report.md
+python3 -m http.server 8765 --directory publish/ai-ip-previews
+curl -I http://127.0.0.1:8765/runs/
+curl -I http://127.0.0.1:8765/runs/2026-05-09-codex-e-business-prd-v2/</pre>
+<p>HTTP 验证结果：</p>
+<pre>/runs/ -&gt; HTTP/1.0 200 OK
+/runs/2026-05-09-codex-e-business-prd-v2/ -&gt; HTTP/1.0 200 OK</pre></div>
+    </section>
+
+    <section class="card"><h2>修改 / 新建文件</h2><h3>修改文件</h3><ul>
+<li><code>docs/business-prd-v0.md</code>：新增 <code>17. V2 试卖执行补丁</code>，明确第一阶段售卖路径、旧产出差距、三个 offer 短版、小红书获客链路、试卖素材、单元经济和 SaaS 阶段条件。</li>
+<li><code>research/business/offer-candidates.md</code>：新增 <code>V2 外部试卖版 Offer 补丁</code>，形成三个可对外沟通的 offer。</li>
+<li><code>research/business/first-30-days-validation-plan.md</code>：新增小红书获客/引流售卖路径、第一批试卖素材清单、运营单元经济补丁和 SaaS 阈值。</li>
+<li><code>publish/ai-ip-previews/runs/index.html</code>：通过发布脚本更新运行报告索引，加入 V2 报告页入口。</li>
+</ul>
+<h3>新建文件</h3><ul>
+<li><code>plans/run-reports/2026-05-09-codex-e-business-prd-v2-report.md</code></li>
+<li><code>publish/ai-ip-previews/runs/2026-05-09-codex-e-business-prd-v2/index.html</code></li>
+<li><code>publish/ai-ip-previews/runs/2026-05-09-codex-e-business-prd-v2/report.md</code></li>
+</ul></section>
+    <section class="card"><h2>链接</h2><div class="links"><a href="report.md">Markdown 报告</a>
+<a href="../">运行报告索引</a>
+<a href="https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-09-codex-e-business-prd-v2/">预期远程链接</a></div></section>
+    <section class="card"><h2>详情</h2><h3>交付物</h3><ul>
+<li>V2 商业 PRD 补丁：<code>docs/business-prd-v0.md</code> 第 17 节。</li>
+<li>V2 对外 offer：<code>research/business/offer-candidates.md</code> 的 <code>V2 外部试卖版 Offer 补丁</code>。</li>
+<li>V2 小红书获客与试卖材料：<code>research/business/first-30-days-validation-plan.md</code> 的 V2 新增章节。</li>
+<li>V2 Markdown 运行报告：<code>plans/run-reports/2026-05-09-codex-e-business-prd-v2-report.md</code>。</li>
+<li>V2 HTML 报告页：<code>publish/ai-ip-previews/runs/2026-05-09-codex-e-business-prd-v2/index.html</code>。</li>
+<li>V2 report.md 发布副本：<code>publish/ai-ip-previews/runs/2026-05-09-codex-e-business-prd-v2/report.md</code>。</li>
+<li>更新后的运行报告索引：<code>publish/ai-ip-previews/runs/index.html</code>。</li>
+</ul>
+<h3>发布链接</h3><ul>
+<li>本地 Markdown 报告：<code>plans/run-reports/2026-05-09-codex-e-business-prd-v2-report.md</code></li>
+<li>本地 HTML 报告：<code>publish/ai-ip-previews/runs/2026-05-09-codex-e-business-prd-v2/index.html</code></li>
+<li>本地 report.md 副本：<code>publish/ai-ip-previews/runs/2026-05-09-codex-e-business-prd-v2/report.md</code></li>
+<li>本地 runs 索引：<code>publish/ai-ip-previews/runs/index.html</code></li>
+<li>预期远程链接：<code>https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-09-codex-e-business-prd-v2/</code></li>
+</ul>
+<h3>跳过项</h3><ul>
+<li>未 push 到 GitHub；项目规则要求不要默认 push，除非用户明确要求。</li>
+<li>未生成新的视觉海报/封面；V2 任务要求的是商业 PRD 和报告发布，不需要 creator-facing image。</li>
+<li>未改动核心脚本、视频分析页、profile 文件、原始媒体或敏感文件。</li>
+</ul>
+<h3>自评</h3><ul>
+<li>Score: 94/100</li>
+<li>Completion gate passed: yes</li>
+<li>Final status: finished</li>
+<li>强项：严格按 V2 防误判规则执行；没有把旧报告/旧 HTML 当完成证据；新增了实质业务补丁、V2 报告、V2 HTML 和索引；补齐小红书获客和试卖材料。</li>
+<li>弱项：没有真实客户访谈数据，价格和转化率仍是假设；销售页仍是大纲而不是最终视觉页面。</li>
+<li>为什么可以 finished：V2 要求的新增报告、发布页、report.md 副本、索引、实质文件改动、差距说明和 HTTP 200 验证均已完成。</li>
+</ul></section>
+    <section class="card"><h2>风险与下一步</h2><h3>风险</h3><ul>
+<li>V2 价格仍是假设，必须通过前 3 个付费试点验证。</li>
+<li>小红书获客路径涉及导流和服务承诺，实际使用时需要保守表达，不可承诺涨粉、爆文、疗效、收入或成交。</li>
+<li>SaaS 积分制仍应延后，除非 10 个付费报告、复购/转介绍、模板化和合规边界都达标。</li>
+</ul>
+<h3>下一步</h3><p>1. 把 <code>research/business/offer-candidates.md</code> 中 V2 Offer A 改成一页微信长文或落地页。</p>
+<p>2. 用 <code>first-30-days-validation-plan.md</code> 的微信话术找 15-30 个潜在客户试聊。</p>
+<p>3. 用初筛问卷确认前 3 个试点客户。</p>
+<p>4. 试卖后回填真实成交率、交付耗时、客户问题和退款/售后风险。</p></section>
+
+    <div class="footer">AI-IP-Studio · 运行报告页面 · 适合手机和微信查看</div>
+  </main>
+</body>
+</html>

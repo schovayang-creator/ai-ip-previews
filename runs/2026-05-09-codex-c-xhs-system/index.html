@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Codex C Xiaohongshu Research And Lead-Gen System · AI-IP-Studio 运行报告</title>
+  <style>
+    :root{--paper:#f6ead8;--card:#fffaf1;--ink:#201713;--muted:#75675d;--line:#ddc4aa;--red:#a93427;--green:#1f6a57;--amber:#b76521;--blue:#285f78;--coal:#17110f;--shadow:0 22px 70px rgba(52,30,14,.12);--sans:"Avenir Next","PingFang SC","Hiragino Sans GB",sans-serif;--serif:"Songti SC","Kaiti SC","Hiragino Mincho ProN",serif}
+    *{box-sizing:border-box}body{margin:0;color:var(--ink);font-family:var(--sans);background:radial-gradient(circle at 8% 8%,rgba(199,107,36,.22),transparent 30%),linear-gradient(135deg,#ead6bd 0%,var(--paper) 52%,#fff8ec 100%)}
+    .page{width:min(920px,100%);margin:0 auto;padding:20px 14px 56px}.nav{display:flex;gap:10px;overflow:auto;margin-bottom:14px}.nav a{white-space:nowrap;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:9px 12px;background:rgba(255,250,241,.88);color:var(--muted);font-size:13px;font-weight:800}
+    .hero{border:1px solid var(--line);border-radius:30px;background:linear-gradient(135deg,#fffaf1 0%,#fff2d9 70%,#f3bd78 100%);padding:24px;box-shadow:var(--shadow)}.kicker{color:var(--red);font-size:12px;font-weight:900;letter-spacing:.14em;text-transform:uppercase}h1{margin:8px 0 10px;font-family:var(--serif);font-size:clamp(32px,8vw,54px);line-height:1.04;letter-spacing:-.05em}.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.pill{border:1px solid var(--line);border-radius:999px;padding:8px 10px;background:rgba(255,250,241,.82);font-weight:800;color:var(--muted)}.badge{border-radius:999px;padding:8px 12px;color:#fff;font-weight:900}.finished{background:var(--green)}.review{background:var(--blue)}.blocked{background:var(--red)}
+    .grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:16px}.card{border:1px solid var(--line);border-radius:24px;background:rgba(255,250,241,.9);padding:18px;box-shadow:0 12px 40px rgba(52,30,14,.07)}h2{margin:0 0 10px;font-family:var(--serif);font-size:26px;letter-spacing:-.03em}h3{margin:16px 0 6px;font-size:18px}p,li{line-height:1.72}.muted{color:var(--muted)}ul{padding-left:20px;margin:8px 0}.links{display:grid;gap:8px}.links a{display:block;text-decoration:none;border:1px solid var(--line);border-radius:16px;background:#fffdf8;padding:12px;color:var(--coal);font-weight:800;overflow-wrap:anywhere}pre{white-space:pre-wrap;overflow:auto;border:1px solid var(--line);border-radius:16px;background:#fffdf8;padding:14px;color:var(--muted)}code{background:#fffdf8;border:1px solid var(--line);border-radius:6px;padding:1px 4px}.footer{margin-top:18px;text-align:center;color:var(--muted);font-size:13px}
+    @media(min-width:760px){.grid.two{grid-template-columns:1fr 1fr}.page{padding:28px 22px 72px}}
+  </style>
+</head>
+<body>
+  <main class="page">
+    <nav class="nav">
+      <a href="../../">V3 主页</a>
+      <a href="../">运行报告索引</a>
+      <a href="report.md">Markdown 报告</a>
+    </nav>
+    <section class="hero">
+      <div class="kicker">AI-IP-Studio · 运行报告</div>
+      <h1>Codex C Xiaohongshu Research And Lead-Gen System</h1>
+      <p class="muted">Design a Xiaohongshu-specific research and lead-generation analysis system for AI-IP-Studio, inspired by the successful Douyin account-distillation workflow but adapted to XHS platform mechanics: cover, title, search keywords, note structur</p>
+      <div class="meta">
+        <span class="badge finished">finished</span>
+        <span class="pill">模式：managed</span>
+        <span class="pill">分数：94/100</span>
+        <span class="pill">更新：2026-05-10 00:02:26 CST</span>
+      </div>
+    </section>
+
+    <section class="grid two">
+      <div class="card"><h2>目标</h2><p>Design a Xiaohongshu-specific research and lead-generation analysis system for AI-IP-Studio, inspired by the successful Douyin account-distillation workflow but adapted to XHS platform mechanics: cover, title, search keywords, note structure, first-screen density, comments, saves, DMs, lead generation, product/service paths, and compliance.</p></div>
+      <div class="card"><h2>验证</h2><p>Commands/checks performed:</p>
+<ul>
+<li>Confirmed required deliverable files were initially missing before writing.</li>
+<li>Inspected required reading and comparison Douyin workflow.</li>
+<li>Checked public source URLs returned HTTP 200 through a local Python request.</li>
+<li>Verified all required deliverables exist after writing.</li>
+<li>Ran marker-based validation to ensure requirements appear in the deliverables.</li>
+<li>Ran <code>git diff --check -- workflows/xhs-account-research-v0.md workflows/xhs-lead-gen-analysis-v0.md research/xhs/README.md research/xhs/templates/xhs-note-brief-template.md research/xhs/templates/xhs-account-funnel-template.md docs/xhs-system-notes.md</code> with no whitespace errors.</li>
+<li>Ran a tab/trailing-whitespace scan on created files; all passed.</li>
+<li>Ran targeted <code>rg</code> checks for required topics: analysis dimensions, evidence signals, HTML/GitHub-viewable path, monetization bridge, compliance, privacy, unknown-data handling.</li>
+<li>Checked write-scope status with <code>git status --short</code> for scoped files.</li>
+</ul>
+<p>Validation checklist from task:</p>
+<ul>
+<li>[x] Required deliverables exist.</li>
+<li>[x] Required reading was inspected.</li>
+<li>[x] Write scope was respected.</li>
+<li>[x] System is clearly XHS-specific and not a direct Douyin copy.</li>
+<li>[x] Account-level workflow exists.</li>
+<li>[x] Single-note template exists.</li>
+<li>[x] Lead-gen workflow exists.</li>
+<li>[x] XHS-specific evidence model exists.</li>
+<li>[x] Click/search/save/comment/DM/conversion signals are separated.</li>
+<li>[x] Pilot package design exists.</li>
+<li>[x] Future GitHub-viewable page path exists without copying Douyin V3 blindly.</li>
+<li>[x] Monetization bridge covers service sales, lead magnets, consultation, private-domain conversion, products, and brand cooperation.</li>
+<li>[x] Ethical/originality boundaries are included.</li>
+<li>[x] Run report exists.</li>
+<li>[x] Self-review score is recorded and &gt;= 90.</li>
+</ul></div>
+    </section>
+
+    <section class="card"><h2>修改 / 新建文件</h2><h3>修改文件</h3><p>Only the scoped files above were created/changed by this run.</p>
+<p>Pre-existing dirty/untracked files were present before this run, including <code>AGENTS.md</code>, <code>research/topic-library.md</code>, <code>webapp/*</code>, Douyin account outputs, <code>publish/</code>, <code>plans/</code>, scripts, skills, and templates. They were not modified by this run outside the allowed XHS/report scope.</p>
+<h3>新建文件</h3><ul>
+<li><code>workflows/xhs-account-research-v0.md</code></li>
+<li><code>workflows/xhs-lead-gen-analysis-v0.md</code></li>
+<li><code>research/xhs/README.md</code></li>
+<li><code>research/xhs/templates/xhs-note-brief-template.md</code></li>
+<li><code>research/xhs/templates/xhs-account-funnel-template.md</code></li>
+<li><code>docs/xhs-system-notes.md</code></li>
+<li><code>plans/run-reports/2026-05-09-codex-c-xhs-system-report.md</code></li>
+</ul></section>
+    <section class="card"><h2>链接</h2><div class="links"><a href="report.md">Markdown 报告</a>
+<a href="../">运行报告索引</a>
+<a href="https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-09-codex-c-xhs-system/">预期远程链接</a></div></section>
+    <section class="card"><h2>详情</h2><h3>交付物</h3><h3>1. XHS Account Research Workflow</h3>
+<p>Created <code>workflows/xhs-account-research-v0.md</code> with:</p>
+<ul>
+<li>XHS-vs-Douyin distinction;</li>
+<li>non-copying and privacy boundaries;</li>
+<li>public/manual evidence model;</li>
+<li>click/search/save/comment/DM/conversion signal separation;</li>
+<li>required analysis dimensions;</li>
+<li>account-level collection workflow;</li>
+<li>topic-cluster grouping;</li>
+<li>funnel-role grouping;</li>
+<li>lead-gen pattern identification;</li>
+<li>account insight output contract;</li>
+<li>XHS-native future HTML/GitHub-viewable page modules;</li>
+<li>validation checklist and blockers.</li>
+</ul>
+<h3>2. XHS Lead-Gen Workflow</h3>
+<p>Created <code>workflows/xhs-lead-gen-analysis-v0.md</code> with:</p>
+<ul>
+<li>offer-hypothesis setup;</li>
+<li>keyword-family design;</li>
+<li>topic-to-note matrix;</li>
+<li>note-to-consultation/DM/product path;</li>
+<li>green/yellow/red conversion paths;</li>
+<li>comment and DM triage rules;</li>
+<li>monetization bridge for service sales, lead magnets, consultation, private-domain conversion, product commerce, and brand cooperation;</li>
+<li>compliance warnings;</li>
+<li>output package contract and first pilot recommendation.</li>
+</ul>
+<h3>3. XHS Research Folder Index</h3>
+<p>Created <code>research/xhs/README.md</code> with:</p>
+<ul>
+<li>folder purpose;</li>
+<li>workflow/template pointers;</li>
+<li>recommended account/category/lead-gen folder contracts;</li>
+<li>data capture rules;</li>
+<li>do-not-capture / do-not-publish rules;</li>
+<li>evidence labels;</li>
+<li>XHS signal model;</li>
+<li>creator profile compatibility checks;</li>
+<li>first pilot scope.</li>
+</ul>
+<h3>4. Single-Note Brief Template</h3>
+<p>Created <code>research/xhs/templates/xhs-note-brief-template.md</code> covering:</p>
+<ul>
+<li>metadata and privacy level;</li>
+<li>first decision and funnel role;</li>
+<li>public evidence captured;</li>
+<li>why user clicks;</li>
+<li>search keyword analysis;</li>
+<li>note structure;</li>
+<li>why user saves;</li>
+<li>why user comments or DMs;</li>
+<li>product/service path;</li>
+<li>what can be learned;</li>
+<li>what must not be copied;</li>
+<li>persona adaptation for AI-IP-Studio creator;</li>
+<li>compliance and ethics check;</li>
+<li>final recommendation.</li>
+</ul>
+<h3>5. Account Funnel Report Template</h3>
+<p>Created <code>research/xhs/templates/xhs-account-funnel-template.md</code> covering:</p>
+<ul>
+<li>report metadata;</li>
+<li>executive account insights summary;</li>
+<li>account positioning;</li>
+<li>note sample overview;</li>
+<li>topic cluster map;</li>
+<li>cover/title pattern library;</li>
+<li>search keyword map;</li>
+<li>funnel role map;</li>
+<li>save/comment/DM demand signal analysis;</li>
+<li>lead-gen and monetization path;</li>
+<li>compliance/originality risk register;</li>
+<li>learn / do-not-copy sections;</li>
+<li>persona adaptation plan;</li>
+<li>next 10 note ideas;</li>
+<li>future HTML page outline.</li>
+</ul>
+<h3>6. XHS System Notes</h3>
+<p>Created <code>docs/xhs-system-notes.md</code> with:</p>
+<ul>
+<li>operating thesis: <code>Why click? -&gt; Why search/find? -&gt; Why save? -&gt; Why comment? -&gt; Why DM? -&gt; Why convert?</code>;</li>
+<li>source notes checked and caution labels;</li>
+<li>XHS-specific analysis dimensions;</li>
+<li>evidence model;</li>
+<li>workflow map;</li>
+<li>monetization bridge;</li>
+<li>compliance guardrails;</li>
+<li>originality boundary;</li>
+<li>future HTML page design;</li>
+<li>first recommended test scope.</li>
+</ul>
+<h3>自评</h3><ul>
+<li>Score: 94/100</li>
+<li>Completion gate passed: yes</li>
+<li>Strong points:</li>
+<li>The system is XHS-native: it centers cover/title/search/save/comment/DM/conversion instead of Douyin retention alone.</li>
+<li>The templates are directly usable for a pilot and future HTML page generation.</li>
+<li>Lead-gen is connected to monetization while keeping platform, privacy, and originality risks visible.</li>
+<li>The creator&#x27;s profile constraints are integrated, especially close-friend tone and no fake experience/therapy claims.</li>
+<li>Weak points:</li>
+<li>No real XHS account pilot was executed because the task requested system design, not a live account study.</li>
+<li>Official XHS public rule pages are not always easy to access in full from browser/search; some compliance notes rely on secondary reporting and are marked as such.</li>
+<li>The future HTML builder is designed conceptually, not implemented as code, because code/publishing files were outside this task&#x27;s write scope.</li>
+<li>What was skipped and why:</li>
+<li>Did not create <code>research/xhs/accounts/*</code> or <code>research/xhs/lead-gen/*</code> sample run folders because the task asked for templates/system design and no target account was supplied.</li>
+<li>Did not publish a report page because this task required a local run report only; <code>publish/</code> was outside write scope.</li>
+<li>Did not use scraping/downloader tools or raw media because the task explicitly prohibits raw media and this run is a workflow-design task.</li>
+</ul></section>
+    <section class="card"><h2>风险与下一步</h2><h3>风险</h3><ul>
+<li>XHS compliance can change; any real private-domain or lead-form implementation should re-check current official platform rules before publishing.</li>
+<li>If future runs use screenshots, comments, or creator-center exports, they must classify privacy level before generating public pages.</li>
+<li>The system can guide analysis, but real monetization validation still requires a sample of actual XHS notes/accounts and observed demand.</li>
+</ul>
+<h3>下一步</h3><p>Run the first XHS test scope:</p>
+<pre>topic: women&#x27;s growth / emotional self-healing XHS lead-gen
+sample: 3-5 comparable XHS accounts
+notes: 10 notes per account, prioritizing pinned, high-save, high-comment, and explicit CTA notes
+outputs:
+  - 50-row note sample table
+  - 15 completed xhs-note-briefs
+  - 1 account-level funnel report
+  - 12-note pilot matrix for our creator
+success question:
+  Can XHS generate save/comment/DM demand for gentle consultation or community without aggressive private-domain tactics?</pre></section>
+
+    <div class="footer">AI-IP-Studio · 运行报告页面 · 适合手机和微信查看</div>
+  </main>
+</body>
+</html>

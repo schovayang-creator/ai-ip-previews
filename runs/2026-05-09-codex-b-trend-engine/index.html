@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Codex B Trend Engine · AI-IP-Studio 运行报告</title>
+  <style>
+    :root{--paper:#f6ead8;--card:#fffaf1;--ink:#201713;--muted:#75675d;--line:#ddc4aa;--red:#a93427;--green:#1f6a57;--amber:#b76521;--blue:#285f78;--coal:#17110f;--shadow:0 22px 70px rgba(52,30,14,.12);--sans:"Avenir Next","PingFang SC","Hiragino Sans GB",sans-serif;--serif:"Songti SC","Kaiti SC","Hiragino Mincho ProN",serif}
+    *{box-sizing:border-box}body{margin:0;color:var(--ink);font-family:var(--sans);background:radial-gradient(circle at 8% 8%,rgba(199,107,36,.22),transparent 30%),linear-gradient(135deg,#ead6bd 0%,var(--paper) 52%,#fff8ec 100%)}
+    .page{width:min(920px,100%);margin:0 auto;padding:20px 14px 56px}.nav{display:flex;gap:10px;overflow:auto;margin-bottom:14px}.nav a{white-space:nowrap;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:9px 12px;background:rgba(255,250,241,.88);color:var(--muted);font-size:13px;font-weight:800}
+    .hero{border:1px solid var(--line);border-radius:30px;background:linear-gradient(135deg,#fffaf1 0%,#fff2d9 70%,#f3bd78 100%);padding:24px;box-shadow:var(--shadow)}.kicker{color:var(--red);font-size:12px;font-weight:900;letter-spacing:.14em;text-transform:uppercase}h1{margin:8px 0 10px;font-family:var(--serif);font-size:clamp(32px,8vw,54px);line-height:1.04;letter-spacing:-.05em}.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.pill{border:1px solid var(--line);border-radius:999px;padding:8px 10px;background:rgba(255,250,241,.82);font-weight:800;color:var(--muted)}.badge{border-radius:999px;padding:8px 12px;color:#fff;font-weight:900}.finished{background:var(--green)}.review{background:var(--blue)}.blocked{background:var(--red)}
+    .grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:16px}.card{border:1px solid var(--line);border-radius:24px;background:rgba(255,250,241,.9);padding:18px;box-shadow:0 12px 40px rgba(52,30,14,.07)}h2{margin:0 0 10px;font-family:var(--serif);font-size:26px;letter-spacing:-.03em}h3{margin:16px 0 6px;font-size:18px}p,li{line-height:1.72}.muted{color:var(--muted)}ul{padding-left:20px;margin:8px 0}.links{display:grid;gap:8px}.links a{display:block;text-decoration:none;border:1px solid var(--line);border-radius:16px;background:#fffdf8;padding:12px;color:var(--coal);font-weight:800;overflow-wrap:anywhere}pre{white-space:pre-wrap;overflow:auto;border:1px solid var(--line);border-radius:16px;background:#fffdf8;padding:14px;color:var(--muted)}code{background:#fffdf8;border:1px solid var(--line);border-radius:6px;padding:1px 4px}.footer{margin-top:18px;text-align:center;color:var(--muted);font-size:13px}
+    @media(min-width:760px){.grid.two{grid-template-columns:1fr 1fr}.page{padding:28px 22px 72px}}
+  </style>
+</head>
+<body>
+  <main class="page">
+    <nav class="nav">
+      <a href="../../">V3 主页</a>
+      <a href="../">运行报告索引</a>
+      <a href="report.md">Markdown 报告</a>
+    </nav>
+    <section class="hero">
+      <div class="kicker">AI-IP-Studio · 运行报告</div>
+      <h1>Codex B Trend Engine</h1>
+      <p class="muted">Design the first version of a domestic + international trend research engine for AI-IP-Studio that can produce daily content candidates with evidence, adaptation angles, scoring/triage, and optional visual proof slices. Because network/sear</p>
+      <div class="meta">
+        <span class="badge finished">finished</span>
+        <span class="pill">模式：managed</span>
+        <span class="pill">分数：93/100</span>
+        <span class="pill">更新：2026-05-10</span>
+      </div>
+    </section>
+
+    <section class="grid two">
+      <div class="card"><h2>目标</h2><p>Design the first version of a domestic + international trend research engine for AI-IP-Studio that can produce daily content candidates with evidence, adaptation angles, scoring/triage, and optional visual proof slices. Because network/search was available, also run a live pilot with at least 10 current candidate trends, including at least 5 domestic and 5 international/cross-border signals.</p></div>
+      <div class="card"><h2>验证</h2><p>Validation command run locally:</p>
+<pre>python3 /tmp/validate_trend_engine.py</pre>
+<p>Validation result:</p>
+<pre>missing: []
+cards: 10 domestic: 5 international_cross_border: 5
+workflow domestic+international: True
+cards&gt;=10: True
+domestic&gt;=5: True
+international&gt;=5: True
+source link in cards: True
+proof signal in cards: True
+hook in cards: True
+persona fit in cards: True
+risk label in cards: True
+adaptation path in cards: True
+hot not fit: True
+fit not hot: True
+visual notes&gt;=3: True
+no raw media stored: True</pre>
+<p>Manual validation:</p>
+<ul>
+<li>Workflow clearly says domestic + international, not only foreign.</li>
+<li>Trend cards include source, proof, hook, persona fit, risk, and adaptation path.</li>
+<li>Visual evidence has rights/risk labels and does not assume public reuse rights.</li>
+<li>Output can become a daily 10-topic candidate list.</li>
+<li>No raw media, screenshots, cookies, tokens, credentials, or large copyrighted assets were stored.</li>
+<li>Existing unrelated dirty worktree changes were not modified.</li>
+</ul></div>
+    </section>
+
+    <section class="card"><h2>修改 / 新建文件</h2><h3>修改文件</h3><ul>
+<li>None outside the allowed write scope. The optional <code>docs/trend-engine-source-policy.md</code> was created because it directly supports the requested visual evidence/source policy.</li>
+</ul>
+<h3>新建文件</h3><ul>
+<li><code>workflows/daily-trend-research-v0.md</code></li>
+<li><code>research/trends/README.md</code></li>
+<li><code>research/trends/templates/daily-trend-brief-template.md</code></li>
+<li><code>research/trends/templates/trend-card-template.md</code></li>
+<li><code>research/trends/templates/visual-evidence-note-template.md</code></li>
+<li><code>docs/trend-engine-source-policy.md</code></li>
+<li><code>research/trends/briefs/2026-05-09-daily-trend-brief.md</code></li>
+<li><code>research/trends/evidence/2026-05-09/caveman-github-visual-evidence.md</code></li>
+<li><code>research/trends/evidence/2026-05-09/mempalace-github-visual-evidence.md</code></li>
+<li><code>research/trends/evidence/2026-05-09/graphify-github-visual-evidence.md</code></li>
+<li><code>plans/run-reports/2026-05-09-codex-b-trend-engine-report.md</code></li>
+</ul></section>
+    <section class="card"><h2>链接</h2><div class="links"><a href="report.md">Markdown 报告</a>
+<a href="../">运行报告索引</a>
+<a href="https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-09-codex-b-trend-engine/">预期远程链接</a></div></section>
+    <section class="card"><h2>详情</h2><h3>交付物</h3><ul>
+<li>Workflow: <code>workflows/daily-trend-research-v0.md</code></li>
+<li>Defines domestic and international input sources.</li>
+<li>Defines source checking, scoring/triage, 10-topic selection, format routing, proof storage, and visual evidence policy.</li>
+<li>Separates <code>hot but not fit</code> from <code>fit but not hot</code>.</li>
+<li>Trend workspace README: <code>research/trends/README.md</code></li>
+<li>Defines folder structure, naming rules, daily brief contents, evidence contents, and what must not be stored.</li>
+<li>Templates:</li>
+<li><code>research/trends/templates/daily-trend-brief-template.md</code></li>
+<li><code>research/trends/templates/trend-card-template.md</code></li>
+<li><code>research/trends/templates/visual-evidence-note-template.md</code></li>
+<li>Source/visual policy: <code>docs/trend-engine-source-policy.md</code></li>
+<li>Defines source tiers, fact discipline, visual evidence rules, risk labels, and public-cover defaults.</li>
+<li>Live pilot brief: <code>research/trends/briefs/2026-05-09-daily-trend-brief.md</code></li>
+<li>10 candidate topics.</li>
+<li>5 domestic signals and 5 international/cross-border signals.</li>
+<li>Each card includes source link, proof signal, hook, persona fit, risk label, adaptation path, and decision.</li>
+<li>Visual evidence notes:</li>
+<li><code>research/trends/evidence/2026-05-09/caveman-github-visual-evidence.md</code></li>
+<li><code>research/trends/evidence/2026-05-09/mempalace-github-visual-evidence.md</code></li>
+<li><code>research/trends/evidence/2026-05-09/graphify-github-visual-evidence.md</code></li>
+</ul>
+<h3>自评</h3><ul>
+<li>Score: 93/100</li>
+<li>Completion gate passed: yes</li>
+<li>Strong points:</li>
+<li>The system is operational, not just conceptual: workflow + README + templates + policy + live daily brief + evidence notes.</li>
+<li>The scoring rubric is simple and explainable, with direct routing to口播, Xiaohongshu,图文, script package, or internal memo.</li>
+<li>Live pilot meets the 5 domestic + 5 international/cross-border requirement.</li>
+<li>Visual evidence policy is conservative and separates internal proof from public cover assets.</li>
+<li>The pilot adapts technical trends into the creator&#x27;s women&#x27;s growth / self-healing persona instead of forcing product reviews.</li>
+<li>Weak points:</li>
+<li>Domestic platform hot-list data from Douyin/Xiaohongshu/Weibo was not directly captured because the run avoided storing platform screenshots and private/session data.</li>
+<li>Some domestic source pages are represented by stable public URLs and summaries, but final scripts should still re-check exact page availability and date immediately before publishing.</li>
+<li>The pilot is a strong first sample, but not a fully automated daily scanner.</li>
+<li>What was skipped and why:</li>
+<li>No visual screenshots were saved. The task allowed optional visual proof slices, but the approved policy says first save URL/timestamp/metric and only preserve screenshots when useful and allowed. Markdown evidence notes were safer for this first run.</li>
+<li>No public HTML run page was created because this task only required a local run report under <code>plans/run-reports/</code>, and the write scope did not include <code>publish/</code>.</li>
+</ul>
+<h3>完成说明</h3><p>The task was run from <code>plans/todo/</code>, so the todo prompt was not deleted or moved. Final archival is left to the user or task-board agent, as instructed by the task file.</p></section>
+    <section class="card"><h2>风险与下一步</h2><h3>风险</h3><ul>
+<li>Not blocked.</li>
+<li>Risk: Trend facts and platform metrics change quickly. Any candidate selected for publishing should be re-checked on the same day before script/package finalization.</li>
+<li>Risk: Policy and mental-health-adjacent topics must be framed as reflection and boundaries, not legal/medical advice.</li>
+</ul>
+<h3>下一步</h3><p>1. User selects 1-3 candidates from <code>research/trends/briefs/2026-05-09-daily-trend-brief.md</code>.</p>
+<p>2. For selected candidates, create standard output packages under <code>outputs/YYYYMMDD-topic-slug/</code> and run persona rewrite + Content Scale.</p>
+<p>3. If the trend engine should become routine, add a project-local skill file that routes future agents to <code>workflows/daily-trend-research-v0.md</code> and the templates.</p></section>
+
+    <div class="footer">AI-IP-Studio · 运行报告页面 · 适合手机和微信查看</div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>V2 运行报告 - Codex B 国内外趋势引擎补丁 · AI-IP-Studio 运行报告</title>
+  <style>
+    :root{--paper:#f6ead8;--card:#fffaf1;--ink:#201713;--muted:#75675d;--line:#ddc4aa;--red:#a93427;--green:#1f6a57;--amber:#b76521;--blue:#285f78;--coal:#17110f;--shadow:0 22px 70px rgba(52,30,14,.12);--sans:"Avenir Next","PingFang SC","Hiragino Sans GB",sans-serif;--serif:"Songti SC","Kaiti SC","Hiragino Mincho ProN",serif}
+    *{box-sizing:border-box}body{margin:0;color:var(--ink);font-family:var(--sans);background:radial-gradient(circle at 8% 8%,rgba(199,107,36,.22),transparent 30%),linear-gradient(135deg,#ead6bd 0%,var(--paper) 52%,#fff8ec 100%)}
+    .page{width:min(920px,100%);margin:0 auto;padding:20px 14px 56px}.nav{display:flex;gap:10px;overflow:auto;margin-bottom:14px}.nav a{white-space:nowrap;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:9px 12px;background:rgba(255,250,241,.88);color:var(--muted);font-size:13px;font-weight:800}
+    .hero{border:1px solid var(--line);border-radius:30px;background:linear-gradient(135deg,#fffaf1 0%,#fff2d9 70%,#f3bd78 100%);padding:24px;box-shadow:var(--shadow)}.kicker{color:var(--red);font-size:12px;font-weight:900;letter-spacing:.14em;text-transform:uppercase}h1{margin:8px 0 10px;font-family:var(--serif);font-size:clamp(32px,8vw,54px);line-height:1.04;letter-spacing:-.05em}.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.pill{border:1px solid var(--line);border-radius:999px;padding:8px 10px;background:rgba(255,250,241,.82);font-weight:800;color:var(--muted)}.badge{border-radius:999px;padding:8px 12px;color:#fff;font-weight:900}.finished{background:var(--green)}.review{background:var(--blue)}.blocked{background:var(--red)}
+    .grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:16px}.card{border:1px solid var(--line);border-radius:24px;background:rgba(255,250,241,.9);padding:18px;box-shadow:0 12px 40px rgba(52,30,14,.07)}h2{margin:0 0 10px;font-family:var(--serif);font-size:26px;letter-spacing:-.03em}h3{margin:16px 0 6px;font-size:18px}p,li{line-height:1.72}.muted{color:var(--muted)}ul{padding-left:20px;margin:8px 0}.links{display:grid;gap:8px}.links a{display:block;text-decoration:none;border:1px solid var(--line);border-radius:16px;background:#fffdf8;padding:12px;color:var(--coal);font-weight:800;overflow-wrap:anywhere}pre{white-space:pre-wrap;overflow:auto;border:1px solid var(--line);border-radius:16px;background:#fffdf8;padding:14px;color:var(--muted)}code{background:#fffdf8;border:1px solid var(--line);border-radius:6px;padding:1px 4px}.footer{margin-top:18px;text-align:center;color:var(--muted);font-size:13px}
+    @media(min-width:760px){.grid.two{grid-template-columns:1fr 1fr}.page{padding:28px 22px 72px}}
+  </style>
+</head>
+<body>
+  <main class="page">
+    <nav class="nav">
+      <a href="../../">V3 主页</a>
+      <a href="../">运行报告索引</a>
+      <a href="report.md">Markdown 报告</a>
+    </nav>
+    <section class="hero">
+      <div class="kicker">AI-IP-Studio · 运行报告</div>
+      <h1>V2 运行报告 - Codex B 国内外趋势引擎补丁</h1>
+      <p class="muted">这次不是旧任务复核，而是 V2 补丁任务。目标是基于已有趋势引擎产出，把系统补到能每天产出国内外热点候选，并能沉淀用于口播、小红书、图文的证据切片。重点补齐国内外源分层、高信号采样、YouTube / X / GitHub 爆款拆解字段、视觉证据切片规范、可复用爆点钩子模板、V2 样例验证，以及新的 HTML 报告发布页。</p>
+      <div class="meta">
+        <span class="badge finished">finished</span>
+        <span class="pill">模式：managed</span>
+        <span class="pill">分数：95/100</span>
+        <span class="pill">更新：2026-05-10</span>
+      </div>
+    </section>
+
+    <section class="grid two">
+      <div class="card"><h2>目标</h2><p>这次不是旧任务复核，而是 V2 补丁任务。目标是基于已有趋势引擎产出，把系统补到能每天产出国内外热点候选，并能沉淀用于口播、小红书、图文的证据切片。重点补齐国内外源分层、高信号采样、YouTube / X / GitHub 爆款拆解字段、视觉证据切片规范、可复用爆点钩子模板、V2 样例验证，以及新的 HTML 报告发布页。</p></div>
+      <div class="card"><h2>验证</h2><p>已执行 V2 验证脚本：</p>
+<pre>python3 /tmp/validate_trend_engine_v2.py</pre>
+<p>检查结果：</p>
+<pre>missing_files: True
+read_old_and_raw: True
+gap_analysis: True
+workflow_source_layers: True
+high_signal_sampling: True
+platform_modules: True
+visual_slice_policy: True
+hook_templates: True
+readme_v2_sampling: True
+daily_template_v2: True
+card_template_v2: True
+visual_template_v2: True
+policy_v2: True
+sample_card: True
+new_html: True
+new_report_copy: True
+index_updated: True
+no_raw_media: True
+V2 validation passed</pre>
+<p>验证覆盖：</p>
+<ul>
+<li>V2 Markdown 报告存在。</li>
+<li>V2 HTML 报告页存在。</li>
+<li>V2 发布副本 <code>report.md</code> 存在。</li>
+<li><code>/runs/</code> 索引包含 V2 任务链接。</li>
+<li>workflow 包含国内外、高信号采样、YouTube、X/Twitter、GitHub、Product Hunt、Hacker News、可复用 hook、同日复核。</li>
+<li>README 包含 V2 Daily Sampling Rules。</li>
+<li>daily brief template 包含 V2 Source Sampling Plan 和视觉切片字段。</li>
+<li>trend card template 包含平台拆解模块。</li>
+<li>visual evidence template 包含截图区域和公开使用替代方案字段。</li>
+<li>source policy 包含 V2 Platform Evidence Rules。</li>
+<li>V2 sample card 包含 source layer、same-day metric recheck、visual slice suggestion、rewrite direction。</li>
+<li>没有在 <code>research/trends</code> 下保存图片、视频、音频、cookie 或 token 类文件。</li>
+</ul>
+<p>本地 HTTP 验证：</p>
+<pre>http://127.0.0.1:8765/runs/2026-05-09-codex-b-trend-engine-v2/ -&gt; HTTP/1.0 200 OK
+http://127.0.0.1:8765/runs/ -&gt; HTTP/1.0 200 OK</pre></div>
+    </section>
+
+    <section class="card"><h2>修改 / 新建文件</h2><p class="muted">未列出修改或新建文件。</p></section>
+    <section class="card"><h2>链接</h2><div class="links"><a href="report.md">Markdown 报告</a>
+<a href="../">运行报告索引</a>
+<a href="https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-09-codex-b-trend-engine-v2/">预期远程链接</a></div></section>
+    <section class="card"><h2>详情</h2><h3>自评</h3><ul>
+<li>分数: 95/100</li>
+<li>完成门槛: 通过</li>
+</ul>
+<p>强项：</p>
+<ul>
+<li>本次不是复核旧产物，而是对核心工作流、README、模板、source policy 做了实质 V2 补丁。</li>
+<li>明确纳入 YouTube / X / GitHub / Product Hunt / Hacker News / 海外 AI 工具。</li>
+<li>把“高信号采样 + 机制抽取”写成可执行的采样数量、入选标准、可信度和版权边界。</li>
+<li>把视觉证据切片从原则补到模板字段和平台级规范。</li>
+<li>增加了可复用爆点钩子模板，并强制同日复核数据。</li>
+<li>生成了新的 V2 Markdown 报告、新 V2 HTML 页面、新 report.md 副本，并更新了 runs 索引。</li>
+</ul>
+<p>不足：</p>
+<ul>
+<li>本次轻量验证使用已有 GitHub brief 证据生成 V2 样例卡，没有大规模实时抓取 YouTube/X 数据；这是任务允许的轻量验证范围。</li>
+<li>X/Twitter 和 YouTube 的实际平台指标可能受登录、地区和反爬限制影响，后续日常执行时应以人工可访问公开页面为准。</li>
+</ul></section>
+    <section class="card"><h2>风险与下一步</h2><h3>风险</h3><ul>
+<li>所有快变指标都必须在发布当天复核；社交平台数据建议发布前 2 小时内复核。</li>
+<li>不默认保存或公开使用 YouTube 缩略图、X 截图、GitHub/Product Hunt/HN 平台 UI 截图。</li>
+<li>公开封面默认用原创文字卡复刻指标和来源，不使用侵权图片。</li>
+<li>没有上传、复制或保存 raw media、cookies、tokens、credentials。</li>
+</ul></section>
+
+    <div class="footer">AI-IP-Studio · 运行报告页面 · 适合手机和微信查看</div>
+  </main>
+</body>
+</html>

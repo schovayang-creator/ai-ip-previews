@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Codex A Project Index And Memory System · AI-IP-Studio 运行报告</title>
+  <style>
+    :root{--paper:#f6ead8;--card:#fffaf1;--ink:#201713;--muted:#75675d;--line:#ddc4aa;--red:#a93427;--green:#1f6a57;--amber:#b76521;--blue:#285f78;--coal:#17110f;--shadow:0 22px 70px rgba(52,30,14,.12);--sans:"Avenir Next","PingFang SC","Hiragino Sans GB",sans-serif;--serif:"Songti SC","Kaiti SC","Hiragino Mincho ProN",serif}
+    *{box-sizing:border-box}body{margin:0;color:var(--ink);font-family:var(--sans);background:radial-gradient(circle at 8% 8%,rgba(199,107,36,.22),transparent 30%),linear-gradient(135deg,#ead6bd 0%,var(--paper) 52%,#fff8ec 100%)}
+    .page{width:min(920px,100%);margin:0 auto;padding:20px 14px 56px}.nav{display:flex;gap:10px;overflow:auto;margin-bottom:14px}.nav a{white-space:nowrap;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:9px 12px;background:rgba(255,250,241,.88);color:var(--muted);font-size:13px;font-weight:800}
+    .hero{border:1px solid var(--line);border-radius:30px;background:linear-gradient(135deg,#fffaf1 0%,#fff2d9 70%,#f3bd78 100%);padding:24px;box-shadow:var(--shadow)}.kicker{color:var(--red);font-size:12px;font-weight:900;letter-spacing:.14em;text-transform:uppercase}h1{margin:8px 0 10px;font-family:var(--serif);font-size:clamp(32px,8vw,54px);line-height:1.04;letter-spacing:-.05em}.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.pill{border:1px solid var(--line);border-radius:999px;padding:8px 10px;background:rgba(255,250,241,.82);font-weight:800;color:var(--muted)}.badge{border-radius:999px;padding:8px 12px;color:#fff;font-weight:900}.finished{background:var(--green)}.review{background:var(--blue)}.blocked{background:var(--red)}
+    .grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:16px}.card{border:1px solid var(--line);border-radius:24px;background:rgba(255,250,241,.9);padding:18px;box-shadow:0 12px 40px rgba(52,30,14,.07)}h2{margin:0 0 10px;font-family:var(--serif);font-size:26px;letter-spacing:-.03em}h3{margin:16px 0 6px;font-size:18px}p,li{line-height:1.72}.muted{color:var(--muted)}ul{padding-left:20px;margin:8px 0}.links{display:grid;gap:8px}.links a{display:block;text-decoration:none;border:1px solid var(--line);border-radius:16px;background:#fffdf8;padding:12px;color:var(--coal);font-weight:800;overflow-wrap:anywhere}pre{white-space:pre-wrap;overflow:auto;border:1px solid var(--line);border-radius:16px;background:#fffdf8;padding:14px;color:var(--muted)}code{background:#fffdf8;border:1px solid var(--line);border-radius:6px;padding:1px 4px}.footer{margin-top:18px;text-align:center;color:var(--muted);font-size:13px}
+    @media(min-width:760px){.grid.two{grid-template-columns:1fr 1fr}.page{padding:28px 22px 72px}}
+  </style>
+</head>
+<body>
+  <main class="page">
+    <nav class="nav">
+      <a href="../../">V3 主页</a>
+      <a href="../">运行报告索引</a>
+      <a href="report.md">Markdown 报告</a>
+    </nav>
+    <section class="hero">
+      <div class="kicker">AI-IP-Studio · 运行报告</div>
+      <h1>Codex A Project Index And Memory System</h1>
+      <p class="muted">Create an AI-friendly project index and memory/decision layer so future Codex/OpenCode/Claude agents can understand AI-IP-Studio quickly without relying on chat memory.</p>
+      <div class="meta">
+        <span class="badge finished">finished</span>
+        <span class="pill">模式：managed</span>
+        <span class="pill">分数：94/100</span>
+        <span class="pill">更新：2026-05-09</span>
+      </div>
+    </section>
+
+    <section class="grid two">
+      <div class="card"><h2>目标</h2><p>Create an AI-friendly project index and memory/decision layer so future Codex/OpenCode/Claude agents can understand AI-IP-Studio quickly without relying on chat memory.</p>
+<p>Concrete deliverables:</p>
+<p>1. <code>docs/project-index.md</code></p>
+<p>2. <code>docs/agent-quickstart.md</code></p>
+<p>3. <code>docs/decision-log.md</code></p>
+<p>4. <code>docs/project-prd-v2.md</code></p>
+<p>5. <code>docs/improvement-loop.md</code></p>
+<p>6. <code>plans/run-reports/2026-05-09-codex-a-project-index-memory-report.md</code></p></div>
+      <div class="card"><h2>验证</h2><p>Commands/checks performed:</p>
+<ul>
+<li>Confirmed required task file contents with <code>sed</code>.</li>
+<li>Confirmed existing and missing target deliverables before writing.</li>
+<li>Inspected top-level directory structure and representative files.</li>
+<li>Re-checked top-level directory structure after parallel-agent changes and updated <code>docs/project-index.md</code> to include the newly present <code>experiments/</code> sandbox without inspecting or relying on its contents.</li>
+<li>Inspected required docs and planning context.</li>
+<li>Inspected safety docs, profile docs, skills, workflows, templates, task board, account V3 progress, and generated/public artifact areas.</li>
+<li>Created only files listed in the write scope.</li>
+<li>Verified all required deliverable files exist after creation.</li>
+<li>Verified no out-of-scope files were intentionally edited by this run.</li>
+</ul>
+<p>Post-write validation checklist:</p>
+<ul>
+<li>[x] <code>docs/project-index.md</code> exists and maps every top-level directory.</li>
+<li>[x] <code>docs/project-index.md</code> marks source-of-truth, generated, sandbox, and publish artifacts.</li>
+<li>[x] <code>docs/project-index.md</code> explains first-read files and what not to modify casually.</li>
+<li>[x] <code>docs/agent-quickstart.md</code> exists and provides five-minute onboarding.</li>
+<li>[x] <code>docs/agent-quickstart.md</code> routes script, account analysis, trend research, XHS, publishing, experiments, business, memory, and managed tasks.</li>
+<li>[x] <code>docs/agent-quickstart.md</code> includes mandatory safety rules and report destinations.</li>
+<li>[x] <code>docs/decision-log.md</code> exists and includes accepted preferences, avoid patterns, confirmed workflows, open decisions, dates, and sources.</li>
+<li>[x] <code>docs/decision-log.md</code> includes confirmed preference for decision-oriented V3 pages.</li>
+<li>[x] <code>docs/decision-log.md</code> includes remote GitHub Pages-style review preference.</li>
+<li>[x] <code>docs/project-prd-v2.md</code> exists and covers second-stage product vision.</li>
+<li>[x] <code>docs/project-prd-v2.md</code> covers account distillation, trend engine, XHS system, tool evaluation, business layer, and publishing layer.</li>
+<li>[x] <code>docs/project-prd-v2.md</code> includes success criteria and risks.</li>
+<li>[x] <code>docs/improvement-loop.md</code> exists and covers small-patch process, when to ask, how to propose changes, and avoiding unfamiliar changes.</li>
+<li>[x] Run report exists at required path.</li>
+<li>[x] No raw media, cookies, tokens, credentials, or private data were uploaded or added.</li>
+</ul></div>
+    </section>
+
+    <section class="card"><h2>修改 / 新建文件</h2><h3>修改文件</h3><p>Only the scoped files above were created/changed by this run.</p>
+<p>Pre-existing dirty/untracked files were present before this run, including <code>AGENTS.md</code>, <code>research/topic-library.md</code>, <code>webapp/*</code>, many <code>accounts/douyin/42470269203/*</code> generated artifacts, <code>publish/</code>, <code>plans/</code>, scripts, skills, and templates. They were inspected when relevant but not modified by this run outside the allowed scope.</p>
+<h3>新建文件</h3><ul>
+<li><code>docs/project-index.md</code></li>
+<li><code>docs/agent-quickstart.md</code></li>
+<li><code>docs/decision-log.md</code></li>
+<li><code>docs/project-prd-v2.md</code></li>
+<li><code>docs/improvement-loop.md</code></li>
+<li><code>plans/run-reports/2026-05-09-codex-a-project-index-memory-report.md</code></li>
+</ul></section>
+    <section class="card"><h2>链接</h2><div class="links"><a href="report.md">Markdown 报告</a>
+<a href="../">运行报告索引</a>
+<a href="https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-09-codex-a-project-index-memory/">预期远程链接</a></div></section>
+    <section class="card"><h2>详情</h2><h3>交付物</h3><h3>1. Project Index</h3>
+<p>Created <code>docs/project-index.md</code> with:</p>
+<ul>
+<li>every top-level directory mapped;</li>
+<li>folder purpose;</li>
+<li>source-of-truth vs generated/sandbox/publish status;</li>
+<li>first-read path for new agents;</li>
+<li>high-risk areas not to modify casually;</li>
+<li>first 15 minutes path;</li>
+<li>cross-agent compatibility notes for Codex, OpenCode/OpenClaw-style agents, Claude-style agents, and humans;</li>
+<li>relationship between <code>plans/</code>, <code>skills/</code>, <code>workflows/</code>, and <code>docs/</code>.</li>
+</ul>
+<h3>2. Agent Quickstart</h3>
+<p>Created <code>docs/agent-quickstart.md</code> with:</p>
+<ul>
+<li>five-minute onboarding checklist;</li>
+<li>task router for script, account analysis, trend research, XHS, publishing, experiments, business, managed tasks, and memory updates;</li>
+<li>mandatory safety rules;</li>
+<li>script/account/trend/business checklists;</li>
+<li>report destinations;</li>
+<li>managed vs office mode distinction.</li>
+</ul>
+<h3>3. Decision Log</h3>
+<p>Created <code>docs/decision-log.md</code> with:</p>
+<ul>
+<li>accepted user preferences;</li>
+<li>rejected/avoid patterns;</li>
+<li>confirmed successful workflows;</li>
+<li>open decisions;</li>
+<li>date and source for each decision;</li>
+<li>explicit record of the user&#x27;s preference for decision-oriented V3 pages;</li>
+<li>explicit record of remote GitHub Pages-style review preference.</li>
+</ul>
+<h3>4. PRD v2</h3>
+<p>Created <code>docs/project-prd-v2.md</code> with:</p>
+<ul>
+<li>second-stage product vision;</li>
+<li>product principles;</li>
+<li>baseline assets;</li>
+<li>target users;</li>
+<li>required modules: account distillation, domestic + international trend engine, XHS system, external tool evaluation sandbox, business layer, publishing layer;</li>
+<li>success criteria, risks, near-term next steps;</li>
+<li>milestones and metrics.</li>
+</ul>
+<h3>5. Improvement Loop</h3>
+<p>Created <code>docs/improvement-loop.md</code> with:</p>
+<ul>
+<li>small/medium/large patch classification;</li>
+<li>when to ask the user;</li>
+<li>proposal format;</li>
+<li>how to avoid making the system unfamiliar;</li>
+<li>evidence standards;</li>
+<li>managed task iteration loop;</li>
+<li>doc/workflow/skill/template promotion path;</li>
+<li>tool promotion path;</li>
+<li>Content Scale evolution rules.</li>
+</ul>
+<h3>6. Run Report</h3>
+<p>Created this report under the required path.</p>
+<h3>发布链接</h3><ul>
+<li>本地 Markdown 报告：<code>plans/run-reports/2026-05-09-codex-a-project-index-memory-report.md</code></li>
+<li>本地发布 Markdown：<code>publish/ai-ip-previews/runs/2026-05-09-codex-a-project-index-memory/report.md</code></li>
+<li>本地 HTML 报告：<code>publish/ai-ip-previews/runs/2026-05-09-codex-a-project-index-memory/index.html</code></li>
+<li>本地 <code>/runs/</code> 索引：<code>publish/ai-ip-previews/runs/index.html</code></li>
+<li>预期远程 URL：<code>https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-09-codex-a-project-index-memory/</code></li>
+</ul>
+<h3>自评</h3><ul>
+<li>Score: 94/100</li>
+<li>Completion gate passed: yes</li>
+<li>Final status: finished</li>
+</ul>
+<p>Strong points:</p>
+<ul>
+<li>Deliverables are concrete and immediately usable by future agents.</li>
+<li>Project index maps top-level folders and clearly marks generated/source/sandbox/publish areas.</li>
+<li>Decision log captures the key V3 decision-oriented page preference and GitHub remote-review preference.</li>
+<li>PRD v2 connects the user&#x27;s broad system-expansion request to modules, success criteria, and risks.</li>
+<li>Improvement loop directly addresses the user&#x27;s concern about small useful changes and avoiding unfamiliar redesigns.</li>
+<li>Write scope was respected.</li>
+</ul>
+<p>Weak points / remaining limitations:</p>
+<ul>
+<li>This run did not publish the report remotely because the task only required a local run report and did not include publish scope.</li>
+<li>Some generated/public artifacts are numerous; the audit sampled representative files rather than reading every generated HTML page.</li>
+<li>The project already has many dirty/untracked files from prior work; this run did not clean or archive them because that was outside scope.</li>
+<li>Parallel-agent files appeared outside this task&#x27;s write scope during validation. The user chose to continue with only this task&#x27;s scoped files, so unrelated files were ignored except that the current top-level <code>experiments/</code> directory was recorded in the project index for map completeness.</li>
+</ul>
+<p>What was skipped and why:</p>
+<ul>
+<li>No task card movement/archive was performed because this prompt is in <code>plans/todo/</code>, and the task explicitly says not to delete it when run directly from that folder.</li>
+<li>No Git commit was made because the task did not request a commit and the worktree contains many unrelated pre-existing changes.</li>
+<li>No remote publishing was performed because publishing was not required and would touch out-of-scope <code>publish/</code> files.</li>
+</ul></section>
+    <section class="card"><h2>风险与下一步</h2><h3>风险</h3><ul>
+<li>No blocker for this task.</li>
+<li>Residual risk: future agents may still see a very dirty worktree. A separate cleanup/archive task should decide what generated artifacts are intentional, what should be ignored, and what should be committed.</li>
+</ul>
+<h3>下一步</h3><ul>
+<li>用户可直接打开本地 HTML 报告，或在推送 GitHub Pages 后使用预期远程 URL 查看。</li>
+<li>后续类似 <code>/goal 文件路径</code> 任务应先按 <code>docs/agent-quickstart.md</code> 的 <code>0A</code> 流程执行，避免再次漏读顶部固定要求。</li>
+</ul></section>
+
+    <div class="footer">AI-IP-Studio · 运行报告页面 · 适合手机和微信查看</div>
+  </main>
+</body>
+</html>

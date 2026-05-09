@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Codex E Business Model And Monetization PRD · AI-IP-Studio 运行报告</title>
+  <style>
+    :root{--paper:#f6ead8;--card:#fffaf1;--ink:#201713;--muted:#75675d;--line:#ddc4aa;--red:#a93427;--green:#1f6a57;--amber:#b76521;--blue:#285f78;--coal:#17110f;--shadow:0 22px 70px rgba(52,30,14,.12);--sans:"Avenir Next","PingFang SC","Hiragino Sans GB",sans-serif;--serif:"Songti SC","Kaiti SC","Hiragino Mincho ProN",serif}
+    *{box-sizing:border-box}body{margin:0;color:var(--ink);font-family:var(--sans);background:radial-gradient(circle at 8% 8%,rgba(199,107,36,.22),transparent 30%),linear-gradient(135deg,#ead6bd 0%,var(--paper) 52%,#fff8ec 100%)}
+    .page{width:min(920px,100%);margin:0 auto;padding:20px 14px 56px}.nav{display:flex;gap:10px;overflow:auto;margin-bottom:14px}.nav a{white-space:nowrap;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:9px 12px;background:rgba(255,250,241,.88);color:var(--muted);font-size:13px;font-weight:800}
+    .hero{border:1px solid var(--line);border-radius:30px;background:linear-gradient(135deg,#fffaf1 0%,#fff2d9 70%,#f3bd78 100%);padding:24px;box-shadow:var(--shadow)}.kicker{color:var(--red);font-size:12px;font-weight:900;letter-spacing:.14em;text-transform:uppercase}h1{margin:8px 0 10px;font-family:var(--serif);font-size:clamp(32px,8vw,54px);line-height:1.04;letter-spacing:-.05em}.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.pill{border:1px solid var(--line);border-radius:999px;padding:8px 10px;background:rgba(255,250,241,.82);font-weight:800;color:var(--muted)}.badge{border-radius:999px;padding:8px 12px;color:#fff;font-weight:900}.finished{background:var(--green)}.review{background:var(--blue)}.blocked{background:var(--red)}
+    .grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:16px}.card{border:1px solid var(--line);border-radius:24px;background:rgba(255,250,241,.9);padding:18px;box-shadow:0 12px 40px rgba(52,30,14,.07)}h2{margin:0 0 10px;font-family:var(--serif);font-size:26px;letter-spacing:-.03em}h3{margin:16px 0 6px;font-size:18px}p,li{line-height:1.72}.muted{color:var(--muted)}ul{padding-left:20px;margin:8px 0}.links{display:grid;gap:8px}.links a{display:block;text-decoration:none;border:1px solid var(--line);border-radius:16px;background:#fffdf8;padding:12px;color:var(--coal);font-weight:800;overflow-wrap:anywhere}pre{white-space:pre-wrap;overflow:auto;border:1px solid var(--line);border-radius:16px;background:#fffdf8;padding:14px;color:var(--muted)}code{background:#fffdf8;border:1px solid var(--line);border-radius:6px;padding:1px 4px}.footer{margin-top:18px;text-align:center;color:var(--muted);font-size:13px}
+    @media(min-width:760px){.grid.two{grid-template-columns:1fr 1fr}.page{padding:28px 22px 72px}}
+  </style>
+</head>
+<body>
+  <main class="page">
+    <nav class="nav">
+      <a href="../../">V3 主页</a>
+      <a href="../">运行报告索引</a>
+      <a href="report.md">Markdown 报告</a>
+    </nav>
+    <section class="hero">
+      <div class="kicker">AI-IP-Studio · 运行报告</div>
+      <h1>Codex E Business Model And Monetization PRD</h1>
+      <p class="muted">Create a practical monetization PRD for AI-IP-Studio comparing SaaS credits, productized report service, private/remote deployment, 起号陪跑/coaching, guild/MCN/cooperation, and hybrid sequencing. The output should recommend a practical first m</p>
+      <div class="meta">
+        <span class="badge finished">finished</span>
+        <span class="pill">模式：managed</span>
+        <span class="pill">分数：93/100</span>
+        <span class="pill">更新：2026-05-10 00:30 CST</span>
+      </div>
+    </section>
+
+    <section class="grid two">
+      <div class="card"><h2>目标</h2><p>Create a practical monetization PRD for AI-IP-Studio comparing SaaS credits, productized report service, private/remote deployment, 起号陪跑/coaching, guild/MCN/cooperation, and hybrid sequencing. The output should recommend a practical first monetization path, include reality/competitive research, define offer validation assets, estimate unit economics/operations, and provide a 30-day validation plan.</p></div>
+      <div class="card"><h2>验证</h2><h3>Prompt-To-Artifact Checklist</h3>
+<p>| Requirement | Evidence | Status |</p>
+<p>|---|---|---|</p>
+<p>| Create practical monetization PRD | <code>docs/business-prd-v0.md</code> exists and contains executive decision, model comparison, offer requirements, unit economics, compliance, and next steps | Pass |</p>
+<p>| Compare SaaS / credit system | <code>docs/business-prd-v0.md</code> section 5.1; <code>research/business/business-model-comparison.md</code> table and notes | Pass |</p>
+<p>| Compare productized report service | <code>docs/business-prd-v0.md</code> section 5.2; <code>research/business/business-model-comparison.md</code> | Pass |</p>
+<p>| Compare remote/private deployment | <code>docs/business-prd-v0.md</code> section 5.3; <code>research/business/business-model-comparison.md</code> | Pass |</p>
+<p>| Compare 起号陪跑/coaching | <code>docs/business-prd-v0.md</code> section 5.4; <code>research/business/business-model-comparison.md</code>; <code>research/business/offer-candidates.md</code> Offer 2 | Pass |</p>
+<p>| Compare guild/MCN/cooperation | <code>docs/business-prd-v0.md</code> section 5.5; <code>research/business/business-model-comparison.md</code> | Pass |</p>
+<p>| Compare hybrid model | <code>docs/business-prd-v0.md</code> section 5.6; <code>research/business/business-model-comparison.md</code> | Pass |</p>
+<p>| Model comparison includes customer, pain, deliverable, pricing, fulfillment burden, automation potential, trust, risk, recommended test order | <code>research/business/business-model-comparison.md</code> comparison table includes all named columns plus ops/CAC/support | Pass |</p>
+<p>| Create first 3 offer candidates | <code>research/business/offer-candidates.md</code> contains 3 named offers | Pass |</p>
+<p>| Each offer includes name, promise, deliverables, price hypothesis, for/not for, proof, minimum delivery workflow | <code>research/business/offer-candidates.md</code> sections for each offer | Pass |</p>
+<p>| Create 30-day validation plan | <code>research/business/first-30-days-validation-plan.md</code> | Pass |</p>
+<p>| Plan includes what to sell first | <code>research/business/first-30-days-validation-plan.md</code> section <code>What To Sell First</code> | Pass |</p>
+<p>| Plan includes where to find first users | <code>research/business/first-30-days-validation-plan.md</code> Days 4-10 | Pass |</p>
+<p>| Plan includes how to demonstrate results | <code>research/business/first-30-days-validation-plan.md</code> <code>How To Demonstrate Results</code> | Pass |</p>
+<p>| Plan includes how to collect testimonials | <code>research/business/first-30-days-validation-plan.md</code> <code>How To Collect Testimonials</code> | Pass |</p>
+<p>| Plan includes when to build software | <code>research/business/first-30-days-validation-plan.md</code> <code>When To Build Software</code> | Pass |</p>
+<p>| Competitive/reality research if network available | Web research used; citations recorded in <code>docs/business-prd-v0.md</code> and <code>research/business/README.md</code> | Pass |</p>
+<p>| Cite sources and separate facts from assumptions | Source tables and <code>Facts vs Assumptions</code> in <code>research/business/README.md</code>; research section in PRD | Pass |</p>
+<p>| Draft 3 productized offer pages/outlines | <code>research/business/offer-candidates.md</code> includes offer page outline for each offer | Pass |</p>
+<p>| Define proof/demo each offer needs | <code>research/business/offer-candidates.md</code> <code>Proof Needed</code> and <code>Offer Validation Assets Needed</code> | Pass |</p>
+<p>| Define minimal paid pilot path and refund/risk boundary | <code>research/business/offer-candidates.md</code> has pilot/refund sections for all offers | Pass |</p>
+<p>| Unit economics and operations | <code>docs/business-prd-v0.md</code> section 9 and <code>research/business/business-model-comparison.md</code> table | Pass |</p>
+<p>| Recommend first 30-day test and do-not-build-SaaS threshold | <code>docs/business-prd-v0.md</code> sections 7, 12, 14; <code>research/business/first-30-days-validation-plan.md</code> | Pass |</p>
+<p>| Recommendation practical, not only conceptual | PRD includes outreach message, metrics, pricing, scope, acceptance criteria, and operational gates | Pass |</p>
+<p>| SaaS not recommended before manual/productized validation | Executive decision and SaaS gates in PRD and plan | Pass |</p>
+<p>| Include ethical/compliance concerns | <code>docs/business-prd-v0.md</code> sections 4.5, 11, risks; research files include compliance rules | Pass |</p>
+<p>| Required reading inspected | Listed in <code>Context Read</code> above; relevant source files were opened/inspected | Pass |</p>
+<p>| Write scope respected | Only allowed files were created; no core scripts/pages/profile files edited by this run | Pass |</p>
+<p>| Run report exists under <code>plans/run-reports/</code> | This file exists | Pass |</p>
+<p>| Publishing/reporting required artifact | Task required local run report only; no published HTML report path was specified. Local run report created; no remote publish attempted. | Pass |</p>
+<p>| Self-review score recorded &gt;= 90 for finished | Score 93/100 below | Pass |</p>
+<p>| <code>plans/todo/</code> task not deleted | Prompt remains in <code>plans/todo/</code>; this report notes completion and leaves archival to user/task-board agent | Pass |</p>
+<h3>Commands / Inspection Evidence</h3>
+<ul>
+<li><code>wc -l docs/business-prd-v0.md research/business/README.md research/business/business-model-comparison.md research/business/offer-candidates.md research/business/first-30-days-validation-plan.md</code> confirmed the five deliverables total over 1,500 lines of content.</li>
+<li><code>rg</code> checks confirmed required model names, pricing, risk/refund, SaaS thresholds, compliance, and offer-plan terms appear across the deliverables.</li>
+<li>A link-status script checked cited URLs in <code>docs/business-prd-v0.md</code>, <code>research/business/README.md</code>, and this report; all checked source links returned HTTP 200 after replacing one stale audit-service URL with live alternatives and using HypeAuditor&#x27;s pricing page as the stable source URL.</li>
+<li><code>git status --short -- &lt;write-scope-files&gt;</code> confirmed only allowed deliverable paths were added by this run.</li>
+</ul></div>
+    </section>
+
+    <section class="card"><h2>修改 / 新建文件</h2><h3>修改文件</h3><ul>
+<li>Created <code>docs/business-prd-v0.md</code></li>
+<li>Created <code>research/business/README.md</code></li>
+<li>Created <code>research/business/business-model-comparison.md</code></li>
+<li>Created <code>research/business/offer-candidates.md</code></li>
+<li>Created <code>research/business/first-30-days-validation-plan.md</code></li>
+<li>Created <code>plans/run-reports/2026-05-09-codex-e-business-prd-report.md</code></li>
+</ul>
+<p>No files outside the allowed write scope were edited.</p></section>
+    <section class="card"><h2>链接</h2><div class="links"><a href="report.md">Markdown 报告</a>
+<a href="../">运行报告索引</a>
+<a href="https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-09-codex-e-business-prd/">预期远程链接</a></div></section>
+    <section class="card"><h2>详情</h2><h3>交付物</h3><ul>
+<li><code>docs/business-prd-v0.md</code> - main monetization PRD with executive decision, research, model comparison summary, offer requirements, operations/unit economics, compliance, metrics, and decision gates.</li>
+<li><code>research/business/README.md</code> - research workspace index and fact/assumption base with citations.</li>
+<li><code>research/business/business-model-comparison.md</code> - detailed comparison table for SaaS, productized reports, private deployment, coaching, guild/MCN, and hybrid path.</li>
+<li><code>research/business/offer-candidates.md</code> - first 3 productized offers, offer-page outlines, proof needed, minimum delivery workflows, paid pilot paths, and refund/risk boundaries.</li>
+<li><code>research/business/first-30-days-validation-plan.md</code> - 30-day validation plan covering what to sell first, where to find users, proof/demo, testimonial collection, metrics, and SaaS thresholds.</li>
+<li>This run report.</li>
+</ul>
+<h3>自评</h3><ul>
+<li>Score: 93/100</li>
+<li>Completion gate passed: yes</li>
+<li>Strong points:</li>
+<li>The recommendation is concrete and commercially sequenced: report first, coaching upsell, private setup later, SaaS last.</li>
+<li>The model comparison includes practical operations, unit economics, CAC path, support risk, and test order rather than abstract pros/cons only.</li>
+<li>The offer-candidate file includes actual page outlines, pilot paths, proof needs, and refund/risk boundaries.</li>
+<li>The 30-day plan includes outreach copy, qualification questions, metrics, and SaaS thresholds.</li>
+<li>Competitive/reality research cites live sources and separates facts from assumptions.</li>
+<li>Weak points:</li>
+<li>Pricing bands are still hypotheses; they need real paid conversations to validate.</li>
+<li>China-specific market pricing is less transparent than Western public audit/coaching services, so some pricing assumptions remain medium-confidence.</li>
+<li>No polished sales landing page or intake form was created because those were not in this task&#x27;s write scope.</li>
+<li>What was skipped and why:</li>
+<li>No HTML published report was created because the task required a run report under <code>plans/run-reports/</code> but did not list publish paths in write scope.</li>
+<li>No task card was moved to <code>plans/tasks/finished/</code> because this prompt was run directly from <code>plans/todo/</code>; the task file explicitly says not to delete it and to leave final archival for the user or task-board agent.</li>
+<li>No raw media, screenshots, cookies, tokens, credentials, or third-party private data were uploaded or stored.</li>
+</ul></section>
+    <section class="card"><h2>风险与下一步</h2><h3>风险</h3><ul>
+<li>No blocking issue remains for this PRD task.</li>
+<li>Commercial risk remains: the first offer must be validated with real buyers before treating pricing or conversion assumptions as facts.</li>
+<li>Compliance risk remains if the future product accepts arbitrary user-submitted links or becomes public SaaS; the PRD recommends manual/client-provided-source validation before automation.</li>
+</ul>
+<h3>下一步</h3><p>Create the actual sales assets for Offer 1:</p>
+<p>1. One-page WeChat/landing-page sales note.</p>
+<p>2. Intake questionnaire.</p>
+<p>3. Scope/refund/no-guarantee agreement.</p>
+<p>4. A redacted sample report derived from the current V3 account-distillation proof.</p></section>
+
+    <div class="footer">AI-IP-Studio · 运行报告页面 · 适合手机和微信查看</div>
+  </main>
+</body>
+</html>

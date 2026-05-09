@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Codex F Run Report Publisher · AI-IP-Studio 运行报告</title>
+  <style>
+    :root{--paper:#f6ead8;--card:#fffaf1;--ink:#201713;--muted:#75675d;--line:#ddc4aa;--red:#a93427;--green:#1f6a57;--amber:#b76521;--blue:#285f78;--coal:#17110f;--shadow:0 22px 70px rgba(52,30,14,.12);--sans:"Avenir Next","PingFang SC","Hiragino Sans GB",sans-serif;--serif:"Songti SC","Kaiti SC","Hiragino Mincho ProN",serif}
+    *{box-sizing:border-box}body{margin:0;color:var(--ink);font-family:var(--sans);background:radial-gradient(circle at 8% 8%,rgba(199,107,36,.22),transparent 30%),linear-gradient(135deg,#ead6bd 0%,var(--paper) 52%,#fff8ec 100%)}
+    .page{width:min(920px,100%);margin:0 auto;padding:20px 14px 56px}.nav{display:flex;gap:10px;overflow:auto;margin-bottom:14px}.nav a{white-space:nowrap;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:9px 12px;background:rgba(255,250,241,.88);color:var(--muted);font-size:13px;font-weight:800}
+    .hero{border:1px solid var(--line);border-radius:30px;background:linear-gradient(135deg,#fffaf1 0%,#fff2d9 70%,#f3bd78 100%);padding:24px;box-shadow:var(--shadow)}.kicker{color:var(--red);font-size:12px;font-weight:900;letter-spacing:.14em;text-transform:uppercase}h1{margin:8px 0 10px;font-family:var(--serif);font-size:clamp(32px,8vw,54px);line-height:1.04;letter-spacing:-.05em}.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.pill{border:1px solid var(--line);border-radius:999px;padding:8px 10px;background:rgba(255,250,241,.82);font-weight:800;color:var(--muted)}.badge{border-radius:999px;padding:8px 12px;color:#fff;font-weight:900}.finished{background:var(--green)}.review{background:var(--blue)}.blocked{background:var(--red)}
+    .grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:16px}.card{border:1px solid var(--line);border-radius:24px;background:rgba(255,250,241,.9);padding:18px;box-shadow:0 12px 40px rgba(52,30,14,.07)}h2{margin:0 0 10px;font-family:var(--serif);font-size:26px;letter-spacing:-.03em}h3{margin:16px 0 6px;font-size:18px}p,li{line-height:1.72}.muted{color:var(--muted)}ul{padding-left:20px;margin:8px 0}.links{display:grid;gap:8px}.links a{display:block;text-decoration:none;border:1px solid var(--line);border-radius:16px;background:#fffdf8;padding:12px;color:var(--coal);font-weight:800;overflow-wrap:anywhere}pre{white-space:pre-wrap;overflow:auto;border:1px solid var(--line);border-radius:16px;background:#fffdf8;padding:14px;color:var(--muted)}code{background:#fffdf8;border:1px solid var(--line);border-radius:6px;padding:1px 4px}.footer{margin-top:18px;text-align:center;color:var(--muted);font-size:13px}
+    @media(min-width:760px){.grid.two{grid-template-columns:1fr 1fr}.page{padding:28px 22px 72px}}
+  </style>
+</head>
+<body>
+  <main class="page">
+    <nav class="nav">
+      <a href="../../">V3 主页</a>
+      <a href="../">运行报告索引</a>
+      <a href="report.md">Markdown 报告</a>
+    </nav>
+    <section class="hero">
+      <div class="kicker">AI-IP-Studio · 运行报告</div>
+      <h1>Codex F Run Report Publisher</h1>
+      <p class="muted">Create a standard task-board and reporting system so every future Codex run can be assigned as a task, run in managed or office mode, self-review against completion gates, produce a local run report, and when required publish a phone-readab</p>
+      <div class="meta">
+        <span class="badge finished">finished</span>
+        <span class="pill">模式：managed</span>
+        <span class="pill">分数：94/100</span>
+        <span class="pill">更新：2026-05-09 23:52 CST</span>
+      </div>
+    </section>
+
+    <section class="grid two">
+      <div class="card"><h2>目标</h2><p>Create a standard task-board and reporting system so every future Codex run can be assigned as a task, run in <code>managed</code> or <code>office</code> mode, self-review against completion gates, produce a local run report, and when required publish a phone-readable report page under the existing GitHub Pages preview site.</p></div>
+      <div class="card"><h2>验证</h2><p>Validation performed before final status:</p>
+<pre>python3 -m py_compile scripts/publish_run_report.py
+result: passed</pre>
+<pre>python3 scripts/publish_run_report.py --check plans/run-reports/2026-05-09-codex-f-run-report-publisher-report.md
+result: passed after report creation</pre>
+<pre>python3 scripts/publish_run_report.py --slug 2026-05-09-codex-f-run-report-publisher plans/run-reports/2026-05-09-codex-f-run-report-publisher-report.md
+result: published local HTML report and rebuilt runs/index.html</pre>
+<pre>python3 -m http.server 8765 --directory publish/ai-ip-previews
+curl -I http://127.0.0.1:8765/runs/
+result: HTTP/1.0 200 OK
+curl -I http://127.0.0.1:8765/runs/2026-05-09-codex-f-run-report-publisher/
+result: HTTP/1.0 200 OK
+curl -I http://127.0.0.1:8765/
+result: HTTP/1.0 200 OK; existing homepage still serves locally</pre>
+<pre>manual file inspection
+result: required scoped files and status folder markers exist; no raw media files were copied; report publishing lives only under publish/ai-ip-previews/runs/; existing video learning-brief URLs were not edited; matching task cards moved to plans/tasks/finished/.</pre></div>
+    </section>
+
+    <section class="card"><h2>修改 / 新建文件</h2><h3>修改文件</h3><ul>
+<li><code>plans/tasks/README.md</code></li>
+<li><code>plans/tasks/TASK-TEMPLATE.md</code></li>
+<li><code>templates/task-card-template.md</code></li>
+<li><code>templates/run-report-template.md</code></li>
+<li><code>workflows/managed-goal-task-v0.md</code></li>
+</ul>
+<h3>新建文件</h3><ul>
+<li><code>templates/run-report-page-template.html</code></li>
+<li><code>workflows/run-report-publishing-v0.md</code></li>
+<li><code>scripts/publish_run_report.py</code></li>
+<li><code>plans/run-reports/2026-05-09-codex-f-run-report-publisher-report.md</code></li>
+<li><code>publish/ai-ip-previews/runs/2026-05-09-codex-f-run-report-publisher/index.html</code></li>
+<li><code>publish/ai-ip-previews/runs/2026-05-09-codex-f-run-report-publisher/report.md</code></li>
+<li><code>publish/ai-ip-previews/runs/index.html</code></li>
+<li><code>plans/tasks/todo/.gitkeep</code></li>
+<li><code>plans/tasks/running/.gitkeep</code></li>
+<li><code>plans/tasks/blocked/.gitkeep</code></li>
+<li><code>plans/tasks/review/.gitkeep</code></li>
+<li><code>plans/tasks/finished/.gitkeep</code></li>
+<li><code>plans/tasks/finished/TASK-20260509-001-task-board-managed-goal-system.md</code></li>
+<li><code>plans/tasks/finished/TASK-20260509-002-run-report-publisher.md</code></li>
+</ul></section>
+    <section class="card"><h2>链接</h2><div class="links"><a href="report.md">Markdown 报告</a>
+<a href="../">运行报告索引</a>
+<a href="https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-09-codex-f-run-report-publisher/">预期远程链接</a></div></section>
+    <section class="card"><h2>详情</h2><h3>交付物</h3><ul>
+<li>Task-board README now defines status folders, managed/office modes, task-card contract, skill binding, lifecycle, completion gates, report requirements, and validation commands. Status folders include <code>.gitkeep</code> markers so empty states persist in Git.</li>
+<li>Task card templates now include machine-readable YAML, MUST/SHOULD/REFERENCE/DO NOT sections, write scope, skill binding, report requirements, and self-review gate.</li>
+<li>Markdown run report template now includes objective, context read, changed/created files, validation, publish links, skipped items, risks, next actions, self-review, and completion note.</li>
+<li>HTML report page template now provides a mobile-readable status-badge layout for published run reports.</li>
+<li>Managed goal workflow now defines triggers, execution loop, completion gates, direct <code>plans/todo/</code> handling, status decisions, and report publishing handoff.</li>
+<li>Run report publishing workflow now defines local and remote paths, safety rules, index update behavior, local HTTP 200 checks, remote verification, and task-board integration.</li>
+<li>Lightweight publishing script now converts Markdown reports into <code>publish/ai-ip-previews/runs/{slug}/index.html</code>, copies <code>report.md</code>, rebuilds <code>runs/index.html</code>, scans for secret-like content, and never pushes automatically.</li>
+<li>This run report was created and published locally as a pilot page.</li>
+</ul>
+<h3>发布链接</h3><ul>
+<li>Local Markdown report: <code>plans/run-reports/2026-05-09-codex-f-run-report-publisher-report.md</code></li>
+<li>Local HTML report: <code>publish/ai-ip-previews/runs/2026-05-09-codex-f-run-report-publisher/index.html</code></li>
+<li>Local report index: <code>publish/ai-ip-previews/runs/index.html</code></li>
+<li>Expected remote report URL: <code>https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-09-codex-f-run-report-publisher/</code></li>
+<li>Expected remote report index: <code>https://schovayang-creator.github.io/ai-ip-previews/runs/</code></li>
+<li>Remote HTTP verification: not checked because this run created local publish artifacts only and did not push/deploy.</li>
+</ul>
+<h3>跳过项</h3><ul>
+<li>Did not push to GitHub Pages; the task explicitly says not to push unless requested.</li>
+<li>Did not delete or move <code>plans/todo/2026-05-09-codex-f-run-report-publisher.md</code>; the prompt says direct <code>plans/todo/</code> runs should leave archival to the user or task-board agent. The matching executable task cards were moved to <code>plans/tasks/finished/</code> because they are inside the task-board write scope and their completion gates passed.</li>
+<li>Did not edit the existing homepage <code>publish/ai-ip-previews/index.html</code>; the task allowed preserving the homepage and only required <code>runs/index.html</code> plus predictable URLs.</li>
+<li>Did not modify the 76 published video pages or copy raw media.</li>
+</ul>
+<h3>自评</h3><ul>
+<li>Score: 94/100</li>
+<li>Completion gate passed: yes</li>
+<li>Required deliverables exist: yes</li>
+<li>Required reading inspected: yes</li>
+<li>Write scope respected: yes</li>
+<li>Validation passed or blocker documented: yes</li>
+<li>Run report created: yes</li>
+<li>Published report done or explained: yes</li>
+<li>No secrets/raw media introduced: yes</li>
+<li>Final status: finished</li>
+</ul>
+<h3>完成说明</h3><p>This task was launched directly from <code>plans/todo/2026-05-09-codex-f-run-report-publisher.md</code>, so the original prompt was left in place. Matching task-board cards were moved from <code>plans/tasks/todo/TASK-20260509-001-task-board-managed-goal-system.md</code> and <code>plans/tasks/todo/TASK-20260509-002-run-report-publisher.md</code> to <code>plans/tasks/finished/</code> with status, report path, published report path, validation checklists, and self-review updated. The direct <code>plans/todo/</code> prompt remains in place.</p></section>
+    <section class="card"><h2>风险与下一步</h2><h3>风险</h3><ul>
+<li>The HTML renderer in <code>scripts/publish_run_report.py</code> is intentionally small; it supports headings, paragraphs, bullets, inline code/links, and fenced code blocks, not full Markdown.</li>
+<li>Secret scanning is heuristic and conservative. It reduces accidental publishing risk but does not replace human review for sensitive reports.</li>
+<li>Remote URLs will 404 until the <code>publish/ai-ip-previews</code> site is deployed/pushed by the user or release workflow.</li>
+<li>Existing repository worktree already had many unrelated modified/untracked files before this run; this task changed only the allowed scoped files listed above.</li>
+</ul>
+<h3>下一步</h3><ul>
+<li>Use <code>plans/tasks/TASK-TEMPLATE.md</code> for new executable task cards.</li>
+<li>For future published reports, run <code>python3 scripts/publish_run_report.py plans/run-reports/YYYY-MM-DD-task-slug-report.md</code>.</li>
+<li>Before sharing a remote report, deploy/push the <code>publish/ai-ip-previews</code> site and verify the expected GitHub Pages URL returns HTTP 200.</li>
+<li>Optionally add a small link from the main preview homepage to <code>/runs/</code> in a future task if the user wants report discovery from the root page.</li>
+</ul></section>
+
+    <div class="footer">AI-IP-Studio · 运行报告页面 · 适合手机和微信查看</div>
+  </main>
+</body>
+</html>

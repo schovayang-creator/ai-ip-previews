@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>托管 Goal 默认发布规则补丁 · AI-IP-Studio 运行报告</title>
+  <style>
+    :root{--paper:#f6ead8;--card:#fffaf1;--ink:#201713;--muted:#75675d;--line:#ddc4aa;--red:#a93427;--green:#1f6a57;--amber:#b76521;--blue:#285f78;--coal:#17110f;--shadow:0 22px 70px rgba(52,30,14,.12);--sans:"Avenir Next","PingFang SC","Hiragino Sans GB",sans-serif;--serif:"Songti SC","Kaiti SC","Hiragino Mincho ProN",serif}
+    *{box-sizing:border-box}body{margin:0;color:var(--ink);font-family:var(--sans);background:radial-gradient(circle at 8% 8%,rgba(199,107,36,.22),transparent 30%),linear-gradient(135deg,#ead6bd 0%,var(--paper) 52%,#fff8ec 100%)}
+    .page{width:min(920px,100%);margin:0 auto;padding:20px 14px 56px}.nav{display:flex;gap:10px;overflow:auto;margin-bottom:14px}.nav a{white-space:nowrap;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:9px 12px;background:rgba(255,250,241,.88);color:var(--muted);font-size:13px;font-weight:800}
+    .hero{border:1px solid var(--line);border-radius:30px;background:linear-gradient(135deg,#fffaf1 0%,#fff2d9 70%,#f3bd78 100%);padding:24px;box-shadow:var(--shadow)}.kicker{color:var(--red);font-size:12px;font-weight:900;letter-spacing:.14em;text-transform:uppercase}h1{margin:8px 0 10px;font-family:var(--serif);font-size:clamp(32px,8vw,54px);line-height:1.04;letter-spacing:-.05em}.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.pill{border:1px solid var(--line);border-radius:999px;padding:8px 10px;background:rgba(255,250,241,.82);font-weight:800;color:var(--muted)}.badge{border-radius:999px;padding:8px 12px;color:#fff;font-weight:900}.finished{background:var(--green)}.review{background:var(--blue)}.blocked{background:var(--red)}
+    .grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:16px}.card{border:1px solid var(--line);border-radius:24px;background:rgba(255,250,241,.9);padding:18px;box-shadow:0 12px 40px rgba(52,30,14,.07)}h2{margin:0 0 10px;font-family:var(--serif);font-size:26px;letter-spacing:-.03em}h3{margin:16px 0 6px;font-size:18px}p,li{line-height:1.72}.muted{color:var(--muted)}ul{padding-left:20px;margin:8px 0}.links{display:grid;gap:8px}.links a{display:block;text-decoration:none;border:1px solid var(--line);border-radius:16px;background:#fffdf8;padding:12px;color:var(--coal);font-weight:800;overflow-wrap:anywhere}pre{white-space:pre-wrap;overflow:auto;border:1px solid var(--line);border-radius:16px;background:#fffdf8;padding:14px;color:var(--muted)}code{background:#fffdf8;border:1px solid var(--line);border-radius:6px;padding:1px 4px}.footer{margin-top:18px;text-align:center;color:var(--muted);font-size:13px}
+    @media(min-width:760px){.grid.two{grid-template-columns:1fr 1fr}.page{padding:28px 22px 72px}}
+  </style>
+</head>
+<body>
+  <main class="page">
+    <nav class="nav">
+      <a href="../../">V3 主页</a>
+      <a href="../">运行报告索引</a>
+      <a href="report.md">Markdown 报告</a>
+    </nav>
+    <section class="hero">
+      <div class="kicker">AI-IP-Studio · 运行报告</div>
+      <h1>托管 Goal 默认发布规则补丁</h1>
+      <p class="muted">把用户最新要求固化到项目标准里：正常开启 goal 模式通常就是托管任务，所以运行报告页面默认要发布到 GitHub Pages 发布目录；只有任务明确写“不发布”时才允许跳过。</p>
+      <div class="meta">
+        <span class="badge finished">finished</span>
+        <span class="pill">模式：office</span>
+        <span class="pill">分数：96/100</span>
+        <span class="pill">更新：2026-05-10</span>
+      </div>
+    </section>
+
+    <section class="grid two">
+      <div class="card"><h2>目标</h2><p>把用户最新要求固化到项目标准里：正常开启 goal 模式通常就是托管任务，所以运行报告页面默认要发布到 GitHub Pages 发布目录；只有任务明确写“不发布”时才允许跳过。</p></div>
+      <div class="card"><h2>验证</h2><ul>
+<li>使用 <code>rg</code> 检查到核心文件均已出现 <code>publish_report_required: true</code> 或“默认发布”规则。</li>
+<li><code>templates/task-card-template.md</code> 和 <code>plans/tasks/TASK-TEMPLATE.md</code> 已默认写入 <code>publish_report_required: true</code>。</li>
+<li><code>workflows/run-report-publishing-v0.md</code> 已明确托管 <code>/goal</code> 默认发布运行报告页。</li>
+<li>本报告已通过 <code>scripts/publish_run_report.py --check</code>，并生成本地 HTML 页面。</li>
+</ul></div>
+    </section>
+
+    <section class="card"><h2>修改 / 新建文件</h2><h3>修改文件</h3><ul>
+<li><code>skills/goal-task-builder.md</code></li>
+<li><code>workflows/managed-goal-task-v0.md</code></li>
+<li><code>workflows/run-report-publishing-v0.md</code></li>
+<li><code>plans/tasks/README.md</code></li>
+<li><code>plans/tasks/TASK-TEMPLATE.md</code></li>
+<li><code>templates/task-card-template.md</code></li>
+<li><code>templates/run-report-template.md</code></li>
+</ul>
+<h3>新建文件</h3><ul>
+<li><code>plans/run-reports/2026-05-10-managed-goal-default-publish-report.md</code></li>
+</ul></section>
+    <section class="card"><h2>链接</h2><div class="links"><a href="report.md">Markdown 报告</a>
+<a href="../">运行报告索引</a>
+<a href="https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-10-managed-goal-default-publish/">预期远程链接</a></div></section>
+    <section class="card"><h2>详情</h2><h3>交付物</h3><ul>
+<li>已把 goal/todo 标准链路改成 <code>publish by default</code>。</li>
+<li>已把任务卡模板的 <code>publish_report_required</code> 默认值改成 <code>true</code>。</li>
+<li>已把托管工作流的 <code>publish_report_required</code> 默认值改成 <code>true</code>。</li>
+<li>已在运行报告发布工作流里写明：托管 <code>/goal</code> 默认要求生成可远程查看的完成报告。</li>
+<li>已保留安全边界：默认生成发布目录和页面，不代表无条件 push；push/远程上线仍按用户授权或发布任务要求执行。</li>
+</ul>
+<h3>发布链接</h3><ul>
+<li>本地页面路径：<code>publish/ai-ip-previews/runs/2026-05-10-managed-goal-default-publish/index.html</code></li>
+<li>本地索引路径：<code>publish/ai-ip-previews/runs/index.html</code></li>
+<li>预期远程链接：<code>https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-10-managed-goal-default-publish/</code></li>
+<li>说明：当前生成的是本地发布目录；是否 push 到 GitHub 由后续发布动作决定。</li>
+</ul>
+<h3>自评</h3><ul>
+<li>分数: 96/100</li>
+<li>达标原因：默认发布规则已写入 skill、workflow、任务模板和报告模板。</li>
+<li>扣分原因：尚未把这条规则回填进 6 个历史 todo 补丁任务；那属于下一批任务重写。</li>
+</ul>
+<h3>完成说明</h3><p>现在项目默认规则已经调整为：托管 goal/todo 默认发布运行报告页，并套用 <code>templates/run-report-page-template.html</code>；除非任务明确写“不发布”，否则不应跳过发布页生成与索引更新。</p></section>
+    <section class="card"><h2>风险与下一步</h2><h3>风险</h3><ul>
+<li>默认发布会增加每个任务的收尾工作量，但符合托管场景下“用户回来手机能看报告”的要求。</li>
+<li>如果某些敏感任务不适合发布，任务卡必须明确写“不发布”并说明原因。</li>
+</ul>
+<h3>下一步</h3><ul>
+<li>后续重写 6 个补丁任务时，默认把 <code>publish_report_required</code> 保持为 <code>true</code>。</li>
+<li>每个 Codex 完成任务后，都应生成中文 Markdown 报告、本地 HTML 报告页，并更新 <code>/runs/</code> 索引。</li>
+</ul></section>
+
+    <div class="footer">AI-IP-Studio · 运行报告页面 · 适合手机和微信查看</div>
+  </main>
+</body>
+</html>
