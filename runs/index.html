@@ -3,94 +3,9 @@
 <style>
 :root{--paper:#f3e6d2;--paper2:#fff8ec;--ink:#1f1714;--muted:#74665c;--line:#d8bea4;--red:#a93427;--green:#1f6a57;--blue:#285f78;--coal:#17110f;--shadow:0 22px 70px rgba(52,30,14,.12);--sans:"Avenir Next","PingFang SC","Hiragino Sans GB",sans-serif;--serif:"Songti SC","Hiragino Mincho ProN",serif}
 *{box-sizing:border-box}body{margin:0;color:var(--ink);font-family:var(--sans);background:radial-gradient(circle at 10% 8%,rgba(199,107,36,.22),transparent 30%),linear-gradient(135deg,#e5cfb5 0%,var(--paper) 46%,#fbf3e9 100%)}a{color:inherit}.page{width:min(1040px,100%);margin:0 auto;padding:24px 16px 60px}.nav{display:flex;gap:10px;overflow:auto;margin-bottom:16px}.nav a{white-space:nowrap;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:9px 12px;background:rgba(255,248,236,.88);color:var(--muted);font-size:13px;font-weight:900}.hero{border:1px solid var(--line);border-radius:32px;background:linear-gradient(135deg,#fff8ec 0%,#fff0d4 62%,#f3bd78 100%);padding:26px;box-shadow:var(--shadow)}.kicker{color:var(--red);font-size:12px;font-weight:900;letter-spacing:.15em;text-transform:uppercase}h1{margin:8px 0 10px;font-family:var(--serif);font-size:clamp(36px,8vw,58px);line-height:1.02;letter-spacing:-.05em}.lead{color:var(--muted);line-height:1.75;max-width:760px}.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:18px}.report-card{position:relative;text-decoration:none;border:1px solid var(--line);border-radius:24px;background:rgba(255,248,236,.9);padding:18px;min-height:170px;box-shadow:0 14px 44px rgba(52,30,14,.08)}.report-card strong{display:block;margin-right:92px;font-size:20px;line-height:1.35}.report-card em{display:block;margin-top:10px;color:var(--muted);font-style:normal;font-weight:800}.report-card p{color:var(--muted);line-height:1.6}.badge{position:absolute;right:16px;top:16px;border-radius:999px;padding:7px 10px;color:#fff;font-size:12px;font-weight:900}.finished{background:var(--green)}.review{background:var(--blue)}.blocked{background:var(--red)}.empty{border:1px solid var(--line);border-radius:24px;background:var(--paper2);padding:20px;color:var(--muted)}.footer{margin-top:24px;text-align:center;color:var(--muted);font-size:13px}@media(max-width:760px){.cards{grid-template-columns:1fr}.page{padding:18px 12px 48px}}
-</style></head><body><main class="page"><nav class="nav"><a href="../">V3 主页</a><a href="../account-insights.html">账号综合分析</a><a href="../links.md">视频链接清单</a></nav><section class="hero"><div class="kicker">AI-IP-Studio · 托管运行记录</div><h1>运行报告索引</h1><p class="lead">这里集中展示每个重要 Codex run 的本地报告和可远程查看页面。状态包括 finished、review、blocked，方便你在手机端继续追踪。</p></section><section class="cards"><a class="report-card" href="2026-05-09-codex-e-business-prd-v2/">
-  <strong>Codex E Business PRD V2 补丁</strong>
+</style></head><body><main class="page"><nav class="nav"><a href="../">V3 主页</a><a href="../account-insights.html">账号综合分析</a><a href="../links.md">视频链接清单</a></nav><section class="hero"><div class="kicker">AI-IP-Studio · 托管运行记录</div><h1>最终版运行报告索引</h1><p class="lead">这里默认只展示公开最终版报告。V1、V2 补丁、debug、review、blocked 和中间过程报告会保留在本地或直接链接里，但不进入公开索引，避免手机端被旧版本刷屏。</p></section><section class="cards"><a class="report-card" href="2026-05-10-codex-g-platform-collector-final/">
+  <strong>Codex G 全平台采集层最终公开报告</strong>
   <span class="badge finished">finished</span>
-  <em>managed · 94/100 · 2026-05-10 CST</em>
-  <p>本次执行的是 V2 补丁任务，不是旧任务复核。目标是把已有商业 PRD 从“策略分析”补到“可以拿去卖 / 试卖 / 陪跑交付”的程度，并生成新的 V2 Markdown 运行报告、V2 HTML 报告页、V2 report.md 发布副本和更新后的 /runs/ 索引。</p>
-</a><a class="report-card" href="2026-05-09-codex-f-run-report-publisher-v2/">
-  <strong>Codex F Run Report Publisher V2 补丁</strong>
-  <span class="badge finished">finished</span>
-  <em>managed · 94/100 · 2026-05-10 03:30 CST</em>
-  <p>执行 V2 补丁任务，而不是复核旧任务：把 run report / task board 系统补到“用户只复制 /goal + 任务文件路径 后，任务会按固定标准收尾”的程度。重点修正旧产物的风险：任务文件可能不够自包含、默认发布习惯不够硬、finished 门槛过宽、缺少统一的 HTML 远程报告证据习惯。</p>
-</a><a class="report-card" href="2026-05-09-codex-e-business-prd/">
-  <strong>Codex E Business Model And Monetization PRD</strong>
-  <span class="badge finished">finished</span>
-  <em>managed · 93/100 · 2026-05-10 00:30 CST</em>
-  <p>Create a practical monetization PRD for AI-IP-Studio comparing SaaS credits, productized report service, private/remote deployment, 起号陪跑/coaching, guild/MCN/cooperation, and hybrid sequencing. The output should recommend a practical first m</p>
-</a><a class="report-card" href="2026-05-09-codex-c-xhs-system/">
-  <strong>Codex C Xiaohongshu Research And Lead-Gen System</strong>
-  <span class="badge finished">finished</span>
-  <em>managed · 94/100 · 2026-05-10 00:02:26 CST</em>
-  <p>Design a Xiaohongshu-specific research and lead-generation analysis system for AI-IP-Studio, inspired by the successful Douyin account-distillation workflow but adapted to XHS platform mechanics: cover, title, search keywords, note structur</p>
-</a><a class="report-card" href="2026-05-10-v2-hard-lock-against-old-report-complete/">
-  <strong>V2 任务防旧报告误判硬锁</strong>
-  <span class="badge finished">finished</span>
-  <em>office · 97/100 · 2026-05-10</em>
-  <p>修复另一个 Codex 继续把旧任务报告、自评 94/100、旧交付物存在当成当前 V2 任务完成证据的问题。现在 6 个 todo 文件都写入了更硬的防误判规则：旧报告和旧 HTML 只能作为输入，不能作为 V2 完成依据。</p>
-</a><a class="report-card" href="2026-05-10-six-todo-v2-patch-rewrite/">
-  <strong>六个 Todo V2 补丁目标回写</strong>
-  <span class="badge finished">finished</span>
-  <em>office · 96/100 · 2026-05-10</em>
-  <p>纠正此前只给 6 个旧 todo 加 /goal 前置规范、但没有根据已有产出和用户原始需求改写任务本体的问题。现在已直接修改原本 6 个 md 文件，把它们从“旧任务”升级为“V2 补丁任务”，旧正文只作为背景参考。</p>
-</a><a class="report-card" href="2026-05-10-six-todo-self-contained-publish-fix/">
-  <strong>六个旧 Todo 自包含化与 HTML 发布补丁</strong>
-  <span class="badge finished">finished</span>
-  <em>office · 95/100 · 2026-05-10</em>
-  <p>纠正此前只把 /goal + 任务文件路径 标准写进 skill/模板、但没有回写到 6 个已存在 plans/todo/.md 的问题；同时补齐 6 个旧任务缺失的 HTML 运行报告页。</p>
-</a><a class="report-card" href="2026-05-10-remote-publish-hard-gate/">
-  <strong>remote publish hard gate</strong>
-  <span class="badge finished">finished</span>
-  <em>office · 93/100 · 2026-05-10</em>
-  <p>修正托管 goal/todo 的完成标准：本地生成 HTML 不等于发布完成。以后默认必须把对应运行报告页提交并推送到 publish/ai-ip-previews 独立 GitHub Pages 仓库，并验证远程 URL HTTP 200，才允许写 finished。</p>
-</a><a class="report-card" href="2026-05-10-managed-goal-default-publish/">
-  <strong>托管 Goal 默认发布规则补丁</strong>
-  <span class="badge finished">finished</span>
-  <em>office · 96/100 · 2026-05-10</em>
-  <p>把用户最新要求固化到项目标准里：正常开启 goal 模式通常就是托管任务，所以运行报告页面默认要发布到 GitHub Pages 发布目录；只有任务明确写“不发布”时才允许跳过。</p>
-</a><a class="report-card" href="2026-05-10-goal-task-standard-hardening/">
-  <strong>Goal/Todo 标准固化与报告页模板修正</strong>
-  <span class="badge finished">finished</span>
-  <em>office · 94/100 · 2026-05-10</em>
-  <p>把用户关于“托管 goal/todo 必须高标准、能跑通、能测试、能自评、能收尾，并且发布到 GitHub 的报告页面必须套用固定页面模板”的要求固化进项目工作流，而不是只停留在聊天记录里。</p>
-</a><a class="report-card" href="2026-05-09-codex-d-skill-tool-eval-v2/">
-  <strong>Codex D Skill And Tool Evaluation Sandbox V2 Patch</strong>
-  <span class="badge review">review</span>
-  <em>managed · 92/100 · 2026-05-10</em>
-  <p>基于已有产出继续做 V2 补丁，不是重写旧制度。目标是把工具/技能评估系统从“框架”补到“能真实试用、能隔离、能二次适配评分”的程度，并产出新的 V2 运行报告页与 /runs/ 索引。</p>
-</a><a class="report-card" href="2026-05-09-codex-c-xhs-system-v2/">
-  <strong>Codex C 小红书系统 V2 补丁</strong>
-  <span class="badge finished">finished</span>
-  <em>managed · 92/100 · 2026-05-10</em>
-  <p>执行 2026-05-09-codex-c-xhs-system.md 的 V2 补丁任务：不是复核旧产物，而是在已有 XHS 系统基础上，把它从“概念框架”补到“可以真实执行一个小红书账号 / 关键词 / 类目样本拆解”的程度，并生成新的 V2 Markdown 报告与新的 V2 HTML 报告页。</p>
-</a><a class="report-card" href="2026-05-09-codex-b-trend-engine-v2/">
-  <strong>V2 运行报告 - Codex B 国内外趋势引擎补丁</strong>
-  <span class="badge finished">finished</span>
-  <em>managed · 95/100 · 2026-05-10</em>
-  <p>这次不是旧任务复核，而是 V2 补丁任务。目标是基于已有趋势引擎产出，把系统补到能每天产出国内外热点候选，并能沉淀用于口播、小红书、图文的证据切片。重点补齐国内外源分层、高信号采样、YouTube / X / GitHub 爆款拆解字段、视觉证据切片规范、可复用爆点钩子模板、V2 样例验证，以及新的 HTML 报告发布页。</p>
-</a><a class="report-card" href="2026-05-09-codex-b-trend-engine/">
-  <strong>Codex B Trend Engine</strong>
-  <span class="badge finished">finished</span>
-  <em>managed · 93/100 · 2026-05-10</em>
-  <p>Design the first version of a domestic + international trend research engine for AI-IP-Studio that can produce daily content candidates with evidence, adaptation angles, scoring/triage, and optional visual proof slices. Because network/sear</p>
-</a><a class="report-card" href="2026-05-09-codex-a-project-index-memory-v2/">
-  <strong>Codex A Project Index Memory V2 Patch</strong>
-  <span class="badge finished">finished</span>
-  <em>managed · 96/100 · 2026-05-10</em>
-  <p>执行 V2 补丁任务，而不是复核旧任务。当前任务文件已明确要求读取顶部固定前置要求、V2 防误判硬规则、当前执行目标，并产生新的 V2 Markdown 报告和新的 V2 HTML 报告页。</p>
-</a><a class="report-card" href="2026-05-09-codex-f-run-report-publisher/">
-  <strong>Codex F Run Report Publisher</strong>
-  <span class="badge finished">finished</span>
-  <em>managed · 94/100 · 2026-05-09 23:52 CST</em>
-  <p>Create a standard task-board and reporting system so every future Codex run can be assigned as a task, run in managed or office mode, self-review against completion gates, produce a local run report, and when required publish a phone-readab</p>
-</a><a class="report-card" href="2026-05-09-codex-d-skill-tool-eval/">
-  <strong>Codex D Skill And Tool Evaluation Sandbox</strong>
-  <span class="badge finished">finished</span>
-  <em>managed · 94/100 · 2026-05-09</em>
-  <p>Create a safe evaluation system for testing external skills/tools related to short-video, social-media research, trend monitoring, account analysis, and content automation. The system needed experiment folder rules, evaluation templates, an</p>
-</a><a class="report-card" href="2026-05-09-codex-a-project-index-memory/">
-  <strong>Codex A Project Index And Memory System</strong>
-  <span class="badge finished">finished</span>
-  <em>managed · 94/100 · 2026-05-09</em>
-  <p>Create an AI-friendly project index and memory/decision layer so future Codex/OpenCode/Claude agents can understand AI-IP-Studio quickly without relying on chat memory.</p>
+  <em>managed · 93/100 · 2026-05-10 CST</em>
+  <p>本次任务不是重新实现全平台采集系统，而是对 G 任务“全平台采集与信号源适配器”做最终公开审计：检查已有产物是否真实存在、哪些能力已可复用、哪些仍只是设计意图，并生成一个可以给用户看的 final-only 报告页。</p>
 </a></section><div class="footer">AI-IP-Studio · 运行报告索引 · 本地生成</div></main></body></html>
