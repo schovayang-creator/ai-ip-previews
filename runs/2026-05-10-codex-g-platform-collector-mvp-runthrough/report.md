@@ -21,6 +21,9 @@ version: 2
 - 本地 dashboard: `research/platforms/runs/2026-05-10-mvp-run/dashboard.html`
 - 远程报告 URL: `https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-10-codex-g-platform-collector-mvp-runthrough/`
 - 远程 `/runs/` URL: `https://schovayang-creator.github.io/ai-ip-previews/runs/`
+- 发布 commit: `c6e27456cdddc9ebc51d924c6d3d471d1ce1ed01`
+- 远程报告 HTTP: `200`
+- 远程 `/runs/` HTTP: `200`
 
 ## 目标 / Objective
 
@@ -175,8 +178,10 @@ python3 scripts/publish_run_report.py --rebuild-index
 
 远程验证项：
 
-- 最终报告页 HTTP 200：`https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-10-codex-g-platform-collector-mvp-runthrough/`
-- `/runs/` HTTP 200：`https://schovayang-creator.github.io/ai-ip-previews/runs/`
+- `git commit -m "reports: publish platform collector mvp runthrough"` 成功，commit 为 `c6e27456cdddc9ebc51d924c6d3d471d1ce1ed01`。
+- `git push` 成功：`ef6b13f..c6e2745 main -> main`。
+- 最终报告页 HTTP 200：`https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-10-codex-g-platform-collector-mvp-runthrough/`。
+- `/runs/` HTTP 200：`https://schovayang-creator.github.io/ai-ip-previews/runs/`。
 
 ## 修改文件 / Files Changed
 
@@ -246,9 +251,9 @@ python3 scripts/publish_run_report.py --rebuild-index
 | Chrome 验证 | Chrome headless DOM 检查 7 平台均存在 | 通过 |
 | 安全边界 | 报告和风险政策明确无登录、无凭据、无 raw media | 通过 |
 | 任务归档 | `plans/todo/...` 已移除，`plans/finished/...` 存在 completion note | 通过 |
-| 报告发布 | 本报告通过 publish script check 并生成 HTML/report.md | 待发布命令写入最终证据 |
-| GitHub push | 发布仓库将只 add 本任务 run 目录和 `runs/index.html` | 待发布命令写入最终证据 |
-| remote HTTP 200 | 最终报告页和 `/runs/` 必须远程 200 | 待发布命令写入最终证据 |
+| 报告发布 | 本报告通过 publish script check，生成 `index.html` 和 `report.md` | 通过 |
+| GitHub push | 发布仓库只提交本任务 run 目录和 `runs/index.html`，commit `c6e27456cdddc9ebc51d924c6d3d471d1ce1ed01` 已 push | 通过 |
+| remote HTTP 200 | 最终报告页和 `/runs/` 均已远程 HTTP 200 | 通过 |
 
 ## 公开索引说明
 
