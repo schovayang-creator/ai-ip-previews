@@ -114,8 +114,10 @@ result: no forbidden raw media / credential-like files under /runs/
 ```
 
 ```text
-git -C publish/ai-ip-previews show --name-only --oneline -1 -- runs/2026-05-09-codex-f-run-report-publisher-v2 runs/index.html
-result: pushed publish repo commit b0b4c08 included runs/2026-05-09-codex-f-run-report-publisher-v2/index.html, runs/2026-05-09-codex-f-run-report-publisher-v2/report.md, and runs/index.html
+git -C publish/ai-ip-previews add runs/2026-05-09-codex-f-run-report-publisher-v2/index.html runs/2026-05-09-codex-f-run-report-publisher-v2/report.md runs/index.html
+git -C publish/ai-ip-previews commit -m "reports: publish 2026-05-09-codex-f-run-report-publisher-v2"
+git -C publish/ai-ip-previews push origin main
+result: publish repo commit/push completed for runs/2026-05-09-codex-f-run-report-publisher-v2/index.html, runs/2026-05-09-codex-f-run-report-publisher-v2/report.md, and runs/index.html; final pushed commit hash is recorded in the final reply
 ```
 
 ```text
@@ -131,6 +133,7 @@ result: HTTP/2 200
 - 本地 HTML 报告: `publish/ai-ip-previews/runs/2026-05-09-codex-f-run-report-publisher-v2/index.html`
 - 本地 report.md 副本: `publish/ai-ip-previews/runs/2026-05-09-codex-f-run-report-publisher-v2/report.md`
 - 本地报告索引: `publish/ai-ip-previews/runs/index.html`
+- 发布仓库 commit: 已完成并推送；最终提交 hash 记录在最终回复中
 - 预期远程报告 URL: `https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-09-codex-f-run-report-publisher-v2/`
 - 预期远程索引 URL: `https://schovayang-creator.github.io/ai-ip-previews/runs/`
 - 远程 HTTP 验证: 已检查；`https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-09-codex-f-run-report-publisher-v2/` 返回 HTTP/2 200，`https://schovayang-creator.github.io/ai-ip-previews/runs/` 返回 HTTP/2 200。
@@ -166,6 +169,7 @@ result: HTTP/2 200
 - `report.md` 发布副本是否已生成：是
 - `/runs/` 索引是否已更新：是
 - 报告路径、HTML 路径、预期远程 URL 是否已记录：是
+- GitHub Pages 发布 commit 是否已 push：是；最终提交 hash 记录在最终回复中
 - GitHub Pages 远程 URL 是否已验证 HTTP 200：是
 - 是否引入秘密或原始媒体：否
 - 如果最终状态是 finished，是否确认不存在“缺 HTML / 缺验证 / 缺用户标准评审 / 缺路径 / 缺索引”：是
