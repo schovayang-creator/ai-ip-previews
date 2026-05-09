@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Codex G2 全平台采集层可执行 MVP 跑通 · AI-IP-Studio 运行报告</title>
+  <style>
+    :root{--paper:#f6ead8;--card:#fffaf1;--ink:#201713;--muted:#75675d;--line:#ddc4aa;--red:#a93427;--green:#1f6a57;--amber:#b76521;--blue:#285f78;--coal:#17110f;--shadow:0 22px 70px rgba(52,30,14,.12);--sans:"Avenir Next","PingFang SC","Hiragino Sans GB",sans-serif;--serif:"Songti SC","Kaiti SC","Hiragino Mincho ProN",serif}
+    *{box-sizing:border-box}body{margin:0;color:var(--ink);font-family:var(--sans);background:radial-gradient(circle at 8% 8%,rgba(199,107,36,.22),transparent 30%),linear-gradient(135deg,#ead6bd 0%,var(--paper) 52%,#fff8ec 100%)}
+    .page{width:min(920px,100%);margin:0 auto;padding:20px 14px 56px}.nav{display:flex;gap:10px;overflow:auto;margin-bottom:14px}.nav a{white-space:nowrap;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:9px 12px;background:rgba(255,250,241,.88);color:var(--muted);font-size:13px;font-weight:800}
+    .hero{border:1px solid var(--line);border-radius:30px;background:linear-gradient(135deg,#fffaf1 0%,#fff2d9 70%,#f3bd78 100%);padding:24px;box-shadow:var(--shadow)}.kicker{color:var(--red);font-size:12px;font-weight:900;letter-spacing:.14em;text-transform:uppercase}h1{margin:8px 0 10px;font-family:var(--serif);font-size:clamp(32px,8vw,54px);line-height:1.04;letter-spacing:-.05em}.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.pill{border:1px solid var(--line);border-radius:999px;padding:8px 10px;background:rgba(255,250,241,.82);font-weight:800;color:var(--muted)}.badge{border-radius:999px;padding:8px 12px;color:#fff;font-weight:900}.finished{background:var(--green)}.review{background:var(--blue)}.blocked{background:var(--red)}
+    .grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:16px}.card{border:1px solid var(--line);border-radius:24px;background:rgba(255,250,241,.9);padding:18px;box-shadow:0 12px 40px rgba(52,30,14,.07)}h2{margin:0 0 10px;font-family:var(--serif);font-size:26px;letter-spacing:-.03em}h3{margin:16px 0 6px;font-size:18px}p,li{line-height:1.72}.muted{color:var(--muted)}ul{padding-left:20px;margin:8px 0}.links{display:grid;gap:8px}.links a{display:block;text-decoration:none;border:1px solid var(--line);border-radius:16px;background:#fffdf8;padding:12px;color:var(--coal);font-weight:800;overflow-wrap:anywhere}pre{white-space:pre-wrap;overflow:auto;border:1px solid var(--line);border-radius:16px;background:#fffdf8;padding:14px;color:var(--muted)}code{background:#fffdf8;border:1px solid var(--line);border-radius:6px;padding:1px 4px}.footer{margin-top:18px;text-align:center;color:var(--muted);font-size:13px}
+    @media(min-width:760px){.grid.two{grid-template-columns:1fr 1fr}.page{padding:28px 22px 72px}}
+  </style>
+</head>
+<body>
+  <main class="page">
+    <nav class="nav">
+      <a href="../../">V3 主页</a>
+      <a href="../">运行报告索引</a>
+      <a href="report.md">Markdown 报告</a>
+    </nav>
+    <section class="hero">
+      <div class="kicker">AI-IP-Studio · 运行报告</div>
+      <h1>Codex G2 全平台采集层可执行 MVP 跑通</h1>
+      <p class="muted">重新把 G 全平台采集层任务从“最终报告”升级为“可执行 MVP 跑通”：补齐平台 adapter 文档、统一 PlatformSignalCard 模型、最小运行器、7 平台样例、测试脚本、本地 dashboard、Chrome 验证、运行报告发布、GitHub Pages push 和远程 HTTP 200。</p>
+      <div class="meta">
+        <span class="badge finished">finished</span>
+        <span class="pill">模式：managed</span>
+        <span class="pill">分数：94/100</span>
+        <span class="pill">更新：2026-05-10 CST</span>
+      </div>
+    </section>
+
+    <section class="grid two">
+      <div class="card"><h2>目标</h2><p>重新把 G 全平台采集层任务从“最终报告”升级为“可执行 MVP 跑通”：补齐平台 adapter 文档、统一 <code>PlatformSignalCard</code> 模型、最小运行器、7 平台样例、测试脚本、本地 dashboard、Chrome 验证、运行报告发布、GitHub Pages push 和远程 HTTP 200。</p>
+<p>本次实际跑通范围：</p>
+<ul>
+<li>自动公开源：GitHub public REST API，News/RSS public feed。</li>
+<li>半自动公开源：YouTube channel RSS。</li>
+<li>安全人工导入 fallback：X/Twitter、XHS、Douyin、Bilibili。</li>
+</ul>
+<p>这不是“全平台自动爬虫”，也不声称 X/Twitter、XHS、Douyin、Bilibili 已自动抓取。它证明的是：全平台采集层的统一数据模型、路由、风险边界、fallback、测试和 dashboard 已经可以真实运行。</p></div>
+      <div class="card"><h2>验证</h2><h3>运行器与测试</h3>
+<p>已执行：</p>
+<pre>python3 scripts/platform_collector.py --config research/platforms/runs/2026-05-10-mvp-run/manifest.json --out research/platforms/runs/2026-05-10-mvp-run
+python3 scripts/test_platform_collector.py</pre>
+<p>结果：</p>
+<pre>generated 7 signals in research/platforms/runs/2026-05-10-mvp-run
+all platform collector tests passed</pre>
+<p>测试覆盖：</p>
+<ul>
+<li><code>signals.json</code>、<code>signals.md</code>、<code>dashboard.html</code>、<code>validation-log.md</code> 存在且非空。</li>
+<li>7 个平台都至少有 1 条信号。</li>
+<li>自动/半自动公开源和 manual fallback 都存在。</li>
+<li>必填字段完整。</li>
+<li><code>rights_risk</code>、<code>privacy_risk</code>、<code>credibility</code> 合法且非空。</li>
+<li>JSON 可解析。</li>
+<li>dashboard 包含 7 平台和总信号数量。</li>
+<li>输出不包含 secret-like 凭据模式。</li>
+</ul>
+<h3>本地 HTTP 与 Chrome 验证</h3>
+<p>已执行本地 HTTP：</p>
+<pre>python3 -m http.server 8787 --directory .
+curl -I http://127.0.0.1:8787/research/platforms/runs/2026-05-10-mvp-run/dashboard.html</pre>
+<p>结果：<code>HTTP/1.0 200 OK</code>。</p>
+<p>已执行 Chrome headless：</p>
+<pre>/Applications/Google Chrome.app/Contents/MacOS/Google Chrome --headless=new --disable-gpu --virtual-time-budget=3000 --dump-dom http://127.0.0.1:8787/research/platforms/runs/2026-05-10-mvp-run/dashboard.html</pre>
+<p>结果：Chrome DOM 检查确认 <code>Platform Collector Dashboard</code>、GitHub、News/RSS、YouTube、X/Twitter、XHS、Douyin、Bilibili 均存在。证据写入 <code>research/platforms/runs/2026-05-10-mvp-run/validation-log.md</code>。</p>
+<h3>发布验证</h3>
+<p>发布前执行：</p>
+<pre>python3 scripts/publish_run_report.py --check plans/run-reports/2026-05-10-codex-g-platform-collector-mvp-runthrough-report.md
+python3 scripts/publish_run_report.py plans/run-reports/2026-05-10-codex-g-platform-collector-mvp-runthrough-report.md
+python3 scripts/publish_run_report.py --rebuild-index</pre>
+<p>发布仓库只提交：</p>
+<ul>
+<li><code>runs/2026-05-10-codex-g-platform-collector-mvp-runthrough/index.html</code></li>
+<li><code>runs/2026-05-10-codex-g-platform-collector-mvp-runthrough/report.md</code></li>
+<li><code>runs/index.html</code></li>
+</ul>
+<p>远程验证项：</p>
+<ul>
+<li>最终报告页 HTTP 200：<code>https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-10-codex-g-platform-collector-mvp-runthrough/</code></li>
+<li><code>/runs/</code> HTTP 200：<code>https://schovayang-creator.github.io/ai-ip-previews/runs/</code></li>
+</ul></div>
+    </section>
+
+    <section class="card"><h2>修改 / 新建文件</h2><h3>修改文件</h3><ul>
+<li><code>workflows/platform-collector-adapters-v0.md</code></li>
+<li><code>docs/platform-collector-tool-map.md</code></li>
+<li><code>docs/platform-collector-risk-policy.md</code></li>
+<li><code>scripts/platform_collector.py</code></li>
+<li><code>scripts/test_platform_collector.py</code></li>
+<li><code>publish/ai-ip-previews/runs/index.html</code></li>
+</ul>
+<h3>新建文件</h3><ul>
+<li><code>plans/finished/2026-05-10-codex-g-platform-collector-mvp-runthrough.md</code></li>
+<li><code>plans/run-reports/2026-05-10-codex-g-platform-collector-mvp-runthrough-report.md</code></li>
+<li><code>research/platforms/README.md</code></li>
+<li><code>research/platforms/templates/platform-signal-card-template.md</code></li>
+<li><code>research/platforms/templates/platform-adapter-spec-template.md</code></li>
+<li><code>research/platforms/templates/platform-collection-run-template.md</code></li>
+<li><code>research/platforms/adapters/youtube.md</code></li>
+<li><code>research/platforms/adapters/x-twitter.md</code></li>
+<li><code>research/platforms/adapters/github.md</code></li>
+<li><code>research/platforms/adapters/xhs.md</code></li>
+<li><code>research/platforms/adapters/douyin.md</code></li>
+<li><code>research/platforms/adapters/bilibili.md</code></li>
+<li><code>research/platforms/adapters/news-rss.md</code></li>
+<li><code>research/platforms/manual-imports/x-twitter-sample.json</code></li>
+<li><code>research/platforms/manual-imports/xhs-sample.json</code></li>
+<li><code>research/platforms/manual-imports/douyin-sample.json</code></li>
+<li><code>research/platforms/manual-imports/bilibili-sample.json</code></li>
+<li><code>research/platforms/manual-imports/youtube-fallback.json</code></li>
+<li><code>research/platforms/examples/2026-05-10-platform-adapter-sample.md</code></li>
+<li><code>research/platforms/runs/2026-05-10-mvp-run/manifest.json</code></li>
+<li><code>research/platforms/runs/2026-05-10-mvp-run/signals.json</code></li>
+<li><code>research/platforms/runs/2026-05-10-mvp-run/signals.md</code></li>
+<li><code>research/platforms/runs/2026-05-10-mvp-run/dashboard.html</code></li>
+<li><code>research/platforms/runs/2026-05-10-mvp-run/validation-log.md</code></li>
+<li><code>publish/ai-ip-previews/runs/2026-05-10-codex-g-platform-collector-mvp-runthrough/index.html</code></li>
+<li><code>publish/ai-ip-previews/runs/2026-05-10-codex-g-platform-collector-mvp-runthrough/report.md</code></li>
+</ul></section>
+    <section class="card"><h2>链接</h2><div class="links"><a href="report.md">Markdown 报告</a>
+<a href="../">最终版报告索引</a>
+<a href="https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-10-codex-g-platform-collector-mvp-runthrough/">预期远程链接</a></div></section>
+    <section class="card"><h2>详情</h2><h3>交付物</h3><h3>文档与模板</h3>
+<ul>
+<li><code>workflows/platform-collector-adapters-v0.md</code></li>
+<li><code>research/platforms/README.md</code></li>
+<li><code>research/platforms/templates/platform-signal-card-template.md</code></li>
+<li><code>research/platforms/templates/platform-adapter-spec-template.md</code></li>
+<li><code>research/platforms/templates/platform-collection-run-template.md</code></li>
+<li><code>docs/platform-collector-tool-map.md</code></li>
+<li><code>docs/platform-collector-risk-policy.md</code></li>
+</ul>
+<h3>7 个平台 adapter spec</h3>
+<ul>
+<li><code>research/platforms/adapters/youtube.md</code></li>
+<li><code>research/platforms/adapters/x-twitter.md</code></li>
+<li><code>research/platforms/adapters/github.md</code></li>
+<li><code>research/platforms/adapters/xhs.md</code></li>
+<li><code>research/platforms/adapters/douyin.md</code></li>
+<li><code>research/platforms/adapters/bilibili.md</code></li>
+<li><code>research/platforms/adapters/news-rss.md</code></li>
+</ul>
+<h3>可运行脚本与测试</h3>
+<ul>
+<li><code>scripts/platform_collector.py</code></li>
+<li><code>scripts/test_platform_collector.py</code></li>
+</ul>
+<h3>样例输入与运行输出</h3>
+<ul>
+<li><code>research/platforms/manual-imports/x-twitter-sample.json</code></li>
+<li><code>research/platforms/manual-imports/xhs-sample.json</code></li>
+<li><code>research/platforms/manual-imports/douyin-sample.json</code></li>
+<li><code>research/platforms/manual-imports/bilibili-sample.json</code></li>
+<li><code>research/platforms/manual-imports/youtube-fallback.json</code></li>
+<li><code>research/platforms/runs/2026-05-10-mvp-run/manifest.json</code></li>
+<li><code>research/platforms/runs/2026-05-10-mvp-run/signals.json</code></li>
+<li><code>research/platforms/runs/2026-05-10-mvp-run/signals.md</code></li>
+<li><code>research/platforms/runs/2026-05-10-mvp-run/dashboard.html</code></li>
+<li><code>research/platforms/runs/2026-05-10-mvp-run/validation-log.md</code></li>
+<li><code>research/platforms/examples/2026-05-10-platform-adapter-sample.md</code></li>
+</ul>
+<h3>报告与归档</h3>
+<ul>
+<li><code>plans/run-reports/2026-05-10-codex-g-platform-collector-mvp-runthrough-report.md</code></li>
+<li><code>plans/finished/2026-05-10-codex-g-platform-collector-mvp-runthrough.md</code></li>
+<li><code>publish/ai-ip-previews/runs/2026-05-10-codex-g-platform-collector-mvp-runthrough/index.html</code></li>
+<li><code>publish/ai-ip-previews/runs/2026-05-10-codex-g-platform-collector-mvp-runthrough/report.md</code></li>
+<li><code>publish/ai-ip-previews/runs/index.html</code></li>
+</ul>
+<h3>跳过项</h3><ul>
+<li>没有接入 GitHub 高分第三方采集工具，因为 MVP 可用 Python 标准库、GitHub API、RSS 直接跑通；引入爬虫工具会增加安全风险。</li>
+<li>没有使用 Chrome 登录任何平台；Chrome 只用于本地 dashboard 验证。</li>
+<li>没有自动抓取 X/Twitter、XHS、Douyin、Bilibili，因为这需要授权和沙箱评估。</li>
+</ul>
+<h3>自评</h3><ul>
+<li>分数: 94/100</li>
+<li>达标原因：这次已从任务重写到脚本、测试、Chrome 验证、报告发布链路完整推进；MVP 真实生成 7 平台信号卡。</li>
+<li>扣分原因：4 个高风险平台仍是人工 fallback；这是安全边界下的正确取舍，不是自动化完成。</li>
+<li>最终状态: finished</li>
+</ul></section>
+    <section class="card"><h2>风险与下一步</h2><h3>风险</h3><ul>
+<li>这是安全 MVP，不是生产级全平台采集服务。</li>
+<li>手动 fallback 样例里的 URL 是占位/示意性质，用于验证字段和路由，不代表真实平台自动采集。</li>
+<li>GitHub/News/RSS/YouTube 的公开源可用性依赖网络和源站返回；脚本已有 fallback，不会把失败伪装成成功。</li>
+<li>后续若要做国内平台自动化，必须另起授权和工具评估任务。</li>
+</ul>
+<h3>下一步</h3><p>1. 把 GitHub + News/RSS 扩展成每天 10-20 条真实信号的低风险日更 MVP。</p>
+<p>2. 给 YouTube/Bilibili 做单独沙箱任务，只评估公开元数据和字幕，不下载 raw media。</p>
+<p>3. 给 XHS/Douyin 做人工导入表单或 Chrome 手动采样清单，先服务账号深扒，不做登录态爬虫。</p>
+<p>4. 从本次 7 条信号里选 3 条进入内容标尺，验证“信号卡 -&gt; 内容转化层”。</p></section>
+
+    <div class="footer">AI-IP-Studio · 运行报告页面 · 适合手机和微信查看</div>
+  </main>
+</body>
+</html>
