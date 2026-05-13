@@ -26,7 +26,7 @@
       <p class="muted">继续执行中断的马拉松任务 TASK-20260512-203：在学术工作台内完成论文写作全流程试跑，包括资料/旧体系盘点、research pack、检索计划、文献矩阵、证据地图、引用核验、研究问题、贡献点、大纲、manuscript draft v1/v2、图表计划、审稿人自检、系统优化建议，并生成运行报告和发布页。</p>
       <div class="meta">
         <span class="badge finished">finished</span>
-        <span class="pill">模式：managed</span>
+        <span class="pill">模式：marathon</span>
         <span class="pill">分数：95.5/100</span>
         <span class="pill">更新：2026-05-13 CST</span>
       </div>
@@ -39,7 +39,7 @@
 <li>文件存在性检查：所有 required paper deliverables 均非空。</li>
 <li>HTML 本地验证：<code>curl -I http://127.0.0.1:8876/runs/2026-05-12-marathon-paper-forge-system/</code> 返回 <code>HTTP/1.0 200 OK</code>。</li>
 <li><code>/runs/</code> 本地索引验证：<code>curl -I http://127.0.0.1:8876/runs/</code> 返回 <code>HTTP/1.0 200 OK</code>。</li>
-<li>GitHub push：<code>publish/ai-ip-previews</code> pushed <code>main</code> from <code>cdd83f0</code> to <code>5668a75</code>。</li>
+<li>GitHub push：已完成多次增量 push；最终公开页面已通过 remote HTTP 200 验证。</li>
 <li>Remote 报告页验证：<code>curl -I -L https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-12-marathon-paper-forge-system/</code> 返回 <code>HTTP/2 200</code>。</li>
 <li>Remote <code>/runs/</code> 验证：<code>curl -I -L https://schovayang-creator.github.io/ai-ip-previews/runs/</code> 返回 <code>HTTP/2 200</code>。</li>
 <li>字数检查：v1 约 1,874 words；v2/current manuscript 约 2,923 words；research pack 约 401 words。</li>

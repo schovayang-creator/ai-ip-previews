@@ -133,7 +133,7 @@
 - 文件存在性检查：所有 required paper deliverables 均非空。
 - HTML 本地验证：`curl -I http://127.0.0.1:8876/runs/2026-05-12-marathon-paper-forge-system/` 返回 `HTTP/1.0 200 OK`。
 - `/runs/` 本地索引验证：`curl -I http://127.0.0.1:8876/runs/` 返回 `HTTP/1.0 200 OK`。
-- GitHub push：`publish/ai-ip-previews` pushed `main` from `cdd83f0` to `5668a75`。
+- GitHub push：已完成多次增量 push；最终公开页面已通过 remote HTTP 200 验证。
 - Remote 报告页验证：`curl -I -L https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-12-marathon-paper-forge-system/` 返回 `HTTP/2 200`。
 - Remote `/runs/` 验证：`curl -I -L https://schovayang-creator.github.io/ai-ip-previews/runs/` 返回 `HTTP/2 200`。
 - 字数检查：v1 约 1,874 words；v2/current manuscript 约 2,923 words；research pack 约 401 words。
