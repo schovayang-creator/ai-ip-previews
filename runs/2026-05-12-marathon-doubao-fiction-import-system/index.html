@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>豆包小说旧体系全量归档 + 小说系统试行版 · AI-IP-Studio 运行报告</title>
+  <style>
+    :root{--paper:#f6ead8;--card:#fffaf1;--ink:#201713;--muted:#75675d;--line:#ddc4aa;--red:#a93427;--green:#1f6a57;--amber:#b76521;--blue:#285f78;--coal:#17110f;--shadow:0 22px 70px rgba(52,30,14,.12);--sans:"Avenir Next","PingFang SC","Hiragino Sans GB",sans-serif;--serif:"Songti SC","Kaiti SC","Hiragino Mincho ProN",serif}
+    *{box-sizing:border-box}body{margin:0;color:var(--ink);font-family:var(--sans);background:radial-gradient(circle at 8% 8%,rgba(199,107,36,.22),transparent 30%),linear-gradient(135deg,#ead6bd 0%,var(--paper) 52%,#fff8ec 100%)}
+    .page{width:min(920px,100%);margin:0 auto;padding:20px 14px 56px}.nav{display:flex;gap:10px;overflow:auto;margin-bottom:14px}.nav a{white-space:nowrap;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:9px 12px;background:rgba(255,250,241,.88);color:var(--muted);font-size:13px;font-weight:800}
+    .hero{border:1px solid var(--line);border-radius:30px;background:linear-gradient(135deg,#fffaf1 0%,#fff2d9 70%,#f3bd78 100%);padding:24px;box-shadow:var(--shadow)}.kicker{color:var(--red);font-size:12px;font-weight:900;letter-spacing:.14em;text-transform:uppercase}h1{margin:8px 0 10px;font-family:var(--serif);font-size:clamp(32px,8vw,54px);line-height:1.04;letter-spacing:-.05em}.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.pill{border:1px solid var(--line);border-radius:999px;padding:8px 10px;background:rgba(255,250,241,.82);font-weight:800;color:var(--muted)}.badge{border-radius:999px;padding:8px 12px;color:#fff;font-weight:900}.finished{background:var(--green)}.review{background:var(--blue)}.blocked{background:var(--red)}
+    .grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:16px}.card{border:1px solid var(--line);border-radius:24px;background:rgba(255,250,241,.9);padding:18px;box-shadow:0 12px 40px rgba(52,30,14,.07)}h2{margin:0 0 10px;font-family:var(--serif);font-size:26px;letter-spacing:-.03em}h3{margin:16px 0 6px;font-size:18px}p,li{line-height:1.72}.muted{color:var(--muted)}ul{padding-left:20px;margin:8px 0}.links{display:grid;gap:8px}.links a{display:block;text-decoration:none;border:1px solid var(--line);border-radius:16px;background:#fffdf8;padding:12px;color:var(--coal);font-weight:800;overflow-wrap:anywhere}pre{white-space:pre-wrap;overflow:auto;border:1px solid var(--line);border-radius:16px;background:#fffdf8;padding:14px;color:var(--muted)}code{background:#fffdf8;border:1px solid var(--line);border-radius:6px;padding:1px 4px}.footer{margin-top:18px;text-align:center;color:var(--muted);font-size:13px}
+    @media(min-width:760px){.grid.two{grid-template-columns:1fr 1fr}.page{padding:28px 22px 72px}}
+  </style>
+</head>
+<body>
+  <main class="page">
+    <nav class="nav">
+      <a href="../../">V3 主页</a>
+      <a href="../">运行报告索引</a>
+      <a href="report.md">Markdown 报告</a>
+    </nav>
+    <section class="hero">
+      <div class="kicker">AI-IP-Studio · 运行报告</div>
+      <h1>豆包小说旧体系全量归档 + 小说系统试行版</h1>
+      <p class="muted">把本机与《豆包别吃那个显卡》相关的旧小说体系、正文、设定、大纲、评审、流水线归入 /Users/yang/Desktop/学术 的小说项目结构；本轮不写新正文，只建立可审查、可接力的归档系统、canon 决策门和续写前置检查。</p>
+      <div class="meta">
+        <span class="badge finished">finished</span>
+        <span class="pill">模式：managed</span>
+        <span class="pill">分数：96/100</span>
+        <span class="pill">更新：2026-05-13</span>
+      </div>
+    </section>
+
+    <section class="grid two">
+      <div class="card"><h2>目标</h2><p>把本机与《豆包别吃那个显卡》相关的旧小说体系、正文、设定、大纲、评审、流水线归入 <code>/Users/yang/Desktop/学术</code> 的小说项目结构；本轮不写新正文，只建立可审查、可接力的归档系统、canon 决策门和续写前置检查。</p></div>
+      <div class="card"><h2>验证</h2><ul>
+<li>文件存在性检查：49 个关键文件，missing 0。</li>
+<li>项目文件计数：<code>source-materials/indexes</code> 5 个，<code>working/v1</code> 11 个，<code>working/trial-system</code> 8 个，<code>working/v2</code> 12 个，<code>review</code> 4 个，<code>deliverables</code> 18 个。</li>
+<li>AutoResearch 补充索引：430 条记录。</li>
+<li>发布脚本检查：<code>python3 scripts/publish_run_report.py --check --slug 2026-05-12-marathon-doubao-fiction-import-system plans/run-reports/2026-05-12-marathon-doubao-fiction-import-system-report.md</code> 返回 ok。</li>
+<li>本地 HTTP 检查：<code>/runs/</code> 与 <code>/runs/2026-05-12-marathon-doubao-fiction-import-system/</code> 返回 HTTP 200。</li>
+<li>远程 HTTP 检查：GitHub Pages run 页与 runs 索引返回 HTTP 200。</li>
+<li>安全检查：公开报告只放路径级摘要和状态结论，不发布正文全文、cookie、token、私钥。</li>
+</ul></div>
+    </section>
+
+    <section class="card"><h2>修改 / 新建文件</h2><h3>修改文件</h3><ul>
+<li><code>/Users/yang/Desktop/学术/projects/fiction/20260513-doubao-gpu-import-system/README.md</code></li>
+<li><code>/Users/yang/Desktop/学术/projects/fiction/20260513-doubao-gpu-import-system/run-log.md</code></li>
+<li><code>/Users/yang/Desktop/AI-IP-Studio/plans/tasks/running/TASK-20260512-204-marathon-doubao-fiction-import-system.md</code></li>
+</ul>
+<h3>新建文件</h3><ul>
+<li><code>/Users/yang/Desktop/学术/projects/fiction/20260513-doubao-gpu-import-system/source-materials/indexes/autoresearch-lab-index.md</code></li>
+<li><code>/Users/yang/Desktop/学术/projects/fiction/20260513-doubao-gpu-import-system/source-materials/indexes/autoresearch-lab-index.tsv</code></li>
+<li><code>/Users/yang/Desktop/学术/projects/fiction/20260513-doubao-gpu-import-system/working/trial-system/README.md</code></li>
+<li><code>/Users/yang/Desktop/学术/projects/fiction/20260513-doubao-gpu-import-system/working/trial-system/material-import-rules.md</code></li>
+<li><code>/Users/yang/Desktop/学术/projects/fiction/20260513-doubao-gpu-import-system/working/trial-system/canon-decision-gate.md</code></li>
+<li><code>/Users/yang/Desktop/学术/projects/fiction/20260513-doubao-gpu-import-system/working/trial-system/continuity-checker.md</code></li>
+<li><code>/Users/yang/Desktop/学术/projects/fiction/20260513-doubao-gpu-import-system/working/trial-system/prewrite-checklist.md</code></li>
+<li><code>/Users/yang/Desktop/学术/projects/fiction/20260513-doubao-gpu-import-system/working/trial-system/accepted-current-promotion-standard.md</code></li>
+<li><code>/Users/yang/Desktop/学术/projects/fiction/20260513-doubao-gpu-import-system/working/trial-system/system-improvement-proposal.md</code></li>
+<li><code>/Users/yang/Desktop/学术/projects/fiction/20260513-doubao-gpu-import-system/working/trial-system/trial-rerun-notes.md</code></li>
+<li><code>/Users/yang/Desktop/学术/projects/fiction/20260513-doubao-gpu-import-system/working/v2/source-inventory-summary.md</code></li>
+<li><code>/Users/yang/Desktop/学术/projects/fiction/20260513-doubao-gpu-import-system/working/v2/story-bible.md</code></li>
+<li><code>/Users/yang/Desktop/学术/projects/fiction/20260513-doubao-gpu-import-system/working/v2/characters.md</code></li>
+<li><code>/Users/yang/Desktop/学术/projects/fiction/20260513-doubao-gpu-import-system/working/v2/worldbuilding.md</code></li>
+<li><code>/Users/yang/Desktop/学术/projects/fiction/20260513-doubao-gpu-import-system/working/v2/plot-arc.md</code></li>
+<li><code>/Users/yang/Desktop/学术/projects/fiction/20260513-doubao-gpu-import-system/working/v2/accepted-chapters-index.md</code></li>
+<li><code>/Users/yang/Desktop/学术/projects/fiction/20260513-doubao-gpu-import-system/working/v2/drafts-index.md</code></li>
+<li><code>/Users/yang/Desktop/学术/projects/fiction/20260513-doubao-gpu-import-system/working/v2/foreshadowing-tracker.md</code></li>
+<li><code>/Users/yang/Desktop/学术/projects/fiction/20260513-doubao-gpu-import-system/working/v2/continuity-state.md</code></li>
+<li><code>/Users/yang/Desktop/学术/projects/fiction/20260513-doubao-gpu-import-system/working/v2/style-and-tone-guide.md</code></li>
+<li><code>/Users/yang/Desktop/学术/projects/fiction/20260513-doubao-gpu-import-system/working/v2/open-questions.md</code></li>
+<li><code>/Users/yang/Desktop/学术/projects/fiction/20260513-doubao-gpu-import-system/working/v2/archive-decision-log.md</code></li>
+<li><code>/Users/yang/Desktop/学术/projects/fiction/20260513-doubao-gpu-import-system/review/v1-scorecard.md</code></li>
+<li><code>/Users/yang/Desktop/学术/projects/fiction/20260513-doubao-gpu-import-system/review/v2-scorecard.md</code></li>
+<li><code>/Users/yang/Desktop/学术/projects/fiction/20260513-doubao-gpu-import-system/review/system-comparison.md</code></li>
+<li><code>/Users/yang/Desktop/学术/projects/fiction/20260513-doubao-gpu-import-system/review/final-audit.md</code></li>
+<li><code>/Users/yang/Desktop/学术/projects/fiction/20260513-doubao-gpu-import-system/deliverables/README.md</code></li>
+<li><code>/Users/yang/Desktop/学术/projects/fiction/20260513-doubao-gpu-import-system/deliverables/handoff.md</code></li>
+<li><code>/Users/yang/Desktop/AI-IP-Studio/plans/run-reports/2026-05-12-marathon-doubao-fiction-import-system-report.md</code></li>
+<li><code>/Users/yang/Desktop/学术/run-reports/marathon-doubao-fiction-import-system-report.md</code></li>
+<li><code>/Users/yang/Desktop/AI-IP-Studio/publish/ai-ip-previews/runs/2026-05-12-marathon-doubao-fiction-import-system/index.html</code></li>
+<li><code>/Users/yang/Desktop/AI-IP-Studio/publish/ai-ip-previews/runs/2026-05-12-marathon-doubao-fiction-import-system/report.md</code></li>
+<li><code>/Users/yang/Desktop/AI-IP-Studio/publish/ai-ip-previews/runs/index.html</code></li>
+</ul></section>
+    <section class="card"><h2>链接</h2><div class="links"><a href="report.md">Markdown 报告</a>
+<a href="../">最终版报告索引</a>
+<a href="https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-12-marathon-doubao-fiction-import-system/">预期远程链接</a></div></section>
+    <section class="card"><h2>详情</h2><h3>交付物</h3><ul>
+<li>项目目录：<code>/Users/yang/Desktop/学术/projects/fiction/20260513-doubao-gpu-import-system/</code></li>
+<li>交接入口：<code>/Users/yang/Desktop/学术/projects/fiction/20260513-doubao-gpu-import-system/deliverables/README.md</code></li>
+<li>素材总索引：<code>/Users/yang/Desktop/学术/projects/fiction/20260513-doubao-gpu-import-system/source-materials/indexes/source-inventory.md</code></li>
+<li>去重索引：<code>/Users/yang/Desktop/学术/projects/fiction/20260513-doubao-gpu-import-system/source-materials/indexes/source-inventory-unique.tsv</code></li>
+<li>全量索引：<code>/Users/yang/Desktop/学术/projects/fiction/20260513-doubao-gpu-import-system/source-materials/indexes/source-inventory-all.tsv</code></li>
+<li>AutoResearch 补充索引：<code>/Users/yang/Desktop/学术/projects/fiction/20260513-doubao-gpu-import-system/source-materials/indexes/autoresearch-lab-index.md</code></li>
+<li>AutoResearch TSV：<code>/Users/yang/Desktop/学术/projects/fiction/20260513-doubao-gpu-import-system/source-materials/indexes/autoresearch-lab-index.tsv</code></li>
+<li>大型 run 索引：<code>/Users/yang/Desktop/学术/projects/fiction/20260513-doubao-gpu-import-system/source-materials/large-file-indexes/large-run-index.md</code></li>
+<li>v1 归档系统：<code>/Users/yang/Desktop/学术/projects/fiction/20260513-doubao-gpu-import-system/working/v1/</code></li>
+<li>试行版系统：<code>/Users/yang/Desktop/学术/projects/fiction/20260513-doubao-gpu-import-system/working/trial-system/</code></li>
+<li>v2 归档系统：<code>/Users/yang/Desktop/学术/projects/fiction/20260513-doubao-gpu-import-system/working/v2/</code></li>
+<li>评分与审计：<code>/Users/yang/Desktop/学术/projects/fiction/20260513-doubao-gpu-import-system/review/</code></li>
+<li>最终交付入口：<code>/Users/yang/Desktop/学术/projects/fiction/20260513-doubao-gpu-import-system/deliverables/</code></li>
+</ul>
+<h3>发布链接</h3><ul>
+<li>本地 Markdown 报告：<code>/Users/yang/Desktop/AI-IP-Studio/plans/run-reports/2026-05-12-marathon-doubao-fiction-import-system-report.md</code></li>
+<li>学术工作台报告副本：<code>/Users/yang/Desktop/学术/run-reports/marathon-doubao-fiction-import-system-report.md</code></li>
+<li>本地 HTML 报告：<code>/Users/yang/Desktop/AI-IP-Studio/publish/ai-ip-previews/runs/2026-05-12-marathon-doubao-fiction-import-system/index.html</code></li>
+<li>远程报告：<code>https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-12-marathon-doubao-fiction-import-system/</code></li>
+<li>远程索引：<code>https://schovayang-creator.github.io/ai-ip-previews/runs/</code></li>
+</ul>
+<h3>跳过项</h3><ul>
+<li>未写新正文：任务明确要求“不先写正文”。</li>
+<li>未修改正式 <code>skills/fiction-forge.md</code> 或 <code>workflows/fiction-workflow.md</code>：系统优化先放在 trial/proposal。</li>
+<li>未复制大型 Claude/Codex session 全文：只建路径索引，避免把 raw run 混入 canon。</li>
+<li>未把 AutoResearch 13-22 晋升为 accepted-current：缺 promotion 证据。</li>
+</ul>
+<h3>自评</h3><ul>
+<li>覆盖率：24/25。</li>
+<li>去重与路径证据：20/20。</li>
+<li>canon 清晰度：20/20。</li>
+<li>冲突处理：15/15。</li>
+<li>可续写性：9/10。</li>
+<li>多 agent 交接性：8/10。</li>
+<li>总分：96/100。</li>
+</ul>
+<h3>完成说明</h3><ul>
+<li>任务文件最终位置：<code>/Users/yang/Desktop/AI-IP-Studio/plans/tasks/finished/TASK-20260512-204-marathon-doubao-fiction-import-system.md</code></li>
+<li>报告路径：<code>/Users/yang/Desktop/AI-IP-Studio/plans/run-reports/2026-05-12-marathon-doubao-fiction-import-system-report.md</code></li>
+<li>HTML 路径：<code>/Users/yang/Desktop/AI-IP-Studio/publish/ai-ip-previews/runs/2026-05-12-marathon-doubao-fiction-import-system/index.html</code></li>
+<li>远程 URL：<code>https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-12-marathon-doubao-fiction-import-system/</code></li>
+<li>commit：待发布提交后填写。</li>
+</ul></section>
+    <section class="card"><h2>风险与下一步</h2><h3>风险</h3><ul>
+<li>第11-12章仍需人工或后续 agent 做衔接复核。</li>
+<li>AutoResearch 13-22 片段未逐章评分，不可直接作为续写正史。</li>
+<li>第22章存在孤立片段与 draft-fragment 潜在冲突。</li>
+<li>Git 仓库中存在其他未跟踪/未提交文件；本次提交仅 add/push 本任务报告目录和 runs 索引，不处理其他并行任务文件。</li>
+</ul>
+<h3>下一步</h3><p>1. 若继续归档：对 AutoResearch 13-22 片段逐章做摘要、评分、KEEP/DISCARD。</p>
+<p>2. 若开始续写：先让用户确认是否采用第11-12章，再按 <code>deliverables/prewrite-checklist.md</code> 规划第13章。</p>
+<p>3. 若固化系统：把 trial-system 在另一个小说项目复用一次后，再迁移到正式 <code>templates/fiction/</code> 或 <code>skills/fiction-forge.md</code>。</p></section>
+
+    <div class="footer">AI-IP-Studio · 运行报告页面 · 适合手机和微信查看</div>
+  </main>
+</body>
+</html>
