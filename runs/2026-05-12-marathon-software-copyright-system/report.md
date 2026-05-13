@@ -11,13 +11,14 @@ version: 2
 - 模式: managed / marathon
 - 最终状态: finished
 - 分数: 96/100
-- 更新时间: 2026-05-13 18:22:27 CST
+- 更新时间: 2026-05-13 18:41:07 CST
 - Agent: Codex
 - Markdown 报告: `plans/run-reports/2026-05-12-marathon-software-copyright-system-report.md`
 - 学术工作台报告副本: `/Users/yang/Desktop/学术/run-reports/marathon-software-copyright-system-report.md`
 - 本地 HTML 报告页: `publish/ai-ip-previews/runs/2026-05-12-marathon-software-copyright-system/index.html`
 - 软著项目目录: `/Users/yang/Desktop/学术/projects/software-copyright/20260513-information-research-lab/`
 - 任务卡最终位置: `plans/tasks/finished/TASK-20260512-202-marathon-software-copyright-system.md`
+- 发布仓库 commit: `e1633f010d12cdcde0ee2da66ad8f33b0b63557d`
 
 ## 目标 / Objective
 
@@ -25,7 +26,8 @@ version: 2
 
 ## 完成度总览
 
-> 最后同步时间：2026-05-13 18:38:37 CST。
+> 最后同步时间：2026-05-13 18:41:07 CST；发布 commit `e1633f0`；远程直链和 `/runs/` 索引均已 HTTP 200。
+
 
 | 项目 | 状态 | 说明 |
 |---|---|---|
@@ -142,7 +144,7 @@ Pilot 选择：`AI-IP-Studio 信息调研实验台软件 V0.1`。
 - 任务安全审查：未读取 `.ssh`、`.config`、浏览器 profile、cookie、token、私钥；未复制 raw media；未公开大段源码。
 - 发布脚本验证：`python3 scripts/publish_run_report.py --check plans/run-reports/2026-05-12-marathon-software-copyright-system-report.md` 通过。
 - 本地 HTTP 验证：`http://127.0.0.1:8766/runs/2026-05-12-marathon-software-copyright-system/` 和 `/runs/` 均返回 `HTTP/1.0 200 OK`。
-- 远程 HTTP 验证：发布仓库已推送，远程直链与 `/runs/` 索引将在本次索引修复后复验；初次直链已可返回 HTTP 200，最终结果以本轮最终回复为准。
+- 远程 HTTP 验证：发布仓库已推送 commit `e1633f0`；`/runs/2026-05-12-marathon-software-copyright-system/` 返回 HTTP 200 且包含报告标题；`/runs/` 返回 HTTP 200 且包含本报告索引项。
 
 未写成通过的验证：
 
@@ -188,8 +190,8 @@ AI-IP-Studio 任务与报告：
 - v3 源码鉴别计划：`/Users/yang/Desktop/学术/projects/software-copyright/20260513-information-research-lab/deliverables/source-identification-material-plan-v3.md`
 - v3 评分表：`/Users/yang/Desktop/学术/projects/software-copyright/20260513-information-research-lab/review/v3-scorecard.md`
 - 本地发布页：`publish/ai-ip-previews/runs/2026-05-12-marathon-software-copyright-system/index.html`
-- 远程直链：`https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-12-marathon-software-copyright-system/`
-- 公开索引：`https://schovayang-creator.github.io/ai-ip-previews/runs/`
+- 远程直链：`https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-12-marathon-software-copyright-system/`（HTTP 200 已验证）
+- 公开索引：`https://schovayang-creator.github.io/ai-ip-previews/runs/`（HTTP 200 且包含本报告项已验证）
 
 ## 自评
 
