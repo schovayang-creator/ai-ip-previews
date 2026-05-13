@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>专利撰写全流程 + 体系自优化 · AI-IP-Studio 运行报告</title>
+  <style>
+    :root{--paper:#f6ead8;--card:#fffaf1;--ink:#201713;--muted:#75675d;--line:#ddc4aa;--red:#a93427;--green:#1f6a57;--amber:#b76521;--blue:#285f78;--coal:#17110f;--shadow:0 22px 70px rgba(52,30,14,.12);--sans:"Avenir Next","PingFang SC","Hiragino Sans GB",sans-serif;--serif:"Songti SC","Kaiti SC","Hiragino Mincho ProN",serif}
+    *{box-sizing:border-box}body{margin:0;color:var(--ink);font-family:var(--sans);background:radial-gradient(circle at 8% 8%,rgba(199,107,36,.22),transparent 30%),linear-gradient(135deg,#ead6bd 0%,var(--paper) 52%,#fff8ec 100%)}
+    .page{width:min(920px,100%);margin:0 auto;padding:20px 14px 56px}.nav{display:flex;gap:10px;overflow:auto;margin-bottom:14px}.nav a{white-space:nowrap;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:9px 12px;background:rgba(255,250,241,.88);color:var(--muted);font-size:13px;font-weight:800}
+    .hero{border:1px solid var(--line);border-radius:30px;background:linear-gradient(135deg,#fffaf1 0%,#fff2d9 70%,#f3bd78 100%);padding:24px;box-shadow:var(--shadow)}.kicker{color:var(--red);font-size:12px;font-weight:900;letter-spacing:.14em;text-transform:uppercase}h1{margin:8px 0 10px;font-family:var(--serif);font-size:clamp(32px,8vw,54px);line-height:1.04;letter-spacing:-.05em}.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.pill{border:1px solid var(--line);border-radius:999px;padding:8px 10px;background:rgba(255,250,241,.82);font-weight:800;color:var(--muted)}.badge{border-radius:999px;padding:8px 12px;color:#fff;font-weight:900}.finished{background:var(--green)}.review{background:var(--blue)}.blocked{background:var(--red)}
+    .grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:16px}.card{border:1px solid var(--line);border-radius:24px;background:rgba(255,250,241,.9);padding:18px;box-shadow:0 12px 40px rgba(52,30,14,.07)}h2{margin:0 0 10px;font-family:var(--serif);font-size:26px;letter-spacing:-.03em}h3{margin:16px 0 6px;font-size:18px}p,li{line-height:1.72}.muted{color:var(--muted)}ul{padding-left:20px;margin:8px 0}.links{display:grid;gap:8px}.links a{display:block;text-decoration:none;border:1px solid var(--line);border-radius:16px;background:#fffdf8;padding:12px;color:var(--coal);font-weight:800;overflow-wrap:anywhere}pre{white-space:pre-wrap;overflow:auto;border:1px solid var(--line);border-radius:16px;background:#fffdf8;padding:14px;color:var(--muted)}code{background:#fffdf8;border:1px solid var(--line);border-radius:6px;padding:1px 4px}.footer{margin-top:18px;text-align:center;color:var(--muted);font-size:13px}
+    @media(min-width:760px){.grid.two{grid-template-columns:1fr 1fr}.page{padding:28px 22px 72px}}
+  </style>
+</head>
+<body>
+  <main class="page">
+    <nav class="nav">
+      <a href="../../">V3 主页</a>
+      <a href="../">运行报告索引</a>
+      <a href="report.md">Markdown 报告</a>
+    </nav>
+    <section class="hero">
+      <div class="kicker">AI-IP-Studio · 运行报告</div>
+      <h1>专利撰写全流程 + 体系自优化</h1>
+      <p class="muted">继续执行 AI-IP-Studio 马拉松任务，基于本地旧专利资料和学术工作台专利 workflow，选择一个资料充分且风险可控的 pilot 技术主题，完成专利撰写全流程 v1/v2、两轮评分、附图 prompt、系统优化包和交付草案。</p>
+      <div class="meta">
+        <span class="badge review">review</span>
+        <span class="pill">模式：managed</span>
+        <span class="pill">分数：93/100</span>
+        <span class="pill">更新：2026-05-13</span>
+      </div>
+    </section>
+
+    <section class="grid two">
+      <div class="card"><h2>目标</h2><p>继续执行 AI-IP-Studio 马拉松任务，基于本地旧专利资料和学术工作台专利 workflow，选择一个资料充分且风险可控的 pilot 技术主题，完成专利撰写全流程 v1/v2、两轮评分、附图 prompt、系统优化包和交付草案。</p></div>
+      <div class="card"><h2>验证</h2><ul>
+<li>文件存在性检查：30 个核心交付物全部存在，<code>MISSING_COUNT 0</code>。</li>
+<li>本地发布页验证：<code>curl -I http://127.0.0.1:9876/runs/</code> 和 <code>curl -I http://127.0.0.1:9876/runs/2026-05-12-marathon-patent-drafting-system/</code> 均返回 <code>HTTP/1.0 200 OK</code>。</li>
+<li>目录清单：学术项目 <code>run-evidence/project-file-list.txt</code>。</li>
+<li>图像边界：未调用外部图像服务，未上传 Confidential 技术细节；仅生成图号、编号、图意和黑白线稿 prompt。</li>
+<li>保密边界：公开/发布报告不包含完整权利要求、说明书或实施例正文；正文留在本地项目目录，按 Confidential 处理。</li>
+</ul></div>
+    </section>
+
+    <section class="card"><h2>修改 / 新建文件</h2><h3>修改文件</h3><ul>
+<li><code>/Users/yang/Desktop/学术/projects/patents/20260513-multiview-delivery-access-gate/README.md</code></li>
+<li><code>/Users/yang/Desktop/学术/projects/patents/20260513-multiview-delivery-access-gate/run-log.md</code></li>
+<li><code>/Users/yang/Desktop/学术/run-reports/marathon-patent-drafting-system-report.md</code></li>
+<li><code>/Users/yang/Desktop/AI-IP-Studio/plans/run-reports/2026-05-12-marathon-patent-drafting-system-report.md</code></li>
+<li><code>/Users/yang/Desktop/AI-IP-Studio/plans/tasks/running/TASK-20260512-201-marathon-patent-drafting-system.md</code></li>
+</ul>
+<h3>新建文件</h3><ul>
+<li><code>/Users/yang/Desktop/学术/projects/patents/20260513-multiview-delivery-access-gate/working/v1/04-claims.md</code></li>
+<li><code>/Users/yang/Desktop/学术/projects/patents/20260513-multiview-delivery-access-gate/working/v1/05-specification.md</code></li>
+<li><code>/Users/yang/Desktop/学术/projects/patents/20260513-multiview-delivery-access-gate/working/v1/06-figure-list.md</code></li>
+<li><code>/Users/yang/Desktop/学术/projects/patents/20260513-multiview-delivery-access-gate/working/v1/07-abstract.md</code></li>
+<li><code>/Users/yang/Desktop/学术/projects/patents/20260513-multiview-delivery-access-gate/working/v2/04-claims.md</code></li>
+<li><code>/Users/yang/Desktop/学术/projects/patents/20260513-multiview-delivery-access-gate/working/v2/05-specification.md</code></li>
+<li><code>/Users/yang/Desktop/学术/projects/patents/20260513-multiview-delivery-access-gate/working/v2/06-figure-list.md</code></li>
+<li><code>/Users/yang/Desktop/学术/projects/patents/20260513-multiview-delivery-access-gate/working/v2/07-abstract.md</code></li>
+<li><code>/Users/yang/Desktop/学术/projects/patents/20260513-multiview-delivery-access-gate/figures/figure-prompts.md</code></li>
+<li><code>/Users/yang/Desktop/学术/projects/patents/20260513-multiview-delivery-access-gate/review/07-patent-self-check-v1.md</code></li>
+<li><code>/Users/yang/Desktop/学术/projects/patents/20260513-multiview-delivery-access-gate/review/v1-score.md</code></li>
+<li><code>/Users/yang/Desktop/学术/projects/patents/20260513-multiview-delivery-access-gate/review/07-patent-self-check-v2.md</code></li>
+<li><code>/Users/yang/Desktop/学术/projects/patents/20260513-multiview-delivery-access-gate/review/v2-score.md</code></li>
+<li><code>/Users/yang/Desktop/学术/projects/patents/20260513-multiview-delivery-access-gate/review/support-matrix-v2.md</code></li>
+<li><code>/Users/yang/Desktop/学术/projects/patents/20260513-multiview-delivery-access-gate/review/system-comparison.md</code></li>
+<li><code>/Users/yang/Desktop/学术/projects/patents/20260513-multiview-delivery-access-gate/review/source-risk-v2.md</code></li>
+<li><code>/Users/yang/Desktop/学术/projects/patents/20260513-multiview-delivery-access-gate/system-improvement/trial-v1/</code></li>
+<li><code>/Users/yang/Desktop/学术/projects/patents/20260513-multiview-delivery-access-gate/deliverables/</code></li>
+</ul></section>
+    <section class="card"><h2>链接</h2><div class="links"><a href="report.md">Markdown 报告</a>
+<a href="../">最终版报告索引</a>
+<a href="https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-12-marathon-patent-drafting-system/">预期远程链接</a></div></section>
+    <section class="card"><h2>详情</h2><h3>交付物</h3><ul>
+<li>学术项目目录：<code>/Users/yang/Desktop/学术/projects/patents/20260513-multiview-delivery-access-gate/</code></li>
+<li><code>working/v1/01-technical-disclosure.md</code>：v1 技术交底整理。</li>
+<li><code>working/v1/02-invention-mining.md</code>：v1 发明点挖掘。</li>
+<li><code>working/v1/03-prior-art-map.md</code>：v1 现有技术检索计划与初步公开检索记录。</li>
+<li><code>working/v1/04-claims.md</code>：v1 权利要求书。</li>
+<li><code>working/v1/05-specification.md</code>：v1 说明书。</li>
+<li><code>working/v1/06-figure-list.md</code>：v1 附图清单与 prompt。</li>
+<li><code>working/v1/07-abstract.md</code>：v1 摘要。</li>
+<li><code>review/07-patent-self-check-v1.md</code>：v1 自检。</li>
+<li><code>review/v1-score.md</code>：v1 评分，折算 77/100。</li>
+<li><code>system-improvement/trial-v1/</code>：试行版系统优化包。</li>
+<li><code>working/v2/04-claims.md</code>：v2 权利要求书。</li>
+<li><code>working/v2/05-specification.md</code>：v2 说明书。</li>
+<li><code>working/v2/06-figure-list.md</code>：v2 附图清单与图文一致性表。</li>
+<li><code>working/v2/07-abstract.md</code>：v2 摘要。</li>
+<li><code>figures/figure-prompts.md</code>：统一附图 prompt。</li>
+<li><code>review/support-matrix-v2.md</code>：权利要求-说明书支撑矩阵。</li>
+<li><code>review/07-patent-self-check-v2.md</code>：v2 自检。</li>
+<li><code>review/v2-score.md</code>：v2 评分，93/100。</li>
+<li><code>review/system-comparison.md</code>：旧系统 / 当前系统 / 试行版对比。</li>
+<li><code>review/source-risk-v2.md</code>：来源与风险说明。</li>
+<li><code>deliverables/</code>：v2 代理师复核草案包。</li>
+</ul>
+<h3>发布链接</h3><ul>
+<li>本地 Markdown：<code>plans/run-reports/2026-05-12-marathon-patent-drafting-system-report.md</code></li>
+<li>本地 HTML：<code>publish/ai-ip-previews/runs/2026-05-12-marathon-patent-drafting-system/index.html</code></li>
+<li>预期远程直链：<code>https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-12-marathon-patent-drafting-system/</code></li>
+<li>公开索引：不进入最终版公开索引，因为状态为 <code>review</code> 且 <code>public_final:false</code>。</li>
+</ul>
+<h3>自评</h3><ul>
+<li>v1 评分：77/100。</li>
+<li>v2 评分：93/100。</li>
+<li>任务要求 finished 需要 &gt;=95、发布/push/远程 HTTP 200 和无重大人工阻塞；本次诚实进入 review。</li>
+</ul>
+<h3>完成说明</h3><p>本地专利核心交付物已补齐，并完成两轮评分和系统优化包。任务不应进入 finished，而应进入 review：可交发明人/代理师复核，但正式检索、申请信息和代理师意见仍是阻塞 finished 的关键条件。</p></section>
+    <section class="card"><h2>风险与下一步</h2><h3>风险</h3><ul>
+<li>未完成正式 CNIPA / WIPO / 中文专利数据库检索，不能形成正式新颖性或创造性结论。</li>
+<li>申请人、发明人、地址、权属和公开时点均待确认。</li>
+<li>v2 仍需代理师确认“质量契约”术语、权利要求数量、客体风险和最接近现有技术。</li>
+<li>未生成正式附图，仅生成可供制图参考的黑白线稿 prompt。</li>
+</ul>
+<h3>下一步</h3><p>1. 用户/发明人确认申请人、发明人、权属和保密边界。</p>
+<p>2. 代理师或检索人员完成正式检索，并反馈最接近现有技术。</p>
+<p>3. 根据检索结果调整独立权利要求宽度和从属层级。</p>
+<p>4. 提供一组完全脱敏的演示数据或日志，补强实施例和技术效果。</p>
+<p>5. 由制图人员按学术项目 <code>figures/figure-prompts.md</code> 绘制正式附图。</p></section>
+
+    <div class="footer">AI-IP-Studio · 运行报告页面 · 适合手机和微信查看</div>
+  </main>
+</body>
+</html>
