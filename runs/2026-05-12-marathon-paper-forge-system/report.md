@@ -133,6 +133,9 @@
 - 文件存在性检查：所有 required paper deliverables 均非空。
 - HTML 本地验证：`curl -I http://127.0.0.1:8876/runs/2026-05-12-marathon-paper-forge-system/` 返回 `HTTP/1.0 200 OK`。
 - `/runs/` 本地索引验证：`curl -I http://127.0.0.1:8876/runs/` 返回 `HTTP/1.0 200 OK`。
+- GitHub push：`publish/ai-ip-previews` pushed `main` from `f819bdc` to `e3333ec`。
+- Remote 报告页验证：`curl -I -L https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-12-marathon-paper-forge-system/` 返回 `HTTP/2 200`。
+- Remote `/runs/` 验证：`curl -I -L https://schovayang-creator.github.io/ai-ip-previews/runs/` 返回 `HTTP/2 200`。
 - 字数检查：v1 约 1,874 words；v2/current manuscript 约 2,923 words；research pack 约 401 words。
 - 引用检查：`references.bib` 含 12 条 BibTeX 记录；核心 DOI/URL 记录在 citation verification table。
 - 风险扫描：正文明确写 narrative/scoping，不声称 systematic review；未把无法访问的 COPE/PLOS/Science 政策列为核心引用。
@@ -145,8 +148,8 @@
 - AI-IP-Studio 报告副本：`/Users/yang/Desktop/AI-IP-Studio/plans/run-reports/2026-05-12-marathon-paper-forge-system-report.md`
 - 本地 HTML 发布页：`/Users/yang/Desktop/AI-IP-Studio/publish/ai-ip-previews/runs/2026-05-12-marathon-paper-forge-system/index.html`
 - 本地 report.md 副本：`/Users/yang/Desktop/AI-IP-Studio/publish/ai-ip-previews/runs/2026-05-12-marathon-paper-forge-system/report.md`
-- 预期远程链接：`https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-12-marathon-paper-forge-system/`
-- 远程状态：待 push 后验证 remote HTTP 200。
+- 远程链接：`https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-12-marathon-paper-forge-system/`
+- 远程状态：已 push；报告页和 `/runs/` 索引均 remote HTTP 200。
 
 ## 跳过项 / Skipped Items
 
@@ -159,7 +162,7 @@
 
 - 真实投稿仍需全文精读、系统检索、目标期刊格式化、作者信息、利益冲突、基金声明。
 - AI/出版政策变化快，正式投稿前必须重新核验。
-- 发布仓库存在无关 dirty changes；本任务只 add/commit/push 自己的 run 目录和 `runs/index.html`，不纳入无关文件。
+- 发布仓库存在无关 dirty changes；本任务只 add/commit/push 了自己的 run 目录和 `runs/index.html`，未纳入无关文件。
 - `AI-IP-Studio/plans/tasks/todo/` 中仍有原 todo 任务副本；本次应进入 review 后再由用户确认归档策略。
 
 ## 下一步 / Next Actions
@@ -180,4 +183,4 @@
 | 已写系统优化建议，未硬改正式 skill/workflow | 是 |
 | 已生成 Markdown 运行报告和 HTML 发布页 | 本地已生成 / 待 AI-IP-Studio 发布脚本同步 |
 | 已更新 final-only `/runs/` 索引、push 并验证远程 HTTP 200 | 否，需用户确认或后续继续 |
-| 最终状态 | finished（待远程验证命令补记） |
+| 最终状态 | finished |
