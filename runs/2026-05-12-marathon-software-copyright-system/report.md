@@ -25,6 +25,8 @@ version: 2
 
 ## 完成度总览
 
+> 最后同步时间：2026-05-13 18:38:37 CST。
+
 | 项目 | 状态 | 说明 |
 |---|---|---|
 | 任务与必读文件 | 已完成 | 已读任务卡、AI-IP-Studio AGENTS、任务板/managed/marathon/publish workflow、学术 AGENTS、软著 skill/workflow、保密边界 |
@@ -140,7 +142,7 @@ Pilot 选择：`AI-IP-Studio 信息调研实验台软件 V0.1`。
 - 任务安全审查：未读取 `.ssh`、`.config`、浏览器 profile、cookie、token、私钥；未复制 raw media；未公开大段源码。
 - 发布脚本验证：`python3 scripts/publish_run_report.py --check plans/run-reports/2026-05-12-marathon-software-copyright-system-report.md` 通过。
 - 本地 HTTP 验证：`http://127.0.0.1:8766/runs/2026-05-12-marathon-software-copyright-system/` 和 `/runs/` 均返回 `HTTP/1.0 200 OK`。
-- 远程 HTTP 验证：待本次 publish 仓库 push 后补写 commit hash 和 HTTP 200 结果。
+- 远程 HTTP 验证：发布仓库已推送，远程直链与 `/runs/` 索引将在本次索引修复后复验；初次直链已可返回 HTTP 200，最终结果以本轮最终回复为准。
 
 未写成通过的验证：
 
