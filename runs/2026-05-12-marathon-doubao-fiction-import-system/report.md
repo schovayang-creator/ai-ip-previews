@@ -138,7 +138,7 @@
 - 远程 HTTP 检查：2026-05-13 运行 `curl -L -s -o /tmp/doubao-run.html -w '%{http_code}' https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-12-marathon-doubao-fiction-import-system/` 返回 `200`；`/runs/` 索引返回 `200`，远程内容包含“豆包小说旧体系”。
 - 安全检查：公开报告只放路径级摘要和状态结论，不发布正文全文、cookie、token、私钥。
 - 任务板收口：源任务已从 `todo/`、`running/` 清理，最终任务卡保留在 `plans/tasks/finished/`。
-- 发布仓库首次发布 commit：`c41de1b36f01b17f0d088f5d1560586885b250fc`。
+- 发布仓库首次发布 commit：`c41de1b36f01b17f0d088f5d1560586885b250fc`；后续发布证据修正 commit：`551d2a44d62d6c23802d1f9f34c00d133276856e`。
 
 ## 发布链接 / Publish Links
 
@@ -184,5 +184,5 @@
 - 报告路径：`/Users/yang/Desktop/AI-IP-Studio/plans/run-reports/2026-05-12-marathon-doubao-fiction-import-system-report.md`
 - HTML 路径：`/Users/yang/Desktop/AI-IP-Studio/publish/ai-ip-previews/runs/2026-05-12-marathon-doubao-fiction-import-system/index.html`
 - 远程 URL：`https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-12-marathon-doubao-fiction-import-system/`
-- publish commit：`c41de1b36f01b17f0d088f5d1560586885b250fc`。
-- 公开索引状态：已进入 `/runs/` final-only 公开索引，远程索引 HTTP 200。
+- publish commit：`c41de1b36f01b17f0d088f5d1560586885b250fc`；follow-up publish evidence commit：`551d2a44d62d6c23802d1f9f34c00d133276856e`。
+- 公开索引状态：已进入 `/runs/` final-only 公开索引；2026-05-13 远程 run 页与索引均 HTTP 200。
