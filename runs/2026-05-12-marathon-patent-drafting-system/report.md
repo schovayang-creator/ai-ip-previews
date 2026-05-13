@@ -118,6 +118,7 @@
 ## 发布链接
 
 - 本地 Markdown：`plans/run-reports/2026-05-12-marathon-patent-drafting-system-report.md`
+- 任务文件最终位置：`plans/tasks/review/TASK-20260512-201-marathon-patent-drafting-system.md`
 - 本地 HTML：`publish/ai-ip-previews/runs/2026-05-12-marathon-patent-drafting-system/index.html`
 - 预期远程直链：`https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-12-marathon-patent-drafting-system/`
 - 公开索引：不进入最终版公开索引，因为状态为 `review` 且 `public_final:false`。
