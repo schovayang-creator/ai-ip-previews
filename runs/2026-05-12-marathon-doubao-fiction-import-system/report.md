@@ -90,6 +90,9 @@
 - `/Users/yang/Desktop/学术/projects/fiction/20260513-doubao-gpu-import-system/review/final-audit.md`
 - `/Users/yang/Desktop/学术/projects/fiction/20260513-doubao-gpu-import-system/deliverables/README.md`
 - `/Users/yang/Desktop/学术/projects/fiction/20260513-doubao-gpu-import-system/deliverables/handoff.md`
+- `/Users/yang/Desktop/学术/projects/fiction/20260513-doubao-gpu-import-system/working/v3/autoresearch-13-22-review.md`
+- `/Users/yang/Desktop/学术/projects/fiction/20260513-doubao-gpu-import-system/deliverables/autoresearch-13-22-review.md`
+- `/Users/yang/Desktop/学术/projects/fiction/20260513-doubao-gpu-import-system/review/v3-scorecard.md`
 - `/Users/yang/Desktop/AI-IP-Studio/plans/run-reports/2026-05-12-marathon-doubao-fiction-import-system-report.md`
 - `/Users/yang/Desktop/学术/run-reports/marathon-doubao-fiction-import-system-report.md`
 - `/Users/yang/Desktop/AI-IP-Studio/publish/ai-ip-previews/runs/2026-05-12-marathon-doubao-fiction-import-system/index.html`
@@ -128,6 +131,13 @@
 - 生成 `working/v2/`、`review/`、`deliverables/`。
 - 自评分：96/100。
 
+### v3 归档增强
+
+- 按用户“继续”要求，补做 AutoResearch 13-22 摘要级逐章评审。
+- 新增 `working/v3/autoresearch-13-22-review.md` 与 `deliverables/autoresearch-13-22-review.md`。
+- 新增 `review/v3-scorecard.md`，v3 归档增强自评 97/100。
+- 结论：13-22 可作参考/重写种子，但全部不晋升 accepted-current。
+
 ## 验证 / Validation
 
 - 文件存在性检查：49 个关键文件，missing 0。
@@ -158,15 +168,15 @@
 ## 风险 / Risks
 
 - 第11-12章仍需人工或后续 agent 做衔接复核。
-- AutoResearch 13-22 片段未逐章评分，不可直接作为续写正史。
+- AutoResearch 13-22 已完成摘要级逐章评分；结论仍是不可直接作为续写正史。
 - 第22章存在孤立片段与 draft-fragment 潜在冲突。
 - Git 仓库中存在其他未跟踪/未提交文件；本次提交仅 add/push 本任务报告目录和 runs 索引，不处理其他并行任务文件。
 
 ## 下一步 / Next Actions
 
-1. 若继续归档：对 AutoResearch 13-22 片段逐章做摘要、评分、KEEP/DISCARD。
-2. 若开始续写：先让用户确认是否采用第11-12章，再按 `deliverables/prewrite-checklist.md` 规划第13章。
-3. 若固化系统：把 trial-system 在另一个小说项目复用一次后，再迁移到正式 `templates/fiction/` 或 `skills/fiction-forge.md`。
+1. 若继续归档：下一步不是再评审 AutoResearch 13-22，而是做第11-12章晋升评审或第13-18桥接大纲。
+2. 若开始续写：先让用户确认是否采用第11-12章，再按 `deliverables/prewrite-checklist.md` 与 `deliverables/autoresearch-13-22-review.md` 规划第13章。
+3. 若固化系统：把 trial-system 与 v3 评审表在另一个小说项目复用一次后，再迁移到正式 `templates/fiction/` 或 `skills/fiction-forge.md`。
 
 ## 自评 / Self-Review
 
@@ -176,7 +186,8 @@
 - 冲突处理：15/15。
 - 可续写性：9/10。
 - 多 agent 交接性：8/10。
-- 总分：96/100。
+- v2 总分：96/100。
+- v3 归档增强：97/100。
 
 ## 完成说明 / Completion Note
 
