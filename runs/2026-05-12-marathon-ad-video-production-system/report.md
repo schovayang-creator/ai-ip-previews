@@ -145,7 +145,7 @@
 - 内容标记检查：`storyboard-v2.md` 包含 0-3s / 3-6s / 6-9s / 9-12s / 12-15s；`image2-prompt-sheet-v2.md` 每个关键帧包含 Vertical 9:16 prompt 和 negative prompt；`scoring-v2.md` 记录 97/100。
 - 本地 HTML 验证：`http://127.0.0.1:8765/runs/2026-05-12-marathon-ad-video-production-system/` 和 `/runs/` 均返回 HTTP 200。
 - 远程 HTML 验证：`https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-12-marathon-ad-video-production-system/` 和 `/runs/` 均返回 HTTP 200；公开索引包含本任务入口。
-- 发布 commit：`ca47400`（包含此前 `d8da9de` 广告报告发布提交，并随专利报告索引更新一起推送）。
+- 发布 commit：`deef965`（更新本报告验证事实并推送；此前 `d8da9de` 为广告报告初次发布提交，`ca47400` 为同步索引提交）。
 - 简单敏感信息扫描：未发现 API key、私钥、password/token/cookie 形式内容；唯一命中是普通文本中的 `marathon-goal-task-v0.md` 文件名。
 - 合规核验：记录了互联网广告管理、深度合成、生成式 AI 和巨量引擎规则相关官方/平台 URL。
 
@@ -154,7 +154,7 @@
 - Markdown 报告：`/Users/yang/Desktop/AI-IP-Studio/plans/run-reports/2026-05-12-marathon-ad-video-production-system-report.md`
 - 学术工作台报告副本：`/Users/yang/Desktop/学术/run-reports/marathon-ad-video-production-system-report.md`
 - HTML 报告：`/Users/yang/Desktop/AI-IP-Studio/publish/ai-ip-previews/runs/2026-05-12-marathon-ad-video-production-system/index.html`
-- 远程 URL：`https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-12-marathon-ad-video-production-system/`（remote HTTP 200 已验证，2026-05-13）（remote HTTP 200 已验证，2026-05-13）
+- 远程 URL：`https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-12-marathon-ad-video-production-system/`（remote HTTP 200 已验证，2026-05-13）
 
 ## 跳过项
 
