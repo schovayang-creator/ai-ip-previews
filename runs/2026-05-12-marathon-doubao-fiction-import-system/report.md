@@ -2,7 +2,7 @@
 
 - Task ID: TASK-20260512-204
 - Status: finished
-- Mode: managed
+- Mode: marathon
 - Score: 96/100
 - Finished: 2026-05-13
 - public_final: true
@@ -16,7 +16,7 @@
 
 ## 模式和最终状态
 
-- 模式：marathon 任务的补交/续跑；报告脚本仅支持 `managed/office`，页面元数据按 `managed` 发布，报告正文保留 marathon 说明。
+- 模式：marathon 任务的补交/续跑；本轮已在发布页中手工校正显示为 `marathon`。
 - 最终状态：finished。
 - v1 自评：83/100。
 - v2 自评：96/100，达到任务卡 `completion_score_min: 95`。
@@ -26,7 +26,7 @@
 
 - `/Users/yang/Desktop/AI-IP-Studio/AGENTS.md`
 - `/Users/yang/Desktop/AI-IP-Studio/plans/tasks/README.md`
-- `/Users/yang/Desktop/AI-IP-Studio/plans/tasks/running/TASK-20260512-204-marathon-doubao-fiction-import-system.md`
+- `/Users/yang/Desktop/AI-IP-Studio/plans/tasks/finished/TASK-20260512-204-marathon-doubao-fiction-import-system.md`
 - `/Users/yang/Desktop/AI-IP-Studio/skills/goal-task-builder.md`
 - `/Users/yang/Desktop/AI-IP-Studio/workflows/managed-goal-task-v0.md`
 - `/Users/yang/Desktop/AI-IP-Studio/workflows/marathon-goal-task-v0.md`
@@ -58,7 +58,7 @@
 
 - `/Users/yang/Desktop/学术/projects/fiction/20260513-doubao-gpu-import-system/README.md`
 - `/Users/yang/Desktop/学术/projects/fiction/20260513-doubao-gpu-import-system/run-log.md`
-- `/Users/yang/Desktop/AI-IP-Studio/plans/tasks/running/TASK-20260512-204-marathon-doubao-fiction-import-system.md`
+- `/Users/yang/Desktop/AI-IP-Studio/plans/tasks/finished/TASK-20260512-204-marathon-doubao-fiction-import-system.md`
 
 ## 新建文件 / Files Created
 
@@ -135,8 +135,10 @@
 - AutoResearch 补充索引：430 条记录。
 - 发布脚本检查：`python3 scripts/publish_run_report.py --check --slug 2026-05-12-marathon-doubao-fiction-import-system plans/run-reports/2026-05-12-marathon-doubao-fiction-import-system-report.md` 返回 ok。
 - 本地 HTTP 检查：`/runs/` 与 `/runs/2026-05-12-marathon-doubao-fiction-import-system/` 返回 HTTP 200。
-- 远程 HTTP 检查：GitHub Pages run 页与 runs 索引返回 HTTP 200。
+- 远程 HTTP 检查：2026-05-13 运行 `curl -L -s -o /tmp/doubao-run.html -w '%{http_code}' https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-12-marathon-doubao-fiction-import-system/` 返回 `200`；`/runs/` 索引返回 `200`，远程内容包含“豆包小说旧体系”。
 - 安全检查：公开报告只放路径级摘要和状态结论，不发布正文全文、cookie、token、私钥。
+- 任务板收口：源任务已从 `todo/`、`running/` 清理，最终任务卡保留在 `plans/tasks/finished/`。
+- 发布仓库首次发布 commit：`c41de1b36f01b17f0d088f5d1560586885b250fc`。
 
 ## 发布链接 / Publish Links
 
@@ -182,4 +184,5 @@
 - 报告路径：`/Users/yang/Desktop/AI-IP-Studio/plans/run-reports/2026-05-12-marathon-doubao-fiction-import-system-report.md`
 - HTML 路径：`/Users/yang/Desktop/AI-IP-Studio/publish/ai-ip-previews/runs/2026-05-12-marathon-doubao-fiction-import-system/index.html`
 - 远程 URL：`https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-12-marathon-doubao-fiction-import-system/`
-- commit：待发布提交后填写。
+- publish commit：`c41de1b36f01b17f0d088f5d1560586885b250fc`。
+- 公开索引状态：已进入 `/runs/` final-only 公开索引，远程索引 HTTP 200。
