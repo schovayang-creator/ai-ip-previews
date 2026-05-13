@@ -121,6 +121,8 @@
 - 本地 HTML：`publish/ai-ip-previews/runs/2026-05-12-marathon-patent-drafting-system/index.html`
 - 预期远程直链：`https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-12-marathon-patent-drafting-system/`
 - 公开索引：不进入最终版公开索引，因为状态为 `review` 且 `public_final:false`。
+- GitHub Pages commit：`d3513ec`。
+- 远程验证：2026-05-13 `https://schovayang-creator.github.io/ai-ip-previews/runs/2026-05-12-marathon-patent-drafting-system/` 返回 HTTP 200；`/runs/` 返回 HTTP 200；`/runs/` 不包含本 review 报告入口，符合 final-only 规则。
 
 ## 风险
 
